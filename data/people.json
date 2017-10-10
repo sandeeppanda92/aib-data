@@ -1,0 +1,406 @@
+[
+  {
+    "slug": "jae-kwon",
+    "name": "Jae Kwon",
+    "bio": "Jae Kwon created Tendermint to save the world from needlessly wasting electricity to secure distributed ledgers. Along the way he realized that using quorums and cryptography instead of energy and hashing affords many advantages such as speed and scalability.",
+    "ids": {
+      "email": "jae",
+      "github": "jaekwon",
+      "keybase": "jaekwon",
+      "linkedin": "yjkwon",
+      "twitter": "jaekwon"
+    },
+    "groups": {
+      "aib": "CEO & Founder",
+      "icf": "Board Member"
+    }
+  },
+  {
+    "slug": "ethan-buchman",
+    "name": "Ethan Buchman",
+    "bio": "Ethan sees consensus algorithms as a 21st century means for promoting social cohesion. He is driven to empower humans with new ways to coordinate and reach agreement at scale.",
+    "ids": {
+      "email": "ethan",
+      "github": "ebuchman",
+      "keybase": "ebuchman",
+      "linkedin": "ethan-buchman-10b34944",
+      "twitter": "buchmanster"
+    },
+    "groups": {
+      "aib": "CTO & Cofounder",
+      "icf": "Board Member"
+    }
+  },
+  {
+    "slug": "guido-schmitz-krummacher",
+    "name": "Guido Schmitz-Krummacher",
+    "bio": "Guido Schmitz-Krummacher is our Board Member based in Switzerland. He has worked for 25 years for SME in MD, Board or CEO positions. Guido joined the crypto-industry a year ago and is a interchain of different crypto foundations and companies.",
+    "ids": {
+      "linkedin": "guidos1",
+      "website": "www.sielva-management.com/de/uber-uns/ihre-ansprechsperson"
+    },
+    "groups": {
+      "icf": "Board Member"
+    }
+  },
+  {
+    "slug": "peng-zhong",
+    "name": "Peng Zhong",
+    "bio": "Peng aims to dramatically increase blockchain adoption through better usability design. He hopes to turning cutting-edge technology into mundane things that everyone can use.",
+    "ids": {
+      "email": "peng",
+      "github": "nylira",
+      "keybase": "peng",
+      "linkedin": "nylira",
+      "twitter": "zcpeng",
+      "website": "nylira.com"
+    },
+    "groups": {
+      "aib": "Head of Design"
+    }
+  },
+  {
+    "slug": "brian-crain",
+    "name": "Brian Fabian Crain",
+    "bio": "For Brian distributed ledger combined interests in economics, game theory, technology and visions of a radically different future. In Tendermint, he wants to walk the tightrope between pragmatism and idealism.",
+    "ids": {
+      "email": "brian",
+      "github": "crainbf",
+      "keybase": "crainbf",
+      "linkedin": "bfcrain",
+      "twitter": "crainbf",
+      "website": "epicenter.tv"
+    },
+    "groups": {
+      "aib": "Head of Research"
+    }
+  },
+  {
+    "slug": "adrian-brink",
+    "name": "Adrian Brink",
+    "bio": "Distributed ledgers will change everything we do. Bitcoin gave us money which was free from central control, but much more is yet to come. Let's bring the crypto revolution to the masses. Broad adoption and ubiquitousness will drive the change we want to see.",
+    "ids": {
+      "email": "adrian",
+      "github": "adrianbrink",
+      "keybase": "adrianbrink",
+      "linkedin": "adrianbrink",
+      "twitter": "adrian_brink",
+      "website": "adrianbrink.com"
+    },
+    "groups": {
+      "aib": "Core Dev & Head of Comm."
+    }
+  },
+  {
+    "slug": "alexis-sellier",
+    "name": "Alexis Sellier",
+    "bio": "",
+    "ids": {
+      "email": "alexis",
+      "github": "cloudhead",
+      "keybase": "cloudhead",
+      "twitter": "cloudhead",
+      "website": "cloudhead.io"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "anton-kaliaev",
+    "name": "Anton Kaliaev",
+    "bio": "Anton is a software engineer with more than 6 years of experience. He has worked in web, video processing, and telecom industries and has extensive knowledge, which he hopes will help him make Tendermint better. Always passionate about learning. Loves occasional traveling and enjoys writing his own blog.",
+    "ids": {
+      "email": "anton",
+      "github": "melekes",
+      "keybase": "melekes",
+      "linkedin": "melekes",
+      "twitter": "akaliaev",
+      "website": "homeonrails.com"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "christine-chiang",
+    "name": "Christine Chiang",
+    "bio": "Christine is the content creator and communications lead for the Cosmos project, the Internet of Blockchains.",
+    "ids": {
+      "email": "chjango",
+      "github": "chjango",
+      "linkedin": "chjango",
+      "twitter": "chjango"
+    },
+    "groups": {
+      "aib": "Strategic Communications"
+    }
+  },
+  {
+    "slug": "ethan-frey",
+    "name": "Ethan Frey",
+    "bio": "Ethan has many years of experience in backend web development, and looks to bring all the tooling we enjoy from the web to help everyone build powerful blockchain applications based on tendermint. And along the way disrupt an industry or two…",
+    "ids": {
+      "email": "frey",
+      "github": "ethanfrey",
+      "keybase": "ethanfrey",
+      "linkedin": "ethanfrey"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "fabian-weber",
+    "name": "Fabian Weber",
+    "bio": "",
+    "ids": {
+      "email": "fabian",
+      "linkedin": "fabian-weber-04100a37"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "gautier-marin",
+    "name": "Gautier Marin",
+    "bio": "",
+    "ids": {
+      "email": "gautier",
+      "linkedin": "gautier-marin-dagannaud-349107120",
+      "twitter": "gautier_md"
+    },
+    "groups": {
+      "aib": "Governance Researcher"
+    }
+  },
+  {
+    "slug": "greg-szabo",
+    "name": "Greg Szabo",
+    "bio": "Greg is an IT enthusiast with more than 10 years of experience in building enterprise infrastructures. His primary goal is to create a world, where computers are used transparently and people are focusing on their goals instead of their tools.",
+    "ids": {
+      "email": "greg",
+      "github": "greg-szabo",
+      "linkedin": "gergelymszabo"
+    },
+    "groups": {
+      "aib": "DevOps Engineer"
+    }
+  },
+  {
+    "slug": "jessica-gelbard",
+    "name": "Jessica Gelbard",
+    "bio": "",
+    "ids": {
+      "email": "jessica",
+      "linkedin": "jessica-gelbard-437540112"
+    },
+    "groups": {
+      "aib": "HR & Culture Manager"
+    }
+  },
+  {
+    "slug": "judd-keppel",
+    "name": "Judd Keppel",
+    "bio": "",
+    "ids": {
+      "email": "judd",
+      "github": "keppel",
+      "linkedin": "juddkeppel",
+      "twitter": "juddkeppel",
+      "website": "kep.io"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "matt-bell",
+    "name": "Matt Bell",
+    "bio": "Matt has been working in the cryptocurrency space since 2011. He believes blockchain technologies like Tendermint will transform the world the same way the internet did.",
+    "ids": {
+      "email": "matt",
+      "github": "mappum",
+      "keybase": "mappum",
+      "linkedin": "matt-bell-941aa146",
+      "twitter": "mappum"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "matt-oneill",
+    "name": "Matt O'Neill",
+    "bio": "",
+    "ids": {
+      "email": "matt.oneill",
+      "linkedin": "operationalfocus"
+    },
+    "groups": {
+      "aib": "Operations Manager"
+    }
+  },
+  {
+    "slug": "ola-kohut",
+    "name": "Ola Kohut",
+    "bio": "",
+    "ids": {
+      "email": "ola",
+      "linkedin": "olakohut",
+      "twitter": "koholaa",
+      "website": "olakohut.com"
+    },
+    "groups": {
+      "aib": "Developer Relations"
+    }
+  },
+  {
+    "slug": "rigel-rozanski",
+    "name": "Rigel Rozanski",
+    "bio": "Rigel is inspired by blockchain as a means of reducing entropy as the interactions of technology grow to manifold complexities. His interests lie in the crossroads between blockchain and the geospatial realm.",
+    "ids": {
+      "email": "rigel",
+      "github": "rigelrozanski",
+      "keybase": "rigel",
+      "linkedin": "rigel-rozanski-28340559"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "sunny-aggarwal",
+    "name": "Sunny Aggarwal",
+    "bio": "",
+    "ids": {
+      "email": "sunny",
+      "github": "sunnya97",
+      "keybase": "sunnya97",
+      "linkedin": "aggarwalsunny",
+      "twitter": "sunnya97",
+      "website": "sunnya97.com"
+    },
+    "groups": {
+      "aib": "Research Scientist"
+    }
+  },
+  {
+    "slug": "william-light",
+    "name": "William Light",
+    "bio": "",
+    "ids": {
+      "email": "william",
+      "github": "wrl",
+      "keybase": "wrl",
+      "twitter": "wrl",
+      "website": "williamlight.net"
+    },
+    "groups": {
+      "aib": "Hardware Engineer"
+    }
+  },
+  {
+    "slug": "zach-ramsay",
+    "name": "Zach Ramsay",
+    "bio": "",
+    "ids": {
+      "email": "zach",
+      "github": "zramsay",
+      "keybase": "zramsay",
+      "linkedin": "zach-ramsay-7a473a94",
+      "twitter": "cerebralbosons"
+    },
+    "groups": {
+      "aib": "Documentation Guru"
+    }
+  },
+  {
+    "slug": "zarko-milosevic",
+    "name": "Zarko Milosevic",
+    "bio": "",
+    "ids": {
+      "email": "zarko",
+      "linkedin": "zarko-milosevic-8a87375"
+    },
+    "groups": {
+      "aib": "Research Scientist"
+    }
+  },
+  {
+    "slug": "henny-han",
+    "name": "Ash Han",
+    "bio": "Ash Han is a founder of Finector, a leading research/consulting firm specialized in distributed ledger technology. He is an advisor of various blockchain-related startups such as Tendermint and Chronobank.io and also an author of multiple books and papers on blockchain.",
+    "ids": {
+      "email": "ashhan",
+      "linkedin": "ashhan",
+      "website": "seunghwanhan.com"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "franck-mikulecz",
+    "name": "Franck Mikulecz",
+    "bio": "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
+    "ids": {
+      "linkedin": "franckmikulecz",
+      "twitter": "franckmikulecz"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "hugh-rooney",
+    "name": "Hugh Rooney",
+    "bio": "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
+    "ids": {
+      "email": "hugh",
+      "linkedin": "hugh-rooney-174003141"
+    },
+    "groups": {
+      "aib": "Advisor"
+    }
+  },
+  {
+    "slug": "jim-yang",
+    "name": "Jim Yang",
+    "bio": "Jim Yang co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.",
+    "ids": {
+      "linkedin": "jimyang"
+    },
+    "groups": {
+      "aib": "Strategy",
+      "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "thomas-greco",
+    "name": "Thomas Greco",
+    "bio": "Thomas Greco is Special Advisor to Omise (おみせ), an Asia-Pacific fintech company developing solutions that can add value to a financially disintermediated future. He also served as a special advisor to the Ethereum Foundation.",
+    "ids": {
+      "website": "omise.co"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "zaki-manian",
+    "name": "Zaki Manian",
+    "bio": "",
+    "ids": {
+      "github": "zmanian",
+      "keybase": "zmanian",
+      "linkedin": "zmanian",
+      "twitter": "zmanian",
+      "website": "zaki.manian.org"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  }
+]

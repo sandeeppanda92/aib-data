@@ -1,0 +1,274 @@
+[
+  {
+    "area": "technical",
+    "description": "Tendermint is looking for a Head of Community Management to lead and manage programs and initiatives to nurture and grow our developer community.\n\nYou will be responsible for building programs, initiatives and social strategy, as well as communicating product updates, best practices, and other announcements from Tendermint to our developer community. You will also act as an internal voice for external developers - prioritizing and shepherding feedback from the community back into the product. An understanding of blockchain development and community management best practices is a must as you will own the communication with a very knowledgeable and vested community.",
+    "id": "developer-relations-lead",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [
+      "Experienced: 5-7 years of experience in developer community management, driving programs, and initiatives",
+      "Strong developer background: Has understanding of software development fundamentals and experience with community management of this audience",
+      "Extraverted: Enjoys communicating with 1000s of eager fans and young adults",
+      "Self-organized: with a desire to get things done",
+      "Excellent communicator: Both written and oral",
+      "Organized: Able to handle complicated situations diplomatically and remain levelheaded",
+      "Passionate: Desire to work on a dynamic team and a willingness to work on new projects.",
+      "Detail-oriented"
+    ],
+    "tasks": [
+      "**Nurture and Grow Community:**",
+      "Define and build programs to scale the growth and success of the community - actively looking to nurture developers from one level to the next",
+      "Maintain consistent Tendermint voice and use best practices for answering company inquiries",
+      "Be connected with the community, monitor communication channels",
+      "Set up metrics and drive reporting for community",
+      "Build personal relationships with community members, developers, and internal staff",
+      "**Manage Social Media and Other Communication Channels:**",
+      "Create a regular cadence of communications to the broader developer community through a combination of blogging, social media, Medium, and Youtube",
+      "Establish measurable metrics for success and improvement for each channel",
+      "Help establish analytical models to understand community requests and needs"
+    ],
+    "title": "Head of Community Management, Developer Relations",
+    "weight": 0
+  },
+  {
+    "area": "technical",
+    "description": "",
+    "id": "technical-documentation-writer",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [
+      "General programming experience (2 years minimum)"
+    ],
+    "tasks": [
+      "Improve and write documentation/tutorials at https://tendermint.com/docs"
+    ],
+    "title": "Documentation Writer, Technical",
+    "weight": 0
+  },
+  {
+    "area": "technical",
+    "description": "",
+    "id": "ethereum-developer",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [
+      "Significant golang experience",
+      "Ethereum developer experience (recommended)"
+    ],
+    "tasks": [
+      "Develop and maintain [ethermint](https://github.com/tendermint/ethermint)",
+      "Work on the Cosmos-Ethermint peg",
+      "Contribute to [go-ethereum](https://github.com/ethereum/go-ethereum)"
+    ],
+    "title": "Software Engineer, Ethereum",
+    "weight": 3
+  },
+  {
+    "area": "technical",
+    "description": "",
+    "id": "devops-sysops-engineer",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [
+      "General programming experience (2 years)",
+      "Linux server administration skills",
+      "Working knowledge of Git",
+      "Understanding of operational security",
+      "Experience with cloud providers such as AWS, GCE, Digital Ocean"
+    ],
+    "tasks": [
+      "Develop and maintain a powerful Continuous Integration (CI) system across repositories to prevent regressions and keep software, documentation, and websites in sync",
+      "Develop and maintain an automated build and release system, integrated in the CI, to ensure the latest builds are easily accessible",
+      "Develop and maintain tools and services for deploying and managing Tendermint clusters",
+      "Contribute to general automation and server needs within the company and across the stack"
+    ],
+    "title": "Software Engineer, DevOps",
+    "weight": 0
+  },
+  {
+    "area": "technical",
+    "description": "Tendermint is a first-of-its kind Proof-of-Stake consensus engine in development since 2015. It is designed to provide developers maximum control in developing their own business logic in a blockchain setting, while relying on a secure consensus algorithm.\n\nWe’re looking for a motivated, experienced Javascript Engineer to work with backend blockchain engineers to develop web applications for novel blockchain applications.\n\nCosmos is a project by the core developers of tendermint to launch a highly-secure public blockchain on this technology. We have recently completed a fundraising round and are looking to rapidly expand, mainly centered around Berlin, Toronto, and San Francisco.\n\nUnder the umbrella of the cosmos system, we are building a number of custom blockchain apps for various usecases.  This position would first work on building some smaller applications to demonstrate and discover best practices with this platform, with the potential of later participating in developing the UI for the main comsos application.",
+    "id": "frontend-engineer",
+    "locations": ["Berlin"],
+    "weight": 0,
+    "requirements": [
+      "Minimum 1 years experience in web engineering and Single-Page apps.",
+      "Strong proficiency in HTML5/CSS3/JavaScript (ES6)",
+      "Strong experience with Vue (prefered), ReactJS or AngularJS",
+      "Experience with TDD and willingness to write tests",
+      "Good level of English",
+      "Self-motivated and creative"
+    ],
+    "tasks": [
+      "Develop intuitive web-based interfaces that expose blockchain applications",
+      "Work closely with backend engineers (in Berlin and remote)",
+      "Give feedback to refine the design of the REST-based API, as well as general functionality",
+      "Provide a basic UI/UX design to your applications",
+      "Work with a remote designer if needed to polish the applications"
+    ],
+    "title": "Software Engineer, Frontend"
+  },
+  {
+    "area": "technical",
+    "description": "",
+    "id": "networking-consensus-engineer",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [
+      "Significant programming experience, 2+ years",
+      "Computer Science background highly desired",
+      "BFT or FT (e.g. Raft) knowledge desired"
+    ],
+    "tasks": [
+      "Optimize our implementation of the Tendermint consensus algorithm and p2p network",
+      "Research, design, and implement improvements to the consensus and related protocols",
+      "Help formalize the specification of the Tendermint consensus and ensure the implementation adheres to the spec",
+      "Develop a compatible implementation in another programming language, according to the specification"
+    ],
+    "title": "Software Engineer, P2P",
+    "weight": 0
+  },
+  {
+    "area": "technical",
+    "description": "",
+    "id": "solidity-engineer",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "tasks": [
+      "Write solidity smart contracts for creating Ethereum side-chains using Tendermint Consensus",
+      "Write other solidity smart contracts to demonstrate the Ethermint stack",
+      "Help develop an alternative smart contracting language"
+    ],
+    "requirements": [
+      "Broad language experience with desire to learn Solidity; or",
+      "Experienced solidity developer"
+    ],
+    "title": "Software Engineer, Solidity",
+    "weight": 0
+  },
+  {
+    "area": "operations",
+    "description": "",
+    "id": "finance-manager",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [
+      "Economic and financial experience"
+    ],
+    "tasks": [
+      "Keep accounting system current",
+      "Process expenses",
+      "Create monthly financial summary",
+      "Manage cryptocurrency, bank, and exchange accounts",
+      "Work with external accountants for tax reporting etc."
+    ],
+    "title": "Finance Manager",
+    "weight": 0
+  },
+  {
+    "area": "operations",
+    "description": "All in Bits GmbH is looking for an Operations Manager to manage the day-to-day responsibilities around managing the company. The position requires experience in executive support, excellent oral and written communication skills, fluency in English and German, exceptional attention to detail and a keen ability to thrive in a fast paced and dynamic environment with constantly evolving priorities. Enthusiasm for blockchain and cryptocurrencies are a big plus. The person will also play a key role in setting up a new 1000-qm Blockchain Hub in Berlin. Opportunity to take on additional responsibility in marketing, project management or business development.",
+    "id": "operations-manager-berlin",
+    "locations": ["Berlin"],
+    "requirements": [
+      "3 years of experience in project management or executive assistance",
+      "Exceptional professionalism, communication and interpersonal skills",
+      "Fluency in both German and English",
+      "Attention to detail, accuracy, reliability",
+      "Interest in and enthusiasm for blockchain technology"
+    ],
+    "tasks": [
+      "Manage operational activities of company including onboarding employees, coordinating accounting and tax-related issues",
+      "Creating and maintaining key contractual agreements",
+      "Implement systems to file, organize and archive information",
+      "Managing organization of upcoming conferences, meetups and events",
+      "General administrative duties (preparing meeting materials, writing reports, setting up events)"
+    ],
+    "title": "Operations Manager",
+    "weight": 0,
+    "contact": "To apply please send a cover letter and CV to careers@tendermint.com using the headline 'AIB GmbH Operations Manager'. Also include a separate document (max 1 page) addressing the following question: Describe the different organizations and projects related to Cosmos and what their relationships are."
+  },
+  {
+    "area": "community",
+    "description": "",
+    "id": "chat-manager",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [
+      "Moderation experience"
+    ],
+    "tasks": [
+      "Respond to frequent questions and refer to relevant resources",
+      "Compile a FAQ",
+      "Ensure channels are used appropriately, create new ones when required",
+      "Manage spam, abusive comments",
+      "Contain prices/speculation discussion",
+      "Ping team if answers are needed"
+    ],
+    "title": "Rocket Chat Manager",
+    "weight": 0
+  },
+  {
+    "area": "community",
+    "description": "",
+    "id": "communications-manager",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [],
+    "tasks": [
+      "Support developing communication strategy",
+      "Manage editorial calendar / content production",
+      "Plan/manage speaking engagements and conferences",
+      "Support CosmoCon organization",
+      "Write monthly Cosmos newsletter",
+      "Organize regular Community hangouts",
+      "Seed/organize Cosmos meetup groups"
+    ],
+    "title": "Communications Manager",
+    "weight": 0
+  },
+  {
+    "area": "community",
+    "description": "",
+    "id": "blog-copywriter",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [],
+    "tasks": [
+      "Write stories about the Internet of Blockchains",
+      "Show how people are using Cosmos",
+      "Hype events"
+    ],
+    "title": "Blog Copywriter",
+    "weight": 0
+  },
+  {
+    "area": "community",
+    "description": "",
+    "id": "graphics-designer",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [],
+    "tasks": [
+      "Generate consistent stylized graphics for blog posts/website/printed materials"
+    ],
+    "title": "Graphics Designer",
+    "weight": 0
+  },
+  {
+    "area": "community",
+    "description": "",
+    "id": "partnership-manager",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [],
+    "tasks": [
+      "Compile inventory of projects building on Tendermint/Cosmos",
+      "Gather requirements from projects and communicate to tech team",
+      "Develop and maintain relationships with exchanges for Cosmos launch",
+      "Support Cosmos validators"
+    ],
+    "title": "Partnership Manager",
+    "weight": 0
+  },
+  {
+    "area": "community",
+    "description": "",
+    "id": "pr-manager",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [],
+    "tasks": [
+      "Constantly get Cosmos / IoB stories in the mainstream and industry press"
+    ],
+    "title": "PR Manager",
+    "weight": 0
+  }
+]

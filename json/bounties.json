@@ -1,0 +1,41 @@
+[
+  {
+    "id": "abci-server",
+    "title": "ABCI Server and Counter Application in Language of Choice",
+    "subtitle": "Any programming language",
+    "tags": ["abci"],
+    "active": true,
+    "requirements": [
+      "Implement a ABCI server and the Counter application in any programming language",
+      "If an implementation already exists in a given language, a new implementation in the same language must be sufficiently justified by awesome features/performance to be considered for the bounty",
+      "The implementation must pass the same tests as the Go implementation"
+    ],
+    "reward": "1 BTC"
+  },
+  {
+    "id": "bitcoin-abci",
+    "title": "Bitcoin as a ABCI Application",
+    "subtitle": "Bitcoin, C++",
+    "tags": ["bitcoin", "abci"],
+    "active": true,
+    "requirements": [
+      "Wrap BitcoinCore in a ABCI app",
+      "Minimal (ideally none) changes to Bitcoin source code",
+      "Must work with some existing client tools for sending transactions"
+    ],
+    "reward": "2 BTC"
+  },
+  {
+    "id": "abci-app-grant",
+    "title": "Application Grant",
+    "subtitle": "Something interesting",
+    "tags": ["abci"],
+    "active": true,
+    "requirements": [
+      "Grants are available for certain well thought-out ABCI applications",
+      "Rewards will probably hover around the 2 BTC mark, and range anywhere from 0.5 BTC to 10 BTC, depending on the work",
+      "Email hello@tendermint.com with 'ABCI Grant' in the subject line to apply"
+    ],
+    "reward": "0.5-10 BTC"
+  }
+]

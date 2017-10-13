@@ -58,7 +58,7 @@
       "Contribute to [go-ethereum](https://github.com/ethereum/go-ethereum)"
     ],
     "title": "Software Engineer, Ethereum",
-    "weight": 3
+    "weight": 5
   },
   {
     "area": "technical",
@@ -107,21 +107,21 @@
   {
     "area": "technical",
     "description": "",
-    "id": "networking-consensus-engineer",
-    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "id": "p2p-networking-engineer",
+    "locations": ["Berlin", "San Francisco", "Toronto", "Remote"],
     "requirements": [
-      "Significant programming experience, 2+ years",
+      "Significant programming experience, 5+ years",
       "Computer Science background highly desired",
-      "BFT or FT (e.g. Raft) knowledge desired"
+      "Familiary with open source P2P networking protocols, (BitTorrent, Kademlia, etc.)"
     ],
     "tasks": [
-      "Optimize our implementation of the Tendermint consensus algorithm and p2p network",
-      "Research, design, and implement improvements to the consensus and related protocols",
-      "Help formalize the specification of the Tendermint consensus and ensure the implementation adheres to the spec",
-      "Develop a compatible implementation in another programming language, according to the specification"
+      "Research, design, and implement improvements to Tendermint p2p network layer",
+      "Enhance the robustness of the Tendermint p2p network layer under adversarial conditions",
+      "Implement secure persistent node identities"
+      "Develop simulations for testing the networking layer under various configurations and attack models"
     ],
     "title": "Software Engineer, P2P",
-    "weight": 0
+    "weight": 10
   },
   {
     "area": "technical",

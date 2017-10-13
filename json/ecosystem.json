@@ -97,12 +97,6 @@
       "author": "jTendermint"
     },
     {
-      "name": "Spearmint",
-      "url": "https://github.com/dennismckinnon/spearmint",
-      "language": "Javascript",
-      "author": "Dennis McKinnon"
-    },
-    {
       "name": "ocaml-tmsp",
       "url": "https://github.com/zballs/ocaml-tmsp",
       "language": "Ocaml",
@@ -113,6 +107,18 @@
       "url": "https://github.com/KrzysiekJ/abci_server",
       "language": "Erlang",
       "author": "Krzysztof Jurewicz"
+    },
+    {
+      "name": "py-tendermint",
+      "url": "https://github.com/davebryson/py-tendermint",
+      "language": "Python",
+      "author": "Dave Bryson"
+    },
+    {
+      "name": "Spearmint",
+      "url": "https://github.com/dennismckinnon/spearmint",
+      "language": "Javascript",
+      "author": "Dennis McKinnon"
     }
   ],
   "deploymentTools": [

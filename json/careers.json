@@ -49,13 +49,14 @@
     "id": "ethereum-developer",
     "locations": ["Berlin", "San Francisco", "Toronto"],
     "requirements": [
-      "Significant golang experience",
-      "Ethereum developer experience (recommended)"
+      "Significant Golang experience (2+ years)",
+      "Extensive understanding of Ethereum's design",
+      "Experience with the go-ethereum codebase (recommended)"
     ],
     "tasks": [
-      "Develop and maintain [ethermint](https://github.com/tendermint/ethermint)",
-      "Work on the Cosmos-Ethermint peg",
-      "Contribute to [go-ethereum](https://github.com/ethereum/go-ethereum)"
+      "Develop and maintain [ethermint](https://github.com/tendermint/ethermint) - the go-ethereum application state running on Tendermint",
+      "Contribute to [go-ethereum](https://github.com/ethereum/go-ethereum) to improve its modularity and useability as a library",
+      "Develop Proof-of-Stake sidechains for Ethereum, eg. the Cosmos-Ethereum peg"
     ],
     "title": "Software Engineer, Ethereum",
     "weight": 5
@@ -117,7 +118,7 @@
     "tasks": [
       "Research, design, and implement improvements to Tendermint p2p network layer",
       "Enhance the robustness of the Tendermint p2p network layer under adversarial conditions",
-      "Implement secure persistent node identities"
+      "Implement secure persistent node identities",
       "Develop simulations for testing the networking layer under various configurations and attack models"
     ],
     "title": "Software Engineer, P2P",

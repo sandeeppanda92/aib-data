@@ -5,7 +5,11 @@
     "date": "October 2-3, 2017",
     "href": "https://cesc.io/",
     "details":"Jae Kwon opens CESC 2017 with a keynote about Cosmos and cryptoeconomics. Find our booth at the Pauley Ballroom at UC Berkeley, California.",
-    "location": "uc-berkeley"
+    "location": "uc-berkeley",
+    "dates": {
+      "start": "2017-10-02",
+      "end": "2017-10-02"
+    }
   },
   {
     "slug": "ethwaterloo",
@@ -13,7 +17,11 @@
     "date": "Oct 13-15, 2017",
     "href": "https://ethwaterloo.com/",
     "details":"Ethan Buchman will speak at ETHWaterloo about Cosmos & Tendermint. Find him at the Centre for International Governance Innovation (CIGI) in Waterloo, Canada.",
-    "location": "waterloo"
+    "location": "waterloo",
+    "dates": {
+      "start": "2017-10-13",
+      "end": "2017-10-15"
+    }
   },
   {
     "slug": "m-0",
@@ -21,7 +29,11 @@
     "date": "Oct 17-18, 2017",
     "href": "https://m-0.melonport.com",
     "details":"Sunny Aggarwal, Research Scientist at Tendermint will be speaking at M-0 about Cosmos. Find him at Park Hotel in Zug, Switzerland.",
-    "location": "zug"
+    "location": "zug",
+    "dates": {
+      "start": "2017-10-17",
+      "end": "2017-10-18"
+    }
   },
   {
     "slug": "devcon3",
@@ -29,6 +41,10 @@
     "date": "November 1-4, 2017",
     "href": "http://cancunicc.com/en/home/",
     "details":"The Cosmos team will be at Devcon3. Find our booth at the Cancún International Convention Center (ICC), Cancún, Mexico.",
-    "location": "cancun"
+    "location": "cancun",
+    "dates": {
+      "start": "2017-11-01",
+      "end": "2017-10-04"
+    }
   }
 ]

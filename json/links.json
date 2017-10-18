@@ -49,7 +49,11 @@
     "reddit": "https://reddit.com/r/cosmosnetwork",
     "twitter": "https://twitter.com/cosmos",
     "validators": {
-      "chat": "https://riot.im/app/#/room/#cosmos_validators:matrix.org"
+      "chat": "https://riot.im/app/#/room/#cosmos_validators:matrix.org",
+      "tutorial": {
+        "text": "https://github.com/cosmos/gaia/blob/master/README.md",
+        "video": "https://www.youtube.com/embed/ry1iw2n6s1k"
+      } 
     },
     "website": "https://cosmos.network"
   },

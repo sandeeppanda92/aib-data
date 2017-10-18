@@ -24,6 +24,7 @@
     "blog": "https://blog.cosmos.network",
     "chat": "https://riot.im/app/#/room/#cosmos:matrix.org",
     "email": "hello@tendermint.com",
+    "fundraiser": "https://fundraiser.cosmos.network",
     "github":{
       "organization": "https://github.com/cosmos",
       "forum": "https://github.com/cosmos/cosmos-forum",

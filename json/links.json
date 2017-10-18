@@ -20,6 +20,10 @@
     "website": "https://tendermint.com"
   },
   "cosmos": {
+    "assets": {
+      "visualIdentity": "https://github.com/tendermint/aib-data/raw/master/assets/cosmos-visual-identity.pdf",
+      "logoAssets": "https://github.com/tendermint/aib-data/raw/master/assets/cosmos-logo-assets.zip"
+    },
     "bitcointalk": "https://bitcointalk.org/index.php?topic=1607111.0",
     "blog": "https://blog.cosmos.network",
     "chat": "https://riot.im/app/#/room/#cosmos:matrix.org",

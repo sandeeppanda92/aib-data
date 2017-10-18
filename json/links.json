@@ -2,6 +2,7 @@
   "tm": {
     "blog": "https://blog.cosmos.network/tendermint/home",
     "docs": "https://tendermint.readthedocs.io/en/master/",
+    "email": "hello@tendermint.com",
     "facebook": "https://www.facebook.com/tendermint/",
     "github":{
       "coc": "https://github.com/tendermint/tendermint/blob/master/CODE_OF_CONDUCT.md",
@@ -9,12 +10,17 @@
       "issues": "https://github.com/tendermint/tendermint/issues",
       "source": "https://github.com/tendermint/tendermint"
     },
-    "twitter": "https://twitter.com/tendermint_team"
+    "linkedin": "https://www.linkedin.com/company/tendermint",
+    "twitter": "https://twitter.com/tendermint_team",
+    "website": "https://tendermint.com"
   },
   "cosmos": {
+    "blog": "https://blog.cosmos.network",
     "chat": "https://riot.im/app/#/room/#cosmos:matrix.org",
-    "reddit": "https://reddit.com/r/cosmosnetwork"
+    "reddit": "https://reddit.com/r/cosmosnetwork",
+    "website": "https://cosmos.network"
   },
   "aib": {
+    "website": "https://allinbits.com"
   }
 }

@@ -23,13 +23,13 @@
     "chat": "https://riot.im/app/#/room/#cosmos:matrix.org",
     "hackatom": "https://cosmos.network/hackatom",
     "meetups": {
-      "devchat": "https://www.meetup.com/COSMOS-Hub-Core-Developer-Chat/",
+      "devchat": "https://www.meetup.com/cosmos-dev",
       "berlin": "https://www.meetup.com/Cosmos-Berlin/",
       "nyc": "https://www.meetup.com/Cosmos-NYC/",
-      "toronto": "https://www.meetup.com/Cosmos-Toronto/",
-      "sf": "https://www.meetup.com/Cosmos-SanFrancisco/",
       "seoul": "https://www.meetup.com/Cosmos-Seoul/",
-      "shanghai": "https://www.meetup.com/Cosmos-Shanghai/"
+      "sf": "https://www.meetup.com/Cosmos-SanFrancisco/",
+      "shanghai": "https://www.meetup.com/Cosmos-Shanghai/",
+      "toronto": "https://www.meetup.com/Cosmos-Toronto/"
     }
     "reddit": "https://reddit.com/r/cosmosnetwork",
     "website": "https://cosmos.network"

@@ -21,6 +21,8 @@
   "cosmos": {
     "blog": "https://blog.cosmos.network",
     "chat": "https://riot.im/app/#/room/#cosmos:matrix.org",
+    "devChat": "https://www.meetup.com/COSMOS-Hub-Core-Developer-Chat/",
+    "hackatom": "https://cosmos.network/hackatom",
     "reddit": "https://reddit.com/r/cosmosnetwork",
     "website": "https://cosmos.network"
   },

@@ -2,6 +2,7 @@
   "tm": {
     "blog": "https://blog.cosmos.network/tendermint/home",
     "chat": "https://riot.im/app/#/room/#cosmos:matrix.org",
+    "careers": "https://tendermint.com/careers",
     "docs": {
       "index": "https://tendermint.readthedocs.io/en/master/",
       "ecosystem": "http://tendermint.readthedocs.io/projects/tools/en/master/ecosystem.html"
@@ -19,14 +20,20 @@
     "website": "https://tendermint.com"
   },
   "cosmos": {
+    "bitcointalk": "https://bitcointalk.org/index.php?topic=1607111.0",
     "blog": "https://blog.cosmos.network",
     "chat": "https://riot.im/app/#/room/#cosmos:matrix.org",
     "email": "hello@tendermint.com",
+    "github":{
+      "organization": "https://github.com/cosmos",
+      "sdk": "https://github.com/cosmos/cosmos-sdk"
+    },
     "hackatom": "https://cosmos.network/hackatom",
     "hackathon": {
       "one": "http://www.hackathon.io/cosmos-hackathon",
       "two": "http://www.hackathon.io/cosmos-hackathon1"
     },
+    "irc": "http://webchat.freenode.net/?channels=%23cosmos_network",
     "meetups": {
       "devchat": "https://www.meetup.com/cosmos-dev/",
       "berlin": "https://www.meetup.com/Cosmos-Berlin/",

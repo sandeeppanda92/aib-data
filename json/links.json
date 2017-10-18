@@ -6,7 +6,7 @@
     "facebook": "https://www.facebook.com/tendermint/",
     "github":{
       "coc": "https://github.com/tendermint/tendermint/blob/master/CODE_OF_CONDUCT.md",
-      "org": "https://github.com/tendermint",
+      "organization": "https://github.com/tendermint",
       "issues": "https://github.com/tendermint/tendermint/issues",
       "source": "https://github.com/tendermint/tendermint"
     },

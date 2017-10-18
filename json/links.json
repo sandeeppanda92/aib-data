@@ -48,6 +48,9 @@
     },
     "reddit": "https://reddit.com/r/cosmosnetwork",
     "twitter": "https://twitter.com/cosmos",
+    "validators": {
+      "chat": "https://riot.im/app/#/room/#cosmos_validators:matrix.org"
+    },
     "website": "https://cosmos.network"
   },
   "aib": {

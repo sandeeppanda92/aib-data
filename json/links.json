@@ -26,7 +26,9 @@
     "email": "hello@tendermint.com",
     "github":{
       "organization": "https://github.com/cosmos",
-      "sdk": "https://github.com/cosmos/cosmos-sdk"
+      "forum": "https://github.com/cosmos/cosmos-forum",
+      "sdk": "https://github.com/cosmos/cosmos-sdk",
+      "ui": "https://github.com/cosmos/cosmos-ui"
     },
     "hackatom": "https://cosmos.network/hackatom",
     "hackathon": {
@@ -44,6 +46,7 @@
       "toronto": "https://www.meetup.com/Cosmos-Toronto/"
     },
     "reddit": "https://reddit.com/r/cosmosnetwork",
+    "twitter": "https://twitter.com/cosmos",
     "website": "https://cosmos.network"
   },
   "aib": {

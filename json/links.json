@@ -21,9 +21,14 @@
   "cosmos": {
     "blog": "https://blog.cosmos.network",
     "chat": "https://riot.im/app/#/room/#cosmos:matrix.org",
+    "email": "hello@tendermint.com",
     "hackatom": "https://cosmos.network/hackatom",
+    "hackathon": {
+      "one": "http://www.hackathon.io/cosmos-hackathon",
+      "two": "http://www.hackathon.io/cosmos-hackathon1"
+    },
     "meetups": {
-      "devchat": "https://www.meetup.com/cosmos-dev",
+      "devchat": "https://www.meetup.com/cosmos-dev/",
       "berlin": "https://www.meetup.com/Cosmos-Berlin/",
       "nyc": "https://www.meetup.com/Cosmos-NYC/",
       "seoul": "https://www.meetup.com/Cosmos-Seoul/",

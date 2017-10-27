@@ -67,20 +67,18 @@
     "id": "devops-sysops-engineer",
     "locations": ["Berlin", "San Francisco", "Toronto"],
     "requirements": [
-      "General programming experience (2 years)",
-      "Linux server administration skills",
-      "Working knowledge of Git",
-      "Understanding of operational security",
-      "Experience with cloud providers such as AWS, GCE, Digital Ocean"
+      "Linux server administration skills, including Git",
+      "Understanding of operational and system security",
+      "Experience with cloud providers such as AWS, GCE, Digital Ocean",
+      "General programming experience (+2years)"
     ],
     "tasks": [
-      "Develop and maintain a powerful Continuous Integration (CI) system across repositories to prevent regressions and keep software, documentation, and websites in sync",
-      "Develop and maintain an automated build and release system, integrated in the CI, to ensure the latest builds are easily accessible",
-      "Develop and maintain tools and services for deploying and managing Tendermint clusters",
-      "Contribute to general automation and server needs within the company and across the stack"
+      "Build tools to deploy, monitor, and maintain a diversity of Tendermint networks",
+      "Build a Continuous Integration (CI) system across repositories to prevent regressions and keep software, documentation, and websites in sync",
+      "Roll out automated build and release system, integrated in the CI, to ensure the latest builds are easily accessible"
     ],
     "title": "Software Engineer, DevOps",
-    "weight": 0
+    "weight": 5
   },
   {
     "area": "technical",

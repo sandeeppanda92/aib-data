@@ -8,8 +8,8 @@
       "facebook": "https://www.facebook.com/tendermint/",
       "irc": "http://webchat.freenode.net/?channels=%23cosmos_network",
       "linkedin": "https://www.linkedin.com/company/tendermint",
+      "matrix": "https://riot.im/app/#/room/#cosmos:matrix.org",
       "reddit": "https://reddit.com/r/cosmosnetwork",
-      "riot": "https://riot.im/app/#/room/#cosmos:matrix.org",
       "telegram": "https://t.me/cosmosproject",
       "twitter": "https://twitter.com/tendermint_team"
     },
@@ -43,8 +43,8 @@
       "discourse": "https://forum.cosmos.network",
       "facebook": "https://www.facebook.com/cosmosblockchain/",
       "irc": "http://webchat.freenode.net/?channels=%23cosmos_network",
+      "matrix": "https://riot.im/app/#/room/#cosmos:matrix.org",
       "reddit": "https://reddit.com/r/cosmosnetwork",
-      "riot": "https://riot.im/app/#/room/#cosmos:matrix.org",
       "telegram": "https://t.me/cosmosproject",
       "twitter": "https://twitter.com/cosmos"
     },

@@ -26,13 +26,12 @@
     "requirements": [
       "Linux server administration skills, including Git",
       "Understanding of operational and system security",
-      "Experience with cloud providers such as AWS, GCE, Digital Ocean",
+      "Experience deploying clusters via cloud providers like AWS, GCE, Digital Ocean",
       "General programming experience (+2years)"
     ],
     "tasks": [
-      "Build tools to deploy, monitor, and maintain a diversity of Tendermint networks",
-      "Build a Continuous Integration (CI) system across repositories to prevent regressions and keep software, documentation, and websites in sync",
-      "Roll out automated build and release system, integrated in the CI, to ensure the latest builds are easily accessible"
+      "Deploy, monitor, and maintain clusters of Cosmos nodes and services to support the Cosmos network",
+      "Automate and streamline our test, build, and release pipelines using Continuous Integration"
     ],
     "title": "Software Engineer, DevOps",
     "weight": 5

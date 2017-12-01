@@ -231,18 +231,6 @@
     }
   },
   {
-    "slug": "matt-oneill",
-    "name": "Matt O'Neill",
-    "bio": "",
-    "ids": {
-      "email": "matt.oneill",
-      "linkedin": "operationalfocus"
-    },
-    "groups": {
-      "aib": "Operations Manager"
-    }
-  },
-  {
     "slug": "ola-kohut",
     "name": "Ola Kohut",
     "bio": "",

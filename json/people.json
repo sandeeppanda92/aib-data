@@ -201,6 +201,21 @@
     }
   },
   {
+    "slug": "jordan-bibla",
+    "name": "Jordan Bibla",
+    "bio": "",
+    "ids": {
+      "email": "jordan",
+      "github": "jolesbi",
+      "linkedin": "jbibla",
+      "twitter": "jordanbibla",
+      "website": "jordanbibla.com"
+    },
+    "groups": {
+      "aib": "Product Manager"
+    }
+  },
+  {
     "slug": "judd-keppel",
     "name": "Judd Keppel",
     "bio": "",

@@ -12,28 +12,28 @@
       "url": "https://github.com/block-finance/cpp-abci",
       "language": "C++",
       "author": "Block Finance",
-      "description": "Custodian Bank Ledger, integrating central banking with the blockchains of tomorrow."
+      "description": "Custodian Bank Ledger, integrating central banking with the blockchains of tomorrow"
     },
     {
       "name": "Clearchain",
       "url": "https://github.com/tendermint/clearchain",
       "language": "Go",
-      "author": "Alessio Treglia",
-      "description": "Application to manage a distributed ledger for money transfers that support multi-currency accounts."
+      "author": "FXCLR",
+      "description": "Application to manage a distributed ledger for money transfers that support multi-currency accounts"
     },
     {
       "name": "Ethermint",
       "url": "https://github.com/tendermint/ethermint",
       "language": "Go",
       "author": "Tendermint",
-      "description": "The go-ethereum state machine run as a ABCI app"
+      "description": "The go-ethereum state machine run as an ABCI app"
     },
     {
       "name": "Merkle AVL Tree",
       "url": "https://github.com/tendermint/merkleeyes",
       "language": "Go",
       "author": "Tendermint",
-      "description": "Tendermint IAVL tree implemented as an abci app"
+      "description": "Tendermint IAVL tree implemented as an ABCI app"
     },
     {
       "name": "Burrow",
@@ -47,7 +47,7 @@
       "url": "https://github.com/jTMSP/MerkleTree",
       "language": "Java",
       "author": "jTMSP",
-      "description": "Tendermint IAVL tree implemented as an abci app"
+      "description": "Tendermint IAVL tree implemented as an ABCI app"
     },
     {
       "name": "TMChat",
@@ -64,11 +64,39 @@
       "description": "Public service reporting and tracking"
     },
     {
+      "name": "Passchain",
+      "url": "https://github.com/trusch/passchain",
+      "language": "Go",
+      "author": "trusch",
+      "description": "Tool to securely store and share passwords, tokens and other short secrets"
+    },
+    {
       "name": "Passwerk",
       "url": "https://github.com/rigelrozanski/passwerk",
       "language": "Go",
       "author": "Rigel Rozanski",
       "description": "Encrypted storage web-utility backed by Tendermint"
+    },
+    {
+      "name": "py-tendermint",
+      "url": "https://github.com/davebryson/py-tendermint",
+      "language": "Python",
+      "author": "Dave Bryson",
+      "description": "A Python microframework for building blockchain applications with Tendermint"
+    },
+    {
+      "name": "Stratumn SDK",
+      "url": "https://github.com/stratumn/sdk",
+      "language": "Go",
+      "author": "Stratumn",
+      "description": "SDK for Proof-of-Process networks"
+    },
+    {
+      "name": "Lotion",
+      "url": "https://github.com/keppel/lotion",
+      "language": "Javascript",
+      "author": "Judd Keppel",
+      "description": "A Javascript microframework for building blockchain applications with Tendermint"
     }
   ],
   "abciServers": [
@@ -109,8 +137,8 @@
       "author": "Krzysztof Jurewicz"
     },
     {
-      "name": "py-tendermint",
-      "url": "https://github.com/davebryson/py-tendermint",
+      "name": "py-abci",
+      "url": "https://github.com/davebryson/py-abci",
       "language": "Python",
       "author": "Dave Bryson"
     },

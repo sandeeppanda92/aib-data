@@ -230,19 +230,6 @@
     }
   },
   {
-    "slug": "ola-kohut",
-    "name": "Ola Kohut",
-    "bio": "",
-    "ids": {
-      "linkedin": "olakohut",
-      "twitter": "koholaa",
-      "website": "olakohut.com"
-    },
-    "groups": {
-      "aib": "Developer Relations"
-    }
-  },
-  {
     "slug": "rigel-rozanski",
     "name": "Rigel Rozanski",
     "bio": "Rigel is inspired by blockchain as a means of reducing entropy as the interactions of technology grow to manifold complexities. His interests lie in the crossroads between blockchain and the geospatial realm.",

@@ -37,20 +37,20 @@
   },
   {
     "id": "cosmos-sdk",
-    "title": "Cosmo SDK",
+    "title": "Cosmos SDK",
     "body": "The Cosmos SDK is...",
     "url": ""
   },
   {
     "id": "cosmos-network",
     "title": "Cosmos Network",
-    "body": "The Cosmos Hub is...",
+    "body": "The Cosmos Network is a network of blockchains that exchange value with each other via a protocol called IBC",
     "url": ""
   },
   {
     "id": "cosmos-ui",
     "title": "Cosmos UI",
-    "body": "The Cosmos UI is...",
+    "body": "The Cosmos UI is the graphical interface for end users to interract with the Cosmos Network",
     "url": ""
   },
   {
@@ -74,7 +74,7 @@
   {
     "id": "ethermint",
     "title": "Ethermint",
-    "body": "Ethermint is...",
+    "body": "Ethermint is the Ethereum Virtual Machine plugged on top of the Tendermint Consensus Engine. It is natively compatible with Cosmos",
     "url": ""
   },
   {
@@ -92,13 +92,13 @@
   {
     "id": "gaia",
     "title": "Gaia",
-    "body": "Gaia is the...",
+    "body": "Gaia is the preliminary version of the Cosmos Hub. It is based on the Cosmos-SDK.",
     "url": ""
   },
   {
     "id": "governance",
     "title": "Governance",
-    "body": "Blockchain governance is...",
+    "body": "Blockchain governance is a process that allows participant to vote on-chain using their staked tokens",
     "url": ""
   },
   {
@@ -110,7 +110,7 @@
   {
     "id": "ibc",
     "title": "IBC",
-    "body": "IBC is the interblockchain communication protocol...",
+    "body": "IBC is the Inter- Blockchain Communication Protocol. It allows fast-finality blockchains to exchange value with eachother",
     "url": ""
   },
   {
@@ -122,7 +122,7 @@
   {
     "id": "lotion",
     "title": "Lotion",
-    "body": "Lotion is...",
+    "body": "Lotion is a framework to easily develop Tendermint blockchains in Javascript",
     "url": ""
   },
   {

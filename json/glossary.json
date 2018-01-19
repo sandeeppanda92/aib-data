@@ -2,25 +2,25 @@
   {
     "id": "abci",
     "title": "ABCI",
-    "body": "ABCI is the Application BlockChain Interface...",
+    "body": "ABCI is the Application BlockChain Interface that provides a clean interface between a state transition machine on one computer and the mechanics of its replication across multiple computers.",
     "url": ""
   },
   {
     "id": "atom",
     "title": "Atom",
-    "body": "The Atom is the...",
+    "body": "The Atom is the staking token for the Cosmos Hub. The best analogy is that an Atom is like a virtualised ASIC miner.",
     "url": ""
   },
   {
     "id": "bft",
     "title": "BFT",
-    "body": "BFT is Byzantine Fault-Tolerance...",
+    "body": "BFT or Byzantine Fault-Tolerance is the ability to tolerate machines failing in arbitrary ways, including becoming malicious.",
     "url": ""
   },
   {
     "id": "blockchain",
     "title": "Blockchain",
-    "body": "Blockchain are...",
+    "body": "A blockchain, originally block chain, is a continuously growing list of records, called blocks, which are linked and secured using cryptography.",
     "url": ""
   },
   {
@@ -32,7 +32,7 @@
   {
     "id": "cosmos-hub",
     "title": "Cosmos Hub",
-    "body": "The Cosmos Hub is...",
+    "body": "The Cosmos Hub is the multi-asset ledger that enforces invariants and maintain the security between connected zones.",
     "url": ""
   },
   {
@@ -56,13 +56,13 @@
   {
     "id": "delegator",
     "title": "Delegator",
-    "body": "Delegators are...",
+    "body": "Delegators are Atom holders that contribute to the security of the network by choosing secure and highly available validators through the process of delegation.",
     "url": ""
   },
   {
     "id": "discrete-logarithm",
     "title": "The Discrete Logarithm Problem",
-    "body": "This problem is...",
+    "body": "This discrete logarithm problem assumes that it is difficult to factor a large integer composed of two or more large prime factors.",
     "url": ""
   },
   {

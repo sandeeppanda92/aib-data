@@ -20,7 +20,7 @@ Introduction to Cosmos IBC, the communication interface that lets you exchange t
 
 ## Resources
 
-COMING SOON! A series of educational videos for developers interested in developing on Cosmos. Follow #[a(href="links.cosmos.community.twitter") @cosmos on Twitter] to get the latest releases. If you have topics that you think could use an explainer video, please talk to us on #[a(:href="links.cosmos.community.matrix") Developer Chat]. Here are some of the upcoming topics.
+COMING SOON! A series of educational videos for developers interested in developing on Cosmos. Follow [@cosmos](https://twitter.com/cosmos) to get the latest releases. If you have topics that you think could use an explainer video, please talk to us on [Developer Chat](https://riot.im/app/#/room/#cosmos:matrix.org). Here are some of the upcoming topics.
 
 #### Validator Program: An Introduction
 Learn about running and securing a validator for the Cosmos Hub.

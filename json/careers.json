@@ -13,7 +13,7 @@
       "Develop applications using the Cosmos-SDK, including functionality for Proof-of-Stake, InterBlockchain Communication, Network Governance, and more",
       "Develop the Light Client Daemon, middleware for User Interfaces to securely connect to the Cosmos Network"
     ],
-    "title": "Software Engineer, Cosmos",
+    "title": "Software Developer, Cosmos",
     "weight": 5
   },
 
@@ -32,7 +32,7 @@
       "Contribute to [go-ethereum](https://github.com/ethereum/go-ethereum) to improve its modularity and useability as a library",
       "Develop Proof-of-Stake sidechains for Ethereum, eg. the Cosmos-Ethereum peg"
     ],
-    "title": "Software Engineer, Ethereum",
+    "title": "Software Developer, Ethereum",
     "weight": 5
   },
 
@@ -51,7 +51,7 @@
       "Deploy, monitor, and maintain clusters of Cosmos nodes and services to support the Cosmos network",
       "Automate and streamline our test, build, and release pipelines using Continuous Integration"
     ],
-    "title": "Software Engineer, DevOps",
+    "title": "Software Developer, DevOps",
     "weight": 5
   },
 
@@ -71,7 +71,7 @@
       "Implement secure persistent node identities",
       "Develop simulations for testing the networking layer under various configurations and attack models"
     ],
-    "title": "Software Engineer, P2P",
+    "title": "Software Developer, P2P",
     "weight": 10
   },
 
@@ -91,7 +91,7 @@
       "Help formalize the specification of the Tendermint consensus and ensure the implementation adheres to the spec",
       "Develop a compatible implementation in another programming language, according to the specification"
     ],
-    "title": "Software Engineer, Consensus",
+    "title": "Software Developer, Consensus",
     "weight": 5
   },
 
@@ -143,7 +143,7 @@
 
   {
     "area": "technical",
-    "description": "Tendermint is a first-of-its kind Proof-of-Stake consensus engine in development since 2015. It is designed to provide developers maximum control in developing their own business logic in a blockchain setting, while relying on a secure consensus algorithm.\n\nWe’re looking for a motivated, experienced Javascript Engineer to work with backend blockchain engineers to develop web applications for novel blockchain applications.\n\nCosmos is a project by the core developers of tendermint to launch a highly-secure public blockchain on this technology. We have recently completed a fundraising round and are looking to rapidly expand, mainly centered around Berlin, Toronto, and San Francisco.\n\nUnder the umbrella of the cosmos system, we are building a number of custom blockchain apps for various usecases.  This position would first work on building some smaller applications to demonstrate and discover best practices with this platform, with the potential of later participating in developing the UI for the main comsos application.",
+    "description": "Tendermint is a first-of-its kind Proof-of-Stake consensus engine in development since 2015. It is designed to provide developers maximum control in developing their own business logic in a blockchain setting, while relying on a secure consensus algorithm.\n\nWe’re looking for a motivated, experienced Javascript Developer to work with backend blockchain engineers to develop web applications for novel blockchain applications.\n\nCosmos is a project by the core developers of tendermint to launch a highly-secure public blockchain on this technology. We have recently completed a fundraising round and are looking to rapidly expand, mainly centered around Berlin, Toronto, and San Francisco.\n\nUnder the umbrella of the cosmos system, we are building a number of custom blockchain apps for various usecases.  This position would first work on building some smaller applications to demonstrate and discover best practices with this platform, with the potential of later participating in developing the UI for the main comsos application.",
     "id": "frontend-engineer",
     "locations": ["Berlin"],
     "weight": 0,
@@ -162,7 +162,7 @@
       "Provide a basic UI/UX design to your applications",
       "Work with a remote designer if needed to polish the applications"
     ],
-    "title": "Software Engineer, Frontend"
+    "title": "Software Developer, Frontend"
   },
 
   {
@@ -179,7 +179,7 @@
       "Broad language experience with desire to learn Solidity; or",
       "Experienced solidity developer"
     ],
-    "title": "Software Engineer, Solidity",
+    "title": "Software Developer, Solidity",
     "weight": 0
   },
 

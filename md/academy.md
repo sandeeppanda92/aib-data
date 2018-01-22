@@ -2,7 +2,7 @@
 
 ## Meetups
 
-COMING SOON! We will host regular [evening meetups in San Francisco](https://www.meetup.com/Cosmos_SF/) for developers who are interested in learning about developing for Cosmos. The Academy meetups will be from 6PM - 7PM on week nights. Dinner is on us!
+COMING SOON! We will host regular evening meetups in [San Francisco](https://www.meetup.com/Cosmos_SF/) and [Berlin](https://www.meetup.com/Cosmos_Berlin/) for developers who are interested in learning about developing for Cosmos. The Academy meetups will be from 6PM - 7PM on week nights. Dinner is on us!
 
 Developers of all levels of familiarity with blockchain engineering are welcome, as engineers will get the most value out of these events. Interested people can join to learn about architecting the next decentralized application on top of the Cosmos Network.
 

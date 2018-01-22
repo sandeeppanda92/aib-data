@@ -87,20 +87,6 @@
     }
   },
   {
-    "slug": "alexis-sellier",
-    "name": "Alexis Sellier",
-    "bio": "",
-    "ids": {
-      "github": "cloudhead",
-      "keybase": "cloudhead",
-      "twitter": "cloudhead",
-      "website": "cloudhead.io"
-    },
-    "groups": {
-      "aib": "Software Engineer"
-    }
-  },
-  {
     "slug": "anton-kaliaev",
     "name": "Anton Kaliaev",
     "bio": "Anton is a software engineer with more than 6 years of experience. He has worked in web, video processing, and telecom industries and has extensive knowledge, which he hopes will help him make Tendermint better. Always passionate about learning. Loves occasional traveling and enjoys writing his own blog.",
@@ -258,17 +244,18 @@
     }
   },
   {
-    "slug": "william-light",
-    "name": "William Light",
+    "slug": "tyler-neely",
+    "name": "Tyler Neely",
     "bio": "",
     "ids": {
-      "github": "wrl",
-      "keybase": "wrl",
-      "twitter": "wrl",
-      "website": "williamlight.net"
+      "github": "spacejam",
+      "keybase": "spacejam",
+      "linkedin": "tyler-neely-9b524640",
+      "twitter": "terminalswarm",
+      "website": "tylerneely.com"
     },
     "groups": {
-      "aib": "Hardware Engineer"
+      "aib": "Research Scientist"
     }
   },
   {

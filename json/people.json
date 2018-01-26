@@ -244,21 +244,6 @@
     }
   },
   {
-    "slug": "tyler-neely",
-    "name": "Tyler Neely",
-    "bio": "",
-    "ids": {
-      "github": "spacejam",
-      "keybase": "spacejam",
-      "linkedin": "tyler-neely-9b524640",
-      "twitter": "terminalswarm",
-      "website": "tylerneely.com"
-    },
-    "groups": {
-      "aib": "Research Scientist"
-    }
-  },
-  {
     "slug": "zach-ramsay",
     "name": "Zach Ramsay",
     "bio": "",

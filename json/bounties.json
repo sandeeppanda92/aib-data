@@ -1,4 +1,4 @@
-[
+test-circle-failure[
   {
     "id": "abci-server",
     "title": "ABCI Server and Counter Application in Language of Choice",

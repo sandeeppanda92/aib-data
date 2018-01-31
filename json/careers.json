@@ -23,14 +23,16 @@
     "id": "ethereum-developer",
     "locations": ["Berlin", "San Francisco", "Toronto"],
     "requirements": [
-      "Significant Golang experience (2+ years)",
-      "Extensive understanding of Ethereum's design",
-      "Experience with the go-ethereum codebase (recommended)"
+      "Significant programming experience (2+ years)",
+      "Experience with go-lang, rust-lang or C++ (2+ years)",
+      "Extensive understanding of the Ethereum Virtual Machine",
+      "Experience with the go-ethereum or parity codebase (preferred)"
     ],
     "tasks": [
-      "Develop and maintain [ethermint](https://github.com/tendermint/ethermint) - the go-ethereum application state running on Tendermint",
-      "Contribute to [go-ethereum](https://github.com/ethereum/go-ethereum) to improve its modularity and useability as a library",
-      "Develop Proof-of-Stake sidechains for Ethereum, eg. the Cosmos-Ethereum peg"
+      "Develop, maintain, and extend [Ethermint](https://github.com/tendermint/ethermint) - the EVM implementation on Tendermint Core",
+      "Develop Plasma-style sidechains for Ethereum",
+      "Develop Cosmos-Ethereum peg zones",
+      "Contribute to [go-ethereum](https://github.com/ethereum/go-ethereum) to improve its modularity and useability as a library"
     ],
     "title": "Software Developer, Ethereum",
     "weight": 5

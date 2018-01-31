@@ -2,25 +2,25 @@
   {
     "id": "abci",
     "title": "ABCI",
-    "body": "ABCI is the Application BlockChain Interface...",
+    "body": "ABCI is the Application BlockChain Interface that provides a clean interface between a state transition machine on one computer and the mechanics of its replication across multiple computers.",
     "url": ""
   },
   {
     "id": "atom",
     "title": "Atom",
-    "body": "The Atom is the...",
+    "body": "The Atom is the staking token for the Cosmos Hub. The best analogy is that an Atom is like a virtualised ASIC miner.",
     "url": ""
   },
   {
     "id": "bft",
     "title": "BFT",
-    "body": "BFT is Byzantine Fault-Tolerance...",
+    "body": "BFT or Byzantine Fault-Tolerance is the ability to tolerate machines failing in arbitrary ways, including becoming malicious.",
     "url": ""
   },
   {
     "id": "blockchain",
     "title": "Blockchain",
-    "body": "Blockchain are...",
+    "body": "A blockchain is a continuously growing list of records, called blocks, which are linked and secured using cryptography.",
     "url": ""
   },
   {
@@ -32,37 +32,43 @@
   {
     "id": "cosmos-hub",
     "title": "Cosmos Hub",
-    "body": "The Cosmos Hub is...",
+    "body": "The Cosmos Hub is the multi-asset ledger that enforces invariants and maintains the security between connected zones.",
     "url": ""
   },
   {
     "id": "cosmos-sdk",
-    "title": "Cosmo SDK",
+    "title": "Cosmos SDK",
     "body": "The Cosmos SDK is...",
     "url": ""
   },
   {
     "id": "cosmos-network",
     "title": "Cosmos Network",
-    "body": "The Cosmos Hub is...",
+    "body": "The Cosmos Network is a network of blockchains that exchange value with each other via a protocol called IBC.",
     "url": ""
   },
   {
     "id": "cosmos-ui",
     "title": "Cosmos UI",
-    "body": "The Cosmos UI is...",
+    "body": "The Cosmos UI is the graphical interface for end users to interract with the Cosmos Network.",
+    "url": ""
+  },
+  {
+    "id": "delegates",
+    "title": "Delegates",
+    "body": "Delegates are Atom holders who can be delegated to (both validators and candidates).",
     "url": ""
   },
   {
     "id": "delegator",
     "title": "Delegator",
-    "body": "Delegators are...",
+    "body": "Delegators are Atom holders that contribute to the security of the network by choosing secure and highly available validators through the process of delegation.",
     "url": ""
   },
   {
     "id": "discrete-logarithm",
     "title": "The Discrete Logarithm Problem",
-    "body": "This problem is...",
+    "body": "This discrete logarithm problem assumes that it is difficult to factor a large integer composed of two or more large prime factors.",
     "url": ""
   },
   {
@@ -74,7 +80,7 @@
   {
     "id": "ethermint",
     "title": "Ethermint",
-    "body": "Ethermint is...",
+    "body": "Ethermint is the Ethereum Virtual Machine running on top of Tendermint Consensus, allowing for significantly reduced block times and scalability. It is natively compatible with Cosmos",
     "url": ""
   },
   {
@@ -92,13 +98,13 @@
   {
     "id": "gaia",
     "title": "Gaia",
-    "body": "Gaia is the...",
+    "body": "Gaia is the preliminary version of the Cosmos Hub. It uses the building blocks of the Cosmos SDK.",
     "url": ""
   },
   {
     "id": "governance",
     "title": "Governance",
-    "body": "Blockchain governance is...",
+    "body": "Blockchain governance is a process that allows participants to vote on-chain using their staked tokens.",
     "url": ""
   },
   {
@@ -110,7 +116,7 @@
   {
     "id": "ibc",
     "title": "IBC",
-    "body": "IBC is the interblockchain communication protocol...",
+    "body": "IBC is the Inter-Blockchain Communication Protocol. It allows fast-finality blockchains to exchange value with each other.",
     "url": ""
   },
   {
@@ -122,7 +128,7 @@
   {
     "id": "lotion",
     "title": "Lotion",
-    "body": "Lotion is...",
+    "body": "Lotion is a framework to easily develop Tendermint blockchains in Javascript.",
     "url": ""
   },
   {

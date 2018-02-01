@@ -22,8 +22,8 @@ Introduction to Cosmos IBC, the communication interface that lets you exchange t
 
 We are working on a series of educational videos for developers interested in developing on Cosmos. Follow [@cosmos](https://twitter.com/cosmos) to get the latest releases. If you have topics that you think could an explanation, please talk to us on [Developer Chat](https://riot.im/app/#/room/#cosmos:matrix.org).
 
-[#### Cosmos: Many Chains, One Ecosystem](https://www.youtube.com/watch?v=LApEkXJR_0M)
-47 min. An introduction to Cosmos by Sunny Aggarwal, Researcher at Tendermint. Sunny explains the architectural and design decisions behind Cosmos and Tendermint. [Watch now &rdaquo;](https://www.youtube.com/watch?v=LApEkXJR_0M)
+#### [Cosmos: Many Chains, One Ecosystem](https://www.youtube.com/watch?v=LApEkXJR_0M)
+47 min. An introduction to Cosmos by Sunny Aggarwal, Researcher at Tendermint. Sunny explains the architectural and design decisions behind Cosmos and Tendermint. [Watch now.](https://www.youtube.com/watch?v=LApEkXJR_0M)
 
 #### Validator Program: An Introduction
 [Coming Soon] Learn about running and securing a validator for the Cosmos Hub.

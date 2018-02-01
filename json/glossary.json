@@ -2,61 +2,61 @@
   {
     "id": "abci",
     "title": "ABCI",
-    "body": "ABCI is the Application BlockChain Interface...",
+    "body": "ABCI is the Application BlockChain Interface, which acts as the API between the application and the consensus layer.",
     "url": ""
   },
   {
     "id": "atom",
     "title": "Atom",
-    "body": "The Atom is the...",
+    "body": "The Atom is the native staking currency of the Cosmos Hub. Validators use the Atom to stake and secure the zones within Cosmos.",
     "url": ""
   },
   {
     "id": "bft",
     "title": "BFT",
-    "body": "BFT is Byzantine Fault-Tolerance...",
+    "body": "BFT stands for Byzantine Fault-Tolerance. Byzantine faults within distributed systems are some of the most difficult to deal with. A Byzantine Fault-Tolerant consensus algorithm simply means that it can guarantee safety for up to a third of Byzantine, or malicious, actors.",
     "url": ""
   },
   {
     "id": "blockchain",
     "title": "Blockchain",
-    "body": "Blockchain are...",
+    "body": "Blockchain are deterministic state machines which act as mechanisms to synchronize data derived from a network of decentralized peers.",
     "url": ""
   },
   {
     "id": "cosmos",
     "title": "Cosmos",
-    "body": "Cosmos is...",
+    "body": "Cosmos is the network of blockchains which form the decentralized internet of tomorrow.",
     "url": ""
   },
   {
     "id": "cosmos-hub",
     "title": "Cosmos Hub",
-    "body": "The Cosmos Hub is...",
+    "body": "The Cosmos Hub is a blockchain, but it's not just any blockchain; it's a custodial blockchain which keeps track of global invariants across other blockchains that are pegged to the hub, ensuring no double-spends across blockchains is possible.",
     "url": ""
   },
   {
     "id": "cosmos-sdk",
     "title": "Cosmo SDK",
-    "body": "The Cosmos SDK is...",
+    "body": "The Cosmos SDK is the bare bones SDK which gives you the framework for your specific blockchain-based application, allowing you to add functionality through plugins.",
     "url": ""
   },
   {
     "id": "cosmos-network",
     "title": "Cosmos Network",
-    "body": "The Cosmos Hub is...",
+    "body": "The Cosmos Nework is the network of blockchains interoperating within the Cosmos ecosystem.",
     "url": ""
   },
   {
     "id": "cosmos-ui",
     "title": "Cosmos UI",
-    "body": "The Cosmos UI is...",
+    "body": "The Cosmos UI is the UI for users to delegate, stake, engage in governance, and so on.",
     "url": ""
   },
   {
     "id": "delegator",
     "title": "Delegator",
-    "body": "Delegators are...",
+    "body": "Delegators are individuals with some amount of Atoms who stake their tokens with a validator, which can be thought of as a mining pool.",
     "url": ""
   },
   {
@@ -68,13 +68,13 @@
   {
     "id": "elliptic-curve",
     "title": "Elliptic Curve",
-    "body": "An elliptic curve is...",
+    "body": "In elliptic curve cryptography, a huge curve is generated, from which a public-private key-pair is derived. The chance of collision is 1 in several billions.",
     "url": ""
   },
   {
     "id": "ethermint",
     "title": "Ethermint",
-    "body": "Ethermint is...",
+    "body": "Ethermint is the EVM, stripped of PoW mining, built on top Tendermint with PoS instated.",
     "url": ""
   },
   {
@@ -92,7 +92,7 @@
   {
     "id": "gaia",
     "title": "Gaia",
-    "body": "Gaia is the...",
+    "body": "Gaia is what powers the Cosmos Hub. It is used as the testnet which serves to test the features of both Tendermint Core's and Cosmos' software stacks.",
     "url": ""
   },
   {
@@ -110,31 +110,31 @@
   {
     "id": "ibc",
     "title": "IBC",
-    "body": "IBC is the interblockchain communication protocol...",
+    "body": "IBC is the interblockchain communication protocol which can be thought of as the TCP/IP for blockchains.",
     "url": ""
   },
   {
     "id": "ibc-packet",
     "title": "IBC packet",
-    "body": "IBC packets are...",
+    "body": "IBC packets are packets of data which carry messages and fraud proofs from one zone to the hub.",
     "url": ""
   },
   {
     "id": "lotion",
     "title": "Lotion",
-    "body": "Lotion is...",
+    "body": "Lotion is the developer toolkit which allows you to build blockchain applications on Tendermint in JavaScript.",
     "url": ""
   },
   {
     "id": "pos",
     "title": "Proof-of-Stake",
-    "body": "Poof-of-Stake is a method of consensus in which...",
+    "body": "Poof-of-Stake is a method of consensus in which uses the token itself to secure the network, which acts as a sort of virtualized ASIC, instead of using physical hardware to burn through electricity in order to do so.",
     "url": ""
   },
   {
     "id": "pow",
     "title": "Proof-of-Work",
-    "body": "Proof-of-Work is a method of consensus in which...",
+    "body": "Proof-of-Work is a method of consensus in which uses hardware to burn through electricity in order to secure a decentralized network and mine blocks which form a blockchain.",
     "url": ""
   },
   {
@@ -158,7 +158,7 @@
   {
     "id": "tendermint",
     "title": "Tendermint",
-    "body": "Tendermint is a proof of stake consensus algorithm...",
+    "body": "Tendermint is a proposal mechanism and a state replication algorithm optimized for proof of stake. Tendermint is a swappable consensus engine, compatible for any blockchain application.",
     "url": "https://tendermint.com"
   },
   {
@@ -194,7 +194,7 @@
   {
     "id": "zone",
     "title": "Zone",
-    "body": "A Cosmos Zone is...",
+    "body": "A Cosmos Zone is a blockchain spun up within the Cosmos Network.",
     "url": ""
   }
 ]

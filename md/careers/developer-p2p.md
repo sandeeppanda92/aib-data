@@ -1,7 +1,6 @@
 # Software Developer, P2P
-Technical Position at Tendermint
 
-## We're looking for someone with…
+## We're looking for someone with:
 * Significant programming experience, 5+ years
 * Computer Science background highly desired
 * Familiarity with open source P2P networking protocols, (BitTorrent, Kademlia, etc.)

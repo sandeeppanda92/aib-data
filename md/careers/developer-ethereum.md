@@ -1,6 +1,6 @@
 # Software Developer, Ethereum
 
-## We're looking for someone with…
+## We're looking for someone with:
 * Significant programming experience (2+ years)
 * Experience with go-lang, rust-lang or C++ (2+ years)
 * Extensive understanding of the Ethereum Virtual Machine

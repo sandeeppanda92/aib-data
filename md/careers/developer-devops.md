@@ -1,6 +1,6 @@
 # Software Developer, DevOps
 
-## We're looking for someone with…
+## We're looking for someone with:
 * Linux server administration skills, including Git
 * Understanding of operational and system security
 * Experience deploying clusters via cloud providers like AWS, GCE, Digital Ocean

@@ -1,6 +1,6 @@
 # Software Developer, Consensus
 
-## We're looking for someone with…
+## We're looking for someone with:
 * Significant programming experience, 5+ years
 * Computer Science background highly desired
 * BFT or FT (e.g. Raft) knowledge desired

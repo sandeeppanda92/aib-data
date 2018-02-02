@@ -1,6 +1,6 @@
 # Software Developer, Cosmos
 
-## We're looking for someone with…
+## We're looking for someone with:
 * Experience building application backends (3+ years), preferably in Golang (1+ years)
 * Understanding of cryptocurrency state machines
 

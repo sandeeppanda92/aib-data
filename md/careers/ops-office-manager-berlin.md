@@ -4,8 +4,7 @@ The Office Manager has 3+ years of experience in a similar role. The Office Mana
 
 ## We're looking for someone with:
 * Part-time (20 hrs/wk)
-* Located in Berkeley, CA
-* Another office in San Francisco, CA, will be opening mid-2018, which will also need support from the Office Manager
+* Located in Berlin, Germany
 
 ## You should be located near:
 * Berlin
@@ -59,5 +58,5 @@ The Office Manager has 3+ years of experience in a similar role. The Office Mana
 * Exposure to cutting-edge blockchain technology
 * And much more…
 
-# Get in touch
+## Get in touch:
 Please submit a cover letter and resume to careers@tendermint.com. Make sure to include availability dates, desired working hours per week, and preferred location. We'll write back as soon as we can.

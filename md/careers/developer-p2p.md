@@ -1,5 +1,4 @@
 # Software Developer, P2P
-Technical Position at Tendermint
 
 ## We're looking for someone with…
 * Significant programming experience, 5+ years

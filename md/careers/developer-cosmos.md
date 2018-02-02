@@ -1,5 +1,4 @@
 # Software Developer, Cosmos
-Technical Position at Tendermint
 
 ## We're looking for someone with…
 * Experience building application backends (3+ years), preferably in Golang (1+ years)

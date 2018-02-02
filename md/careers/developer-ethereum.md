@@ -1,5 +1,4 @@
 # Software Developer, Ethereum
-Technical Position at Tendermint
 
 ## We're looking for someone with…
 * Significant programming experience (2+ years)

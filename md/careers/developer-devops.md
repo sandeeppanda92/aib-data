@@ -1,5 +1,4 @@
-## Software Developer, DevOps
-Technical Position at Tendermint
+# Software Developer, DevOps
 
 ## We're looking for someone with…
 * Linux server administration skills, including Git

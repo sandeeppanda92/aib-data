@@ -60,5 +60,5 @@ The Office Manager has 3+ years of experience in a similar role. The Office Mana
 * Exposure to cutting-edge blockchain technology
 * And much more…
 
-# Get in touch
+## Get in touch:
 Please submit a cover letter and resume to careers@tendermint.com. Make sure to include availability dates, desired working hours per week, and preferred location. We'll write back as soon as we can.

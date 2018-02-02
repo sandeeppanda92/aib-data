@@ -24,5 +24,5 @@
 * Potential to work remotely later on
 * And much more…
 
-##Get in touch
+## Get in touch
 Please submit a cover letter and resume to careers@tendermint.com. Make sure to include availability dates, desired working hours per week, and preferred location. We'll write back as soon as we can.

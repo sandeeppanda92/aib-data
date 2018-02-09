@@ -153,7 +153,7 @@
       "version": "0.9.0",
       "span": 1,
       "date": "",
-      "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3 & Cosmos-UI 0.5.0, partner projects gets unblocked."
+      "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3, Cosmos-UI 0.5.0, and partner projects) gets unblocked."
     },
     {
       "id": "sdk-0-10",
@@ -363,9 +363,17 @@
       "id": "gui-0-5",
       "title": "Cosmos UI",
       "version": "0.5.0",
-      "span": 2,
+      "span": 1,
       "date": "",
-      "notes": "Cosmos UI 0.5.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as block rewards and commission rates for validators."
+      "notes": "Cosmos UI 0.5.0 will include bug fixes, usability improvements, and support the newly refactored Cosmos SDK (version 0.9.0)."
+    },
+    {
+      "id": "gui-0-6",
+      "title": "Cosmos UI",
+      "version": "0.6.0",
+      "span": 1,
+      "date": "",
+      "notes": "Cosmos UI 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as block rewards and commission rates for validators."
     },
     {
       "id": "gui-1-0",

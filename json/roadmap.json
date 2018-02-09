@@ -299,7 +299,7 @@
       "version": "1.0.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "Final version of Tendermint Core before we launch. Features are frozen."
     }
   ],
   "gui":[
@@ -373,7 +373,7 @@
       "version": "1.0.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "Final version of Cosmos UI before we launch. Features are frozen."
     }
   ]
 }

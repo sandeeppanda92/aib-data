@@ -86,11 +86,12 @@
       "version": "1.0.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "tbd"
     }
   ],
   "sdk":[
     {
+<<<<<<< HEAD
       "id": "sdk-0-2",
       "title": "Basecoin",
       "version": "0.2.0",
@@ -130,6 +131,12 @@
       "span": 2,
       "date": "2017-06-22",
       "notes": ""
+      "id": "sdk-0-6",
+      "title": "Basecoin",
+      "version": "<= 0.6.0",
+      "span": 1,
+      "date": "2017-06-22",
+      "notes": "Cosmos SDK was originally named Basecoin."
     },
     {
       "id": "sdk-0-7",
@@ -153,7 +160,7 @@
       "version": "0.9.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3 & Cosmos-UI 0.5.0, partner projects) gets unblocked."
     },
     {
       "id": "sdk-0-10",
@@ -161,7 +168,15 @@
       "version": "0.10.0",
       "span": 3,
       "date": "",
-      "notes": "Cosmos SDK 0.10.0 includes the light client daemon."
+      "notes": "Cosmos SDK 0.10.0 includes the light client daemon and CircleCI integration."
+    },
+    {
+      "id": "sdk-0-11",
+      "title": "Cosmos SDK",
+      "version": "0.11.0",
+      "span": 3,
+      "date": "",
+      "notes": "Cosmos SDK 0.11.0 will have governance, staking, and IBC modules built in."
     },
     {
       "id": "sdk-1-0",
@@ -169,7 +184,7 @@
       "version": "1.0.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "Final Cosmos SDK before we go live. Features are frozen."
     }
   ],
   "tmc":[
@@ -267,7 +282,7 @@
       "version": "0.16.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "Major p2p updates."
     },
     {
       "id": "tmc-0-17",
@@ -275,7 +290,7 @@
       "version": "0.17.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "HSM"
     },
     {
       "id": "tmc-0-18",
@@ -283,7 +298,7 @@
       "version": "0.18.0",
       "span": 2,
       "date": "",
-      "notes": ""
+      "notes": "Fork detection & halt detection. LevelDB server."
     },
     {
       "id": "tmc-1-0",
@@ -360,12 +375,20 @@
       "notes": "Cosmos UI 0.5.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as block rewards and commission rates for validators."
     },
     {
+      "id": "gui-0-6",
+      "title": "Cosmos UI",
+      "version": "0.6.0",
+      "span": 1,
+      "date": "",
+      "notes": "tbd"
+    },
+    {
       "id": "gui-1-0",
       "title": "Cosmos UI",
       "version": "1.0.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "tbd"
     }
   ]
 }

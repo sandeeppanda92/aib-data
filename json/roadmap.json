@@ -1,6 +1,46 @@
 {
   "hub":[
     {
+      "id": "gaia-hermes",
+      "title": "Testnet",
+      "version": "hermes",
+      "span": 1,
+      "date": "2017-06-26",
+      "notes": "Hermes is a 7-node public testnet for Basecoin 0.6.0. It allows sending tokens to Mercury (our other testnet) through a relay.  [Offline]"
+    },
+    {
+      "id": "gaia-mercury",
+      "title": "Testnet",
+      "version": "mercury",
+      "span": 1,
+      "date": "2017-06-26",
+      "notes": "Mercury is a 7-node public testnet based Basecoin 0.6.0.  It allowed sending tokens to Hermes (our other testnet) through a relay.  [Offline]"
+    },
+    {
+      "id": "gaia-venus",
+      "title": "Testnet",
+      "version": "venus",
+      "span": 2,
+      "date": "2017-06-30",
+      "notes": "Venus is a 7-node public testnet based on Ethermint 0.3.0. It allows you to do everything you can do with the standard Ethereum network, but at 10-times the speed and a much lower cost per transaction. [Offline]"
+    },
+    {
+      "id": "gaia-sdk1",
+      "title": "Testnet",
+      "version": "sdk1",
+      "span": 1,
+      "date": "2017-09-13",
+      "notes": "sdk1 is a public testnet for the first version of Cosmos SDK."
+    },
+    {
+      "id": "gaia-tak",
+      "title": "Testnet",
+      "version": "Tak",
+      "span": 2,
+      "date": "2017-09-25",
+      "notes": "Tak is a continually updated development testnet for Cosmos SDK."
+    },
+    {
       "id": "gaia-1",
       "title": "Testnet",
       "version": "Gaia-1",
@@ -22,7 +62,7 @@
       "version": "Gaia-3",
       "span": 1,
       "date": "",
-      "notes": "Gaia-3 focuses on the P2P layer. It includes a seed mode, sentry mode architecture, peer IDs, and may bug fixes."
+      "notes": "Gaia-3 focuses on the P2P layer. It includes a seed mode, sentry mode architecture, peer IDs, and may bug fixes. Gaia-3 depends on Tendermint 0.16.0."
     },
     {
       "id": "gaia-4",
@@ -51,26 +91,59 @@
   ],
   "sdk":[
     {
+      "id": "sdk-0-2",
+      "title": "Basecoin",
+      "version": "0.2.0",
+      "offset": 1,
+      "span": 1,
+      "date": "2017-03-06",
+      "notes": ""
+    },
+    {
+      "id": "sdk-0-3",
+      "title": "Basecoin",
+      "version": "0.3.0",
+      "span": 1,
+      "date": "2017-03-24",
+      "notes": ""
+    },
+    {
+      "id": "sdk-0-4",
+      "title": "Basecoin",
+      "version": "0.4.0",
+      "span": 1,
+      "date": "2017-04-22",
+      "notes": ""
+    },
+    {
+      "id": "sdk-0-5",
+      "title": "Basecoin",
+      "version": "0.5.0",
+      "span": 1,
+      "date": "2017-05-29",
+      "notes": ""
+    },
+    {
       "id": "sdk-0-6",
       "title": "Basecoin",
-      "version": "<= 0.6.0",
-      "span": 1,
+      "version": "0.6.0",
+      "span": 2,
       "date": "2017-06-22",
-      "notes": "Cosmos SDK was originally named Basecoin."
+      "notes": "The last version of Basecoin before it is renamed to Cosmos SDK."
     },
     {
       "id": "sdk-0-7",
       "title": "Cosmos SDK",
       "version": "0.7.0",
-      "span": 1,
+      "span": 4,
       "date": "2017-07-27",
-      "notes": "Basecoin is renamed to Cosmos SDK. Everything changed."
+      "notes": "Basecoin is renamed to Cosmos SDK for a more descriptive name. It will serve as the primary framework for building the Cosmos Hub."
     },
     {
       "id": "sdk-0-8",
       "title": "Cosmos SDK",
       "version": "0.8.0",
-      "span": 1,
+      "span": 3,
       "date": "2017-12-19",
       "notes": ""
     },
@@ -80,23 +153,23 @@
       "version": "0.9.0",
       "span": 1,
       "date": "",
-      "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3 & Cosmos-UI 0.5.0, partner projects) gets unblocked."
+      "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3 & Cosmos-UI 0.5.0, partner projects gets unblocked."
     },
     {
       "id": "sdk-0-10",
       "title": "Cosmos SDK",
       "version": "0.10.0",
-      "span": 3,
+      "span": 1,
       "date": "",
-      "notes": "Cosmos SDK 0.10.0 includes the light client daemon and circle-cli."
+      "notes": "Cosmos SDK 0.10.0 includes the light client daemon (LCD) feature."
     },
     {
       "id": "sdk-0-11",
       "title": "Cosmos SDK",
       "version": "0.11.0",
-      "span": 3,
+      "span": 2,
       "date": "",
-      "notes": "Cosmos SDK 0.11.0 will have governance, staking, and IBC modules built in."
+      "notes": "tbd"
     },
     {
       "id": "sdk-1-0",
@@ -104,17 +177,81 @@
       "version": "1.0.0",
       "span": 1,
       "date": "",
-      "notes": "Final Cosmos SDK before we go live. Features are frozen."
+      "notes": "Final version of Cosmos SDK before we launch. Features are frozen."
     }
   ],
   "tmc":[
     {
+      "id": "tmc-0-1",
+      "title": "Tendermint",
+      "version": "0.1.0",
+      "span": 1,
+      "date": "2015-08-15",
+      "notes": "The first public release of Tendermint includes address generation from a seed phrase and sending of coins."
+    },
+    {
+      "id": "tmc-0-2",
+      "title": "Tendermint",
+      "version": "0.2.0",
+      "span": 1,
+      "date": "2015-10-24",
+      "notes": ""
+    },
+    {
+      "id": "tmc-0-7",
+      "title": "Tendermint",
+      "version": "0.7.0",
+      "span": 1,
+      "date": "2016-08-07",
+      "notes": "Starting from this release (0.7.0 \"Tommy\") we commit to following a strict semantic versioning discipline and release protocol. In recognition of this monumental occasion, we bumped the version number a few extra times."
+    },
+    {
+      "id": "tmc-0-8",
+      "title": "Tendermint",
+      "version": "0.8.0",
+      "span": 1,
+      "date": "2017-01-14",
+      "notes": "Tendermint 0.8.0 \"Chuckie\" includes support for validator set changes, handshakes between Tendermint and app, BFT-liveness fix, and more test coverage."
+    },
+    {
+      "id": "tmc-0-9",
+      "title": "Tendermint",
+      "version": "0.9.0",
+      "span": 3,
+      "date": "2017-03-06",
+      "notes": "Tendermint 0.9.0 \"Phil and Lil\" includes a new client API and RPC endpoint for viewing header and commits of particular blocks."
+    },
+    {
+      "id": "tmc-0-10",
+      "title": "Tendermint",
+      "version": "0.10.0",
+      "span": 4,
+      "date": "2017-06-02",
+      "notes": "Tendermint 0.10.0 \"Angelica\" includes major updates to configuration, logging, and json serialization. Also includes the Grand Repo-Merge of 2017."
+    },
+    {
+      "id": "tmc-0-11",
+      "title": "Tendermint",
+      "version": "0.11.0",
+      "span": 1,
+      "date": "2017-09-23",
+      "notes": "Tendermint 0.11.0 \"Susie\" includes querying for validators at previous heights."
+    },
+    {
+      "id": "tmc-0-12",
+      "title": "Tendermint",
+      "version": "0.12.0",
+      "span": 1,
+      "date": "2017-10-28",
+      "notes": "Tendermint 0.12.0 \"Dil\" includes RPC calls for genesis, abci_query, and more."
+    },
+    {
       "id": "tmc-0-13",
       "title": "Tendermint",
-      "version": "<= 0.13.0",
+      "version": "0.13.0",
       "span": 1,
       "date": "2017-12-06",
-      "notes": "Tendermint 0.13.0 \"Constantine\" adde new RPC endpoints, a new trust metric for tracking peers, and TxIndexConfig."
+      "notes": "Tendermint 0.13.0 \"Constantine\" adds new RPC endpoints, a new trust metric for tracking peers, and TxIndexConfig."
     },
     {
       "id": "tmc-0-14",
@@ -128,7 +265,7 @@
       "id": "tmc-0-15",
       "title": "Tendermint",
       "version": "0.15.0",
-      "span": 1,
+      "span": 2,
       "date": "2017-12-29",
       "notes": "Tendermint 0.15.0 \"Leo\" adds an RPC query for transactions at a give block height, a new evidence reactor, state features, and new docs."
     },
@@ -138,7 +275,7 @@
       "version": "0.16.0",
       "span": 1,
       "date": "",
-      "notes": "Major p2p updates."
+      "notes": "Tendermint 0.16.0 includes major P2P updates."
     },
     {
       "id": "tmc-0-17",
@@ -146,7 +283,7 @@
       "version": "0.17.0",
       "span": 1,
       "date": "",
-      "notes": "HSM"
+      "notes": "Tendermint 0.17.0 will include support for hardware security modules (HSM), like Ledger."
     },
     {
       "id": "tmc-0-18",
@@ -154,7 +291,7 @@
       "version": "0.18.0",
       "span": 2,
       "date": "",
-      "notes": "Fork detection & halt detection. LevelDB server."
+      "notes": "Tendermint 0.18.0 will include fork detection and halt detection, as well as a LevelDB server."
     },
     {
       "id": "tmc-1-0",
@@ -162,10 +299,42 @@
       "version": "1.0.0",
       "span": 1,
       "date": "",
-      "notes": ""
+      "notes": "Final version of Tendermint Core before we launch. Features are frozen."
     }
   ],
   "gui":[
+    {
+      "id": "gui-netmon",
+      "title": "Netmon UI",
+      "version": "0.0.3",
+      "span": 1,
+      "date": "2016-08-01",
+      "notes": "Before the Cosmos UI, there was the web-based Tendermint Blockchain Platform UI. TMUI was designed as a multi-blockchain management interface. Components of the platform are used today in Cosmos UI, primarily the network monitor portion."
+    },
+    {
+      "id": "gui-basecoin",
+      "title": "Basecoin UI",
+      "version": "0.0.5",
+      "span": 4,
+      "date": "2017-02-01",
+      "notes": "The Basecoin UI was conceived as a stripped down cryptocurrency wallet with send, recieve, address list, and theming functionality. The idea is that anyone can fork this wallet for their own cryptocurrency based on Basecoin."
+    },
+    {
+      "id": "gui-delegation",
+      "title": "Delegation UI",
+      "version": "0.0.7",
+      "span": 4,
+      "date": "2017-06-01",
+      "notes": "The Delegation UI is a razor-sharp focused user interface for Cosmos ATOM holders to use to bond to Cosmos validators. Functionality included viewing validators, bonding to validators, and voting on proposals."
+    },
+    {
+      "id": "gui-0-1",
+      "title": "Cosmos UI",
+      "version": "0.1.0",
+      "span": 3,
+      "date": "2017-09-01",
+      "notes": "Cosmos UI was built together from three parts: the Netmon UI, the Wallet UI, and the Delegation UI. Version 0.1.0 was the first time all three components were integrated in one Electron-based application."
+    },
     {
       "id": "gui-0-2",
       "title": "Cosmos UI",
@@ -194,17 +363,9 @@
       "id": "gui-0-5",
       "title": "Cosmos UI",
       "version": "0.5.0",
-      "span": 1,
+      "span": 2,
       "date": "",
-      "notes": "Cosmos-UI 0.5.0 will include support for the light client daemon from Cosmos-SDK 0.10.0 as well as block rewards and commission rates for validators."
-    },
-    {
-      "id": "gui-0-6",
-      "title": "Cosmos UI",
-      "version": "0.6.0",
-      "span": 1,
-      "date": "",
-      "notes": "tbd"
+      "notes": "Cosmos UI 0.5.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as block rewards and commission rates for validators."
     },
     {
       "id": "gui-1-0",
@@ -212,7 +373,7 @@
       "version": "1.0.0",
       "span": 1,
       "date": "",
-      "notes": "tbd"
+      "notes": "Final version of Cosmos UI before we launch. Features are frozen."
     }
   ]
 }

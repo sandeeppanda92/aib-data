@@ -191,7 +191,7 @@
       "span": 1,
       "date": "",
       "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3, Cosmos-UI 0.5.0, and partner projects) gets unblocked.",
-      "url": ""
+      "url": "https://github.com/cosmos/cosmos-sdk/projects/2"
     },
     {
       "id": "sdk-0-10",
@@ -202,7 +202,7 @@
       "span": 1,
       "date": "",
       "notes": "Cosmos SDK 0.10.0 includes the light client daemon (LCD) feature.",
-      "url": ""
+      "url": "https://github.com/cosmos/cosmos-sdk/projects/4"
     },
     {
       "id": "sdk-0-11",

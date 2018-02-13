@@ -107,7 +107,7 @@
       "children": [],
       "span": 1,
       "date": "",
-      "notes": "tbd",
+      "notes": "Final version of Cosmos Hub before we launch. Features are frozen.",
       "url": ""
     }
   ],
@@ -190,7 +190,7 @@
       "children": ["hub-gaia-3", "gui-0-5"],
       "span": 1,
       "date": "",
-      "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3, Cosmos-UI 0.5.0, and partner projects) gets unblocked.",
+      "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3, Voyager 0.5.0, and partner projects) gets unblocked.",
       "url": "https://github.com/cosmos/cosmos-sdk/projects/2"
     },
     {
@@ -385,7 +385,7 @@
       "children": [],
       "span": 3,
       "date": "2016-08-01",
-      "notes": "Before the Cosmos UI, there was the web-based Tendermint Blockchain Platform UI. TMUI was designed as a multi-blockchain management interface. Components of the platform are used today in Cosmos UI, primarily the network monitor portion.",
+      "notes": "Before Voyager, there was the web-based Tendermint Blockchain Platform UI. TMUI was designed as a multi-blockchain management interface. Components of the platform are used today in Voyager, primarily the network monitor portion.",
       "url": ""
     },
     {
@@ -450,32 +450,32 @@
     },
     {
       "id": "gui-0-5",
-      "title": "Cosmos UI",
+      "title": "Voyager",
       "version": "0.5.0",
       "children": [],
       "span": 1,
       "date": "",
-      "notes": "Cosmos UI 0.5.0 will include bug fixes, usability improvements, and support the newly refactored Cosmos SDK (version 0.9.0).",
+      "notes": "Cosmos UI is renamed to Cosmos Voyager. Voyager 0.5.0 will include bug fixes, usability improvements, and support the newly refactored Cosmos SDK (version 0.9.0).",
       "url": ""
     },
     {
       "id": "gui-0-6",
-      "title": "Cosmos UI",
+      "title": "Voyager",
       "version": "0.6.0",
       "children": [],
       "span": 2,
       "date": "",
-      "notes": "Cosmos UI 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as block rewards and commission rates for validators.",
+      "notes": "Voyager 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as block rewards and commission rates for validators.",
       "url": ""
     },
     {
       "id": "gui-1-0",
-      "title": "Cosmos UI",
+      "title": "Voyager",
       "version": "1.0.0",
       "children": [],
       "span": 1,
       "date": "",
-      "notes": "Final version of Cosmos UI before we launch. Features are frozen.",
+      "notes": "Final version of Voyager before we launch. Features are frozen.",
       "url": ""
     }
   ]

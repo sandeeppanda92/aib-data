@@ -198,7 +198,7 @@
       "title": "Cosmos SDK",
       "version": "0.10.0",
       "children": [],
-      "children": ["hub-gaia-4", "gui-0-6"],
+      "children": ["hub-gaia-5", "gui-0-6"],
       "span": 1,
       "date": "",
       "notes": "Cosmos SDK 0.10.0 includes the light client daemon (LCD) feature.",

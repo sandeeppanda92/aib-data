@@ -198,7 +198,7 @@
       "title": "Cosmos SDK",
       "version": "0.10.0",
       "children": [],
-      "children": ["hub-gaia-4", "gui-0-6"],
+      "children": ["hub-gaia-5", "gui-0-6"],
       "span": 1,
       "date": "",
       "notes": "Cosmos SDK 0.10.0 includes the light client daemon (LCD) feature.",
@@ -465,7 +465,7 @@
       "children": [],
       "span": 2,
       "date": "",
-      "notes": "Voyager 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as block rewards and commission rates for validators.",
+      "notes": "Voyager 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as UI for block rewards and commission rates for validators.",
       "url": ""
     },
     {
@@ -475,7 +475,7 @@
       "children": [],
       "span": 1,
       "date": "",
-      "notes": "Final version of Voyager before we launch. Features are frozen.",
+      "notes": "Final version of Voyager, the UI for Cosmos, before launch. Features are frozen.",
       "url": ""
     }
   ]

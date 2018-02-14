@@ -87,7 +87,7 @@
       "children": [],
       "span": 1,
       "date": "",
-      "notes": "Gaia-4 runs on Cosmos SDK 0.10.0. It includes block rewards for validators and commission fees.",
+      "notes": "Gaia-4 includes block rewards for validators and commission fees. Gaia-4 runs on Cosmos SDK 0.9.0. ",
       "url": ""
     },
     {
@@ -187,7 +187,7 @@
       "id": "sdk-0-9",
       "title": "Cosmos SDK",
       "version": "0.9.0",
-      "children": ["hub-gaia-3", "gui-0-5"],
+      "children": ["hub-gaia-4", "gui-0-5"],
       "span": 1,
       "date": "",
       "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3, Voyager 0.5.0, and partner projects) gets unblocked.",
@@ -211,7 +211,7 @@
       "children": [],
       "span": 2,
       "date": "",
-      "notes": "tbd",
+      "notes": "Please read the spec for details.",
       "url": "https://github.com/cosmos/cosmos-sdk/tree/develop/docs/spec"
     },
     {

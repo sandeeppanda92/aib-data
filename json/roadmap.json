@@ -95,7 +95,7 @@
       "title": "Testnet",
       "version": "Gaia-5",
       "children": [],
-      "span": 1,
+      "span": 2,
       "date": "",
       "notes": "Gaia-5 supports an unbonding period for delegates, HSM, fork and halt detection, as well as a LevelDB server.",
       "url": ""
@@ -219,7 +219,7 @@
       "version": "0.12.0",
       "children": [],
       "children": ["hub-gaia-5", "gui-0-6"],
-      "span": 1,
+      "span": 3,
       "date": "",
       "notes": "Please read the spec for more details.",
       "url": "https://github.com/cosmos/cosmos-sdk/projects/4"
@@ -371,7 +371,7 @@
       "title": "Tendermint",
       "version": "0.18.0",
       "children": [],
-      "span": 2,
+      "span": 3,
       "date": "",
       "notes": "Tendermint 0.18.0 will include fork detection and halt detection, as well as a LevelDB server.",
       "url": ""

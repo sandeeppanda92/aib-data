@@ -95,7 +95,7 @@
       "title": "Testnet",
       "version": "Gaia-5",
       "children": [],
-      "span": 2,
+      "span": 1,
       "date": "",
       "notes": "Gaia-5 supports an unbonding period for delegates, HSM, fork and halt detection, as well as a LevelDB server.",
       "url": ""
@@ -178,7 +178,7 @@
       "title": "Cosmos SDK",
       "version": "0.8.0",
       "children": [],
-      "span": 3,
+      "span": 2,
       "date": "2017-12-19",
       "notes": "",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.8.0"
@@ -219,7 +219,7 @@
       "version": "0.12.0",
       "children": [],
       "children": ["hub-gaia-5", "gui-0-6"],
-      "span": 3,
+      "span": 2,
       "date": "",
       "notes": "Please read the spec for more details.",
       "url": "https://github.com/cosmos/cosmos-sdk/projects/4"
@@ -381,7 +381,7 @@
       "title": "Tendermint",
       "version": "0.18.0",
       "children": [],
-      "span": 3,
+      "span": 2,
       "date": "",
       "notes": "Tendermint 0.18.0 will include fork detection and halt detection, as well as a LevelDB server.",
       "url": ""
@@ -483,7 +483,7 @@
       "title": "Voyager",
       "version": "0.6.0",
       "children": [],
-      "span": 2,
+      "span": 1,
       "date": "",
       "notes": "Voyager 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as UI for block rewards and commission rates for validators.",
       "url": ""

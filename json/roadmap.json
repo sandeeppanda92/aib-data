@@ -342,8 +342,8 @@
       "version": "0.16.0",
       "children": ["hub-gaia-3"],
       "span": 1,
-      "date": "",
-      "notes": "Tendermint 0.16.0 includes major P2P updates.",
+      "date": "2018-02-20",
+      "notes": "Tendermint 0.16.0 includes major P2P updates, a new specification and improvements to the config.",
       "url": ""
     },
     {

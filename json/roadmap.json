@@ -189,19 +189,39 @@
       "version": "0.9.0",
       "children": ["hub-gaia-4", "gui-0-5"],
       "span": 1,
-      "date": "2017-02-13",
+      "date": "2018-02-13",
       "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3, Voyager 0.5.0, and partner projects) gets unblocked.",
-      "url": "https://github.com/cosmos/cosmos-sdk/projects/2"
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.9.0"
     },
     {
       "id": "sdk-0-10",
       "title": "Cosmos SDK",
       "version": "0.10.0",
+      "children": ["hub-gaia-4", "gui-0-5"],
+      "span": 1,
+      "date": "2018-02-20",
+      "notes": "Cosmos-SDK 0.10.0 has improvements to BaseApp and a mock staking CLI.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.10.0"
+    },
+    {
+      "id": "sdk-0-11",
+      "title": "Cosmos SDK",
+      "version": "0.11.0",
+      "children": ["hub-gaia-4", "gui-0-5"],
+      "span": 1,
+      "date": "",
+      "notes": "Cosmos-SDK 0.11.0 includes the light client daemon (LCD) feature ",
+      "url": "https://github.com/cosmos/cosmos-sdk/projects/4"
+    },
+    {
+      "id": "sdk-0-12",
+      "title": "Cosmos SDK",
+      "version": "0.12.0",
       "children": [],
       "children": ["hub-gaia-5", "gui-0-6"],
       "span": 1,
       "date": "",
-      "notes": "Cosmos SDK 0.10.0 includes the light client daemon (LCD) feature.",
+      "notes": "Please read the spec for more details.",
       "url": "https://github.com/cosmos/cosmos-sdk/projects/4"
     },
     {
@@ -344,7 +364,7 @@
       "span": 1,
       "date": "2018-02-20",
       "notes": "Tendermint 0.16.0 includes major P2P updates, a new specification and improvements to the config.",
-      "url": ""
+      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.16.0"
     },
     {
       "id": "tmc-0-17",

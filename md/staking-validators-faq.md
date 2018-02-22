@@ -24,7 +24,7 @@ Of course, it is possible and encouraged for any user to run full-nodes even if 
 
 ### What is a delegator?
 
-[Delegators](/staking/delegators) are Atom holders who cannot, or do not want to run validator operations themselves. Through the Cosmos UI, a user can delegate Atoms to a validator and obtain a part of its revenue in exchange (for more detail on how revenue is distributed, see  **What is the incentive to stake?** and **What is a validator's commission?** sections below).
+[Delegators](/staking/delegators) are Atom holders who cannot, or do not want to run validator operations themselves. Through [Cosmos Voyager](/voyager), a user can delegate Atoms to a validator and obtain a part of its revenue in exchange (for more detail on how revenue is distributed, see  **What is the incentive to stake?** and **What is a validator's commission?** sections below).
 
 Because they share revenue with their validators, delegators also share responsiblity. Should a validator misbehave, each of its delegators will be partially slashed in proportion to their stake. This is why delegators should perform due diligence on validator candidates before delegating, as well as spreading their stake over multiple validators.
 
@@ -34,7 +34,7 @@ Delegators play a critical role in the system, as they are responsible for choos
 
 ### How to become a validator?
 
-Any participant in the network can signal that they want to become a validator by sending a “declare-candidacy” transaction, where they must fill out the following parameters:
+Any participant in the network can signal that they want to become a validator by sending a "declare-candidacy" transaction, where they must fill out the following parameters:
 
 * Validator's PubKey: The validator must signal an account with which it will perform its validator duties. The private key associated with PubKey is used to sign *prevotes* and *precommits*. This way, validators can have different accounts for validating and holding liquid funds.
 * Validator's name
@@ -48,7 +48,7 @@ Any participant in the network can signal that they want to become a validator b
 
 Once a PubKey has declared candidacy, Atom holders can delegate atoms to it, effectively adding stake to this pool. The total stake of an address is the combination of Atoms bonded by delegators and Atoms self-bonded by the entity which designated itself.
 
-Out of all the candidates that signaled themselves, the 100 with the most stake are the ones who are designated as validators. If a validator’s total stake falls below the top 100 then that validator loses its validator privileges. Over time, the maximum number of validators will increase, according to a predefined schedule:
+Out of all the candidates that signaled themselves, the 100 with the most stake are the ones who are designated as validators. If a validator's total stake falls below the top 100 then that validator loses its validator privileges. Over time, the maximum number of validators will increase, according to a predefined schedule:
 
 * **Year 0:** 100
 * **Year 1:** 113
@@ -66,11 +66,11 @@ Out of all the candidates that signaled themselves, the 100 with the most stake 
 
 The Testnet is a great environment to test your validator setup before launch.
 
-We view testnet participation as a great way to signal to the community that you are ready and able to operate a validator. You can find all relevant information about the testnet and more here : https://cosmos.network/validators
+We view testnet participation as a great way to signal to the community that you are ready and able to operate a validator. You can find all relevant information about the [testnet and more here](https://cosmos.network/validators).
 
 ### Is there a faucet?
 
-If you want to obtain coins, you can do so by using this faucet (maintained by community) : https://www.cosmosvalidators.com/
+If you want to obtain coins, you can do so by using [this faucet (maintained by community)](https://www.cosmosvalidators.com/)
 
 ### Is there a minimum amount of Atoms that must be staked to be a validator?
 
@@ -85,7 +85,7 @@ Delegators are free to choose validators according to their own subjective crite
 * **Commission rate:** Commission applied on revenue by validators before it is distributed to their delegators
 * **Track record:** Delegators will likely look at the track record of the validators they plan to delegate to. This includes seniority, past votes on proposals, historical average uptime and how often the node was compromised.
 
-Apart from these criteria that will be displayed in the Cosmos UI, there will be a possibility for validators to signal a website address to complete their resume. Validators will need to build reputation one way or another to attract delegators. For example, it would be a good practice for validators to have their setup audited by third parties. Note though, that the Tendermint Team will not approve or conduct any audit itself.
+Apart from these criteria that will be displayed in Cosmos Voyager, there will be a possibility for validators to signal a website address to complete their resume. Validators will need to build reputation one way or another to attract delegators. For example, it would be a good practice for validators to have their setup audited by third parties. Note though, that the Tendermint team will not approve or conduct any audit itself.
 
 ## Validator directives
 
@@ -102,7 +102,7 @@ Validators have two main responsibilities:
 
 Additionally, validators are expected to be active members of the community. They should always be up-to-date with the current state of the ecosystem so that they can easily adapt to any change.
 
-### What does ‘participate in governance’ entail?
+### What does 'participate in governance' entail?
 
 Validators and delegators on the Cosmos Hub can vote on proposals to change operational parameters (such as the block gas limit), coordinate upgrades, as well as vote on amendments to the human-readable constitution that govern the Cosmos Hub. 
 
@@ -116,7 +116,7 @@ Validators, and by association delegators, receive block provisions, block rewar
 
 ### Can a validator run away with its delegators' Atoms?
 
-By delegating to a validator, a user delegates staking power. The more staking power a validator has, the more weight it has in the consensus and governance processes. This does not mean that the validator has custody of its delegators' Atoms. *By no means can a validator run away with its delegator’s funds*. 
+By delegating to a validator, a user delegates staking power. The more staking power a validator has, the more weight it has in the consensus and governance processes. This does not mean that the validator has custody of its delegators' Atoms. *By no means can a validator run away with its delegator's funds*. 
 
 Even though delegated funds cannot be stolen by their validators, delegators are still liable if their validators misbehave. In such case, each delegators' stake will be partially slashed in proportion to their relative stake.
 
@@ -132,12 +132,12 @@ Yes, they will. Initially, validators of the Cosmos hub will also validate the f
 
 ### What is the incentive to stake?
 
-Each member of a validator’s staking pool earns different types of revenue:
+Each member of a validator's staking pool earns different types of revenue:
 * **Block provisions:** Native tokens of applications run by validators (e.g. Atoms on the Cosmos Hub) are inflated to produce block provisions. These provisions exist to incentivize Atom holders to bond their stake, as non-bonded Atom will be diluted over time. 
 * **Block rewards:** For the Ethermint zone, block rewards are paid in Photons. Initial distribution of Photons will be hard spooned from Ethereum. This means Photons will be emitted 1:1 to Ether. 
 * **Transaction fees:** The Cosmos Hub maintains a whitelist of token that are accepted as fee payment. 
 
-This total revenue is divided among validators' staking pools according to each validator’s weight. Then, within each validator's staking pool the revenue is divided among delegators in proportion to each delegator’s stake. Note that a commission on delegators' revenue is applied by the validator before it is distributed. 
+This total revenue is divided among validators' staking pools according to each validator's weight. Then, within each validator's staking pool the revenue is divided among delegators in proportion to each delegator's stake. Note that a commission on delegators' revenue is applied by the validator before it is distributed. 
 
 ### What is the incentive to run a validator ?
 
@@ -147,19 +147,19 @@ Validators also play a major role in governance. If a delegator does not vote, i
 
 ### What is a validator's commission?
 
-Revenue received by a validator’s pool is split between the validator and its delegators. The validator can apply a commission on the part of the revenue that goes to its delegators. This commission is set as a percentage. Each validator is free to set its initial commission, maximum daily commission change rate and maximum commission. The Cosmos Hub enforces the parameter that each validator sets. These parameters can only be defined when initially declaring candidacy, and may only be constrained further after being declared. 
+Revenue received by a validator's pool is split between the validator and its delegators. The validator can apply a commission on the part of the revenue that goes to its delegators. This commission is set as a percentage. Each validator is free to set its initial commission, maximum daily commission change rate and maximum commission. The Cosmos Hub enforces the parameter that each validator sets. These parameters can only be defined when initially declaring candidacy, and may only be constrained further after being declared. 
 
 ### How are block provisions distributed?
 
 Block provisions are distributed proportionally to all validators relative to their total stake. This means that even though each validator gains atoms with each provision, all validators will still maintain equal weight.
 
-Let us take an example where we have 10 validators with equal staking power and a commission rate of 1%. Let us also assume that the provision for a block is 1000 Atoms and that each validator has 20% of self-bonded Atoms. These tokens do not go directly to the proposer. Instead, they are evenly spread among validators. So now each validator’s pool has 100 Atoms. These 100 Atoms will be distributed according to each participant’s stake:
+Let us take an example where we have 10 validators with equal staking power and a commission rate of 1%. Let us also assume that the provision for a block is 1000 Atoms and that each validator has 20% of self-bonded Atoms. These tokens do not go directly to the proposer. Instead, they are evenly spread among validators. So now each validator's pool has 100 Atoms. These 100 Atoms will be distributed according to each participant's stake:
 
 * Commission: 100*80%*1% = 0.8 Atoms
 * Validator gets: 100*20% + Commission = 20.8 Atoms
 * All delegators get: 100*80% - Commission = 79.2 Atoms
 
-Then, each delegator can claim its part of the 79.2 Atoms in proportion to their stake in the validator’s staking pool. Note that the validator's commission is not applied on block provisions. Note that block rewards (paid in Photons) are distributed according to the same mechanism.
+Then, each delegator can claim its part of the 79.2 Atoms in proportion to their stake in the validator's staking pool. Note that the validator's commission is not applied on block provisions. Note that block rewards (paid in Photons) are distributed according to the same mechanism.
 
 ### How are fees distributed?
 
@@ -167,12 +167,12 @@ Fees are similarly distributed with the exception that the block proposer can ge
 
 When a validator is selected to propose the next block, it must include at least 2/3 precommits for the previous block in the form of validator signatures. However, there is an incentive to include more than 2/3 precommits in the form of a bonus. The bonus is linear: it ranges from 1% if the proposer includes 2/3rd precommits (minimum for the block to be valid) to 5% if the proposer includes 100% precommits. Of course the proposer should not wait too long or other validators may timeout and move on to the next proposer. As such, validators have to find a balance between wait-time to get the most signatures and risk of losing out on proposing the next block. This mechanism aims to incentivize non-empty block proposals, better networking between validators as well as to mitigate censorship.
 
-Let’s take a concrete example to illustrate the aforementioned concept. In this example, there are 10 validators with equal stake. Each of them applies a 1% commission and has 20% of self-bonded Atoms. Now comes a successful block that collects a total of 1025.51020408 Atoms in fees.
+Let's take a concrete example to illustrate the aforementioned concept. In this example, there are 10 validators with equal stake. Each of them applies a 1% commission and has 20% of self-bonded Atoms. Now comes a successful block that collects a total of 1025.51020408 Atoms in fees.
 
 First, a 2% tax is applied. The corresponding Atoms go to the reserve pool. Reserve pool's funds can be allocated through governance to fund bounties and upgrades. 
 * 2% * 1025.51020408 = 20.51020408 Atoms go to the reserve pool.
 
-1005 Atoms now remain. Let’s assume that the proposer included 100% of the signatures in its block. It thus obtains the full bonus of 5%.
+1005 Atoms now remain. Let's assume that the proposer included 100% of the signatures in its block. It thus obtains the full bonus of 5%.
 
 We have to solve this simple equation to find the reward R for each validator:
 
@@ -194,7 +194,7 @@ We have to solve this simple equation to find the reward R for each validator:
 If a validator misbehaves, its bonded stake along with its delegators' stake and will be slashed. The severity of the punishment depends on the type of fault. There are 3 main faults that can result in slashing of funds for a validator and its delegators:
 
 * **Double signing:** If someone reports on chain A that a validator signed two blocks at the same height on chain A and chain B, this validator will get slashed on chain A
-* **Unavailability:** If a validator’s signature has not been included in the last X blocks, the validator will get slashed by a marginal amount proportional to X. If X is above a certain limit Y, then the validator will get unbonded
+* **Unavailability:** If a validator's signature has not been included in the last X blocks, the validator will get slashed by a marginal amount proportional to X. If X is above a certain limit Y, then the validator will get unbonded
 * **Non-voting:** If a validator did not vote on a proposal and once the fault is reported by a someone, its stake will receive a minor slash. 
 
 Note that even if a validator does not intentionally misbehave, it can still be slashed if its node crashes, looses connectivity, gets DDOSed, or if its private key is compromised. A complete document on the economics of the network will be published soon.
@@ -213,7 +213,7 @@ For now the community is expected to behave in a smart and self-preserving way. 
 
 * **Penalty-free re-delegation:** This is to allow delegators to easily switch from one validator to another, in order to reduce validator stickiness.
 * **Hack bounty:** This is an incentive for the community to hack validators. There will be bounties proportionate to the size of the validator, so that a validator becomes a bigger target as its stake grows.
-* **UI warning:** Users will be warned by the Cosmos UI if they want to delegate to a validator that already has a significant amount of staking power.
+* **UI warning:** Users will be warned by Cosmos Voyager if they want to delegate to a validator that already has a significant amount of staking power.
 
 
 ## Technical requirements 
@@ -249,7 +249,7 @@ Validators should expect to run an HSM that supports ed25519 keys. Here are pote
  * Thales nShield support
  * Tendermint SGX enclave
  
-The Tendermint Team does not recommend one solution above the other. The community is encouraged to bolster the effort to improve HSMs and the security of key management.
+The Tendermint team does not recommend one solution above the other. The community is encouraged to bolster the effort to improve HSMs and the security of key management.
 
 ### What can validators expect in terms of operations? 
 

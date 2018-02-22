@@ -27,7 +27,7 @@ Please check [our roadmap](/roadmap). Atoms will not be tradeable until then.
 
 Public, decentralized networks require high levels of security and spam-prevention that are best achieved by economic means:
 participants in the consensus must incur some economic cost, and all transactions processed by the network must pay a fee.
-Since we want to use Proof-of-Stake validators insteaed of Proof-of-Work miners,
+Since we want to use Proof-of-Stake validators instead of Proof-of-Work miners,
 we require validators of the Cosmos Hub to make a large security deposit in Atoms - 
 if they misbehave, their Atoms are revoked by the protocol! 
 The more Atoms in security deposits, the more stake on the line; the more skin-in-the-game; the greater the economic security.

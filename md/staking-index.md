@@ -1,4 +1,4 @@
-# Staking Documentation
+# Staking - Index
 
 ## Cosmos 
 

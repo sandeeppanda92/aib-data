@@ -1,4 +1,4 @@
-## Validators
+# Staking - Validators
 
 ## What is a validator?
 

@@ -19,7 +19,7 @@ Its development is being led primarily by the [Tendermint](https://tendermint.co
 
 ### When will the Cosmos Network launch?
 
-Please check <router-link to="/roadmap">our roadmap</router-link>. Atoms will not be tradeable until then.
+Please check [our roadmap](/roadmap). Atoms will not be tradeable until then.
 
 ## Atoms
 
@@ -58,7 +58,7 @@ The security of the fundraising process has been vetted extremely carefully.
 ### How do I get Atoms?
 
 If you participated in the fundraiser, you can check your suggested atom balance at [fundraiser.cosmos.network](https://fundraiser.cosmos.network).
-If not, you must wait until the <router-link to="/roadmap">Cosmos Network launches</router-link> and Atoms are traded on exchanges.
+If not, you must wait until the [Cosmos Network launches](/roadmap) and Atoms are traded on exchanges.
 
 ### Which exchanges will Atoms trade on?
 

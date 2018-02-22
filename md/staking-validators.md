@@ -10,7 +10,7 @@ Validators and their delegators will earn Atoms as block provisions and tokens a
 
 If validators double sign, are frequently offline or do not participate in governance, their staked Atoms (including Atoms of users that delegated to them) can be slashed. The penalty depends on the severity of the violation.
 
-All details concerning validators and the validation process can be found in our FAQ. <router-link to="/validators/faq">Read the validator FAQ</router-link>
+All details concerning validators and the validation process can be found in our FAQ. [Read the validator FAQ](/staking/validator-faq)
 
 ## Becoming a validator
 
@@ -22,7 +22,7 @@ Next, you will find baseline recommendations for entities intending to run a val
 
 #### 1. Read the FAQ
 
-Be familiar with all the responsibilities of a validator by reading our <router-link to="/validators/faq">FAQ</router-link>. This FAQ will be frequently updated so be sure to stay up-to-date.
+Be familiar with all the responsibilities of a validator by reading our [FAQ](/staking/validator-faq). This FAQ will be frequently updated so be sure to stay up-to-date.
 
 #### 2. Participate in the testnet
 

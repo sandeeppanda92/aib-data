@@ -8,7 +8,7 @@ There are two types of blockchains in the Cosmos ecosystem: Hubs and Zones. Zone
 
 ## Cosmos Hub
 
-Cosmos is a permissionless system, meaning anybody can launch a Hub or Zone in it. The first Hub in the Cosmos network is the Cosmos Hub. Any Zone can connect to the Cosmos Hub to send tokens to any other Zone that is connected to it. For each transfer, a transaction fee has to be paid by the sender to the Hub's validators and delegators. The Hub maintains a whitelist of tokens that are accepted to pay transaction fees (initially, this list will include Atoms and Photons). This list can be modified through governance (link to governance section below).
+Cosmos is a permissionless system, meaning anybody can launch a Hub or Zone in it. The first Hub in the Cosmos network is the Cosmos Hub. Any Zone can connect to the Cosmos Hub to send tokens to any other Zone that is connected to it. For each transfer, a transaction fee has to be paid by the sender to the Hub's validators and delegators. The Hub maintains a whitelist of tokens that are accepted to pay transaction fees (initially, this list will include Atoms and [Photons](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa). This list can be modified through governance.
 
 The following sections will give an overview on the staking and governance process of the Cosmos Hub.
 

@@ -6,11 +6,11 @@ People that cannot, or do not want to run validator operations, can still partic
 
 Delegators share the revenue of their validators, but they also share the risks. In terms of revenue, validators and delegators differ in that validators can apply a commission on the revenue that goes to their delegator before it is distributed. This commission is known to delegators beforehand and can only change according to predefined constraints (see section below). In terms of risk, delegators' Atoms can be slashed if their validator misbehaves. For more, see Risks section.
 
-To become delegators, Atom holders need to send a "Bond transaction" from their Cosmos Wallet where they specify how many Atoms they want to bond and to which validator. A list of validator candidates will be displayed in the Cosmos Wallet. Later, if a delegator wants to unbond part or all of its stake, it needs to send an "Unbond transaction". From there, the delegator will have to wait 3 weeks to retrieve its Atoms.
+To become delegators, Atom holders need to send a "Bond transaction" from [Cosmos Voyager](/voyager) where they specify how many Atoms they want to bond and to which validator. A list of validator candidates will be displayed in Cosmos Voyager. Later, if a delegator wants to unbond part or all of its stake, it needs to send an "Unbond transaction". From there, the delegator will have to wait 3 weeks to retrieve its Atoms.
 
 ## Choosing a validator
 
-In order to choose their validators, delegators have access to a range of information directly in the Cosmos Wallet. 
+In order to choose their validators, delegators have access to a range of information directly in Cosmos Voyager. 
 
 * Validator's name: Name that was chosen by the validator candidate when it declared candidacy.
 * Validator's description: Description that was provided by the validator candidate when it declared candidacy. 
@@ -32,7 +32,7 @@ Being a delegator is not a passive task. Here are the main directives of a deleg
 
 Validators and delegators earn revenue in exchange for their services. This revenue is given in three forms:
 
-* Block provisions (Atoms): They are paid in newly created Atoms. Block provisions exist to incentivize Atom holders to stake. The yearly inflation rate fluctuates around a target of ⅔ bonded stake. If the total bonded stake is less than ⅔ of the total Atom supply, inflation increases until it reaches 20%. If the total bonded stake is more than  ⅔ of the Atom supply, inflation decreases until it reaches 7%. This means that if total bonded stake stays less than ⅔ of the total Atom supply for a prolonged period of time, unbonded Atom holders can expect their Atom value to deflate by 20% per year.
+* Block provisions (Atoms): They are paid in newly created Atoms. Block provisions exist to incentivize Atom holders to stake. The yearly inflation rate fluctuates around a target of 2/3 bonded stake. If the total bonded stake is less than 2/3 of the total Atom supply, inflation increases until it reaches 20%. If the total bonded stake is more than  2/3 of the Atom supply, inflation decreases until it reaches 7%. This means that if total bonded stake stays less than 2/3 of the total Atom supply for a prolonged period of time, unbonded Atom holders can expect their Atom value to deflate by 20% per year.
 * Block rewards (Photons): They are paid in Photons. Initial distribution of Photons will take the form of a hard spoon of the Ethereum chain. Atom holders will vote on the parameter of this hard spoon, like the date of the snapshot or the initial distribution. Additionally, bonded Atom holders will receive newly created Photons as block rewards. Photons will be distributed at a fixed rate in proportion to each bonded Atom holder's stake. This rate will be decided via governance.
 * Transaction fees (various tokens): Each transfer on the Cosmos Hub comes with transactions fees. These fees can be paid in any currency that is whitelisted by the Hub's governance. Fees are distributed to bonded Atom holders in proportion to their stake. The first whitelisted tokens at launch are Atoms and Photons.
 
@@ -50,9 +50,9 @@ This amounts to a total of 1000 Atoms and 100 Photons to be distributed among al
 
 Our validator's staking pool represents 10% of the total stake, which means the pool obtains 100 Atoms and 10 Photons. Now let us look at the internal distribution of revenue:
 
-* Commission = 10%*80%*100 Atoms + 10%*80%*10 Photons = 8 Atoms + 0.8 Photons
-* Validator's revenue = 20%*100 Atoms + 20%*10 Photons + Commission = 28 Atoms + 2.8 Photons
-* Delegators' total revenue = 80%*100 Atoms + 20%*10 Photons - Commission = 72 Atoms + 7.2 Photons
+* Commission = `10% * 80% * 100` Atoms + `10% * 80% * 10` Photons = 8 Atoms + 0.8 Photons
+* Validator's revenue = `20% * 100` Atoms + `20% * 10` Photons + Commission = 28 Atoms + 2.8 Photons
+* Delegators' total revenue = `80% * 100` Atoms + `20% * 10` Photons - Commission = 72 Atoms + 7.2 Photons
 
 Then, each delegator in the staking pool can claim its portion of the delegators' total revenue. 
 
@@ -70,7 +70,7 @@ This is why Atom holders should perform careful due diligence on validators befo
 
 ## In Practice
 
-[Coming Soon]
+[Coming Soon] Atoms are not available yet, since the Cosmos Hub has [yet to launch](/roadmap). However, you may try staking tokens on the [alpha version of Cosmos Voyager](/voyager).
 
 ## Governance
 

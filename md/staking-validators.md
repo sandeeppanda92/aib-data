@@ -2,15 +2,15 @@
 
 ## What is a validator?
 
-The Cosmos Hub is based on Tendermint, which relies on a set of validators that are responsible for committing new blocks in the blockchain. These validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each validator's private key.
+The [Cosmos Hub](/developers) is based on [Tendermint](https://tendermint.com), which relies on a set of validators that are responsible for committing new blocks in the blockchain. These validators participate in the consensus protocol by broadcasting votes which contain cryptographic signatures signed by each validator's private key.
 
-Validator candidates can bond their own Atoms and have Atoms "delegated", or staked, to them by token holders. The Cosmos Hub will have 100 validators, but over time this will increase to 300 validators according to a predefined schedule. The validators are determined by who has the most stake delegated to them — the top 100 validator candidates with the most stake will become Cosmos validators.
+Validator candidates can bond their own Atoms and have Atoms ["delegated"](/staking/delegators), or staked, to them by token holders. The Cosmos Hub will have 100 validators, but over time this will increase to 300 validators according to a predefined schedule. The validators are determined by who has the most stake delegated to them — the top 100 validator candidates with the most stake will become Cosmos validators.
 
 Validators and their delegators will earn Atoms as block provisions and tokens as transaction fees through execution of the Tendermint consensus protocol. Initially, transaction fees will be paid in Atoms but in the future, any token in the Cosmos ecosystem will be valid as fee tender if it is whitelisted by governance. Note that validators can set commission on the fees their delegators receive as additional incentive.
 
 If validators double sign, are frequently offline or do not participate in governance, their staked Atoms (including Atoms of users that delegated to them) can be slashed. The penalty depends on the severity of the violation.
 
-All details concerning validators and the validation process can be found in our FAQ. <router-link to="/validators/faq">Read the validator FAQ</router-link>
+All details concerning validators and the validation process can be found in our FAQ. [Read the validator FAQ](/staking/validator-faq)
 
 ## Becoming a validator
 
@@ -22,7 +22,7 @@ Next, you will find baseline recommendations for entities intending to run a val
 
 #### 1. Read the FAQ
 
-Be familiar with all the responsibilities of a validator by reading our <router-link to="/validators/faq">FAQ</router-link>. This FAQ will be frequently updated so be sure to stay up-to-date.
+Be familiar with all the responsibilities of a validator by reading our [FAQ](/staking/validator-faq). This FAQ will be frequently updated so be sure to stay up-to-date.
 
 #### 2. Participate in the testnet
 

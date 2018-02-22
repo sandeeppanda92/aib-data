@@ -4,11 +4,11 @@
 
 Cosmos is not a blockchain, it is a network of blockchains. In this network, blockchains can exchange value (tokens) with each other.
 
-There are two types of blockchains in the Cosmos ecosystem: Hubs and Zones. Zones are sovereign blockchains--public or private--built on top of Tendermint. They can exchange value between each other by transacting through Hubs, which act as coordinators to limit overhead. In other words, Hubs are blockchains that connect independent Zones together. They help isolate Zone failures so that global token invariance is preserved. If a Zone wants to send tokens to any other Zone in the Cosmos ecosystem, a single connection with a shared Hub is required. 
+There are two types of blockchains in the Cosmos ecosystem: Hubs and Zones. Zones are sovereign blockchains--public or private--built on top of [Tendermint](https://tendermint.com). They can exchange value between each other by transacting through Hubs, which act as coordinators to limit overhead. In other words, Hubs are blockchains that connect independent Zones together. They help isolate Zone failures so that global token invariance is preserved. If a Zone wants to send tokens to any other Zone in the Cosmos ecosystem, a single connection with a shared Hub is required. 
 
 ## Cosmos Hub
 
-Cosmos is a permissionless system, meaning anybody can launch a Hub or Zone in it. The first Hub in the Cosmos network is the Cosmos Hub. Any Zone can connect to the Cosmos Hub to send tokens to any other Zone that is connected to it. For each transfer, a transaction fee has to be paid by the sender to the Hub's validators and delegators. The Hub maintains a whitelist of tokens that are accepted to pay transaction fees (initially, this list will include Atoms and [Photons](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa). This list can be modified through governance.
+Cosmos is a permissionless system, meaning anybody can launch a Hub or Zone in it. The first Hub in the Cosmos network is the Cosmos Hub. Any Zone can connect to the Cosmos Hub to send tokens to any other Zone that is connected to it. For each transfer, a transaction fee has to be paid by the sender to the Hub's [validators](/staking/validators) and [delegators](/staking/delegators). The Hub maintains a whitelist of tokens that are accepted to pay transaction fees (initially, this list will include Atoms and [Photons](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa). This list can be modified through governance.
 
 The following sections will give an overview on the staking and governance process of the Cosmos Hub.
 
@@ -28,7 +28,7 @@ Atoms are designed to be bonded on the Hub. This means that they are not ideal t
 
 ## Hard spoon
 
-A hard spoon occurs when a new cryptocurrency is minted by replicating the account balances of an existing cryptocurrency. In our case, we are [hard spooning Ethereum](https://blog.cosmos.network/introducing-the-hard-spoon-4a9288d3f0df<Paste>) by taking the account balances of existing Ethereum holders and mirroring those values. This means that ETH holders will have their coins replicated in this EVM zone and will be redeemable as fee tokens—Photons—within [Ethermint](https://ethermint.zone).
+A hard spoon occurs when a new cryptocurrency is minted by replicating the account balances of an existing cryptocurrency. In our case, we are [hard spooning Ethereum](https://blog.cosmos.network/introducing-the-hard-spoon-4a9288d3f0df<Paste>) by taking the account balances of existing Ethereum holders and mirroring those values. This means that ETH holders will have their coins replicated in this EVM zone and will be redeemable as fee tokens--Photons--within [Ethermint](https://ethermint.zone).
 
 After launch, Atom holders will be able to vote on the hard spoon, specifically:
 

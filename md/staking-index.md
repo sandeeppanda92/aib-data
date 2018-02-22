@@ -36,13 +36,13 @@ After launch, Atom holders will be able to vote on the hard spoon, specifically:
 * When the snapshot will occur
 * How Photons are distributed (what goes to Ethereum holders, what goes to Atom holders and Photon inflation)
 
-## <router-link to="/staking/validators">Validators</router-link>
+## Validators
 
 Validators of the Cosmos Hub are responsible for creating new blocks of transactions that are added to the blockchain. Running a validator is non-trivial. It requires technical knowledge and hardware investment. Additionally, due to the way that Tendermint—the underlying consensus engine on which the Cosmos Hub is built—works, the number of validators must be limited. Initially, this limit is fixed to 100. This means that only the top 100 addresses with the most stake that declared their intention to become validator will be validators. As a result, most Atom holders will not be validators. Instead, they will become delegators, thereby participating in deciding who among the validator candidates actually become validators.
 
-If you are interested in becoming a validator or just want to learn more about validators, <router-link to="/staking/validators">click here</router-link>.
+If you are interested in becoming a validator or just want to learn more about validators, [visit this page](/staking/validators).
 
 
-## <router-link to="/staking/delegators">Delegators</router-link>
+## Delegators
 
-If you are interested in staking your atoms to a Validator to earn revenue, or just want to learn more about delegators, <router-link to="/staking/delegators">click here</router-link>.
+If you are interested in staking your atoms to a Validator to earn revenue, or just want to learn more about delegators, [go to this page](/staking/delegators).

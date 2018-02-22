@@ -4,7 +4,7 @@
 
 Cosmos is not a blockchain, it is a network of blockchains. In this network, blockchains can exchange value (tokens) with each other.
 
-There are two types of blockchains in the Cosmos ecosystem: Hubs and Zones. Zones are sovereign blockchains — public or private — built on top of Tendermint. They can exchange value between each other by transacting through Hubs, which act as coordinators to limit overhead. In other words, Hubs are blockchains that connect independent Zones together. They help isolate Zone failures so that global token invariance is preserved. If a Zone wants to send tokens to any other Zone in the Cosmos ecosystem, a single connection with a shared Hub is required. 
+There are two types of blockchains in the Cosmos ecosystem: Hubs and Zones. Zones are sovereign blockchains--public or private--built on top of Tendermint. They can exchange value between each other by transacting through Hubs, which act as coordinators to limit overhead. In other words, Hubs are blockchains that connect independent Zones together. They help isolate Zone failures so that global token invariance is preserved. If a Zone wants to send tokens to any other Zone in the Cosmos ecosystem, a single connection with a shared Hub is required. 
 
 ## Cosmos Hub
 

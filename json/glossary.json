@@ -2,13 +2,13 @@
   {
     "id": "abci",
     "title": "ABCI",
-    "body": "ABCI is the Application BlockChain Interface, which acts as the API between the application and the consensus layer.",
+    "body": "ABCI is the Application BlockChain Interface that provides a clean interface between a state transition machine on one computer and the mechanics of its replication across multiple computers.",
     "url": ""
   },
   {
     "id": "atom",
     "title": "Atom",
-    "body": "The Atom is the native staking currency of the Cosmos Hub. Validators use the Atom to stake and secure the zones within Cosmos.",
+    "body": "The Atom is the native staking currency of the Cosmos Hub. Validators use the Atom to stake and secure the zones within Cosmos. The best analogy is that an Atom is like a virtualized ASIC miner.",
     "url": ""
   },
   {
@@ -20,7 +20,7 @@
   {
     "id": "blockchain",
     "title": "Blockchain",
-    "body": "Blockchain are deterministic state machines which act as mechanisms to synchronize data derived from a network of decentralized peers.",
+    "body": "A blockchain is a continuously growing list of records, called blocks, which are linked and secured using cryptography. Blockchains are deterministic state machines which act as mechanisms to synchronize data derived from a network of decentralized peers.",
     "url": ""
   },
   {
@@ -44,25 +44,25 @@
   {
     "id": "cosmos-network",
     "title": "Cosmos Network",
-    "body": "The Cosmos Nework is the network of blockchains interoperating within the Cosmos ecosystem.",
+    "body": "The Cosmos Nework is a network of blockchains that exchange value with each other via a protocol called IBC.",
     "url": ""
   },
   {
-    "id": "cosmos-ui",
-    "title": "Cosmos UI",
-    "body": "The Cosmos UI is the UI for users to delegate, stake, engage in governance, and so on.",
+    "id": "cosmos-voyager",
+    "title": "Cosmos Voyager",
+    "body": "The Cosmos Voyager is the UI for users to delegate, stake, engage in governance, etc. with the Cosmos Network.",
     "url": ""
   },
   {
     "id": "delegator",
     "title": "Delegator",
-    "body": "Delegators are individuals with some amount of Atoms who stake their tokens with a validator, which can be thought of as a mining pool.",
+    "body": "Delegators are Atom holders that contribute to the security of the network by choosing secure and highly available validators through the process of delegation.",
     "url": ""
   },
   {
     "id": "discrete-logarithm",
     "title": "The Discrete Logarithm Problem",
-    "body": "This problem is...",
+    "body": "This discrete logarithm problem assumes that it is difficult to factor a large integer composed of two or more large prime factors.",
     "url": ""
   },
   {
@@ -74,7 +74,7 @@
   {
     "id": "ethermint",
     "title": "Ethermint",
-    "body": "Ethermint is the EVM, stripped of PoW mining, built on top Tendermint with PoS instated.",
+    "body": "Ethermint is the Ethereum Virtual Machine running on top of Tendermint PoS Consensus, allowing for significantly reduced block times and scalability. It is natively compatible with Cosmos",
     "url": ""
   },
   {
@@ -92,13 +92,13 @@
   {
     "id": "gaia",
     "title": "Gaia",
-    "body": "Gaia is what powers the Cosmos Hub. It is used as the testnet which serves to test the features of both Tendermint Core's and Cosmos' software stacks.",
+    "body": "Gaia is the preliminary version of the Cosmos Hub. It is used as the testnet which serves to test the features of both Tendermint Core's and Cosmos' software stacks.",
     "url": ""
   },
   {
     "id": "governance",
     "title": "Governance",
-    "body": "Blockchain governance is...",
+    "body": "Blockchain governance is a process that allows participants to vote on-chain using their staked tokens.",
     "url": ""
   },
   {
@@ -110,7 +110,7 @@
   {
     "id": "ibc",
     "title": "IBC",
-    "body": "IBC is the interblockchain communication protocol which can be thought of as the TCP/IP for blockchains.",
+    "body": "IBC is the interblockchain communication protocol which can be thought of as the TCP/IP for blockchains. It allows fast-finality blockchains to exchange value with each other.",
     "url": ""
   },
   {

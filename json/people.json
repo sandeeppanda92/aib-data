@@ -83,21 +83,7 @@
       "website": "adrianbrink.com"
     },
     "groups": {
-      "aib": "Core Dev & Head of Comm."
-    }
-  },
-  {
-    "slug": "alexis-sellier",
-    "name": "Alexis Sellier",
-    "bio": "",
-    "ids": {
-      "github": "cloudhead",
-      "keybase": "cloudhead",
-      "twitter": "cloudhead",
-      "website": "cloudhead.io"
-    },
-    "groups": {
-      "aib": "Software Engineer"
+      "aib": "Core Dev & Head of Community"
     }
   },
   {
@@ -125,7 +111,7 @@
       "twitter": "chjango"
     },
     "groups": {
-      "aib": "Strategic Communications"
+      "aib": "Head of Communications"
     }
   },
   {
@@ -255,20 +241,6 @@
     },
     "groups": {
       "aib": "Research Scientist"
-    }
-  },
-  {
-    "slug": "william-light",
-    "name": "William Light",
-    "bio": "",
-    "ids": {
-      "github": "wrl",
-      "keybase": "wrl",
-      "twitter": "wrl",
-      "website": "williamlight.net"
-    },
-    "groups": {
-      "aib": "Hardware Engineer"
     }
   },
   {

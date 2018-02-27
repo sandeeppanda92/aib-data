@@ -97,6 +97,13 @@
       "language": "Javascript",
       "author": "Judd Keppel",
       "description": "A Javascript microframework for building blockchain applications with Tendermint"
+    },
+    {
+      "name": "Tendermint Blockchain Chat App",
+      "url": "https://github.com/SaifRehman/tendermint-chat-app/",
+      "language": "Javascript",
+      "author": "Saif Rehman",
+      "description": "This is a minimal chat application based on Tendermint using Lotion.js in 30 lines of code!. It also includes web/mobile application built using Ionic 3."
     }
   ],
   "abciServers": [

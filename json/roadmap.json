@@ -200,7 +200,7 @@
       "children": [],
       "span": 1,
       "date": "2018-02-20",
-      "notes": "Cosmos-SDK 0.10.0 has improvements to BaseApp and a mock staking CLI.",
+      "notes": "Cosmos-SDK 0.10.0 \"Thales\" has improvements to BaseApp and a mock staking CLI.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.10.0"
     },
     {
@@ -210,15 +210,15 @@
       "children": ["hub-gaia-3", "gui-0-5"],
       "span": 1,
       "date": "2018-03-01",
-      "notes": "Cosmos-SDK 0.11.0 includes the light client daemon (LCD) feature ",
-      "url": "https://github.com/cosmos/cosmos-sdk/projects/4"
+      "notes": "Cosmos-SDK 0.11.0 adds more tests, more examples, and spec for the REST API.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.11.0"
     },
     {
       "id": "sdk-0-12",
       "title": "Cosmos SDK",
       "version": "0.12.0",
       "children": [],
-      "children": ["hub-gaia-5", "gui-0-6"],
+      "children": ["hub-gaia-4", "gui-0-6"],
       "span": 3,
       "date": "",
       "notes": "Please read the spec for more details.",
@@ -473,7 +473,7 @@
       "title": "Voyager",
       "version": "0.6.0",
       "children": [],
-      "span": 1,
+      "span": 2,
       "date": "",
       "notes": "Voyager 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as UI for block rewards and commission rates for validators.",
       "url": ""

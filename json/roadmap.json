@@ -218,7 +218,7 @@
       "title": "Cosmos SDK",
       "version": "0.12.0",
       "children": [],
-      "children": ["hub-gaia-5", "gui-0-6"],
+      "children": ["hub-gaia-4", "gui-0-6"],
       "span": 3,
       "date": "",
       "notes": "Please read the spec for more details.",
@@ -453,7 +453,7 @@
       "title": "Cosmos UI",
       "version": "0.4.0",
       "children": [],
-      "span": 2,
+      "span": 3,
       "date": "2018-02-01",
       "notes": "In this release, we upgraded the UI to use the gaia-2 testnet, and added a block explorer, among many other enhancements.",
       "url": "https://github.com/cosmos/cosmos-ui/releases/tag/0.4.0"

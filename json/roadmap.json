@@ -87,7 +87,7 @@
       "children": [],
       "span": 1,
       "date": "",
-      "notes": "Gaia-4 includes block rewards for validators and commission fees. Gaia-4 runs on Cosmos SDK 0.9.0. ",
+      "notes": "Gaia-4 includes block rewards for validators and commission fees.",
       "url": ""
     },
     {
@@ -187,7 +187,7 @@
       "id": "sdk-0-9",
       "title": "Cosmos SDK",
       "version": "0.9.0",
-      "children": ["hub-gaia-3"],
+      "children": [],
       "span": 1,
       "date": "2018-02-13",
       "notes": "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3, Voyager 0.5.0, and partner projects) gets unblocked.",
@@ -207,9 +207,9 @@
       "id": "sdk-0-11",
       "title": "Cosmos SDK",
       "version": "0.11.0",
-      "children": ["hub-gaia-4", "gui-0-5"],
+      "children": ["hub-gaia-3", "gui-0-5"],
       "span": 1,
-      "date": "",
+      "date": "2018-03-01",
       "notes": "Cosmos-SDK 0.11.0 includes the light client daemon (LCD) feature ",
       "url": "https://github.com/cosmos/cosmos-sdk/projects/4"
     },
@@ -219,7 +219,7 @@
       "version": "0.12.0",
       "children": [],
       "children": ["hub-gaia-5", "gui-0-6"],
-      "span": 2,
+      "span": 3,
       "date": "",
       "notes": "Please read the spec for more details.",
       "url": "https://github.com/cosmos/cosmos-sdk/projects/4"

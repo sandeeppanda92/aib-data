@@ -14,7 +14,9 @@ The [peg zone 'Peggy'](https://ether.peg.zone) allows Ethereum users to move the
 
 ## Cosmos SDK
 
-Perhaps you don't need Ethereum at all? The [Cosmos-SDK](/developers) gives project an easy way to build their own blockchain. This means that features which used to be difficult, such as Atomic Swaps, are now simple and cheap to implement. Developers can define their own application logic while taking advantage of all the fundamental building blocks that the Cosmos-SDK offers.
+The Cosmos SDK is an ABCI framework written in Golang that affords you all the tools you need to rapidly develop robust blockchains and blockchain applications which are interoperable with the Cosmos Hub. It is a blockchain development 'starter-pack' of common blockchain modules while not enforcing their use thus giving maximum flexibility for application customization. It is perfect to build highly-customizable public proof-of-stake blockchains.
+* 		[Cosmos SDK on GitHub](https://github.com/cosmos/cosmos-sdk)
+* 		[Cosmos SDK Documentation](http://cosmos-sdk.readthedocs.io/en/develop/)
 
 ## Discuss with us
 

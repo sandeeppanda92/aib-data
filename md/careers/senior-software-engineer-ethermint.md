@@ -16,7 +16,7 @@ Note: This position is full time and located in either Berlin, Toronto, Berkeley
 * Experience working with distributed teams.
 
 ## What your primary responsibilities will be:
-* Develop, maintain, and extend (Ethermint)[https://ethermint.zone/] - the EVM implementation on Tendermint Core
+* Develop, maintain, and extend [Ethermint](https://ethermint.zone/) - the EVM implementation on Tendermint Core
 * Develop Plasma-style sidechains for Ethereum
 * Develop Cosmos-Ethereum peg zones
 * Contribute to go-ethereum to improve its modularity and useability as a library

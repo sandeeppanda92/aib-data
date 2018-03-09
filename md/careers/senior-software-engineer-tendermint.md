@@ -15,7 +15,7 @@ Note: This position is full time and located in either Berlin, Toronto, or Berke
 * Experience working with distributed teams.
 
 ## What your primary responsibilities will be:
-* Work with the Tendermint team to triage tickets and move the (project)[https://github.com/tendermint/tendermint/projects] forward.
+* Work with the Tendermint team to triage tickets and move the [project](https://github.com/tendermint/tendermint/projects) forward.
 * Optimize our implementation of the Tendermint consensus algorithm and p2p network.
 * Research, design, and implement improvements to the consensus and related protocols.
 * Help formalize the specification of the Tendermint consensus and ensure the implementation adheres to the spec.

@@ -15,7 +15,7 @@ Note: This position is full time and located in either Berlin, Toronto, or Berke
 * An eye for good UI and UX design.
 
 ## What your primary responsibilities will be:
-* Work with the Voyager team to triage issues and move the (project)[https://github.com/cosmos/voyager/projects] forward.
+* Work with the Voyager team to triage issues and move the [project](https://github.com/cosmos/voyager/projects) forward.
 * Improve the Voyager codebase by committing DRY, well tested code.
 * Research, design, and implement features and optimizations.
 * Transform product ideas into accessible and pleasant user experiences.

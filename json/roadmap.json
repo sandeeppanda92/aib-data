@@ -77,7 +77,7 @@
       "children": [],
       "span": 1,
       "date": "",
-      "notes": "Gaia-3 focuses on the P2P layer. It includes a seed mode, sentry mode architecture, peer IDs, and may bug fixes. Gaia-3 depends on Tendermint 0.16.0.",
+      "notes": "Gaia-3 focuses on the P2P layer. It includes a seed mode, sentry mode architecture, peer IDs, and many bug fixes. Gaia-3 depends on Tendermint 0.16.0.",
       "url": ""
     },
     {

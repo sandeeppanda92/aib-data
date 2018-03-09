@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #1B1E36;">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/zone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M384,768 C596.077344,768 768,596.077344 768,384 C768,171.922656 596.077344,0 384,0 C171.922656,0 0,171.922656 0,384 C0,596.077344 171.922656,768 384,768 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="768" height="768" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="48" cy="48" r="60"></circle>
+        <circle id="path-4" cx="48" cy="48" r="60"></circle>
+        <circle id="path-5" cx="48" cy="48" r="60"></circle>
+        <circle id="path-6" cx="48" cy="48" r="60"></circle>
+        <circle id="path-7" cx="48" cy="48" r="60"></circle>
+        <circle id="path-8" cx="48" cy="48" r="60"></circle>
+    </defs>
+    <g id="icon/zone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="zone" transform="translate(128.000000, 128.000000)">
+            <use id="outset-circle" stroke="#494E6D" mask="url(#mask-2)" stroke-width="36" fill="#1B1E36" fill-rule="evenodd" stroke-dasharray="18" xlink:href="#path-1"></use>
+            <circle id="inset-circle" stroke="#6F7390" stroke-width="24" cx="384" cy="384" r="324"></circle>
+            <g id="circles" stroke-width="1" fill-rule="evenodd" transform="translate(384.000000, 384.000000) rotate(30.000000) translate(-384.000000, -384.000000) translate(37.500000, 12.000000)">
+                <g id="zones-1" transform="translate(298.500000, 0.000000)">
+                    <g id="mini/default">
+                        <g id="Oval-Copy">
+                            <use fill="#1B1E36" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <circle stroke="#494E6D" stroke-width="36" cx="48" cy="48" r="42"></circle>
+                        </g>
+                    </g>
+                    <g id="mini/default" transform="translate(0.000000, 648.000000)">
+                        <g id="Oval-Copy">
+                            <use fill="#1B1E36" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <circle stroke="#494E6D" stroke-width="36" cx="48" cy="48" r="42"></circle>
+                        </g>
+                    </g>
+                </g>
+                <g id="zones-1-copy" transform="translate(346.500000, 372.000000) rotate(60.000000) translate(-346.500000, -372.000000) translate(298.500000, 0.000000)">
+                    <g id="mini/default">
+                        <g id="Oval-Copy">
+                            <use fill="#1B1E36" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            <circle stroke="#494E6D" stroke-width="36" cx="48" cy="48" r="42"></circle>
+                        </g>
+                    </g>
+                    <g id="mini/default" transform="translate(0.000000, 648.000000)">
+                        <g id="Oval-Copy">
+                            <use fill="#1B1E36" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            <circle stroke="#494E6D" stroke-width="36" cx="48" cy="48" r="42"></circle>
+                        </g>
+                    </g>
+                </g>
+                <g id="zones-1-copy-2" transform="translate(346.500000, 372.000000) rotate(120.000000) translate(-346.500000, -372.000000) translate(298.500000, 0.000000)">
+                    <g id="mini/default">
+                        <g id="Oval-Copy">
+                            <use fill="#1B1E36" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            <circle stroke="#494E6D" stroke-width="36" cx="48" cy="48" r="42"></circle>
+                        </g>
+                    </g>
+                    <g id="mini/default" transform="translate(0.000000, 648.000000)">
+                        <g id="Oval-Copy">
+                            <use fill="#1B1E36" fill-rule="evenodd" xlink:href="#path-8"></use>
+                            <circle stroke="#494E6D" stroke-width="36" cx="48" cy="48" r="42"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <polygon id="Z" fill="#B7B9C8" fill-rule="evenodd" points="285.75 519.5625 285.75 501 448.125 273.375 448.125 272.25 291 272.25 291 249 480.5625 249 480.5625 267.75 318.5625 495.1875 318.5625 496.3125 482.8125 496.3125 482.8125 519.5625"></polygon>
+        </g>
+    </g>
+</svg>

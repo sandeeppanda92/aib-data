@@ -28,7 +28,7 @@ Note: This is a full time position, ideally located in either Berlin, Toronto, B
 * An exciting role building open source software.
 * Flexible work schedule.
 * Travel stipend for conferences and in person collaboration.
-* 4 weeks of paid vacation.
+* At least 4 weeks of paid vacation.
 * Very competitive salary, including equity.
 
 ## How to apply:

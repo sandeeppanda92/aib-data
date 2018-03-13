@@ -17,7 +17,7 @@ Our software development teams are broken up into Tendermint, Cosmos, and Voyage
 * An exciting role building open source software.
 * Flexible work schedule.
 * Travel stipend for conferences and in person collaboration.
-* 4 weeks of paid vacation.
+* At least 4 weeks of paid vacation.
 * Very competitive salary, including equity.
 
 ## How to apply:

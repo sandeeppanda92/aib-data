@@ -7,7 +7,7 @@ Note: This position is full time and located in either Berlin, Toronto, or Berke
 * Significant experience writing JavaScript.
 * Knowledge of Vue.js or other reactive frameworks.
 * The ability to build maintainable and scalable CSS, with familiarity in BEM or SMACSS
-* Experience working in an agile environment.
+* Experience working in an agile development environment.
 * The ability to take ownership and see initiatives through.
 * Worked with and mentored junior engineers.
 * Exceptional communication skills.

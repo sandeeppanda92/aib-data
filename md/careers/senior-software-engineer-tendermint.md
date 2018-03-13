@@ -3,12 +3,13 @@
 Note: This position is full time and located in either Berlin, Toronto, or Berkeley.
 
 ## We're looking for someone who has:
-* At least 5 years of software engineering experience.
-* Significant experience writing Golang.
-* A computer science background.
+* At least 5 years of software engineering experience with open source contributions
+* Experience developing, releasing, and maintaining production software.
+* Significant experience writing Golang or the ability and desire to become proficient in new languages.
+* A strong grasp of computer science fundamentals.
 * Knowledge of fault tolerant consensus protocols like PBFT or Raft.
 * Familiarity with open source P2P networking protocols like BitTorrent, Kademlia, etc.
-* Experience working in an agile environment.
+* Experience working in an agile development environment.
 * The ability to take ownership and see initiatives through.
 * Worked with and mentored junior engineers.
 * Exceptional communication skills.

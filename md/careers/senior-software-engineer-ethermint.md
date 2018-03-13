@@ -1,14 +1,13 @@
 # Senior Software Engineer, Ethermint
 
-Note: This position is full time and located in either Berlin, Toronto, Berkeley, or San Francisco.
+Note: This is a full time position, ideally located in either Berlin, Toronto, Berkeley, or San Francisco. Remote friendly for exceptional candidates.
 
 ## We're looking for someone who has:
 * At least 5 years of programming experience.
 * Significant experience with Golang, Rust, or C++.
-* Extensive understanding of the Ethereum Virtual Machine.
+* Extensive understanding of the Ethereum state machine, including the EVM, transaction structures, state mechanics, etc.
 * Experience with the go-ethereum or parity codebase.
 * Expertise in blockchain technologies.
-* Knowledge of fault tolerant consensus protocols like PBFT or Raft.
 * Experience working in an agile environment.
 * The ability to take ownership and see initiatives through.
 * Worked with and mentored junior engineers.
@@ -19,10 +18,10 @@ Note: This position is full time and located in either Berlin, Toronto, Berkeley
 * Develop, maintain, and extend [Ethermint](https://ethermint.zone/) - the EVM implementation on Tendermint Core
 * Develop Plasma-style sidechains for Ethereum
 * Develop Cosmos-Ethereum peg zones
-* Contribute to go-ethereum to improve its modularity and useability as a library
-* Research, design, and implement improvements to the consensus and related protocols.
+* Contribute to go-ethereum to improve its modularity and usability as a library
 * Help formalize the specification of Ethermint and ensure the implementation adheres to the spec.
 * Mentor junior engineers and support the growth and health of the team.
+* Review pull requests and provide valuable feedback to members of the team and open source contributors.
 
 ## What we offer:
 * The opportunity to build the future of the internet.

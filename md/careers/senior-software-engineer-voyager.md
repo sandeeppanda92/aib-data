@@ -23,6 +23,7 @@ Note: This position is full time and located in either Berlin, Toronto, or Berke
 * Review pull requests and provide valuable feedback to members of the team and open source contributors.
 * Participate in discussion about architecture, security, and performance.
 * Mentor other engineers and support the growth and health of the team.
+* Review pull requests and provide valuable feedback to members of the team and open source contributors.
 
 ## What we offer:
 * The opportunity to build the future of the internet.

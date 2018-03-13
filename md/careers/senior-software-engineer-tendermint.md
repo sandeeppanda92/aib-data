@@ -15,14 +15,16 @@ Note: This position is full time and located in either Berlin, Toronto, or Berke
 * Experience working with distributed teams.
 
 ## What your primary responsibilities will be:
+* Improve the Tendermint codebase by committing DRY, well tested code.
 * Work with the Tendermint team to triage tickets and move the [project](https://github.com/tendermint/tendermint/projects) forward.
 * Optimize our implementation of the Tendermint consensus algorithm and p2p network.
 * Research, design, and implement improvements to the consensus and related protocols.
 * Help formalize the specification of the Tendermint consensus and ensure the implementation adheres to the spec.
-* Research, design, and implement improvements to Tendermint p2p network layer.
-* Enhance the robustness of the Tendermint p2p network layer under adversarial conditions.
+* Research, design, and implement improvements to Tendermint subprotocols.
+* Enhance the robustness of the Tendermint subprotocols under adversarial conditions.
 * Develop simulations for testing the networking layer under various configurations and attack models.
 * Mentor junior engineers and support the growth and health of the team.
+* Review pull requests and provide valuable feedback to members of the team and open source contributors.
 
 ## What we offer:
 * The opportunity to build the future of the internet.

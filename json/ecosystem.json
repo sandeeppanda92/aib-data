@@ -184,35 +184,5 @@
       "author": "Cloudsoft",
       "description": "Deploy a tendermint test network in docker containers "
     }
-  ],
-  "competitors": [
-    {
-      "name": "Hyperledger",
-      "url": "https://github.com/hyperledger/fabric",
-      "language": "Go",
-      "author": "Linux Foundation",
-      "description": "PBFT state machine replication for dynamic set of simple dockerized applications"
-    },
-    {
-      "name": "Hydrachain",
-      "url": "https://github.com/HydraChain/hydrachain",
-      "language": "Python",
-      "author": "HydraChain",
-      "description": "Pyethereum adapted to a non-BFT consensus algorithm modelled on Tendermint."
-    },
-    {
-      "name": "Juno",
-      "url": "https://github.com/kadena-io/juno",
-      "language": "Haskell",
-      "author": "Kadena",
-      "description": "Variant of Tangaroa, a BFT version of Raft"
-    },
-    {
-      "name": "HoneyBadgerBFT",
-      "url": "https://github.com/amiller/HoneyBadgerBFT",
-      "language": "Python",
-      "author": "Andrew Miller",
-      "description": "Fully asynchronous and highly optimized BFT using secret-sharing"
-    }
   ]
 }

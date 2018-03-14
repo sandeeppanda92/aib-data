@@ -1,6 +1,6 @@
 # Technical Content Writer
 
-Note: This position is full time and located in either Berlin, Toronto, or Berkeley.
+Note: This position is full time and located in either Berlin, Toronto, Berkeley, or San Francisco.
 
 ## We're looking for someone who has:
 * Exceptional command of the english language.

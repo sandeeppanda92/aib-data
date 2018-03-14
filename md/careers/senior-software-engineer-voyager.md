@@ -1,6 +1,6 @@
 # Senior Software Engineer, Voyager
 
-Note: This position is full time and located in either Berlin, Toronto, or Berkeley.
+Note: This position is full time and located in either Berlin, Toronto, Berkeley, or San Francisco.
 
 ## We're looking for someone who has:
 * At least 5 years of software engineering experience.

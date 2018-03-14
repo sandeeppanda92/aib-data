@@ -14,7 +14,7 @@ Note: This position is full time and located in either Berlin, Toronto, Berkeley
 * Exceptional communication skills.
 
 ## What your primary responsibilities will be:
-* Plan, write, and edit technical articles relating to Cosmos, Tendermint, and blockchain technology.
+* Plan, write, and edit technical articles relating to Cosmos, Tendermint, and blockchain technologies.
 * Collaborate with our marketing and communications teams on content production.
 * Research emerging tech and stay on top of latest developments in the crypto space.
 * Support and produce technical literature for Cosmos Academy.

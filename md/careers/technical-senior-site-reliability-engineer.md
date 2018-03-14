@@ -15,8 +15,8 @@
 * Experience working with distributed teams.
 
 ## What your primary responsibilities will be:
-* Build and maintain tooling for deploying, monitoring, and maintaining clusters of Tendermint nodes on our testnets and mainnets.
-* Streamline our test, build, and release pipelines using CircleCI or Jenkins.
-* Build and maintain tooling to help increase feedback cycles within teams and projects.
-* Measure and monitor availability, latency and overall system health.
 * Help scale software systems through with automation, in an effort to improve reliability, velocity, and simplicity.
+* Build and maintain tooling for deploying, monitoring, and maintaining clusters of Tendermint nodes on our testnets and mainnets.
+* Streamline our test, build, and release pipelines.
+* Build and maintain tooling to help shorten feedback cycles within teams and projects.
+* Measure and monitor availability, latency and overall system health.

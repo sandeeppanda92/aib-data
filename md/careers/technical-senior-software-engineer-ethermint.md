@@ -4,7 +4,7 @@ Note: This is a full time position, ideally located in either Berlin, Toronto, B
 
 ## We're looking for someone who has:
 * At least 5 years of programming experience.
-* Significant experience with Golang, Rust, or C++.
+* Significant experience with Golang.
 * Extensive understanding of the Ethereum state machine, including the EVM, transaction structures, state mechanics, etc.
 * Experience with the go-ethereum or parity codebase.
 * Expertise in blockchain technologies.

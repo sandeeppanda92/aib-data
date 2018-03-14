@@ -1,11 +1,12 @@
 # AiB Employee Title
-## Location (pick a hub)
+
+## This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
 
 ## About us
 Tendermint is building state-of-the-art consensus and networking protocols to enable internet-scale distributed applications. We’re passionate, self-driven, industry leaders whose mission is to build a better, freer internet. We're building The Cosmos Network, a decentralized network of independent parallel blockchains, each powered by classical BFT consensus algorithms like Tendermint Core. We believe the technology we're building will have a major impact on human beings around the world. We’re well funded and growing quickly.
 
 ## How we work
-Our software development teams are broken up into Tendermint, Cosmos, and Voyager. Our teams leverage agile methodologies to move quickly and stay focussed. Most of us work out of our offices in Berkeley, Toronto, and Berlin, but some of our employees work remotely. Communication is important to us and we rely heavily on Slack, Zoom, and GitHub to help us stay in sync. Everything we build is open source  and available on (GitHub)[].
+Our software development teams are broken up into Tendermint, Cosmos, and Voyager. Our teams leverage agile methodologies to move quickly and stay focussed. Most of us work out of our offices in Berkeley, Toronto, and Berlin, but some of our employees work remotely. Communication is important to us and we rely heavily on Slack, Zoom, and GitHub to help us stay in sync. Everything we build is [open](https://github.com/cosmos) [source](https://github.com/tendermint) and available on GitHub.
 
 <!-- these sections will change for each position
 ## We're looking for someone who has:

@@ -215,6 +215,16 @@
     }
   },
   {
+    "slug": "shelley-chang",
+    "name": "Shelley Chang",
+    "bio": "Shelley is a tech enthusiast participating in hackathons, and has presented at Tech Crunch Disrupt. Her operations experience spans across SASS, AI and cryptocurrency. At Tendermint, she is the copilot to the CEO, and a generalist assisting in various functions of the company.",
+    "ids": {
+    },
+    "groups": {
+      "aib": "Operations Manager"
+    }
+  },
+  {
     "slug": "sunny-aggarwal",
     "name": "Sunny Aggarwal",
     "bio": "",

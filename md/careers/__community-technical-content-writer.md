@@ -44,7 +44,7 @@ To apply, please fill out [this form](https://goo.gl/forms/jpdRI1wD8pdfoqKl2).
 ## About our application process:
 Qualified candidates can expect to go through a 4 step interview process. The first interview will be a call to assess cultural fit and to make sure our goals are aligned.
 
-If we think there is a good fit, you'll have a call with one of our project managers to learn more about your skills and attitudes toward teamwork. If it's clear that you'd be a good addition to the team, we'gll ask you to complete a technical task for which you will be compensated.
+If we think there is a good fit, you'll have a call with one of our project managers to learn more about your skills and attitudes toward teamwork. If it's clear that you'd be a good addition to the team, we'll ask you to complete a technical task for which you will be compensated.
 
 If your technical task displays a high level of quality and care we will set up a final interview with our CEO or CTO.
 

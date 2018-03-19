@@ -31,8 +31,7 @@ Docker, Google Container Engine, Kubernetes or Docker Swarm).
 * Build and maintain tooling for deploying, monitoring, and maintaining clusters of Tendermint nodes on our testnets and mainnets.
 * Build and maintain tooling to help shorten feedback cycles within teams and projects.
 * Plan, build, and maintain public facing services in association with business goals.
-* Measure and monitor availability, latency and overall system health.
-* Provide operational support for production infrastructure.
+* Built tools to measure and monitor availability, latency and overall system health.
 
 ### What we offer:
 * The opportunity to build the future of the internet.

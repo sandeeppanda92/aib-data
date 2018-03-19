@@ -31,7 +31,7 @@ Our software development teams are broken up into [Tendermint](https://github.co
 * Enhance the robustness of the Tendermint subprotocols under adversarial conditions.
 * Develop simulations for testing the networking layer under various configurations and attack models.
 * Mentor junior engineers and support the growth and health of the team.
-* Review pull requests and provide valuable feedback to members of the team and open source contributors.\
+* Review pull requests and provide valuable feedback to members of the team and open source contributors.
 
 ### What we offer:
 * The opportunity to build the future of the internet.

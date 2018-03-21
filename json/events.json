@@ -1,46 +1,121 @@
 [
   {
-    "slug": "cesc-2017",
+    "id": "cesc-2017",
     "title": "CESC 2017",
     "href": "https://cesc.io/",
-    "details":"Jae Kwon opens CESC 2017 with a keynote about Cosmos and cryptoeconomics. Find our booth at the Pauley Ballroom at UC Berkeley, California.",
-    "location": "uc-berkeley",
+    "body": "Jae Kwon opens CESC 2017 with a keynote about Cosmos and cryptoeconomics. Find our booth at the Pauley Ballroom at UC Berkeley, California.",
+    "image": "berkeley",
+    "location": "Berkeley, USA",
     "dates": {
       "start": "2017-10-02",
       "end": "2017-10-03"
     }
   },
   {
-    "slug": "ethwaterloo",
+    "id": "ethwaterloo",
     "title": "ETHWaterloo",
     "href": "https://ethwaterloo.com/",
-    "details":"Ethan Buchman will speak at ETHWaterloo about Cosmos & Tendermint. Find him at the Centre for International Governance Innovation (CIGI) in Waterloo, Canada.",
-    "location": "waterloo",
+    "body": "Ethan Buchman will speak at ETHWaterloo about Cosmos & Tendermint. Find him at the Centre for International Governance Innovation (CIGI) in Waterloo, Canada.",
+    "image": "waterloo",
+    "location": "Waterloo, Canada",
     "dates": {
       "start": "2017-10-13",
       "end": "2017-10-15"
     }
   },
   {
-    "slug": "m-0",
+    "id": "m-0",
     "title": "M-0",
     "href": "https://m-0.melonport.com",
-    "details":"Sunny Aggarwal, Research Scientist at Tendermint will be speaking at M-0 about Cosmos. Find him at Park Hotel in Zug, Switzerland.",
-    "location": "zug",
+    "body": "Sunny Aggarwal, Research Scientist at Tendermint will be speaking at M-0 about Cosmos. Find him at Park Hotel in Zug, Switzerland.",
+    "image": "zug",
+    "location": "Zug, Switzerland",
     "dates": {
       "start": "2017-10-17",
       "end": "2017-10-18"
     }
   },
   {
-    "slug": "devcon3",
+    "id": "devcon3",
     "title": "Devcon3",
     "href": "http://cancunicc.com/en/home/",
-    "details":"The Cosmos team will be at Devcon3. Find our booth at the Cancún International Convention Center (ICC), Cancún, Mexico.",
-    "location": "cancun",
+    "body": "The Cosmos team will be at Devcon3. Find our booth at the Cancún International Convention Center (ICC), Cancún, Mexico.",
+    "image": "cancun",
+    "location": "Cancún, Mexico",
     "dates": {
       "start": "2017-11-01",
       "end": "2017-11-04"
+    }
+  },
+  {
+    "id": "ethuoft",
+    "title": "ETHUofT",
+    "href": "http://www.ethuoft.ca",
+    "body": "Lecture / Sponsorship",
+    "image": "toronto",
+    "location": "Toronto, Canada",
+    "dates": {
+      "start": "2018-03-23",
+      "end": "2018-11-25"
+    }
+  },
+  {
+    "id": "c4yt",
+    "title": "C4YT Hackathon",
+    "href": "https://c4yt.io/",
+    "body": "Sponsorship",
+    "image": "sf",
+    "location": "San Francisco, USA",
+    "dates": {
+      "start": "2018-04-06",
+      "end": "2018-04-08"
+    }
+  },
+  {
+    "id": "blockfin",
+    "title": "BlockFin",
+    "href": "http://www.lendit.com/usa/2018/blockfin",
+    "body": "Sponsorship",
+    "image": "sf",
+    "location": "San Francisco, USA",
+    "dates": {
+      "start": "2018-04-09",
+      "end": "2018-04-11"
+    }
+  },
+  {
+    "id": "she256",
+    "title": "she(256)",
+    "href": "https://www.she256.io/",
+    "body": "Lecture / Sponsorship",
+    "image": "berkeley",
+    "location": "Berkeley, USA",
+    "dates": {
+      "start": "2018-04-23"
+    }
+  },
+  {
+    "id": "edcon",
+    "title": "EdCon",
+    "href": "https://edcon.io/",
+    "body": "Sponsorship",
+    "image": "toronto",
+    "location": "Toronto, Canada",
+    "dates": {
+      "start": "2018-05-03",
+      "end": "2018-05-03"
+    }
+  },
+  {
+    "id": "consensus-2018",
+    "title": "Consensus NYC",
+    "href": "https://www.coindesk.com/events/consensus-2018/",
+    "body": "Sponsorship",
+    "image": "nyc",
+    "location": "New York City, USA",
+    "dates": {
+      "start": "2018-05-14",
+      "end": "2018-05-16"
     }
   }
 ]

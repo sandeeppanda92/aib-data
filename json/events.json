@@ -168,12 +168,14 @@
     "id": "ecf-tokyo-2018",
     "title": "ECF Tokyo",
     "href": "https://ecf.network/",
-    "body": "The aim of the Ethereum Community Fund is to encourage mainstream adoption by funding infrastructure and application development. Cosmos is a founding project of the ECF, and ECF Tokyo is the first conference. Meet us there!",
+    "body": "The aim of the Ethereum Community Fund is to encourage mainstream adoption by funding infrastructure and application development. Cosmos is a founding project of the ECF. THe first grant programs will be announced during this conference.",
     "images": {
       "logo": "ecf",
       "location": "tokyo"
     },
     "location": "Tokyo, Japan",
-    "dates": {}
+    "dates": {
+      "start": "2018-03-29"
+    }
   }
 ]

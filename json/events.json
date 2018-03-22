@@ -4,7 +4,11 @@
     "title": "CESC 2017",
     "href": "https://cesc.io/",
     "body": "Jae Kwon opens CESC 2017 with a keynote about Cosmos and cryptoeconomics. Find our booth at the Pauley Ballroom at UC Berkeley, California.",
-    "image": "berkeley",
+    "hashtag": "#CESC2017",
+    "images": {
+      "logo": "cesc-2017",
+      "location": "berkeley"
+    },
     "location": "Berkeley, USA",
     "dates": {
       "start": "2017-10-02",
@@ -12,11 +16,14 @@
     }
   },
   {
-    "id": "ethwaterloo",
+    "id": "ethwaterloo-2017",
     "title": "ETHWaterloo",
     "href": "https://ethwaterloo.com/",
     "body": "Ethan Buchman will speak at ETHWaterloo about Cosmos & Tendermint. Find him at the Centre for International Governance Innovation (CIGI) in Waterloo, Canada.",
-    "image": "waterloo",
+    "images": {
+      "logo": "ethwaterloo",
+      "location": "waterloo"
+    },
     "location": "Waterloo, Canada",
     "dates": {
       "start": "2017-10-13",
@@ -28,7 +35,10 @@
     "title": "M-0",
     "href": "https://m-0.melonport.com",
     "body": "Sunny Aggarwal, Research Scientist at Tendermint will be speaking at M-0 about Cosmos. Find him at Park Hotel in Zug, Switzerland.",
-    "image": "zug",
+    "images": {
+      "logo": "m-0",
+      "location": "zug"
+    },
     "location": "Zug, Switzerland",
     "dates": {
       "start": "2017-10-17",
@@ -38,9 +48,12 @@
   {
     "id": "devcon3",
     "title": "Devcon3",
-    "href": "http://cancunicc.com/en/home/",
+    "href": "https://ethereumfoundation.org/devcon3/",
     "body": "The Cosmos team will be at Devcon3. Find our booth at the Cancún International Convention Center (ICC), Cancún, Mexico.",
-    "image": "cancun",
+    "images": {
+      "logo": "devcon3",
+      "location": "cancun"
+    },
     "location": "Cancún, Mexico",
     "dates": {
       "start": "2017-11-01",
@@ -48,23 +61,29 @@
     }
   },
   {
-    "id": "ethuoft",
+    "id": "ethuoft-2018",
     "title": "ETHUofT",
     "href": "http://www.ethuoft.ca",
-    "body": "Lecture / Sponsorship",
-    "image": "toronto",
+    "body": "At the 36-hour ETHUofT Hackathon, Ethereum enthusiasts and students will contribute to the ecosystem by solving real world problems with smart contracts. Ethan Buchman, CTO of Tendermint, will be giving a talk and judging projects.",
+    "images": {
+      "logo": "ethuoft",
+      "location": "toronto"
+    },
     "location": "Toronto, Canada",
     "dates": {
       "start": "2018-03-23",
-      "end": "2018-11-25"
+      "end": "2018-03-25"
     }
   },
   {
-    "id": "c4yt",
+    "id": "c4yt-2018",
     "title": "C4YT Hackathon",
     "href": "https://c4yt.io/",
-    "body": "Sponsorship",
-    "image": "sf",
+    "body": "Crypto 4 Your Thoughts is a hackathon focused on building new developer tools, improving cryptocurrency UX and fostering a strong, supportive and diverse open-source community. Jae Kwon, CEO of Tendermint, will be judging projects.",
+    "images": {
+      "logo": "c4yt",
+      "location": "sf"
+    },
     "location": "San Francisco, USA",
     "dates": {
       "start": "2018-04-06",
@@ -72,11 +91,29 @@
     }
   },
   {
-    "id": "blockfin",
+    "id": "decentralize-2018",
+    "title": "De/Centralize 2018",
+    "href": "https://www.decentralize.sg/",
+    "body": "De/Centralize is Singapore’s premier blockchain conference examining the thematic interplay of decentralization and centralization in technology, economics and law. Adrian Brink, Head of Community at Tendermint, will be giving a talk.",
+    "images": {
+      "logo": "decentralize",
+      "location": "sg"
+    },
+    "location": "Singapore",
+    "dates": {
+      "start": "2018-04-05",
+      "end": "2018-04-06"
+    }
+  },
+  {
+    "id": "blockfin-2018",
     "title": "BlockFin",
     "href": "http://www.lendit.com/usa/2018/blockfin",
-    "body": "Sponsorship",
-    "image": "sf",
+    "body": "BlockFin brings together innovators and exports from the blockchain ecosystem including platforms, companies, investors, and banks for 3 days. Cosmos has a booth - meet members from our team there!",
+    "images": {
+      "logo": "blockfin",
+      "location": "sf"
+    },
     "location": "San Francisco, USA",
     "dates": {
       "start": "2018-04-09",
@@ -84,22 +121,28 @@
     }
   },
   {
-    "id": "she256",
+    "id": "she256-2018",
     "title": "she(256)",
     "href": "https://www.she256.io/",
-    "body": "Lecture / Sponsorship",
-    "image": "berkeley",
+    "body": "she(256) aims to empower women by highlighting existing diversity and by breaking down the barriers to entry in the blockchain space. Tendermint is sponsoring she(256) and women from the Tendermint team will managing the Cosmos booth!",
+    "images": {
+      "logo": "she256",
+      "location": "berkeley"
+    },
     "location": "Berkeley, USA",
     "dates": {
       "start": "2018-04-23"
     }
   },
   {
-    "id": "edcon",
+    "id": "edcon-2018",
     "title": "EdCon",
     "href": "https://edcon.io/",
-    "body": "Sponsorship",
-    "image": "toronto",
+    "body": "EdCon 2018 will cover the latest in Ethereum research, current trends, Ethereum based projects and apps, and community development. Tendermint is sponsoring EdCon. Jae Kwon, CEO of Tendermint, will be giving a talk.",
+    "images": {
+      "logo": "edcon",
+      "location": "toronto"
+    },
     "location": "Toronto, Canada",
     "dates": {
       "start": "2018-05-03",
@@ -108,14 +151,29 @@
   },
   {
     "id": "consensus-2018",
-    "title": "Consensus NYC",
+    "title": "Consensus 2018",
     "href": "https://www.coindesk.com/events/consensus-2018/",
-    "body": "Sponsorship",
-    "image": "nyc",
+    "body": "Consensus 2018 will feature 250+ speakers and 4,000+ attendees from the leading industry startups, investors, financial institutions, and more, who are building the foundations of the blockchain economy. Tendermint & Cosmos has an exhibit - meet us there!",
+    "images": {
+      "logo": "consensus-2018",
+      "location": "nyc"
+    },
     "location": "New York City, USA",
     "dates": {
       "start": "2018-05-14",
       "end": "2018-05-16"
     }
+  },
+  {
+    "id": "ecf-tokyo-2018",
+    "title": "ECF Tokyo",
+    "href": "https://ecf.network/",
+    "body": "The aim of the Ethereum Community Fund is to encourage mainstream adoption by funding infrastructure and application development. Cosmos is a founding project of the ECF, and ECF Tokyo is the first conference. Meet us there!",
+    "images": {
+      "logo": "ecf",
+      "location": "tokyo"
+    },
+    "location": "Tokyo, Japan",
+    "dates": {}
   }
 ]

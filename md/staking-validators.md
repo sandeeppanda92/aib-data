@@ -28,9 +28,8 @@ Be familiar with all the responsibilities of a validator by reading our [FAQ](/s
 
 Actively participate in the testnet. By the end of 2017 you should be able to maintain a validator node with constant uptime on the testnet. Below you will find instructions on how to become a validator in our testnet.
 
-* [Tutorial](https://github.com/cosmos/gaia/blob/master/README.md)
-
-<iframe class="youtube" src="https://www.youtube.com/embed/B-shjoqvnnY" frameborder="0" allowfullscreen></iframe>
+* [Text Tutorial](https://github.com/cosmos/gaia/blob/master/README.md)
+* [Video Tutorial](https://www.youtube.com/watch?v=B-shjoqvnnY)
 
 Tutorial and faucet maintained by community member [Michael Yuan](http://cosmosvalidators.com)
 

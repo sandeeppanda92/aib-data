@@ -3,8 +3,8 @@
 ### This is a contract position located in either Toronto, Berlin, or San Francisco with the possibility of long term employment.
 
 ### We're looking for someone who has:
-* At least 5 years of network engineering experience.
-* Significant experience in network design and implementation, including troubleshooting and optimizing for performance.
+* Significant experience in network design and implementation, including troubleshooting and performance optimizations.
+* Experience with production data center deployments and clean slate network design and implementation.
 * Deep knowledge of network security best practices.
 * Hands-on experience setting up and managing data center firewalls and routers (Cisco, Juniper, Palo Alto).
 * Familiarity with open source P2P networking protocols.

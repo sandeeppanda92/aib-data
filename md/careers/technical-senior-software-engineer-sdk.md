@@ -18,6 +18,6 @@
 * Work with the SDK team to triage tickets and move the [project](https://github.com/cosmos/cosmos-sdk) forward.
 * Review pull requests and provide valuable feedback to members of the team and open source contributors.
 * Mentor junior engineers and support the growth and health of the team.
-* Help with developer adoption by supporting projects using the SDK
+* Help with developer adoption by supporting projects using the SDK.
 * Participate in developer discussion forums and work to improve the usability based on user feedback.
 * Promote the SDK by publishing blog posts and guides.

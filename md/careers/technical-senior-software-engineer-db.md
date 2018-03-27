@@ -1,8 +1,8 @@
 # Senior Software Engineer, Databases
 
-## This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
+### This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
 
-## We're looking for someone who has:
+### We're looking for someone who has:
 * At least 5 years of software engineering experience with open source contributions.
 * Experience developing, releasing, and maintaining production software.
 * Significant experience writing Golang or the ability and desire to become proficient in new languages.
@@ -14,7 +14,7 @@
 * Exceptional communication skills.
 * Experience working with distributed teams.
 
-## What your primary responsibilities will be:
+### What your primary responsibilities will be:
 * Improve the [IAVL](https://github.com/tendermint/iavl) codebase by committing DRY, well tested code.
 * Work with the Cosmos-SDK team to keep the IAVL tree and its proofs well integrated.
 * Optimize our implementation of the IAVL tree and its proofs.

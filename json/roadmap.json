@@ -353,7 +353,7 @@
       "children": ["hub-gaia-3"],
       "span": 1,
       "date": "2018-02-20",
-      "notes": "Tendermint 0.16.0 includes major P2P updates, a new specification and improvements to the config.",
+      "notes": "Tendermint 0.16.0 \"Lovelace\" includes major P2P updates, a new specification and improvements to the config.",
       "url": "https://github.com/tendermint/tendermint/releases/tag/v0.16.0"
     },
     {
@@ -362,9 +362,9 @@
       "version": "0.17.0",
       "children": [],
       "span": 1,
-      "date": "",
-      "notes": "Tendermint 0.17.0 will include support for hardware security modules (HSM), like Ledger.",
-      "url": ""
+      "date": "2018-03-27",
+      "notes": "Tendermint 0.17.0 \"Hopper\" includes lots of P2P improvements, preparation for switching to go-amino encoding, and doc and spec updates.",
+      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.17.1"
     },
     {
       "id": "tmc-0-18",

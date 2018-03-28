@@ -7,8 +7,7 @@
 * Written structured, high-quality programs and scripts for automation.
 * Significant experience writing Golang or the ability and desire to become proficient in new languages.
 * Experience developing, releasing, and maintaining production software and infrastructure tools like Elastic stack, InfluxDB stack, DataDog, PagerDuty, or VictorOps.
-* Built solutions with a broad set of technologies in and around cloud solutions (AWS EC2, ECS, Route53, DynamoDB, RDS, Lambda
-Docker, Google Container Engine, Kubernetes or Docker Swarm).
+* Built solutions with a broad set of technologies in and around cloud solutions (AWS EC2, ECS, Route53, DynamoDB, RDS, Lambda, Docker, Google Container Engine, Kubernetes or Docker Swarm).
 * Implemented continuous deployment before (Jenkins, CircleCI, Travis, Ansible, Chef, Puppet).
 * Experience with SDLC tools (Git, GitHub, Atlassian Stash/Bitbucket, GitLab, JIRA).
 * Experience with QA/SIT tools (Selenium).
@@ -25,4 +24,4 @@ Docker, Google Container Engine, Kubernetes or Docker Swarm).
 * Build and maintain tooling for deploying, monitoring, and maintaining clusters of Tendermint nodes on our testnets and mainnets.
 * Build and maintain tooling to help shorten feedback cycles within teams and projects.
 * Plan, build, and maintain public facing services in association with business goals.
-* Built tools to measure and monitor availability, latency and overall system health.
+* Build tools to measure and monitor availability, latency and overall system health.

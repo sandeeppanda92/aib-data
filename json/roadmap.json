@@ -219,10 +219,21 @@
       "version": "0.12.0",
       "children": [],
       "children": ["hub-gaia-4", "gui-0-6"],
-      "span": 3,
+      "span": 1,
       "date": "",
-      "notes": "Cosmos SDK 0.12 'Double Hubble' is a two-week sprint to refactor the SDK and to implement cross-chain visibility and transfer",
-      "url": "https://github.com/cosmos/cosmos-sdk/projects/16 "
+      "notes": "Cosmos SDK 0.12 'Double Hubble' is a two-week sprint to refactor the SDK and to implement cross-chain visibility and transfer.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.12.0"
+    },
+    {
+      "id": "sdk-0-13",
+      "title": "Cosmos SDK",
+      "version": "0.13.0",
+      "children": [],
+      "children": [""],
+      "span": 2,
+      "date": "2018-04-02",
+      "notes": "Cosmos SDK 0.13 'Sima Tan' merges in the full staking module, improvements for `basecoind`, and a new `democoin` example app.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.13.0"
     },
     {
       "id": "sdk-1-0",

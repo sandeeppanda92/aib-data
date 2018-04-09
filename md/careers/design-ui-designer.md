@@ -1,12 +1,12 @@
 # User Interface Designer
 
-### This is a contract position located in either Toronto, Berlin, or San Francisco with the possibility of long term employment.
+### This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
 
 ### Role summary:
 
 Tendermint is seeking an exceptional user interface designer to join the burgeoning Tendermint Design team. The designer will be responsible for researching, designing, and prototyping new user experiences based on product requirements. Deliverables include design mockups, prototyping, production of visual assets, and documentation required for proper implementation. The candidate must flourish in a fast-paced environment at a blockchain startup.
 
-This position will work closely with our Head of Design and Voyager team to design user experiences for our websites and software releases. The applicant should be a solid communicator and visual problem solver who has experience working with distributed teams.
+This position will work closely with our Head of Design and the Voyager team to design user experiences for our websites and software releases. The applicant should be a solid communicator and visual problem solver who has experience working with distributed teams.
 
 ### We're looking for someone who has:
 

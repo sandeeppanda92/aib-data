@@ -1,6 +1,6 @@
 # Visual Designer
 
-### This is a contract position located in either Toronto, Berlin, or San Francisco with the possibility of long term employment.
+### This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
 
 ### Role summary:
 

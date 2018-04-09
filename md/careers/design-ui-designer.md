@@ -6,7 +6,7 @@
 
 Tendermint is seeking an exceptional user interface designer to join the burgeoning Tendermint Design team. The designer will be responsible for researching, designing, and prototyping new user experiences based on product requirements. Deliverables include design mockups, prototyping, production of visual assets, and documentation required for proper implementation. The candidate must flourish in a fast-paced environment at a blockchain startup.
 
-This position will work closely with our Head of Design and Voyager team to design user experiences for our websites and software releases. The applicant should be a solid communicator and visual problem solver who can collaborate across timezones.
+This position will work closely with our Head of Design and Voyager team to design user experiences for our websites and software releases. The applicant should be a solid communicator and visual problem solver who has experience working with distributed teams.
 
 ### We're looking for someone who has:
 

@@ -4,7 +4,7 @@
 
 ### Role summary:
 
-Tendermint is seeking an exemplary visual designer to join the burgeoning Tendermint Design team. This is a role for the self-motivated visual artist and communicator who wants to wear multiple hats at once at a fast-spaced blockchain startup. The candidate should have the ability to deliver creative designs across media types, screens, formats, and technologies.
+We are seeking an exemplary visual designer to join the burgeoning Tendermint Design team. This is a role for the self-motivated visual artist and communicator who wants to wear multiple hats at once at a fast-spaced blockchain startup. The candidate should have the ability to deliver creative designs across media types, screens, formats, and technologies.
 
 This position will work closely with our Head of Design and Communications team to design, create, and maintain Tendermint and Cosmos' visual presence in marketing efforts and on social media. The applicant should be a talented communicator and visual problem solver who collaborates well across timezones.
 

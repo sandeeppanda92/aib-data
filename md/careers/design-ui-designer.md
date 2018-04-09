@@ -25,3 +25,10 @@ This position will work closely with our Head of Design and the Voyager team to 
 * A strong understanding of information architecture, workflows, concept development and interaction design
 * Experience participating in user testing sessions and interviewing customers
 * Skills in researching existing user experiences and identifying areas for improvement
+
+### Primary responsibilities:
+
+* Researching, designing, and prototyping new user experiences for Tendermint and Cosmos for the web, desktop, and mobile platforms.
+* Presenting and collaborating on user experiences with the Head of Design and the Voyager team.
+* Working with the Design and Voyager teams to ensure that new user experiences follow the company's official style guide.
+* Deliverables will include wireframes, design mockups, visual assets production, implementation documentation, and user testing reports.

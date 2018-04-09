@@ -1,4 +1,4 @@
-# User Interface Designer
+# Senior User Interface Designer
 
 ### This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
 

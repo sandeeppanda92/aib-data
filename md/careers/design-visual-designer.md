@@ -25,7 +25,7 @@ This position will work closely with our Head of Design and Communications team 
 
 ### Primary responsibilities:
 
-* Visual design for Tendermint and Cosmos across print, web, and presentational media.
+* Visual design for Tendermint and Cosmos across print, web, and digital media.
 * Presenting and collaborating on visuals with the Design and the Communications teams.
 * Working with the Head of Design to establish and maintain a company-wide style guide.
 * Deliverables will include logos, iconography, background illustrations, technical diagrams, merchandising, and designs for print.

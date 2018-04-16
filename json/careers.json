@@ -99,7 +99,8 @@
 
   {
     "area": "technical",
-    "description": "Tendermint is looking for a Head of Community Management to lead and manage programs and initiatives to nurture and grow our developer community.\n\nYou will be responsible for building programs, initiatives and social strategy, as well as communicating product updates, best practices, and other announcements from Tendermint to our developer community. You will also act as an internal voice for external developers - prioritizing and shepherding feedback from the community back into the product. An understanding of blockchain development and community management best practices is a must as you will own the communication with a very knowledgeable and vested community.",
+    "description":
+      "Tendermint is looking for a Head of Community Management to lead and manage programs and initiatives to nurture and grow our developer community.\n\nYou will be responsible for building programs, initiatives and social strategy, as well as communicating product updates, best practices, and other announcements from Tendermint to our developer community. You will also act as an internal voice for external developers - prioritizing and shepherding feedback from the community back into the product. An understanding of blockchain development and community management best practices is a must as you will own the communication with a very knowledgeable and vested community.",
     "id": "developer-relations-lead",
     "locations": ["Berlin", "San Francisco", "Toronto"],
     "requirements": [
@@ -133,9 +134,7 @@
     "description": "",
     "id": "technical-documentation-writer",
     "locations": ["Berlin", "San Francisco", "Toronto"],
-    "requirements": [
-      "General programming experience (2 years minimum)"
-    ],
+    "requirements": ["General programming experience (2 years minimum)"],
     "tasks": [
       "Improve and write documentation/tutorials at https://tendermint.com/docs"
     ],
@@ -145,7 +144,8 @@
 
   {
     "area": "technical",
-    "description": "Tendermint is a first-of-its kind Proof-of-Stake consensus engine in development since 2015. It is designed to provide developers maximum control in developing their own business logic in a blockchain setting, while relying on a secure consensus algorithm.\n\nWe’re looking for a motivated, experienced Javascript Developer to work with backend blockchain engineers to develop web applications for novel blockchain applications.\n\nCosmos is a project by the core developers of tendermint to launch a highly-secure public blockchain on this technology. We have recently completed a fundraising round and are looking to rapidly expand, mainly centered around Berlin, Toronto, and San Francisco.\n\nUnder the umbrella of the cosmos system, we are building a number of custom blockchain apps for various usecases.  This position would first work on building some smaller applications to demonstrate and discover best practices with this platform, with the potential of later participating in developing the UI for the main comsos application.",
+    "description":
+      "Tendermint is a first-of-its kind Proof-of-Stake consensus engine in development since 2015. It is designed to provide developers maximum control in developing their own business logic in a blockchain setting, while relying on a secure consensus algorithm.\n\nWe’re looking for a motivated, experienced Javascript Developer to work with backend blockchain engineers to develop web applications for novel blockchain applications.\n\nCosmos is a project by the core developers of tendermint to launch a highly-secure public blockchain on this technology. We have recently completed a fundraising round and are looking to rapidly expand, mainly centered around Berlin, Toronto, and San Francisco.\n\nUnder the umbrella of the cosmos system, we are building a number of custom blockchain apps for various usecases.  This position would first work on building some smaller applications to demonstrate and discover best practices with this platform, with the potential of later participating in developing the UI for the main comsos application.",
     "id": "frontend-engineer",
     "locations": ["Berlin"],
     "weight": 0,
@@ -190,9 +190,7 @@
     "description": "",
     "id": "finance-manager",
     "locations": ["Berlin", "San Francisco", "Toronto"],
-    "requirements": [
-      "Economic and financial experience"
-    ],
+    "requirements": ["Economic and financial experience"],
     "tasks": [
       "Keep accounting system current",
       "Process expenses",
@@ -206,7 +204,8 @@
 
   {
     "area": "operations",
-    "description": "All in Bits GmbH is looking for an Operations Manager to manage the day-to-day responsibilities around managing the company. The position requires experience in executive support, excellent oral and written communication skills, fluency in English and German, exceptional attention to detail and a keen ability to thrive in a fast paced and dynamic environment with constantly evolving priorities. Enthusiasm for blockchain and cryptocurrencies are a big plus. The person will also play a key role in setting up a new 1000-qm Blockchain Hub in Berlin. Opportunity to take on additional responsibility in marketing, project management or business development.",
+    "description":
+      "All in Bits GmbH is looking for an Operations Manager to manage the day-to-day responsibilities around managing the company. The position requires experience in executive support, excellent oral and written communication skills, fluency in English and German, exceptional attention to detail and a keen ability to thrive in a fast paced and dynamic environment with constantly evolving priorities. Enthusiasm for blockchain and cryptocurrencies are a big plus. The person will also play a key role in setting up a new 1000-qm Blockchain Hub in Berlin. Opportunity to take on additional responsibility in marketing, project management or business development.",
     "id": "operations-manager-berlin",
     "locations": ["Berlin"],
     "requirements": [
@@ -225,7 +224,8 @@
     ],
     "title": "Operations Manager",
     "weight": 0,
-    "contact": "To apply please send a cover letter and CV to careers@tendermint.com using the headline 'AIB GmbH Operations Manager'. Also include a separate document (max 1 page) addressing the following question: Describe the different organizations and projects related to Cosmos and what their relationships are."
+    "contact":
+      "To apply please send a cover letter and CV to careers@tendermint.com using the headline 'AIB GmbH Operations Manager'. Also include a separate document (max 1 page) addressing the following question: Describe the different organizations and projects related to Cosmos and what their relationships are."
   },
 
   {
@@ -233,9 +233,7 @@
     "description": "",
     "id": "chat-manager",
     "locations": ["Berlin", "San Francisco", "Toronto"],
-    "requirements": [
-      "Moderation experience"
-    ],
+    "requirements": ["Moderation experience"],
     "tasks": [
       "Respond to frequent questions and refer to relevant resources",
       "Compile a FAQ",
@@ -326,24 +324,25 @@
 
   {
     "area": "operations",
-    "description": "The Office Manager has 3+ years of experience in a similar role. The Office Manager will organize and coordinate office operations and procedure in order to ensure organizational effectiveness, efficiency, and safety. As well, facilitating staff productivity and satisfaction will be integral to this role. The ideal candidate will be experienced in handling a wide range of administrative and executive support related tasks and must be able to work independently with little or no supervision. This person must be exceedingly well organized, flexible, resourceful, personable and enjoy the administrative challenges of supporting an office of a fast-growing, innovative company.",
+    "description":
+      "The Office Manager has 3+ years of experience in a similar role. The Office Manager will organize and coordinate office operations and procedure in order to ensure organizational effectiveness, efficiency, and safety. As well, facilitating staff productivity and satisfaction will be integral to this role. The ideal candidate will be experienced in handling a wide range of administrative and executive support related tasks and must be able to work independently with little or no supervision. This person must be exceedingly well organized, flexible, resourceful, personable and enjoy the administrative challenges of supporting an office of a fast-growing, innovative company.",
     "id": "ops-office manager",
     "locations": ["Berkeley", "San Francisco"],
     "requirements": [
-        "Part-time (20 hrs/wk)",
-         "Located in Berkeley, CA",
-         "Another office in San Francisco, CA, will be opening mid-2018, which will also need support from the Office Manager"
-     ],
+      "Part-time (20 hrs/wk)",
+      "Located in Berkeley, CA",
+      "Another office in San Francisco, CA, will be opening mid-2018, which will also need support from the Office Manager"
+    ],
     "tasks": [
       "WHAT YOU WILL BE DOING:",
       "**Administrative Assistant Tasks**:",
       "Calendars; meeting, room and appointment scheduling for staff as needed",
-     "Housing, travel planning assistance, expense reporting for staff as needed",
-     "Special administrative projects or tasks as assigned or required",
-     "**Office Purchasing**:",
-     "Purchasing general office supplies",
-     "Purchasing snacks and beverages",
-     "Re-stocking company schwag",
+      "Housing, travel planning assistance, expense reporting for staff as needed",
+      "Special administrative projects or tasks as assigned or required",
+      "**Office Purchasing**:",
+      "Purchasing general office supplies",
+      "Purchasing snacks and beverages",
+      "Re-stocking company schwag",
       "**Corporate Credit Card Management**:",
       "Responsible for safe keeping, usage and approvals for office credit card",
       "Sending receipts weekly to Finance",
@@ -373,23 +372,21 @@
 
   {
     "area": "operations",
-    "description": "The Office Manager has 3+ years of experience in a similar role. The Office Manager will organize and coordinate office operations and procedure in order to ensure organizational effectiveness, efficiency, and safety. As well, facilitating staff productivity and satisfaction will be integral to this role. The ideal candidate will be experienced in handling a wide range of administrative and executive support related tasks and must be able to work independently with little or no supervision. This person must be exceedingly well organized, flexible, resourceful, personable and enjoy the administrative challenges of supporting an office of a fast-growing, innovative company.",
+    "description":
+      "The Office Manager has 3+ years of experience in a similar role. The Office Manager will organize and coordinate office operations and procedure in order to ensure organizational effectiveness, efficiency, and safety. As well, facilitating staff productivity and satisfaction will be integral to this role. The ideal candidate will be experienced in handling a wide range of administrative and executive support related tasks and must be able to work independently with little or no supervision. This person must be exceedingly well organized, flexible, resourceful, personable and enjoy the administrative challenges of supporting an office of a fast-growing, innovative company.",
     "id": "berlin-office-manager",
     "locations": ["Berlin, Germany"],
-    "requirements": [
-        "Part/Full-Time",
-         "Located in Berlin, Germany"
-     ],
+    "requirements": ["Part/Full-Time", "Located in Berlin, Germany"],
     "tasks": [
       "WHAT YOU WILL BE DOING:",
       "**Administrative Assistant Tasks**:",
       "Calendars; meeting, room and appointment scheduling for staff as needed",
-     "Housing, travel planning assistance, expense reporting for staff as needed",
-     "Special administrative projects or tasks as assigned or required",
-     "**Office Purchasing**:",
-     "Purchasing general office supplies",
-     "Purchasing snacks and beverages",
-     "Re-stocking company schwag",
+      "Housing, travel planning assistance, expense reporting for staff as needed",
+      "Special administrative projects or tasks as assigned or required",
+      "**Office Purchasing**:",
+      "Purchasing general office supplies",
+      "Purchasing snacks and beverages",
+      "Re-stocking company schwag",
       "**Corporate Credit Card Management**:",
       "Responsible for safe keeping, usage and approvals for office credit card",
       "Sending receipts weekly to Finance",

@@ -1,6 +1,21 @@
 [
   {
     "area": "technical",
+    "description": "Langauge Engineer",
+    "id": "apps-developer",
+    "locations": ["Berlin", "San Francisco", "Toronto"],
+    "requirements": [
+      "Experience building language parsers, compilers, and interpreters (2+ years)",
+      "Experience writing concurrent applications in Go (3+ years)",
+    ],
+    "tasks": [
+      "Develop the Hog language",
+    ],
+    "title": "Language Engineer, HogLang",
+    "weight": 5
+  },
+  {
+    "area": "technical",
     "description": "",
     "id": "apps-developer",
     "locations": ["Berlin", "San Francisco", "Toronto"],

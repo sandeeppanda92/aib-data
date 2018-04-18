@@ -2,7 +2,8 @@
   {
     "slug": "jae-kwon",
     "name": "Jae Kwon",
-    "bio": "Jae Kwon created Tendermint to save the world from needlessly wasting electricity to secure distributed ledgers. Along the way he realized that using quorums and cryptography instead of energy and hashing affords many advantages such as speed and scalability.",
+    "bio":
+      "Jae Kwon created Tendermint to save the world from needlessly wasting electricity to secure distributed ledgers. Along the way he realized that using quorums and cryptography instead of energy and hashing affords many advantages such as speed and scalability.",
     "ids": {
       "github": "jaekwon",
       "keybase": "jaekwon",
@@ -17,7 +18,8 @@
   {
     "slug": "ethan-buchman",
     "name": "Ethan Buchman",
-    "bio": "Ethan sees consensus algorithms as a 21st century means for promoting social cohesion. He is driven to empower humans with new ways to coordinate and reach agreement at scale.",
+    "bio":
+      "Ethan sees consensus algorithms as a 21st century means for promoting social cohesion. He is driven to empower humans with new ways to coordinate and reach agreement at scale.",
     "ids": {
       "github": "ebuchman",
       "keybase": "ebuchman",
@@ -32,7 +34,8 @@
   {
     "slug": "guido-schmitz-krummacher",
     "name": "Guido Schmitz-Krummacher",
-    "bio": "Guido Schmitz-Krummacher is our Board Member based in Switzerland. He has worked for 25 years for SME in MD, Board or CEO positions. Guido joined the crypto-industry a year ago and is a interchain of different crypto foundations and companies.",
+    "bio":
+      "Guido Schmitz-Krummacher is our Board Member based in Switzerland. He has worked for 25 years for SME in MD, Board or CEO positions. Guido joined the crypto-industry a year ago and is a interchain of different crypto foundations and companies.",
     "ids": {
       "linkedin": "guidos1",
       "website": "www.sielva-management.com/de/uber-uns/ihre-ansprechsperson"
@@ -44,7 +47,8 @@
   {
     "slug": "peng-zhong",
     "name": "Peng Zhong",
-    "bio": "Peng aims to dramatically increase blockchain adoption through better usability design. He hopes to turn cutting-edge technology into mundane things that everyone can use.",
+    "bio":
+      "Peng aims to dramatically increase blockchain adoption through better usability design. He hopes to turn cutting-edge technology into mundane things that everyone can use.",
     "ids": {
       "github": "nylira",
       "keybase": "peng",
@@ -59,7 +63,8 @@
   {
     "slug": "adrian-brink",
     "name": "Adrian Brink",
-    "bio": "Distributed ledgers will change everything we do. Bitcoin gave us money which was free from central control, but much more is yet to come. Let's bring the crypto revolution to the masses. Broad adoption and ubiquitousness will drive the change we want to see.",
+    "bio":
+      "Distributed ledgers will change everything we do. Bitcoin gave us money which was free from central control, but much more is yet to come. Let's bring the crypto revolution to the masses. Broad adoption and ubiquitousness will drive the change we want to see.",
     "ids": {
       "github": "adrianbrink",
       "keybase": "adrianbrink",
@@ -68,13 +73,14 @@
       "website": "adrianbrink.com"
     },
     "groups": {
-      "aib": "Core Dev & Head of Community"
+      "aib": "Core Dev & Head of Partnerships"
     }
   },
   {
     "slug": "christine-chiang",
     "name": "Christine Chiang",
-    "bio": "Christine is the content creator and communications lead for the Cosmos project, the Internet of Blockchains.",
+    "bio":
+      "Christine is the content creator and communications lead for the Cosmos project, the Internet of Blockchains.",
     "ids": {
       "github": "chjango",
       "linkedin": "chjango",
@@ -87,7 +93,8 @@
   {
     "slug": "greg-szabo",
     "name": "Greg Szabo",
-    "bio": "Greg is an IT enthusiast with more than 10 years of experience in building enterprise infrastructures. His primary goal is to create a world, where computers are used transparently and people are focusing on their goals instead of their tools.",
+    "bio":
+      "Greg is an IT enthusiast with more than 10 years of experience in building enterprise infrastructures. His primary goal is to create a world, where computers are used transparently and people are focusing on their goals instead of their tools.",
     "ids": {
       "github": "greg-szabo",
       "linkedin": "gergelymszabo"
@@ -99,7 +106,8 @@
   {
     "slug": "jessy-irwin",
     "name": "Jessy Irwin",
-    "bio": "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
+    "bio":
+      "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
     "ids": {
       "github": "jessysaurusrex",
       "keybase": "jessysaurusrex",
@@ -127,7 +135,8 @@
   {
     "slug": "anton-kaliaev",
     "name": "Anton Kaliaev",
-    "bio": "Anton is a software engineer with more than 6 years of experience. He has worked in web, video processing, and telecom industries and has extensive knowledge, which he hopes will help him make Tendermint better. Always passionate about learning. Loves occasional traveling and enjoys writing his own blog.",
+    "bio":
+      "Anton is a software engineer with more than 6 years of experience. He has worked in web, video processing, and telecom industries and has extensive knowledge, which he hopes will help him make Tendermint better. Always passionate about learning. Loves occasional traveling and enjoys writing his own blog.",
     "ids": {
       "github": "melekes",
       "keybase": "melekes",
@@ -190,7 +199,8 @@
   {
     "slug": "matt-bell",
     "name": "Matt Bell",
-    "bio": "Matt has been working in the cryptocurrency space since 2011. He believes blockchain technologies like Tendermint will transform the world the same way the internet did.",
+    "bio":
+      "Matt has been working in the cryptocurrency space since 2011. He believes blockchain technologies like Tendermint will transform the world the same way the internet did.",
     "ids": {
       "github": "mappum",
       "keybase": "mappum",
@@ -204,7 +214,8 @@
   {
     "slug": "rigel-rozanski",
     "name": "Rigel Rozanski",
-    "bio": "Rigel is inspired by blockchain as a means of reducing entropy as the interactions of technology grow to manifold complexities. His interests lie in the crossroads between blockchain and the geospatial realm.",
+    "bio":
+      "Rigel is inspired by blockchain as a means of reducing entropy as the interactions of technology grow to manifold complexities. His interests lie in the crossroads between blockchain and the geospatial realm.",
     "ids": {
       "github": "rigelrozanski",
       "keybase": "rigel",
@@ -217,9 +228,9 @@
   {
     "slug": "shelley-chang",
     "name": "Shelley Chang",
-    "bio": "Shelley is a tech enthusiast participating in hackathons, and has presented at Tech Crunch Disrupt. Her operations experience spans across SASS, AI and cryptocurrency. At Tendermint, she is the copilot to the CEO, and a generalist assisting in various functions of the company.",
-    "ids": {
-    },
+    "bio":
+      "Shelley is a tech enthusiast participating in hackathons, and has presented at Tech Crunch Disrupt. Her operations experience spans across SASS, AI and cryptocurrency. At Tendermint, she is the copilot to the CEO, and a generalist assisting in various functions of the company.",
+    "ids": {},
     "groups": {
       "aib": "Operations Manager"
     }
@@ -267,7 +278,8 @@
   {
     "slug": "henny-han",
     "name": "Ash Han",
-    "bio": "Ash Han is a founder of Finector, a leading research/consulting firm specialized in distributed ledger technology. He is an advisor of various blockchain-related startups such as Tendermint and Chronobank.io and also an author of multiple books and papers on blockchain.",
+    "bio":
+      "Ash Han is a founder of Finector, a leading research/consulting firm specialized in distributed ledger technology. He is an advisor of various blockchain-related startups such as Tendermint and Chronobank.io and also an author of multiple books and papers on blockchain.",
     "ids": {
       "linkedin": "ashhan",
       "website": "seunghwanhan.com"
@@ -279,7 +291,8 @@
   {
     "slug": "franck-mikulecz",
     "name": "Franck Mikulecz",
-    "bio": "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
+    "bio":
+      "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
     "ids": {
       "linkedin": "franckmikulecz",
       "twitter": "franckmikulecz"
@@ -291,7 +304,8 @@
   {
     "slug": "hugh-rooney",
     "name": "Hugh Rooney",
-    "bio": "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
+    "bio":
+      "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
     "ids": {
       "linkedin": "hugh-rooney-174003141"
     },
@@ -302,7 +316,8 @@
   {
     "slug": "jim-yang",
     "name": "Jim Yang",
-    "bio": "Jim Yang co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.",
+    "bio":
+      "Jim Yang co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.",
     "ids": {
       "linkedin": "jimyang"
     },
@@ -314,7 +329,8 @@
   {
     "slug": "thomas-greco",
     "name": "Thomas Greco",
-    "bio": "Thomas Greco is Special Advisor to Omise (おみせ), an Asia-Pacific fintech company developing solutions that can add value to a financially disintermediated future. He also served as a special advisor to the Ethereum Foundation.",
+    "bio":
+      "Thomas Greco is Special Advisor to Omise (おみせ), an Asia-Pacific fintech company developing solutions that can add value to a financially disintermediated future. He also served as a special advisor to the Ethereum Foundation.",
     "ids": {
       "website": "omise.co"
     },

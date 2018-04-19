@@ -57,7 +57,7 @@
       "website": "adrianbrink.com"
     },
     "groups": {
-      "aib": "Core Dev & Head of Community"
+      "aib": "Core Dev & Head of Partnerships"
     }
   },
   {
@@ -87,10 +87,62 @@
     }
   },
   {
+    "slug": "henny-han",
+    "name": "Ash Han",
+    "bio":
+      "Ash Han is a founder of Finector, a leading research/consulting firm specialized in distributed ledger technology. He is an advisor of various blockchain-related startups such as Tendermint and Chronobank.io and also an author of multiple books and papers on blockchain.",
+    "ids": {
+      "linkedin": "ashhan",
+      "website": "seunghwanhan.com"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
     "slug": "christine-chiang",
     "name": "Christine Chiang",
     "bio":
       "Christine is the content creator and communications lead for the Cosmos project, the Internet of Blockchains.",
+    "ids": {
+      "github": "chjango",
+      "linkedin": "chjango",
+      "twitter": "chjango"
+    },
+    "groups": {
+      "aib": "Head of Communications"
+    }
+  },
+  {
+    "slug": "franck-mikulecz",
+    "name": "Franck Mikulecz",
+    "bio":
+      "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
+    "ids": {
+      "linkedin": "franckmikulecz",
+      "twitter": "franckmikulecz"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "hugh-rooney",
+    "name": "Hugh Rooney",
+    "bio":
+      "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
+    "ids": {
+      "linkedin": "hugh-rooney-174003141"
+    },
+    "groups": {
+      "aib": "Advisor"
+    }
+  },
+  {
+    "slug": "jessy-irwin",
+    "name": "Jessy Irwin",
+    "bio":
+      "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
     "ids": {
       "github": "chjango",
       "linkedin": "chjango",
@@ -121,7 +173,7 @@
       "keybase": "nodeguy",
       "linkedin": "nodeguy",
       "twitter": "NodejsGuy",
-      "website": "https://t.co/FZL9VFuhsi"
+      "website": "https://www.nodeguy.com"
     },
     "groups": {
       "aib": "Software Engineer"
@@ -200,6 +252,19 @@
     },
     "groups": {
       "aib": "Head of Security"
+    }
+  },
+  {
+    "slug": "jim-yang",
+    "name": "Jim Yang",
+    "bio":
+      "Jim Yang co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.",
+    "ids": {
+      "linkedin": "jimyang"
+    },
+    "groups": {
+      "aib": "Strategy",
+      "icf": "Advisor"
     }
   },
   {
@@ -311,6 +376,18 @@
     }
   },
   {
+    "slug": "thomas-greco",
+    "name": "Thomas Greco",
+    "bio":
+      "Thomas Greco is Special Advisor to Omise (おみせ), an Asia-Pacific fintech company developing solutions that can add value to a financially disintermediated future. He also served as a special advisor to the Ethereum Foundation.",
+    "ids": {
+      "website": "omise.co"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
     "slug": "zach-ramsay",
     "name": "Zach Ramsay",
     "bio": "",
@@ -349,69 +426,6 @@
     },
     "groups": {
       "aib": "Research Scientist"
-    }
-  },
-  {
-    "slug": "henny-han",
-    "name": "Ash Han",
-    "bio":
-      "Ash Han is a founder of Finector, a leading research/consulting firm specialized in distributed ledger technology. He is an advisor of various blockchain-related startups such as Tendermint and Chronobank.io and also an author of multiple books and papers on blockchain.",
-    "ids": {
-      "linkedin": "ashhan",
-      "website": "seunghwanhan.com"
-    },
-    "groups": {
-      "icf": "Advisor"
-    }
-  },
-  {
-    "slug": "franck-mikulecz",
-    "name": "Franck Mikulecz",
-    "bio":
-      "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
-    "ids": {
-      "linkedin": "franckmikulecz",
-      "twitter": "franckmikulecz"
-    },
-    "groups": {
-      "icf": "Advisor"
-    }
-  },
-  {
-    "slug": "hugh-rooney",
-    "name": "Hugh Rooney",
-    "bio":
-      "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
-    "ids": {
-      "linkedin": "hugh-rooney-174003141"
-    },
-    "groups": {
-      "aib": "Advisor"
-    }
-  },
-  {
-    "slug": "jim-yang",
-    "name": "Jim Yang",
-    "bio":
-      "Jim Yang co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.",
-    "ids": {
-      "linkedin": "jimyang"
-    },
-    "groups": {
-      "aib": "Strategy",
-      "icf": "Advisor"
-    }
-  },
-  {
-    "slug": "thomas-greco",
-    "name": "Thomas Greco",
-    "bio":
-      "Thomas Greco is Special Advisor to Omise (おみせ), an Asia-Pacific fintech company developing solutions that can add value to a financially disintermediated future. He also served as a special advisor to the Ethereum Foundation.",
-    "ids": {
-      "website": "omise.co"
-    },
-    "groups": {
-      "icf": "Advisor"
     }
   }
 ]

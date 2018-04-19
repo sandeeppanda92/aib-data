@@ -215,20 +215,6 @@
     }
   },
   {
-    "slug": "jessy-irwin",
-    "name": "Jessy Irwin",
-    "bio":
-      "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
-    "ids": {
-      "github": "chjango",
-      "linkedin": "chjango",
-      "twitter": "chjango"
-    },
-    "groups": {
-      "aib": "Head of Communications"
-    }
-  },
-  {
     "slug": "jessica-gelbard",
     "name": "Jessica Gelbard",
     "bio": "",

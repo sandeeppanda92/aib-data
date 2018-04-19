@@ -114,45 +114,6 @@
     }
   },
   {
-    "slug": "franck-mikulecz",
-    "name": "Franck Mikulecz",
-    "bio":
-      "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
-    "ids": {
-      "linkedin": "franckmikulecz",
-      "twitter": "franckmikulecz"
-    },
-    "groups": {
-      "icf": "Advisor"
-    }
-  },
-  {
-    "slug": "hugh-rooney",
-    "name": "Hugh Rooney",
-    "bio":
-      "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
-    "ids": {
-      "linkedin": "hugh-rooney-174003141"
-    },
-    "groups": {
-      "aib": "Advisor"
-    }
-  },
-  {
-    "slug": "jessy-irwin",
-    "name": "Jessy Irwin",
-    "bio":
-      "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
-    "ids": {
-      "github": "chjango",
-      "linkedin": "chjango",
-      "twitter": "chjango"
-    },
-    "groups": {
-      "aib": "Head of Communications"
-    }
-  },
-  {
     "slug": "christopher-goes",
     "name": "Christopher Goes",
     "bio":
@@ -204,6 +165,19 @@
     }
   },
   {
+    "slug": "franck-mikulecz",
+    "name": "Franck Mikulecz",
+    "bio":
+      "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
+    "ids": {
+      "linkedin": "franckmikulecz",
+      "twitter": "franckmikulecz"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
     "slug": "gautier-marin",
     "name": "Gautier Marin",
     "bio": "",
@@ -226,6 +200,32 @@
     },
     "groups": {
       "aib": "VP of SRE"
+    }
+  },
+  {
+    "slug": "hugh-rooney",
+    "name": "Hugh Rooney",
+    "bio":
+      "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
+    "ids": {
+      "linkedin": "hugh-rooney-174003141"
+    },
+    "groups": {
+      "aib": "Advisor"
+    }
+  },
+  {
+    "slug": "jessy-irwin",
+    "name": "Jessy Irwin",
+    "bio":
+      "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
+    "ids": {
+      "github": "chjango",
+      "linkedin": "chjango",
+      "twitter": "chjango"
+    },
+    "groups": {
+      "aib": "Head of Communications"
     }
   },
   {

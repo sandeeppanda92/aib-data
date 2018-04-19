@@ -45,22 +45,6 @@
     }
   },
   {
-    "slug": "peng-zhong",
-    "name": "Peng Zhong",
-    "bio":
-      "Peng aims to dramatically increase blockchain adoption through better usability design. He hopes to turn cutting-edge technology into mundane things that everyone can use.",
-    "ids": {
-      "github": "nylira",
-      "keybase": "peng",
-      "linkedin": "nylira",
-      "twitter": "zcpeng",
-      "website": "nylira.com"
-    },
-    "groups": {
-      "aib": "Head of Design"
-    }
-  },
-  {
     "slug": "adrian-brink",
     "name": "Adrian Brink",
     "bio":
@@ -74,62 +58,6 @@
     },
     "groups": {
       "aib": "Core Dev & Head of Partnerships"
-    }
-  },
-  {
-    "slug": "christine-chiang",
-    "name": "Christine Chiang",
-    "bio":
-      "Christine is the content creator and communications lead for the Cosmos project, the Internet of Blockchains.",
-    "ids": {
-      "github": "chjango",
-      "linkedin": "chjango",
-      "twitter": "chjango"
-    },
-    "groups": {
-      "aib": "Head of Communications"
-    }
-  },
-  {
-    "slug": "greg-szabo",
-    "name": "Greg Szabo",
-    "bio":
-      "Greg is an IT enthusiast with more than 10 years of experience in building enterprise infrastructures. His primary goal is to create a world, where computers are used transparently and people are focusing on their goals instead of their tools.",
-    "ids": {
-      "github": "greg-szabo",
-      "linkedin": "gergelymszabo"
-    },
-    "groups": {
-      "aib": "VP of SRE"
-    }
-  },
-  {
-    "slug": "jessy-irwin",
-    "name": "Jessy Irwin",
-    "bio":
-      "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
-    "ids": {
-      "github": "jessysaurusrex",
-      "keybase": "jessysaurusrex",
-      "linkedin": "jessyirwin",
-      "twitter": "jessysaurusrex"
-    },
-    "groups": {
-      "aib": "Head of Security"
-    }
-  },
-  {
-    "slug": "jordan-bibla",
-    "name": "Jordan Bibla",
-    "bio": "",
-    "ids": {
-      "github": "jolesbi",
-      "linkedin": "jbibla",
-      "twitter": "jordanbibla",
-      "website": "jordanbibla.com"
-    },
-    "groups": {
-      "aib": "Engineering Manager"
     }
   },
   {
@@ -149,6 +77,109 @@
     }
   },
   {
+    "slug": "arianne-flemming",
+    "name": "Arianne Flemming",
+    "ids": {
+      "linkedin": "arianneflemming"
+    },
+    "groups": {
+      "aib": "VP of Finance"
+    }
+  },
+  {
+    "slug": "henny-han",
+    "name": "Ash Han",
+    "bio":
+      "Ash Han is a founder of Finector, a leading research/consulting firm specialized in distributed ledger technology. He is an advisor of various blockchain-related startups such as Tendermint and Chronobank.io and also an author of multiple books and papers on blockchain.",
+    "ids": {
+      "linkedin": "ashhan",
+      "website": "seunghwanhan.com"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "christine-chiang",
+    "name": "Christine Chiang",
+    "bio":
+      "Christine is the content creator and communications lead for the Cosmos project, the Internet of Blockchains.",
+    "ids": {
+      "github": "chjango",
+      "linkedin": "chjango",
+      "twitter": "chjango"
+    },
+    "groups": {
+      "aib": "Head of Communications"
+    }
+  },
+  {
+    "slug": "franck-mikulecz",
+    "name": "Franck Mikulecz",
+    "bio":
+      "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
+    "ids": {
+      "linkedin": "franckmikulecz",
+      "twitter": "franckmikulecz"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "hugh-rooney",
+    "name": "Hugh Rooney",
+    "bio":
+      "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
+    "ids": {
+      "linkedin": "hugh-rooney-174003141"
+    },
+    "groups": {
+      "aib": "Advisor"
+    }
+  },
+  {
+    "slug": "jessy-irwin",
+    "name": "Jessy Irwin",
+    "bio":
+      "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
+    "ids": {
+      "github": "chjango",
+      "linkedin": "chjango",
+      "twitter": "chjango"
+    },
+    "groups": {
+      "aib": "Head of Communications"
+    }
+  },
+  {
+    "slug": "christopher-goes",
+    "name": "Christopher Goes",
+    "bio":
+      "Christopher Goes hopes that distributed ledgers will shift the economics of network effects in favor of aligned incentives and positive-sum games. He hopes to help Cosmos make this happen by developing robust software infrastructure layers and reducing barriers to entry. Christopher previously cofounded Stash.ai and led CUAUV.",
+    "ids": {
+      "github": "cwgoes",
+      "twitter": "cwgoes"
+    },
+    "groups": {
+      "aib": "Software Developer"
+    }
+  },
+  {
+    "slug": "david-braun",
+    "name": "David Braun",
+    "ids": {
+      "github": "NodeGuy",
+      "keybase": "nodeguy",
+      "linkedin": "nodeguy",
+      "twitter": "NodejsGuy",
+      "website": "https://www.nodeguy.com"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
     "slug": "fabian-weber",
     "name": "Fabian Weber",
     "bio": "",
@@ -157,6 +188,19 @@
     },
     "groups": {
       "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "federico-kunze",
+    "name": "Federico Kunze",
+    "bio":
+      "Federico Kunze is an alumni from Blockchain at Berkeley (B@B) where in 2017 he joined an external consulting team working to build a decentralized license marketplace for Qualcomm and created content for the Executive Education program for Fortune 500 companies. He's now also advising the Chilean ministry of economy in public sector blockchain use cases and co-founded the Chilean Blockchain Industry Association (a.k.a CryptoChile).",
+    "ids": {
+      "github": "fedekunze",
+      "twitter": "fekunze"
+    },
+    "groups": {
+      "aib": "Software Developer"
     }
   },
   {
@@ -172,6 +216,19 @@
     }
   },
   {
+    "slug": "greg-szabo",
+    "name": "Greg Szabo",
+    "bio":
+      "Greg is an IT enthusiast with more than 10 years of experience in building enterprise infrastructures. His primary goal is to create a world, where computers are used transparently and people are focusing on their goals instead of their tools.",
+    "ids": {
+      "github": "greg-szabo",
+      "linkedin": "gergelymszabo"
+    },
+    "groups": {
+      "aib": "VP of SRE"
+    }
+  },
+  {
     "slug": "jessica-gelbard",
     "name": "Jessica Gelbard",
     "bio": "",
@@ -180,6 +237,48 @@
     },
     "groups": {
       "aib": "HR & Culture Manager"
+    }
+  },
+  {
+    "slug": "jessy-irwin",
+    "name": "Jessy Irwin",
+    "bio":
+      "Jessy is Head of Security at Tendermint, where she excels at translating complex cybersecurity problems into relatable terms, and is responsible for developing, maintaining and delivering comprehensive security strategy that supports and enables the needs of her organization and its people.",
+    "ids": {
+      "github": "jessysaurusrex",
+      "keybase": "jessysaurusrex",
+      "linkedin": "jessyirwin",
+      "twitter": "jessysaurusrex"
+    },
+    "groups": {
+      "aib": "Head of Security"
+    }
+  },
+  {
+    "slug": "jim-yang",
+    "name": "Jim Yang",
+    "bio":
+      "Jim Yang co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.",
+    "ids": {
+      "linkedin": "jimyang"
+    },
+    "groups": {
+      "aib": "Strategy",
+      "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "jordan-bibla",
+    "name": "Jordan Bibla",
+    "bio": "",
+    "ids": {
+      "github": "jolesbi",
+      "linkedin": "jbibla",
+      "twitter": "jordanbibla",
+      "website": "jordanbibla.com"
+    },
+    "groups": {
+      "aib": "Engineering Manager"
     }
   },
   {
@@ -197,6 +296,16 @@
     }
   },
   {
+    "slug": "juwoon-yun",
+    "name": "Juwoon Yun",
+    "ids": {
+      "github": "mossid"
+    },
+    "groups": {
+      "aib": "Software Developer"
+    }
+  },
+  {
     "slug": "matt-bell",
     "name": "Matt Bell",
     "bio":
@@ -209,6 +318,22 @@
     },
     "groups": {
       "aib": "Software Engineer"
+    }
+  },
+  {
+    "slug": "peng-zhong",
+    "name": "Peng Zhong",
+    "bio":
+      "Peng aims to dramatically increase blockchain adoption through better usability design. He hopes to turn cutting-edge technology into mundane things that everyone can use.",
+    "ids": {
+      "github": "nylira",
+      "keybase": "peng",
+      "linkedin": "nylira",
+      "twitter": "zcpeng",
+      "website": "nylira.com"
+    },
+    "groups": {
+      "aib": "Head of Design"
     }
   },
   {
@@ -251,6 +376,18 @@
     }
   },
   {
+    "slug": "thomas-greco",
+    "name": "Thomas Greco",
+    "bio":
+      "Thomas Greco is Special Advisor to Omise (おみせ), an Asia-Pacific fintech company developing solutions that can add value to a financially disintermediated future. He also served as a special advisor to the Ethereum Foundation.",
+    "ids": {
+      "website": "omise.co"
+    },
+    "groups": {
+      "icf": "Advisor"
+    }
+  },
+  {
     "slug": "zach-ramsay",
     "name": "Zach Ramsay",
     "bio": "",
@@ -265,80 +402,6 @@
     }
   },
   {
-    "slug": "zarko-milosevic",
-    "name": "Zarko Milosevic",
-    "bio": "",
-    "ids": {
-      "linkedin": "zarko-milosevic-8a87375"
-    },
-    "groups": {
-      "aib": "Research Scientist"
-    }
-  },
-  {
-    "slug": "henny-han",
-    "name": "Ash Han",
-    "bio":
-      "Ash Han is a founder of Finector, a leading research/consulting firm specialized in distributed ledger technology. He is an advisor of various blockchain-related startups such as Tendermint and Chronobank.io and also an author of multiple books and papers on blockchain.",
-    "ids": {
-      "linkedin": "ashhan",
-      "website": "seunghwanhan.com"
-    },
-    "groups": {
-      "icf": "Advisor"
-    }
-  },
-  {
-    "slug": "franck-mikulecz",
-    "name": "Franck Mikulecz",
-    "bio":
-      "Franck is founder and CEO of BAXTER, a group of companies focused on foreign exchange and technology. Having spent years in a market perpetually dominated by Banks, Franck feels the urge to help deliver the \"disruption\" promise of the Blockchain. With FXCH Ltd, a Clearing and Settlement startup, his goal is simply to drag FX, screaming and kicking into the cryptocurrency era.",
-    "ids": {
-      "linkedin": "franckmikulecz",
-      "twitter": "franckmikulecz"
-    },
-    "groups": {
-      "icf": "Advisor"
-    }
-  },
-  {
-    "slug": "hugh-rooney",
-    "name": "Hugh Rooney",
-    "bio":
-      "Hugh has extensive experience in the application of leading-edge technologies to a wide range of business problems in both the public and private sectors. He was also one of the founders of Infobright, a \"Big Data Analytics\" company.",
-    "ids": {
-      "linkedin": "hugh-rooney-174003141"
-    },
-    "groups": {
-      "aib": "Advisor"
-    }
-  },
-  {
-    "slug": "jim-yang",
-    "name": "Jim Yang",
-    "bio":
-      "Jim Yang co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.",
-    "ids": {
-      "linkedin": "jimyang"
-    },
-    "groups": {
-      "aib": "Strategy",
-      "icf": "Advisor"
-    }
-  },
-  {
-    "slug": "thomas-greco",
-    "name": "Thomas Greco",
-    "bio":
-      "Thomas Greco is Special Advisor to Omise (おみせ), an Asia-Pacific fintech company developing solutions that can add value to a financially disintermediated future. He also served as a special advisor to the Ethereum Foundation.",
-    "ids": {
-      "website": "omise.co"
-    },
-    "groups": {
-      "icf": "Advisor"
-    }
-  },
-  {
     "slug": "zaki-manian",
     "name": "Zaki Manian",
     "bio": "",
@@ -350,8 +413,19 @@
       "website": "zaki.manian.org"
     },
     "groups": {
-      "aib": "Director of Tendermint Labs",
+      "aib": "Head of Tendermint Labs",
       "icf": "Advisor"
+    }
+  },
+  {
+    "slug": "zarko-milosevic",
+    "name": "Zarko Milosevic",
+    "bio": "",
+    "ids": {
+      "linkedin": "zarko-milosevic-8a87375"
+    },
+    "groups": {
+      "aib": "Research Scientist"
     }
   }
 ]

@@ -19,9 +19,6 @@ This position will work closely with our Head of Design and the Voyager team to 
 * Experience working with developers in both scrum and agile methodologies
 * Demonstrated mastery of Sketch, Figma, or other visual design tools
 * Interest in emerging interactive technology in web, mobile, and other devices
-
-### The ideal candidate has:
-
 * A strong understanding of information architecture, workflows, concept development and interaction design
 * Experience participating in user testing sessions and interviewing customers
 * Skills in researching existing user experiences and identifying areas for improvement

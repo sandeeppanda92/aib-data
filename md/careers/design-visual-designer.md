@@ -1,4 +1,4 @@
-# Visual Designer
+# Senior Visual Designer
 
 ### This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
 

@@ -10,7 +10,7 @@ Cosmos is a network of blockchains whose purpose is to solve long-standing probl
 
 ### Architecture
 
-The Cosmos network consists of many independent, parallel blockchains, called zones, each powered by classical Byzantine fault-tolerant (BFT) consensus protocols like #[a(:href='links.tm.website') Tendermint] (already used by platforms like #[a(href='https://github.com/hyperledger/burrow') Hyperledger's Burrow]). Some zones act as hubs with respect to other zones, allowing many zones to interoperate through a shared hub. The architecture is a more general application of the Bitcoin sidechains concept, using classic BFT and Proof-of-Stake algorithms, instead of Proof-of-Work.
+The Cosmos network consists of many independent, parallel blockchains, called zones, each powered by classical Byzantine fault-tolerant (BFT) consensus protocols like [Tendermint](https://tendermint.com) (already used by platforms like [Hyperledger's Burrow](https://github.com/hyperledger/burrow)). Some zones act as hubs with respect to other zones, allowing many zones to interoperate through a shared hub. The architecture is a more general application of the Bitcoin sidechains concept, using classic BFT and Proof-of-Stake algorithms, instead of Proof-of-Work.
 
 ## Interoperable
 

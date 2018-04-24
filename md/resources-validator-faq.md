@@ -2,7 +2,7 @@
 
 ## General concepts
 
-*Disclaimer: This is work in progress. Mechanisms and values are susceptible to change* 
+_Disclaimer: This is work in progress. Mechanisms and values are susceptible to change_
 
 ### What is a validator?
 
@@ -18,13 +18,13 @@ The weight (i.e. total stake) of a candidate determines wether or not it is a va
 
 ### What is a full-node?
 
-A full-node is a program that fully validates transactions and blocks of a blockchain. It is distinct from a light-node that only processes block headers and a small subset of transactions. Running a full-node requires more resources than a light-node but is necessary in order to be a validator. In practice, running a full-node only implies running a non-compromised and up-to-date version of the software with low network latency and without downtime. 
+A full-node is a program that fully validates transactions and blocks of a blockchain. It is distinct from a light-node that only processes block headers and a small subset of transactions. Running a full-node requires more resources than a light-node but is necessary in order to be a validator. In practice, running a full-node only implies running a non-compromised and up-to-date version of the software with low network latency and without downtime.
 
 Of course, it is possible and encouraged for any user to run full-nodes even if they do not plan to be validators.
 
 ### What is a delegator?
 
-[Delegators](/staking/delegators) are Atom holders who cannot, or do not want to run validator operations themselves. Through [Cosmos Voyager](/voyager), a user can delegate Atoms to a validator and obtain a part of its revenue in exchange (for more detail on how revenue is distributed, see  **What is the incentive to stake?** and **What is a validator's commission?** sections below).
+[Delegators](/resources/delegators) are Atom holders who cannot, or do not want to run validator operations themselves. Through [Cosmos Voyager](/voyager), a user can delegate Atoms to a validator and obtain a part of its revenue in exchange (for more detail on how revenue is distributed, see **What is the incentive to stake?** and **What is a validator's commission?** sections below).
 
 Because they share revenue with their validators, delegators also share responsiblity. Should a validator misbehave, each of its delegators will be partially slashed in proportion to their stake. This is why delegators should perform due diligence on validator candidates before delegating, as well as spreading their stake over multiple validators.
 
@@ -36,7 +36,7 @@ Delegators play a critical role in the system, as they are responsible for choos
 
 Any participant in the network can signal that they want to become a validator by sending a "declare-candidacy" transaction, where they must fill out the following parameters:
 
-* Validator's PubKey: The validator must signal an account with which it will perform its validator duties. The private key associated with PubKey is used to sign *prevotes* and *precommits*. This way, validators can have different accounts for validating and holding liquid funds.
+* Validator's PubKey: The validator must signal an account with which it will perform its validator duties. The private key associated with PubKey is used to sign _prevotes_ and _precommits_. This way, validators can have different accounts for validating and holding liquid funds.
 * Validator's name
 * Validator's website (Optional)
 * Validator's description (Optional)
@@ -66,7 +66,7 @@ Out of all the candidates that signaled themselves, the 100 with the most stake 
 
 The Testnet is a great environment to test your validator setup before launch.
 
-We view testnet participation as a great way to signal to the community that you are ready and able to operate a validator. You can find all relevant information about the [testnet and more here](https://cosmos.network/validators).
+We view testnet participation as a great way to signal to the community that you are ready and able to operate a validator. You can find all relevant information about the [testnet and more here](/validators/tutorial).
 
 ### Is there a faucet?
 
@@ -74,7 +74,7 @@ If you want to obtain coins, you can do so by using [this faucet (maintained by 
 
 ### Is there a minimum amount of Atoms that must be staked to be a validator?
 
-There is no minimum. The top 100 validator candidates with the highest total stake (where total stake = self-bonded stake + delegators stake) are the validators. 
+There is no minimum. The top 100 validator candidates with the highest total stake (where total stake = self-bonded stake + delegators stake) are the validators.
 
 ### How will delegators choose their validators?
 
@@ -104,19 +104,19 @@ Additionally, validators are expected to be active members of the community. The
 
 ### What does 'participate in governance' entail?
 
-Validators and delegators on the Cosmos Hub can vote on proposals to change operational parameters (such as the block gas limit), coordinate upgrades, as well as vote on amendments to the human-readable constitution that govern the Cosmos Hub. 
+Validators and delegators on the Cosmos Hub can vote on proposals to change operational parameters (such as the block gas limit), coordinate upgrades, as well as vote on amendments to the human-readable constitution that govern the Cosmos Hub.
 
 Validators play a special role in the governance system. Being the pillars of the system, they are required to vote on every proposal. It is especially important since delegators who do not vote will inherit the vote of their validator. Each time a validator does not vote on a proposal, it will get slashed by a minimal amount.
 
 ### What does staking imply?
 
-Staking Atoms can be thought of as a safety deposit on validation activities. When a validator or a delegator wants to retrieve part or all of their deposit, they send an unbonding transaction. Then, Atoms undergo a *three weeks unbonding period* during which they are liable to being slashed for potential misbehaviors committed by the validator before the unbonding process started.
+Staking Atoms can be thought of as a safety deposit on validation activities. When a validator or a delegator wants to retrieve part or all of their deposit, they send an unbonding transaction. Then, Atoms undergo a _three weeks unbonding period_ during which they are liable to being slashed for potential misbehaviors committed by the validator before the unbonding process started.
 
 Validators, and by association delegators, receive block provisions, block rewards, fee rewards, and the right to participate in governance. If a validator misbehaves, a certain portion of its total stake is slashed (the severity of the penalty depends on the type of misbehavior). This means that every user that bonded Atoms to this validator gets penalized in proportion to its stake. Delegators are therefore incentivized to delegate to validators that they anticipate will function safely.
 
 ### Can a validator run away with its delegators' Atoms?
 
-By delegating to a validator, a user delegates staking power. The more staking power a validator has, the more weight it has in the consensus and governance processes. This does not mean that the validator has custody of its delegators' Atoms. *By no means can a validator run away with its delegator's funds*. 
+By delegating to a validator, a user delegates staking power. The more staking power a validator has, the more weight it has in the consensus and governance processes. This does not mean that the validator has custody of its delegators' Atoms. _By no means can a validator run away with its delegator's funds_.
 
 Even though delegated funds cannot be stolen by their validators, delegators are still liable if their validators misbehave. In such case, each delegators' stake will be partially slashed in proportion to their relative stake.
 
@@ -133,11 +133,12 @@ Yes, they will. Initially, validators of the Cosmos hub will also validate the f
 ### What is the incentive to stake?
 
 Each member of a validator's staking pool earns different types of revenue:
-* **Block provisions:** Native tokens of applications run by validators (e.g. Atoms on the Cosmos Hub) are inflated to produce block provisions. These provisions exist to incentivize Atom holders to bond their stake, as non-bonded Atom will be diluted over time. 
-* **Block rewards:** For the Ethermint zone, block rewards are paid in Photons. Initial distribution of Photons will be hard spooned from Ethereum. This means Photons will be emitted 1:1 to Ether. 
-* **Transaction fees:** The Cosmos Hub maintains a whitelist of token that are accepted as fee payment. 
 
-This total revenue is divided among validators' staking pools according to each validator's weight. Then, within each validator's staking pool the revenue is divided among delegators in proportion to each delegator's stake. Note that a commission on delegators' revenue is applied by the validator before it is distributed. 
+* **Block provisions:** Native tokens of applications run by validators (e.g. Atoms on the Cosmos Hub) are inflated to produce block provisions. These provisions exist to incentivize Atom holders to bond their stake, as non-bonded Atom will be diluted over time.
+* **Block rewards:** For the Ethermint zone, block rewards are paid in Photons. Initial distribution of Photons will be hard spooned from Ethereum. This means Photons will be emitted 1:1 to Ether.
+* **Transaction fees:** The Cosmos Hub maintains a whitelist of token that are accepted as fee payment.
+
+This total revenue is divided among validators' staking pools according to each validator's weight. Then, within each validator's staking pool the revenue is divided among delegators in proportion to each delegator's stake. Note that a commission on delegators' revenue is applied by the validator before it is distributed.
 
 ### What is the incentive to run a validator ?
 
@@ -147,7 +148,7 @@ Validators also play a major role in governance. If a delegator does not vote, i
 
 ### What is a validator's commission?
 
-Revenue received by a validator's pool is split between the validator and its delegators. The validator can apply a commission on the part of the revenue that goes to its delegators. This commission is set as a percentage. Each validator is free to set its initial commission, maximum daily commission change rate and maximum commission. The Cosmos Hub enforces the parameter that each validator sets. These parameters can only be defined when initially declaring candidacy, and may only be constrained further after being declared. 
+Revenue received by a validator's pool is split between the validator and its delegators. The validator can apply a commission on the part of the revenue that goes to its delegators. This commission is set as a percentage. Each validator is free to set its initial commission, maximum daily commission change rate and maximum commission. The Cosmos Hub enforces the parameter that each validator sets. These parameters can only be defined when initially declaring candidacy, and may only be constrained further after being declared.
 
 ### How are block provisions distributed?
 
@@ -156,8 +157,8 @@ Block provisions are distributed proportionally to all validators relative to th
 Let us take an example where we have 10 validators with equal staking power and a commission rate of 1%. Let us also assume that the provision for a block is 1000 Atoms and that each validator has 20% of self-bonded Atoms. These tokens do not go directly to the proposer. Instead, they are evenly spread among validators. So now each validator's pool has 100 Atoms. These 100 Atoms will be distributed according to each participant's stake:
 
 * Commission: 100*80%*1% = 0.8 Atoms
-* Validator gets: 100*20% + Commission = 20.8 Atoms
-* All delegators get: 100*80% - Commission = 79.2 Atoms
+* Validator gets: 100\*20% + Commission = 20.8 Atoms
+* All delegators get: 100\*80% - Commission = 79.2 Atoms
 
 Then, each delegator can claim its part of the 79.2 Atoms in proportion to their stake in the validator's staking pool. Note that the validator's commission is not applied on block provisions. Note that block rewards (paid in Photons) are distributed according to the same mechanism.
 
@@ -169,8 +170,9 @@ When a validator is selected to propose the next block, it must include at least
 
 Let's take a concrete example to illustrate the aforementioned concept. In this example, there are 10 validators with equal stake. Each of them applies a 1% commission and has 20% of self-bonded Atoms. Now comes a successful block that collects a total of 1025.51020408 Atoms in fees.
 
-First, a 2% tax is applied. The corresponding Atoms go to the reserve pool. Reserve pool's funds can be allocated through governance to fund bounties and upgrades. 
-* 2% * 1025.51020408 = 20.51020408 Atoms go to the reserve pool.
+First, a 2% tax is applied. The corresponding Atoms go to the reserve pool. Reserve pool's funds can be allocated through governance to fund bounties and upgrades.
+
+* 2% \* 1025.51020408 = 20.51020408 Atoms go to the reserve pool.
 
 1005 Atoms now remain. Let's assume that the proposer included 100% of the signatures in its block. It thus obtains the full bonus of 5%.
 
@@ -195,17 +197,17 @@ If a validator misbehaves, its bonded stake along with its delegators' stake and
 
 * **Double signing:** If someone reports on chain A that a validator signed two blocks at the same height on chain A and chain B, this validator will get slashed on chain A
 * **Unavailability:** If a validator's signature has not been included in the last X blocks, the validator will get slashed by a marginal amount proportional to X. If X is above a certain limit Y, then the validator will get unbonded
-* **Non-voting:** If a validator did not vote on a proposal and once the fault is reported by a someone, its stake will receive a minor slash. 
+* **Non-voting:** If a validator did not vote on a proposal and once the fault is reported by a someone, its stake will receive a minor slash.
 
 Note that even if a validator does not intentionally misbehave, it can still be slashed if its node crashes, looses connectivity, gets DDOSed, or if its private key is compromised. A complete document on the economics of the network will be published soon.
 
 ### Do validators need to self-bond Atoms?
 
-No, they do not. A validators total stake is equal to the sum of its own self-bonded stake and of its delegated stake. This means that a validator can compensate its low amount of self-bonded stake by attracting more delegators. This is why reputation is very important for validators. 
+No, they do not. A validators total stake is equal to the sum of its own self-bonded stake and of its delegated stake. This means that a validator can compensate its low amount of self-bonded stake by attracting more delegators. This is why reputation is very important for validators.
 
-Even though there is no obligation for validators to self-bond Atoms, delegators should want their validator to have self-bonded Atoms in their staking pool. In other words, validators should have skin in the game. 
+Even though there is no obligation for validators to self-bond Atoms, delegators should want their validator to have self-bonded Atoms in their staking pool. In other words, validators should have skin in the game.
 
-In order for delegators to have some guarantee about how much skin-in-the-game their validator has, the latter can signal a minimum amount of self-bonded Atoms. If a validator's self-bond goes below the limit that it predefined, this validator and all of its delegators will unbond. 
+In order for delegators to have some guarantee about how much skin-in-the-game their validator has, the latter can signal a minimum amount of self-bonded Atoms. If a validator's self-bond goes below the limit that it predefined, this validator and all of its delegators will unbond.
 
 ### How to prevent concentration of stake in the hands of a few top validators?
 
@@ -215,15 +217,14 @@ For now the community is expected to behave in a smart and self-preserving way. 
 * **Hack bounty:** This is an incentive for the community to hack validators. There will be bounties proportionate to the size of the validator, so that a validator becomes a bigger target as its stake grows.
 * **UI warning:** Users will be warned by Cosmos Voyager if they want to delegate to a validator that already has a significant amount of staking power.
 
-
-## Technical requirements 
+## Technical requirements
 
 ### What are hardware requirements?
 
 Validators should expect to provision one or more data center locations with redundant power, networking, firewalls, HSMs and servers.
 
 We expect that a modest level of hardware specifications will be needed initially and that they might rise as network use increases. Participating in the testnet is the best way to learn more.
- 
+
 ### What are software requirements?
 
 In addition to running a Cosmos Hub node, validators should develop monitoring, alerting and management solutions.
@@ -236,36 +237,37 @@ We recommend that the data center nodes only connect to trusted full-nodes in th
 
 Ultimately, as the network becomes more heavily used, multigigabyte per day bandwidth is very realistic.
 
-### What does running a validator imply in terms of logistics? 
+### What does running a validator imply in terms of logistics?
 
 A successful validator operation will require the efforts of multiple highly skilled individuals and continuous operational attention. This will be considerably more involved than running a bitcoin miner for instance.
 
 ### How to handle key management?
 
 Validators should expect to run an HSM that supports ed25519 keys. Here are potential options:
- * YubiHSM 2
- * Ledger Nano S
- * Ledger BOLOS SGX enclave
- * Thales nShield support
- * Tendermint SGX enclave
- 
+
+* YubiHSM 2
+* Ledger Nano S
+* Ledger BOLOS SGX enclave
+* Thales nShield support
+* Tendermint SGX enclave
+
 The Tendermint team does not recommend one solution above the other. The community is encouraged to bolster the effort to improve HSMs and the security of key management.
 
-### What can validators expect in terms of operations? 
+### What can validators expect in terms of operations?
 
 Running effective operation is the key to avoiding unexpectedly unbonding or being slashed. This includes being able to respond to attacks, outages, as well as to maintain security and isolation in your data center.
 
 ### What are the maintenance requirements?
 
-Validators should expect to perform regular software updates to accommodate upgrades and bug fixes. There will inevitably be issues with the network early in its bootstrapping phase that will require substantial vigilance. 
+Validators should expect to perform regular software updates to accommodate upgrades and bug fixes. There will inevitably be issues with the network early in its bootstrapping phase that will require substantial vigilance.
 
 ### How can validators protect themselves from denial-of-service attacks?
- 
+
 Denial-of-service attacks occur when an attacker sends a flood of internet traffic to an IP address to prevent the server at the IP address from connecting to the internet.
 
-An attacker scans the network, tries to learn the IP address of various validator nodes and disconnect them from communication by flooding them with traffic. 
+An attacker scans the network, tries to learn the IP address of various validator nodes and disconnect them from communication by flooding them with traffic.
 
-One recommended way to mitigate these risks is for validators to carefully structure their network topology in a so-called sentry node architecture. 
+One recommended way to mitigate these risks is for validators to carefully structure their network topology in a so-called sentry node architecture.
 
 Validator nodes should only connect to full-nodes they trust because they operate them themselves or are run by other validators they know socially. A validator node will typically run in a data center. Most data centers provide direct links the networks of major cloud providers. The validator can use those links to connect to sentry nodes in the cloud. This shifts the burden of denial-of-service from the validator's node directly to its sentry nodes, and may require new sentry nodes be spun up or activated to mitigate attacks on existing ones.
 

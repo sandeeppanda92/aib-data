@@ -26,12 +26,7 @@ Be familiar with all the responsibilities of a validator by reading our [FAQ](/s
 
 #### 2. Participate in the testnet
 
-Actively participate in the testnet. By the end of 2017 you should be able to maintain a validator node with constant uptime on the testnet. Below you will find instructions on how to become a validator in our testnet.
-
-* [Text Tutorial](https://github.com/cosmos/gaia/blob/master/README.md)
-* [Video Tutorial](https://www.youtube.com/watch?v=B-shjoqvnnY)
-
-Tutorial and faucet maintained by community member [Michael Yuan](http://cosmosvalidators.com)
+Actively participate in the testnet. By the end of 2017 you should be able to maintain a validator node with constant uptime on the testnet. The [Testnet Tutorial](/validators/tutorial) contains instructions on how to become a validator in our testnet.
 
 Be sure to frequently check the [changelog](https://github.com/cosmos/gaia/blob/master/CHANGELOG.md) and the [validator chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org) to keep track of any updates.
 
@@ -43,7 +38,7 @@ Set up a dedicated validator's website and signal your intention to become a val
 
 There currently exists no appropriate cloud solution for validator key management. This may change in 2018 when cloud SGX becomes more widely available. For this reason, validators must set up a physical operation secured with restricted access. A good starting place, for example, would be co-locating in secure datacenters.
 
-Validators should expect to equip their datacenter location with redundant power, connectivity, and  storage backups. Expect to have several redundant networking boxes for fiber, firewall and switching and then small servers with redundant hard drive and failover. Hardware can be on the low end of datacenter gear to start out with.
+Validators should expect to equip their datacenter location with redundant power, connectivity, and storage backups. Expect to have several redundant networking boxes for fiber, firewall and switching and then small servers with redundant hard drive and failover. Hardware can be on the low end of datacenter gear to start out with.
 
 We anticipate that network requirements will be low initially. The current testnet requires minimal resources. Then bandwidth, CPU and memory requirements will rise as the network grows. Large hard drives are recommended for storing years of blockchain history.
 
@@ -88,4 +83,5 @@ Promote your validator's website by posting on [this thread in our forum](https:
 ## Mailing List
 
 Subscribe to our Validator's mailing list to get the latest news about testnets, documentation, timelines and more!
+
 * [Validator Mailing List](https://tendermint.us8.list-manage.com/subscribe?u=89d5a312be95ee3f0c9cf7ecd&id=a8e72383ff)

@@ -1,5 +1,7 @@
 # Intro - Further
 
+## More Cosmos Resources
+
 ### Read the [Whitepaper](/resources/whitepaper)
 
 ### Read the [Cosmos FAQ](/resources/faq)

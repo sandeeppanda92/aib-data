@@ -2,7 +2,7 @@
 
 ## What is a delegator?
 
-People that cannot, or do not want to run [validator](/staking/validators) operations, can still participate in the staking process as delegators. Indeed, validators are not chosen based on their own [stake](/staking) but based on their total stake, which is the sum of their own stake and of the stake that is delegated to them. This is an important property, as it makes delegators a safeguard against validators that exhibit bad behavior. If a validator misbehaves, its delegators will move their Atoms away from it, thereby reducing its stake. Eventually, if a validator's stake falls under the top 100 addresses with highest stake, it will exit the validator set. 
+People that cannot, or do not want to run [validator](/validators) operations, can still participate in the staking process as delegators. Indeed, validators are not chosen based on their own [stake](/intro/hub) but based on their total stake, which is the sum of their own stake and of the stake that is delegated to them. This is an important property, as it makes delegators a safeguard against validators that exhibit bad behavior. If a validator misbehaves, its delegators will move their Atoms away from it, thereby reducing its stake. Eventually, if a validator's stake falls under the top 100 addresses with highest stake, it will exit the validator set.
 
 Delegators share the revenue of their validators, but they also share the risks. In terms of revenue, validators and delegators differ in that validators can apply a commission on the revenue that goes to their delegator before it is distributed. This commission is known to delegators beforehand and can only change according to predefined constraints (see section below). In terms of risk, delegators' Atoms can be slashed if their validator misbehaves. For more, see Risks section.
 
@@ -10,11 +10,11 @@ To become delegators, Atom holders need to send a "Bond transaction" from [Cosmo
 
 ## Choosing a validator
 
-In order to choose their validators, delegators have access to a range of information directly in Cosmos Voyager. 
+In order to choose their validators, delegators have access to a range of information directly in Cosmos Voyager.
 
 * Validator's name: Name that was chosen by the validator candidate when it declared candidacy.
-* Validator's description: Description that was provided by the validator candidate when it declared candidacy. 
-* Validator's website: Link to the validator's website. 
+* Validator's description: Description that was provided by the validator candidate when it declared candidacy.
+* Validator's website: Link to the validator's website.
 * Initial commission rate: The commission rate on revenue charged to any delegators (see below for more detail).
 * Commission change rate: The maximum daily increase of the validator's commission
 * Maximum commission: The maximum commission rate which this validator candidate can charge.
@@ -24,7 +24,7 @@ In order to choose their validators, delegators have access to a range of inform
 
 Being a delegator is not a passive task. Here are the main directives of a delegator:
 
-* Perform careful due diligence on validators before delegating. If a validator misbehaves, part of its total stake, which includes the stake of its delegators, can be slashed. Delegators should therefore carefully select validators they think will behave correctly. 
+* Perform careful due diligence on validators before delegating. If a validator misbehaves, part of its total stake, which includes the stake of its delegators, can be slashed. Delegators should therefore carefully select validators they think will behave correctly.
 * Actively monitor their validator after having delegated. Delegators should ensure that the validators they're delegating to behaves correctly, meaning that they have good uptime, do not get hacked and participate in governance. They should also monitor the commission rate that is applied. If a delegator is not satisfied with its validator, it can unbond or switch to another validator.
 * Participate in governance. Delegators can and are expected to actively participate in governance. A delegator's voting power is proportional to the size of its stake. If a delegator does not vote, it will inherit the vote of its validator. Delegators therefore act as a counterbalance to their validators.
 
@@ -32,7 +32,7 @@ Being a delegator is not a passive task. Here are the main directives of a deleg
 
 Validators and delegators earn revenue in exchange for their services. This revenue is given in three forms:
 
-* Block provisions (Atoms): They are paid in newly created Atoms. Block provisions exist to incentivize Atom holders to stake. The yearly inflation rate fluctuates around a target of 2/3 bonded stake. If the total bonded stake is less than 2/3 of the total Atom supply, inflation increases until it reaches 20%. If the total bonded stake is more than  2/3 of the Atom supply, inflation decreases until it reaches 7%. This means that if total bonded stake stays less than 2/3 of the total Atom supply for a prolonged period of time, unbonded Atom holders can expect their Atom value to deflate by 20% per year.
+* Block provisions (Atoms): They are paid in newly created Atoms. Block provisions exist to incentivize Atom holders to stake. The yearly inflation rate fluctuates around a target of 2/3 bonded stake. If the total bonded stake is less than 2/3 of the total Atom supply, inflation increases until it reaches 20%. If the total bonded stake is more than 2/3 of the Atom supply, inflation decreases until it reaches 7%. This means that if total bonded stake stays less than 2/3 of the total Atom supply for a prolonged period of time, unbonded Atom holders can expect their Atom value to deflate by 20% per year.
 * Block rewards ([Photons](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa): They are paid in Photons. Initial distribution of Photons will take the form of a hard spoon of the Ethereum chain. Atom holders will vote on the parameter of this hard spoon, like the date of the snapshot or the initial distribution. Additionally, bonded Atom holders will receive newly created Photons as block rewards. Photons will be distributed at a fixed rate in proportion to each bonded Atom holder's stake. This rate will be decided via governance.
 * Transaction fees (various tokens): Each transfer on the Cosmos Hub comes with transactions fees. These fees can be paid in any currency that is whitelisted by the Hub's governance. Fees are distributed to bonded Atom holders in proportion to their stake. The first whitelisted tokens at launch are Atoms and Photons.
 
@@ -54,11 +54,11 @@ Our validator's staking pool represents 10% of the total stake, which means the 
 * Validator's revenue = `20% * 100` Atoms + `20% * 10` Photons + Commission = 28 Atoms + 2.8 Photons
 * Delegators' total revenue = `80% * 100` Atoms + `20% * 10` Photons - Commission = 72 Atoms + 7.2 Photons
 
-Then, each delegator in the staking pool can claim its portion of the delegators' total revenue. 
+Then, each delegator in the staking pool can claim its portion of the delegators' total revenue.
 
 ## Risks
 
-Staking Atoms is not free of risk. First, staked Atoms are locked up, and retrieving them requires a 3 week waiting period called unbonding period. Additionally,  if a validator misbehaves, a portion of its total stake can be slashed (i.e. destroyed). This includes the stake of their delegators. 
+Staking Atoms is not free of risk. First, staked Atoms are locked up, and retrieving them requires a 3 week waiting period called unbonding period. Additionally, if a validator misbehaves, a portion of its total stake can be slashed (i.e. destroyed). This includes the stake of their delegators.
 
 There are 3 main slashing conditions:
 

@@ -1,14 +1,14 @@
 # Intro - Index
 
-## Building an Internet of Blockchains
+## Building an "Internet of Blockchains"
 
-### Purpose
+### Purpose of Cosmos
 
 Cosmos is a network of blockchains whose purpose is to solve long-standing problems in cryptocurrency and blockchain communities. The end goal is to allow many sovereign and easy-to-develop blockchains to scale and interoperate with each other, creating an Internet of Blockchains.
 
 <iframe src="https://player.vimeo.com/video/183530279?title=0&byline=0&portrait=0" width="1024" height="576" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-### Architecture
+### Cosmos Architecture
 
 The Cosmos network consists of many independent, parallel blockchains, called zones, each powered by classical Byzantine fault-tolerant (BFT) consensus protocols like [Tendermint](https://tendermint.com) (already used by platforms like [Hyperledger's Burrow](https://github.com/hyperledger/burrow)). Some zones act as hubs with respect to other zones, allowing many zones to interoperate through a shared hub. The architecture is a more general application of the Bitcoin sidechains concept, using classic BFT and Proof-of-Stake algorithms, instead of Proof-of-Work.
 

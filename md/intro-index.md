@@ -14,7 +14,7 @@ The Cosmos network consists of many independent, parallel blockchains, called zo
 
 ## Interoperable
 
-<div class="image"><img src="public/diagrams/ex_dist_exchange.png"></div>
+<div class="image"><img src="~images/diagrams/ex_dist_exchange.png"></div>
 
 Cosmos can interoperate with multiple other applications and cryptocurrencies, something other blockchains can't do well. By creating a new zone, you can plug any blockchain system into the Cosmos hub and pass tokens back and forth between those zones, without the need for an intermediary.
 
@@ -22,19 +22,19 @@ For example, if you wanted to trade bitcoins for ether today, you would have to 
 
 ## Scalable
 
-<div class="image"><img src="public/diagrams/ex_evm_sharding.png"></div>
+<div class="image"><img src="~images/public/diagrams/ex_evm_sharding.png"></div>
 
 Scaling is another open issue for blockchains. Both Ethereum and Bitcoin support only a fraction of the transactions seen daily on payment networks like Visa or Mastercard. In contrast, Tendermint and IBC allow blockchains in Cosmos to scale out indefinitely. Zones built on top of Tendermint can handle up to thousands of transactions per second by themselves. And even if transaction speed slows down on a Zone because too many people are using it, another identical Zone can be added to the Hub and half of the users directed to it, thereby doubling transaction capacity. Meanwhile, the Cosmos Hub ensure that Zones connected to it remain in sync.
 
 ## Developer Friendly
 
-<div class="image"><img src="public/diagrams/ex_evm_upgrading.png"></div>
+<div class="image"><img src="/public/diagrams/ex_evm_upgrading.png"></div>
 
 Cosmos was designed with developers in mind. It comes with a powerful toolkit based on Tendermint that enables you to easily build decentralized applications. If your application requires sovereignty and flexibility, you can deploy your own blockchain without having to deal with the complicated networking and consensus parts of the software--thanks to Tendermint and its Application-Blockchain Interface (ABCI). If your application doesn't need its own chain and validator set, you can deploy it on Ethermint, which allows you to do everything Ethereum does--but with far greater performance. Finally, if you want to retain full privacy and control over your application, Tendermint enables you to deploy private blockchains. You can learn more in our #[a(href='/developers') developer] page.
 
 ## Decentralized
 
-<div class="image"><img src="public/diagrams/ex_network.png"></div>
+<div class="image"><img src="/public/diagrams/ex_network.png"></div>
 
 One of the great tragedies of cryptocurrencies today has been their failure to interoperate with existing systems — and each other. Cosmos offers a way to link them together, but without creating a new centralized clearinghouse or exchange.
 

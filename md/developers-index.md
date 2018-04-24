@@ -4,7 +4,7 @@
 
 The Cosmos SDK is an ABCI framework written in Golang that affords you all the tools you need to rapidly develop robust blockchains and blockchain applications which are interoperable with the Cosmos Hub. It is a blockchain development 'starter-pack' of common blockchain modules while not enforcing their use thus giving maximum flexibility for application customization. It is perfect to build highly-customizable public proof-of-stake blockchains.
 
-WARNING: The Cosmos SDK is under heavy development and it's #[router-link(:to="{name: 'roadmap'}") not yet ready] for release. Keep up to date with Cosmos SDK news #[<a href="https://blog.cosmos.network" target="_blank") on our blog].
+WARNING: The Cosmos SDK is under heavy development and it's [not yet ready](/roadmap) for release. Keep up to date with Cosmos SDK news [on our blog](https://blog.cosmos.network).
 
 * <a href="https://github.com/cosmos/cosmos-sdk" target="_blank">Cosmos SDK on GitHub</a>
 * <a href="https://cosmos-sdk.readthedocs.io/en/develop/" target="_blank">Cosmos SDK Documentation</a>

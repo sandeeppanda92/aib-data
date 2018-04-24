@@ -1,6 +1,6 @@
 # Intro - Hub
 
-## Cosmos Hub
+## The First Hub
 
 The first blockchain in the Cosmos network is the Cosmos hub. The Cosmos hub connects to zones via the novel IBC (inter-blockchain communication) protocol and keeps a record of the total number of tokens in each zone. Because all inter-zone transfers go through the Cosmos Hub, you can send tokens from one zone to another, quickly and securely, without the need for a liquid exchange or trusted third party between zones.
 
@@ -34,8 +34,8 @@ After launch, Atom holders will be able to vote on the hard spoon, specifically:
 
 Validators of the Cosmos Hub are responsible for creating new blocks of transactions that are added to the blockchain. Running a validator is non-trivial. It requires technical knowledge and hardware investment. Additionally, due to the way that Tendermint—the underlying consensus engine on which the Cosmos Hub is built—works, the number of validators must be limited. Initially, this limit is fixed to 100. This means that only the top 100 addresses with the most stake that declared their intention to become validator will be validators. As a result, most Atom holders will not be validators. Instead, they will become delegators, thereby participating in deciding who among the validator candidates actually become validators.
 
-If you are interested in becoming a validator or just want to learn more about validators, [visit this page](/staking/validators).
+If you are interested in becoming a validator: [learn more about validators](/validators).
 
 ## Delegators
 
-If you are interested in staking your atoms to a Validator to earn revenue, or just want to learn more about delegators, [go to this page](/staking/delegators).
+People that cannot, or do not want to run validator operations, can still participate in the staking process as delegators. Indeed, validators are not chosen based on their own stake but based on their total stake, which is the sum of their own stake and of the stake that is delegated to them. If you are interested in staking your atoms to a Validator to earn revenue, or just want to learn more about delegators, read the [Delegators FAQ](/resources/delegators).

@@ -80,13 +80,13 @@
   {
     "id": "finite-field",
     "title": "Finite Field",
-    "body": "A finite field is...",
+    "body": "",
     "url": ""
   },
   {
     "id": "gf-2-255-19",
     "title": "GF(2^255-19)",
-    "body": "This is...",
+    "body": "",
     "url": ""
   },
   {
@@ -104,7 +104,7 @@
   {
     "id": "hub",
     "title": "Hub",
-    "body": "A Cosmos Hub is...",
+    "body": "",
     "url": ""
   },
   {
@@ -140,19 +140,19 @@
   {
     "id": "signature",
     "title": "Signature",
-    "body": "A signature is...",
+    "body": "",
     "url": ""
   },
   {
     "id": "sharding",
     "title": "Sharding",
-    "body": "Sharding is...",
+    "body": "",
     "url": ""
   },
   {
     "id": "stake",
     "title": "Stake",
-    "body": "Stake is...",
+    "body": "",
     "url": ""
   },
   {
@@ -164,31 +164,31 @@
   {
     "id": "testnet",
     "title": "Testnet",
-    "body": "Testnets are...",
+    "body": "",
     "url": ""
   },
   {
     "id": "token",
     "title": "Token",
-    "body": "A Cosmos Token is...",
+    "body": "",
     "url": ""
   },
   {
     "id": "validator",
     "title": "Validator",
-    "body": "A Cosmos Validator is...",
+    "body": "",
     "url": ""
   },
   {
     "id": "validator-set",
     "title": "Validator Set",
-    "body": "A Validator Set is...",
+    "body": "",
     "url": ""
   },
   {
     "id": "zksnark",
     "title": "zkSNARK",
-    "body": "zkSNARKs are...",
+    "body": "",
     "url": ""
   },
   {

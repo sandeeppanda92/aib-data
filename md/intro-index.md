@@ -6,7 +6,7 @@
 
 Cosmos is a network of blockchains whose purpose is to solve long-standing problems in cryptocurrency and blockchain communities. The end goal is to allow many sovereign and easy-to-develop blockchains to scale and interoperate with each other, creating an Internet of Blockchains.
 
-<iframe :src="links.cosmos.intro.video" width="1024" height="576" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+<iframe src="https://player.vimeo.com/video/183530279?title=0&byline=0&portrait=0" width="1024" height="576" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Architecture
 
@@ -17,7 +17,8 @@ The Cosmos network consists of many independent, parallel blockchains, called zo
 <div class="image"><img src="public/diagrams/ex_dist_exchange.png"></div>
 
 Cosmos can interoperate with multiple other applications and cryptocurrencies, something other blockchains can't do well. By creating a new zone, you can plug any blockchain system into the Cosmos hub and pass tokens back and forth between those zones, without the need for an intermediary.
-For example, if you wanted to trade bitcoins for ether today, you would have to do so on a centralized exchange. The problem is, many of our exchanges today are plagued by hacks, theft, and cons. Two prime examples are what happened at #[a(href='http://www.thedailybeast.com/articles/2016/05/19/behind-the-biggest-bitcoin-heist-in-history-inside-the-implosion-of-mt-gox.html') Mt. Gox] and more recently #[a(href='http://www.reuters.com/article/us-bitfinex-hacked-hongkong-idUSKCN10E0KP') Bitfinex].
+
+For example, if you wanted to trade bitcoins for ether today, you would have to do so on a centralized exchange. The problem is, many of our exchanges today are plagued by hacks, theft, and cons. Two prime examples are what happened at [Mt. Gox](http://www.thedailybeast.com/articles/2016/05/19/behind-the-biggest-bitcoin-heist-in-history-inside-the-implosion-of-mt-gox.html) and more recently [Bitfinex](http://www.reuters.com/article/us-bitfinex-hacked-hongkong-idUSKCN10E0KP).
 
 ## Scalable
 

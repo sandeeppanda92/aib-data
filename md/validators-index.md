@@ -26,7 +26,7 @@ Be familiar with all the responsibilities of a validator by reading our [FAQ](/s
 
 #### 2. Participate in the testnet
 
-Actively participate in the testnet. By the end of 2017 you should be able to maintain a validator node with constant uptime on the testnet. The [Testnet Tutorial](/validators/testnet) contains instructions on how to become a validator in our testnet.
+Actively participate in the testnet. By the end of 2017 you should be able to maintain a validator node with constant uptime on the testnet. The [Testnet Tutorial](/validators/tutorial) contains instructions on how to become a validator in our testnet.
 
 Be sure to frequently check the [changelog](https://github.com/cosmos/gaia/blob/master/CHANGELOG.md) and the [validator chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org) to keep track of any updates.
 

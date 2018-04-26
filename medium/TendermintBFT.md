@@ -48,11 +48,11 @@ know the ip address of the validator. You are never able to open the connection
 to the validator. So validator is spawning sentry nodes and this is the single
 administration domain and there is only connection from validator in the sense
 of sentry nodes. And ip address of validator is not shared in the p2p network.
-It’s completely private. This is our answer to ddos attack. By playing clever
+It’s completely private. This is our answer to DDoS attack. By playing clever
 at this sentry node architecture and spawning additional sentry nodes in case,
-for ex your sentry nodes are being ddos’d, bc your sentry nodes are public,
+for ex your sentry nodes are being DDoS’d, bc your sentry nodes are public,
 then you will be able to connect to sentry nodes. this is where we will expect
-the validator to be clever enough that so that in case they are ddos’d at the
+the validator to be clever enough that so that in case they are DDoS’d at the
 sentry level, they will spawn a different sentry node and then you communicate
 through them. We are in a sense pushing the responsibility on the validator.
 
@@ -127,7 +127,7 @@ you receive enough messages. And it happens because of the asynchrony of the
 message communication so you give more time to guys with this timeout to
 receive some messages which are maybe delayed.
 
-__CC__: In this way that you just decribed via the whole network gossiping
+__CC__: In this way that you just described via the whole network gossiping
 before we commit a block, that is what makes Tendermint BFT deterministic in a
 partially synchronous setting vs Bitcoin which has synchrony assumptions
 whereby blocks are first mined and then gossiped to the network.
@@ -156,10 +156,10 @@ other the consensus messages, not the transactions, but consensus messages.
 They need to communicate in a timely and reliable fashion. But this doesn't
 need to hold forever. It's just that what we are assuming when we say it's a
 partially synchronous system, we assume that the system will be going through a
-period of asynchrony, where we don't have this gaurantee; the messages will be
+period of asynchrony, where we don't have this guarantee; the messages will be
 delayed or some will be lost and then will not make progress for some period of
-time, or we're not gauranteed to make progress. And the period of synchrony
-where these gaurantees hold. And if we think about internet, internet is best
+time, or we're not guaranteed to make progress. And the period of synchrony
+where these guarantees hold. And if we think about internet, internet is best
 described using such a model. Sometimes when we send a message to SF to
 Belgrade, it takes 100 ms, sometimes it takes 300 ms, sometimes it takes 1 s.
 But in most cases, it takes 100 ms or less than this.
@@ -236,28 +236,48 @@ complexity in Tendermint is simpler.* The initial goal of Jae and Bucky which
 is inspired by Raft, is that it's simpler so normal engineers could understand.
 If we compare this with the new generation of protocols like Ouroboros, etc...
 
-...[some off the record stuff]...
+...some off the record stuff...
 
 __CC__: Can you expand on the termination requirement?
 
-*Important point about Liveness in Tendermint* __ZM__: In Tendermint, we are
-saying, for termination, we are making assumption that the system is partially
-synchronous. And in a partially synchronous system model, we are able to
-mathematically prove that the protocol will make decisions; it will decide. In
-Casper, they don't talk about this thing. I know that bucky was talking to vlad
-and I think Vlad still has this position that termination is easy, it's
-trivial, and they will address it after. When people compare Tendermint and
-Casper, they compare Tesla and a car which is not finished.
+*Important point about Liveness in Tendermint*
 
-...\[some off the record stuff\]...
+__ZM__: In Tendermint, we are saying, for termination, we are making assumption
+that the system is partially synchronous. And in a partially synchronous system
+model, we are able to mathematically prove that the protocol will make
+decisions; it will decide. In Casper, they don't talk about this thing. I know
+that bucky was talking to vlad and I think Vlad still has this position that
+termination is easy, it's trivial, and they will address it after. When people
+compare Tendermint and Casper, they compare Tesla and a car which is not
+finished.
 
-If you ask me about the competition from the algorithmic point of view, the
-only strong competition we have is vmware research. So the Dahlia group, where
-they are lagging behind is the implemention. This is where we are ahead by at
-least two years. The algorithm is hard but the implementation is harder. They
-are publishing 3 or 4 publications a year and we should follow and learn from
-each of them. Fundamanetally how this works, it's the same system model as
-Tendermint: partially synchronous, timing assumptions,
+...some off the record stuff...
+
+If you ask me about the competition from the algorithmic point of view, the only
+strong competition we have is vmware research. So the Dahlia group, where they
+are lagging behind is the implementation. This is where we are ahead by at least
+two years. The algorithm is hard but the implementation is harder. They are
+publishing 3 or 4 publications a year and we should follow and learn from each
+of them. Fundamentally how this works, it's very similar. It's the same system
+model as Tendermint: partially synchronous, timing assumptions, safety always
+holds,  and now at the consensus level, it's slightly different. So it's a
+variant. We can probably take their protocol and implement it relatively easily
+in Tendermint. It's an incremental idea but there is nothing fundamentally
+different there.
+
+__CC__: What is a persistent peer?
+
+__ZM__: It's a list of peer identities, which you will try to establish
+connection to them, in case connection is broken, Tendermint will automatically
+try to reestablish connection. These are important peers, you will really try
+persistently to establish connection to them. For other peers, you just drop it
+and try from your address book to connect to someone else. The address book is a
+list of peers which you discover that they exist, because we are talking about a
+very dynamic network—so the nodes are coming and going away—and the gossiping
+protocol is discovering new nodes and gossiping them around. So every node will
+keep the list of new nodes it discovers, and when you need to establish
+connection to a peer, you'll look to address book and get some addresses from
+there. There's categorization/ranking of nodes there.
 
 [1]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md
 [2]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md

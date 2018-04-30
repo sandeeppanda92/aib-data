@@ -81,34 +81,45 @@
     {
       "id": "hub-gaia-3",
       "title": "Testnet",
-      "version": "Gaia-3",
+      "version": "Gaia-3000",
       "children": [],
-      "span": 2,
-      "date": "2018-04-25",
+      "span": 1,
+      "date": "2018-04-20",
       "notes":
-        "Multiple instances of Gaia-3 are set up by the Cosmos community, following in the wake of new Tendermint and Cosmos SDK releases. The most recent version was Gaia-3008.",
+        "Multiple instances of Gaia-3000 are set up by the Cosmos community, following in the wake of new Tendermint and Cosmos SDK releases. The most recent version was Gaia-3008.",
       "url": "http://explorer.cosmos.network/"
     },
     {
       "id": "hub-gaia-4",
       "title": "Testnet",
-      "version": "Gaia-4",
+      "version": "Gaia-4000",
       "children": [],
       "span": 1,
-      "date": "",
+      "date": "2018-04-21",
       "notes":
-        "Gaia-4 includes block rewards for validators and commission fees.",
+        "Gaia-4000 has improved stability, bug fixes, and runs on Cosmos SDK 0.15.0.",
       "url": "http://explorer.cosmos.network/"
     },
     {
       "id": "hub-gaia-5",
       "title": "Testnet",
-      "version": "Gaia-5",
+      "version": "Gaia-5000",
       "children": [],
       "span": 1,
       "date": "",
       "notes":
-        "Gaia-5 supports an unbonding period for delegates, HSM, fork and halt detection, as well as a LevelDB server.",
+        "Gaia-5000 includes support for block rewards for validators and commission fees.",
+      "url": "http://explorer.cosmos.network/"
+    },
+    {
+      "id": "hub-gaia-6",
+      "title": "Testnet",
+      "version": "Gaia-6000",
+      "children": [],
+      "span": 1,
+      "date": "",
+      "notes":
+        "To be announced.",
       "url": "http://explorer.cosmos.network/"
     },
     {

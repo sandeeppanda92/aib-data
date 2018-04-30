@@ -160,22 +160,6 @@
     }
   },
   {
-    "id": "consensus-2018",
-    "title": "Consensus 2018",
-    "href": "https://www.coindesk.com/events/consensus-2018/",
-    "body":
-      "Consensus 2018 will feature 250+ speakers and 4,000+ attendees from the leading industry startups, investors, financial institutions, and more, who are building the foundations of the blockchain economy. Tendermint & Cosmos has an exhibit - meet us there!",
-    "images": {
-      "logo": "consensus-2018",
-      "location": "nyc"
-    },
-    "location": "New York City, USA",
-    "dates": {
-      "start": "2018-05-14",
-      "end": "2018-05-16"
-    }
-  },
-  {
     "id": "ecf-tokyo-2018",
     "title": "ECF Tokyo",
     "href": "https://ecf.network/",

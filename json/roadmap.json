@@ -83,11 +83,11 @@
       "title": "Testnet",
       "version": "Gaia-3",
       "children": [],
-      "span": 1,
-      "date": "",
+      "span": 2,
+      "date": "2018-04-25",
       "notes":
-        "Gaia-3 focuses on the P2P layer. It includes a seed mode, sentry mode architecture, peer IDs, and many bug fixes. Gaia-3 depends on Tendermint 0.16.0.",
-      "url": ""
+        "Multiple instances of Gaia-3 are set up by the Cosmos community, following in the wake of new Tendermint and Cosmos SDK releases. The most recent version was Gaia-3008.",
+      "url": "https://explorer.adrianbrink.com"
     },
     {
       "id": "hub-gaia-4",
@@ -234,7 +234,6 @@
       "id": "sdk-0-12",
       "title": "Cosmos SDK",
       "version": "0.12.0",
-      "children": [],
       "children": ["hub-gaia-4", "gui-0-6"],
       "span": 1,
       "date": "2018-03-28",
@@ -247,7 +246,6 @@
       "title": "Cosmos SDK",
       "version": "0.13.0",
       "children": [],
-      "children": [""],
       "span": 1,
       "date": "2018-04-02",
       "notes":
@@ -259,12 +257,22 @@
       "title": "Cosmos SDK",
       "version": "0.14.0",
       "children": [],
-      "children": [""],
       "span": 1,
       "date": "2018-04-09",
       "notes":
         "Cosmos SDK 0.14 'Shi Shen' includes improvements to staking, usability, and refactoring to reduce duplicated code.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.14.1"
+    },
+    {
+      "id": "sdk-0-15",
+      "title": "Cosmos SDK",
+      "version": "0.15.0",
+      "children": [],
+      "span": 1,
+      "date": "2018-04-30",
+      "notes":
+        "Cosmos SDK 0.15 includes the upgrade from go-wire to go-amino.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.15.1"
     },
     {
       "id": "sdk-1-0",
@@ -436,7 +444,7 @@
       "title": "Tendermint",
       "version": "0.19.0",
       "children": [],
-      "span": 1,
+      "span": 2,
       "date": "2018-04-13",
       "notes":
         "Tendermint 0.19.0 upgrades go-wire to go-amino. This is a sweeping change that breaks everything that is serialized to disk or over the network.",
@@ -548,7 +556,7 @@
       "title": "Voyager",
       "version": "0.6.0",
       "children": [],
-      "span": 2,
+      "span": 3,
       "date": "",
       "notes":
         "Voyager 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as UI for block rewards and commission rates for validators.",

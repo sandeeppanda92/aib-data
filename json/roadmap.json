@@ -87,7 +87,7 @@
       "date": "2018-04-25",
       "notes":
         "Multiple instances of Gaia-3 are set up by the Cosmos community, following in the wake of new Tendermint and Cosmos SDK releases. The most recent version was Gaia-3008.",
-      "url": "https://explorer.adrianbrink.com"
+      "url": "http://explorer.cosmos.network/"
     },
     {
       "id": "hub-gaia-4",
@@ -98,7 +98,7 @@
       "date": "",
       "notes":
         "Gaia-4 includes block rewards for validators and commission fees.",
-      "url": ""
+      "url": "http://explorer.cosmos.network/"
     },
     {
       "id": "hub-gaia-5",
@@ -109,7 +109,7 @@
       "date": "",
       "notes":
         "Gaia-5 supports an unbonding period for delegates, HSM, fork and halt detection, as well as a LevelDB server.",
-      "url": ""
+      "url": "http://explorer.cosmos.network/"
     },
     {
       "id": "hub-1-0",
@@ -120,7 +120,7 @@
       "date": "",
       "notes":
         "Final version of Cosmos Hub before we launch. Features are frozen.",
-      "url": ""
+      "url": "http://explorer.cosmos.network/"
     }
   ],
   "sdk": [

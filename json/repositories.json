@@ -1,0 +1,78 @@
+{
+  "tendermint": [
+    {
+      "name": "Tendermint",
+      "github": "https://github.com/tendermint/tendermint",
+      "type": "core",
+      "description": "Tendermint Core (BFT) in Golang"
+    },
+    {
+      "name": "ABCI",
+      "github": "https://github.com/tendermint/abci",
+      "type": "core",
+      "description": "Interface between blockchain and application"
+    },
+    {
+      "name": "Ethermint",
+      "github": "https://github.com/tendermint/ethermint",
+      "type": "core",
+      "description": "Ethereum powered by Tendermint consensus"
+    },
+    {
+      "name": "go-amino",
+      "github": "https://github.com/tendermint/go-amino",
+      "type": "secondary",
+      "description": "An object encoding specification used across the stack"
+    },
+    {
+      "name": "IAVL",
+      "github": "https://github.com/tendermint/iavl",
+      "type": "secondary",
+      "description": "A versioned and immutable AVL+ tree for persistent data"
+    },
+    {
+      "name": "go-crypto",
+      "github": "https://github.com/tendermint/go-crypto",
+      "type": "secondary",
+      "description": "Go library for cryptography"
+    },
+    {
+      "name": "tmlibs",
+      "github": "https://github.com/tendermint/tmlibs",
+      "type": "secondary",
+      "description": "Common Golang libraries used in the Tendermint stack"
+    },
+    {
+      "name": "Coding",
+      "github": "https://github.com/tendermint/coding",
+      "type": "secondary",
+      "description": "Coding guidelines"
+    },
+    {
+      "name": "Website",
+      "github": "https://github.com/tendermint/tendermint.com",
+      "type": "secondary",
+      "description": "Source code for https://tendermint.com"
+    }
+  ],
+  "cosmos": [
+    {
+      "name": "",
+      "github": "",
+      "type": "core",
+      "description": ""
+    },
+    {
+      "name": "",
+      "github": "",
+      "type": "core",
+      "description": ""
+    },
+    {
+      "name": "",
+      "github": "",
+      "type": "core",
+      "description": ""
+    }
+  ]
+}

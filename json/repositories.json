@@ -19,10 +19,16 @@
       "description": "Ethereum powered by Tendermint consensus"
     },
     {
-      "name": "go-amino",
+      "name": "Go-amino",
       "github": "https://github.com/tendermint/go-amino",
       "type": "secondary",
       "description": "An object encoding specification used across the stack"
+    },
+    {
+      "name": "Go-crypto",
+      "github": "https://github.com/tendermint/go-crypto",
+      "type": "secondary",
+      "description": "Go library for cryptography"
     },
     {
       "name": "IAVL",
@@ -31,13 +37,7 @@
       "description": "A versioned and immutable AVL+ tree for persistent data"
     },
     {
-      "name": "go-crypto",
-      "github": "https://github.com/tendermint/go-crypto",
-      "type": "secondary",
-      "description": "Go library for cryptography"
-    },
-    {
-      "name": "tmlibs",
+      "name": "Tmlibs",
       "github": "https://github.com/tendermint/tmlibs",
       "type": "secondary",
       "description": "Common Golang libraries used in the Tendermint stack"
@@ -67,6 +67,12 @@
       "github": "https://github.com/cosmos/voyager",
       "type": "core",
       "description": "The user interface for the Cosmos Network"
+    },
+    {
+      "name": "Lotion JS",
+      "github": "https://github.com/keppel/lotion",
+      "type": "core",
+      "description": "Smooth and easy blockchain apps"
     },
     {
       "name": "Cosmos Core",

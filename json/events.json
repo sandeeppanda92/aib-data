@@ -220,5 +220,37 @@
     "dates": {
       "start": "2018-04-20"
     }
+  },
+  {
+    "id": "tokensummit-3",
+    "title": "Token Summit III",
+    "href": "http://tokensummit.com/",
+    "body":
+      "Token Summit is in New York again during May 16-17, 2018. We will continue to discuss the economics, regulation and best practices around blockchain-based tokens, protocols, and crypto-assets. Jae Kwon, founder and CEO of Tendermint will be speaking.",
+    "images": {
+      "logo": "tokensummit",
+      "location": "nyc"
+    },
+    "location": "New York City, USA",
+    "dates": {
+      "start": "2018-05-16",
+      "end": "2018-05-17"
+    }
+  },
+  {
+    "id": "w4b-hackathon-2018",
+    "title": "Women4Blockchain Hackathon",
+    "href": "https://www.women4blockchain.com/",
+    "body":
+      "A gathering of business, legal, and technical minds to build new and innovative solutions on the blockchain. Join us for a weekend of workshopping, hacking, and creating, as we build the blockchain solutions — for the rest of the world to follow.",
+    "images": {
+      "logo": "w4b",
+      "location": "nyc"
+    },
+    "location": "New York City, USA",
+    "dates": {
+      "start": "2018-06-01",
+      "end": "2018-06-04"
+    }
   }
 ]

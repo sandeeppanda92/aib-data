@@ -106,7 +106,7 @@
       "version": "gaia-5000",
       "children": [],
       "span": 1,
-      "date": "",
+      "date": "2018-05-2",
       "notes":
         "gaia-5000 includes support for block rewards for validators and commission fees.",
       "url": "http://explorer.cosmos.network/"
@@ -116,7 +116,7 @@
       "title": "Testnet",
       "version": "gaia-6000",
       "children": [],
-      "span": 1,
+      "span": 2,
       "date": "",
       "notes":
         "To be announced.",
@@ -249,7 +249,7 @@
       "span": 1,
       "date": "2018-03-28",
       "notes":
-        "Cosmos SDK 0.12 'Aristarchus' is part of a two-week sprint to refactor the SDK and to implement cross-chain visibility and transfer.",
+        "Cosmos SDK 0.12.0 'Aristarchus' is part of a two-week sprint to refactor the SDK and to implement cross-chain visibility and transfer.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.12.0"
     },
     {
@@ -260,7 +260,7 @@
       "span": 1,
       "date": "2018-04-02",
       "notes":
-        "Cosmos SDK 0.13 'Sima Tan' merges in the full staking module, improvements for `basecoind`, and a new `democoin` example app.",
+        "Cosmos SDK 0.13.0 'Sima Tan' merges in the full staking module, improvements for `basecoind`, and a new `democoin` example app.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.13.0"
     },
     {
@@ -271,7 +271,7 @@
       "span": 1,
       "date": "2018-04-09",
       "notes":
-        "Cosmos SDK 0.14 'Shi Shen' includes improvements to staking, usability, and refactoring to reduce duplicated code.",
+        "Cosmos SDK 0.14.0 'Shi Shen' includes improvements to staking, usability, and refactoring to reduce duplicated code.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.14.1"
     },
     {
@@ -282,8 +282,19 @@
       "span": 1,
       "date": "2018-04-30",
       "notes":
-        "Cosmos SDK 0.15 includes the upgrade from go-wire to go-amino.",
+        "Cosmos SDK 0.15.0 includes the upgrade from go-wire to go-amino.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.15.1"
+    },
+    {
+      "id": "sdk-0-16",
+      "title": "Cosmos SDK",
+      "version": "0.16.0",
+      "children": ["hub-gaia-5"],
+      "span": 1,
+      "date": "2018-05-02",
+      "notes":
+        "Cosmos SDK 0.16.0 includes staking functionality, new validator bonding/unbonding functions, and lots of refactoring.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.16.0-rc0"
     },
     {
       "id": "sdk-1-0",
@@ -455,11 +466,11 @@
       "title": "Tendermint",
       "version": "0.19.0",
       "children": [],
-      "span": 2,
+      "span": 3,
       "date": "2018-04-13",
       "notes":
         "Tendermint 0.19.0 upgrades go-wire to go-amino. This is a sweeping change that breaks everything that is serialized to disk or over the network.",
-      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.1"
+      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.2"
     },
     {
       "id": "tmc-1-0",
@@ -578,7 +589,7 @@
       "title": "Voyager",
       "version": "0.7.0",
       "children": [],
-      "span": 1,
+      "span": 2,
       "date": "",
       "notes":
         "Voyager 0.7.0 supports block rewards and commission rates for validators.",

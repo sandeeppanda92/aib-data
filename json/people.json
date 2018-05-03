@@ -61,6 +61,17 @@
     }
   },
   {
+    "slug": "anna-harbaum",
+    "name": "Anna Harbaum",
+    "bio": "",
+    "ids": {
+      "linkedin": "anna-harbaum-84193159"
+    },
+    "groups": {
+      "aib": "Internal Operations Manager"
+    }
+  },
+  {
     "slug": "anton-kaliaev",
     "name": "Anton Kaliaev",
     "bio":

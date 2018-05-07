@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Tendermint 0.9.0 Release</title><meta name="description" content="Tendermint 0.9.0 makes some important changes to facilitate building and querying applications. By Ethan Buchman"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Tendermint 0.9.0 Release</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Tendermint 0.9.0 makes some important changes to facilitate building and querying applications. By Ethan Buchman
+</section>
+<section data-field="body" class="e-content">
+<section name="acdf" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4991" id="4991" class="graf graf--h3 graf--leading graf--title">Tendermint 0.9.0 Release</h3><h4 name="8bb6" id="8bb6" class="graf graf--h4 graf-after--h3 graf--subtitle">Tendermint 0.9.0 makes some important changes to facilitate building and querying applications. By <a href="https://twitter.com/buchmanster" data-href="https://twitter.com/buchmanster" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">Ethan Buchman</a></h4><blockquote name="a882" id="a882" class="graf graf--blockquote graf-after--h4">Credits to our <a href="https://tendermint.com/about" data-href="https://tendermint.com/about" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">team</a>, and <a href="http://forum.tendermint.com:3000/" data-href="http://forum.tendermint.com:3000/" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">community</a> for the hard work in making this release possible.</blockquote><p name="4d8b" id="4d8b" class="graf graf--p graf-after--blockquote">Tendermint 0.9.0 is the result of the last couple months of work, wherein we devoted significant effort to building out an <a href="https://github.com/tendermint/basecoin" data-href="https://github.com/tendermint/basecoin" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">actual, useable, cryptocurrency application</a> on Tendermint. Doing so required some modifications to ABCI to enable more informative queries, and an additional RPC endpoint for easily fetching commit signatures. The hard work paid off — we can now do light-client verification of the latest state of a Tendermint blockchain. We even demonstrated how this could be used to do <a href="https://github.com/tendermint/basecoin/blob/master/docs/guide/ibc.md" data-href="https://github.com/tendermint/basecoin/blob/master/docs/guide/ibc.md" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">InterBlockchain Communication</a>!</p><p name="33a6" id="33a6" class="graf graf--p graf-after--p">Get the latest release at <a href="https://tendermint.com/download" data-href="https://tendermint.com/download" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">our downloads page</a>. See the <a href="https://github.com/tendermint/tendermint/blob/master/CHANGELOG.md#090-march-6-2017" data-href="https://github.com/tendermint/tendermint/blob/master/CHANGELOG.md#090-march-6-2017" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">v0.9.0 release notes</a> for more details.</p><h3 name="862d" id="862d" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">ABCI: Query takes more arguments and returns more results</strong></h3><p name="c99b" id="c99b" class="graf graf--p graf-after--h3">The <code class="markup--code markup--p-code">Query</code> message in ABCI has been updated to take additional arguments, and return additional values. First, the new request type allows us to specify the height we want to query from, though loading old states is not implemented yet. Second, while before a query request was just arbitrary bytes, we now break up the query bytes into <code class="markup--code markup--p-code">path</code> and <code class="markup--code markup--p-code">data</code> components for better standardization. Finally, a <code class="markup--code markup--p-code">prove</code> flag allows callers to specify whether or not they would like a Merkle proof for the result of the query. The new response type includes the same <code class="markup--code markup--p-code">code</code> and <code class="markup--code markup--p-code">log</code> we are used to, but renames <code class="markup--code markup--p-code">data</code> to <code class="markup--code markup--p-code">value</code> and includes the <code class="markup--code markup--p-code">key</code> used for lookup and the <code class="markup--code markup--p-code">index</code> of this key within the tree. It also includes a <code class="markup--code markup--p-code">proof</code>, if it was requested, and the <code class="markup--code markup--p-code">height</code> that the query was taken at. These features make queries much more manageable, and facilitate producing proofs for light-clients!</p><figure name="2774" id="2774" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/nylira/e27f397545fe606f405afa1b3ab5cf34.js"></script></figure><h3 name="5540" id="5540" class="graf graf--h3 graf-after--figure"><strong class="markup--strong markup--h3-strong">RPC: New </strong><code class="markup--code markup--h3-code"><strong class="markup--strong markup--h3-strong">/commit</strong></code><strong class="markup--strong markup--h3-strong"> endpoint</strong></h3><p name="6e33" id="6e33" class="graf graf--p graf-after--h3">A secure light-client in Tendermint needs to verify not only a Merkle proof, but also that the root of the corresponding Merkle tree was signed by more than 2/3 of a validator set they know about. Since validator signatures for block <code class="markup--code markup--p-code">H</code> are collected in the <code class="markup--code markup--p-code">LastCommit</code> field of block <code class="markup--code markup--p-code">H+1</code>, we added a <code class="markup--code markup--p-code">/commit</code> RPC endpoint to simplify fetching the commit data for block <code class="markup--code markup--p-code">H</code>. The new endpoint takes a height as an argument and returns both the header and commit signatures for that height. A secure light client will verify that at least 2/3 of these signatures are from known active validators, that they are valid signatures of the block header, and that the header contains the relevant Merkle root.</p><h3 name="58f4" id="58f4" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">Basecoin</strong></h3><p name="aacd" id="aacd" class="graf graf--p graf-after--h3">This release was all about getting things ready for a real and useable <a href="https://github.com/tendermint/basecoin" data-href="https://github.com/tendermint/basecoin" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Basecoin</a>. If you’re not familiar, Basecoin is our framework for building cryptocurrency applications on Tendermint, which we plan to use to build out the <a href="https://cosmos.network/" data-href="https://cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Cosmos Hub</a> and other blockchains in the Cosmos Network. It’s an ABCI app that has some built in cryptocurrency functionality, and can be easily extended by plugins implemented in Go, without forking the repository. We have a series of example plugins in our <a href="https://github.com/tendermint/basecoin-examples" data-href="https://github.com/tendermint/basecoin-examples" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Basecoin examples repository</a>. With this release of Tendermint, we are announcing our first official release of Basecoin, v0.3.0. Checkout the <a href="https://github.com/tendermint/basecoin/blob/master/docs/guide/basecoin-basics.md" data-href="https://github.com/tendermint/basecoin/blob/master/docs/guide/basecoin-basics.md" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">basecoin guide</a> to get started!</p><p name="6c5e" id="6c5e" class="graf graf--p graf-after--p">One of the most important features of the Cosmos Network is InterBlockchain Communication (IBC), which enables different blockchains to send data back and forth. This works by having the two blockchains act as light-clients of one another. We implemented this functionality as a plugin in Basecoin, and it is available now! Check out the <a href="https://github.com/tendermint/basecoin/blob/master/docs/guide/ibc.md" data-href="https://github.com/tendermint/basecoin/blob/master/docs/guide/ibc.md" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">IBC guide</a> to demo it today!</p><h3 name="2fc7" id="2fc7" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">Other improvements</strong></h3><p name="bc1b" id="bc1b" class="graf graf--p graf-after--h3">Included in this release were various other improvements to Tendermint. Notably, we make it easier to start Tendermint in-process with other applications, and we made a variety of improvements on the automation and code maintenance front. We also fixed some bugs, in particular in keeping Tendermint and its ABCI application in-sync after a restart. We also discovered and fixed a subtle bug in Tendermint’s proposer selection logic. For more details about these and other changes, see <a href="https://github.com/tendermint/tendermint/blob/master/CHANGELOG.md#090-march-6-2017" data-href="https://github.com/tendermint/tendermint/blob/master/CHANGELOG.md#090-march-6-2017" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">the changelog!</a>.</p><h3 name="f735" id="f735" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">Tendermint Roadmap</strong></h3><p name="2f2a" id="2f2a" class="graf graf--p graf-after--h3">Here are some of the items up next on our stack:</p><ul class="postList"><li name="a4d5" id="a4d5" class="graf graf--li graf-after--p">Update ABCI to include vote information (e.g. evidence of double-signing)</li><li name="abf4" id="abf4" class="graf graf--li graf-after--li">Implement transaction indexing and querying</li><li name="8b89" id="8b89" class="graf graf--li graf-after--li">Update the Tendermint block header for more secure validator set changes and transaction result queries</li><li name="5b6c" id="5b6c" class="graf graf--li graf-after--li">Secure the RPC server</li></ul><p name="6098" id="6098" class="graf graf--p graf-after--li">We’ve also added an <a href="https://tendermint.com/docs/roadmap" data-href="https://tendermint.com/docs/roadmap" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">official roadmap to the website</a>, and of course you can keep up with us via <a href="https://github.com/tendermint/tendermint/issues" data-href="https://github.com/tendermint/tendermint/issues" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">our GitHub issues</a>, by following us on <a href="http://twitter.com/tendermint_team" data-href="http://twitter.com/tendermint_team" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Twitter</a>, or by asking us questions directly on <a href="http://forum.tendermint.com:3000/" data-href="http://forum.tendermint.com:3000/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">our Slack</a>.</p><p name="07a1" id="07a1" class="graf graf--p graf-after--p graf--trailing">Cheers!</p></div></div></section><section name="7397" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="5dad" id="5dad" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/02c73adbef83a3bba4264417f1cc2709" data-href="https://gist.github.com/02c73adbef83a3bba4264417f1cc2709" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/consensus" class="p-tag">Consensus</a>, <a href="https://medium.com/tag/quark" class="p-tag">Quark</a>, <a href="https://medium.com/tag/abci" class="p-tag">Abci</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/bac934f37da8"><time class="dt-published" datetime="2017-03-15T07:00:00.000Z">March 15, 2017</time></a>.</p><p><a href="https://medium.com/@nylira/tendermint-0-9-release-bac934f37da8" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

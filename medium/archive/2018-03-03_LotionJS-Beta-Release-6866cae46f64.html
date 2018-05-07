@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>LotionJS Beta Release</title><meta name="description" content="To program a blockchain in JavaScript, just apply Lotion."><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">LotionJS Beta Release</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+To program a blockchain in JavaScript, just apply Lotion.
+</section>
+<section data-field="body" class="e-content">
+<section name="fe14" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8412" id="8412" class="graf graf--h3 graf--leading graf--title">LotionJS Beta Release</h3></div><div class="section-inner sectionLayout--outsetColumn"><figure name="5983" id="5983" class="graf graf--figure graf--layoutOutsetCenter graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 563px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 56.3%;"></div><img class="graf-image" data-image-id="1*ZRpdTfAcAn7Mx0ErUhfBHQ.png" data-width="3840" data-height="2160" src="https://cdn-images-1.medium.com/max/1000/1*ZRpdTfAcAn7Mx0ErUhfBHQ.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="ad2d" id="ad2d" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">To program a blockchain in JavaScript, just apply Lotion.</em></p><ul class="postList"><li name="66ff" id="66ff" class="graf graf--li graf-after--p graf--trailing"><a href="https://github.com/keppel/lotion" data-href="https://github.com/keppel/lotion" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://github.com/keppel/lotion</a></li></ul></div></div></section><section name="cfff" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="28c5" id="28c5" class="graf graf--h3 graf--leading">Key Features</h3><ul class="postList"><li name="f8b7" id="f8b7" class="graf graf--li graf-after--h3">Spin up blockchain applications in JavaScript.</li><li name="afa7" id="afa7" class="graf graf--li graf-after--li">Under the hood, Lotion runs on top of Tendermint Proof-of-Stake consensus and networking protocols so you only need to worry about writing the application logic.</li><li name="b432" id="b432" class="graf graf--li graf-after--li">Composable, middleware-oriented module design.</li><li name="d3df" id="d3df" class="graf graf--li graf-after--li">Complex peer-to-peer networking handled for you (by Tendermint).</li><li name="7b41" id="7b41" class="graf graf--li graf-after--li">Fast: scales effortlessly to hundreds of transactions per second (thanks to Proof-of-Stake).</li><li name="201c" id="201c" class="graf graf--li graf-after--li">Rich module ecosystem, just an <code class="markup--code markup--li-code">npm install</code> away.</li><li name="8f64" id="8f64" class="graf graf--li graf-after--li">Pure JavaScript light clients.</li><li name="4c72" id="4c72" class="graf graf--li graf-after--li">CLI for quick application scaffolding and deployment.</li><li name="3ebe" id="3ebe" class="graf graf--li graf-after--li">Automatic node discovery through the BitTorrent DHT and multicast DNS.</li><li name="eecf" id="eecf" class="graf graf--li graf-after--li">Single-command installation.</li><li name="18ab" id="18ab" class="graf graf--li graf-after--li">Easy to learn, especially for those just being introduced to blockchain development.</li><li name="7bbb" id="7bbb" class="graf graf--li graf-after--li">Interoperable with other applications on the Cosmos Network through <a href="https://blog.cosmos.network/developer-deep-dive-cosmos-ibc-5855aaf183fe" data-href="https://blog.cosmos.network/developer-deep-dive-cosmos-ibc-5855aaf183fe" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">IBC</a>.</li><li name="00db" id="00db" class="graf graf--li graf-after--li">Plain-old-JavaScript-object interface to blockchain state.</li><li name="3abe" id="3abe" class="graf graf--li graf-after--li">Minimalist state querying syntax with efficient Merkle proofs.</li></ul><p name="4290" id="4290" class="graf graf--p graf-after--li">To expound on the last point, the state querying syntax is one of the bigger points worth illustrating on the client.</p><p name="a2f6" id="a2f6" class="graf graf--p graf-after--p">The developer just has to write:</p><pre name="918e" id="918e" class="graf graf--pre graf-after--p">let { connect } = require(&#39;lotion&#39;)<br>let { state,send } = await connect(GCI)</pre><pre name="4811" id="4811" class="graf graf--pre graf-after--pre">let myData = await state.some.key.path<br>console.log(myData)</pre><p name="454a" id="454a" class="graf graf--p graf-after--pre graf--trailing">…and myData will contain a snapshot of that part of the state. Under the hood, it’s verifying a Merkle proof of just that arbitrary subtree of the state. It will be fast no matter how big the blockchain state is. Very notably, this light client experience is something that no other blockchain project has implemented to date.</p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/javascript" class="p-tag">JavaScript</a>, <a href="https://medium.com/tag/dapps" class="p-tag">Dapps</a>, <a href="https://medium.com/tag/blockchain-technology" class="p-tag">Blockchain Technology</a>, <a href="https://medium.com/tag/developer-tools" class="p-tag">Developer Tools</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a></p><p>By <a href="https://medium.com/@tendermint" class="p-author h-card">Tendermint Team</a> on <a href="https://medium.com/p/6866cae46f64"><time class="dt-published" datetime="2018-03-03T23:52:07.537Z">March 3, 2018</time></a>.</p><p><a href="https://medium.com/@tendermint/lotionjs-beta-release-6866cae46f64" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

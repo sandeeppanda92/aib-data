@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Light Clients on Ethermint</title><meta name="description" content="This post is about how you can build very good light clients using Ethermint."><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Light Clients on Ethermint</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This post is about how you can build very good light clients using Ethermint.
+</section>
+<section data-field="body" class="e-content">
+<section name="66e2" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="11e6" id="11e6" class="graf graf--h3 graf--leading graf--title">Light Clients on Ethermint</h3></div><div class="section-inner sectionLayout--outsetColumn"><figure name="2029" id="2029" class="graf graf--figure graf--layoutOutsetCenter graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 563px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 56.3%;"></div><img class="graf-image" data-image-id="1*-TUcfszYV9RD1zxO04QSwg.png" data-width="1600" data-height="900" src="https://cdn-images-1.medium.com/max/1000/1*-TUcfszYV9RD1zxO04QSwg.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="fda1" id="fda1" class="graf graf--p graf-after--figure">This post is about how you can build very good light clients using Ethermint.</p><ul class="postList"><li name="5da9" id="5da9" class="graf graf--li graf-after--p">Ethermint docs here: <a href="http://ethermint.readthedocs.io/en/develop/" data-href="http://ethermint.readthedocs.io/en/develop/" class="markup--anchor markup--li-anchor" rel="nofollow noopener noopener" target="_blank">http://ethermint.readthedocs.io/en/develop/</a></li><li name="7a04" id="7a04" class="graf graf--li graf-after--li graf--trailing">Ethermint GitHub repo here: <a href="https://github.com/tendermint/ethermint" data-href="https://github.com/tendermint/ethermint" class="markup--anchor markup--li-anchor" rel="nofollow noopener noopener" target="_blank">https://github.com/tendermint/ethermint</a></li></ul></div></div></section><section name="82f8" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="555d" id="555d" class="graf graf--p graf--leading">It’s very hard to build light clients on Ethereum because a light client <em class="markup--em markup--p-em">at least</em> must have the ability to see every block header. This means that a light client must be able to receive new data of the network state every 12 seconds, be able to verify that data, go back to sleep, then run the same process again 12 seconds later. The problem is, if you have a light client running on your phone, this process becomes very expensive in terms of bandwidth and battery.</p><p name="5a30" id="5a30" class="graf graf--p graf-after--p">What we have built in Tendermint is a highly efficient light client protocol, which only requires a light client to keep track of the validator set. Since validator sets change less frequently than the state of a network changes, with Ethermint, your phone running a light client need only to verify 1 transaction every 30 days.</p><p name="335a" id="335a" class="graf graf--p graf-after--p graf--trailing">Tendermint’s light client protocol by proxy of Ethermint fully supports Ethereum functionality in the palm of your hands. Powerfully, Ethermint light clients will allow you to execute smart contracts from your mobile phone, all without zapping your battery. This use case is huge. And we are inviting you to try it.</p></div></div></section><section name="e96d" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a06f" id="a06f" class="graf graf--h3 graf--leading">Further Discussions</h3><ul class="postList"><li name="9268" id="9268" class="graf graf--li graf-after--h3">Ethermint on Twitter: <a href="https://twitter.com/ethermint" data-href="https://twitter.com/ethermint" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">@ethermint</a></li><li name="520d" id="520d" class="graf graf--li graf-after--li graf--trailing">Watercooler for developers on Matrix Chat Channel: <a href="https://riot.im/app/#/room/#cosmos:matrix.org" data-href="https://riot.im/app/#/room/#cosmos:matrix.org" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">#cosmos</a></li></ul></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a>, <a href="https://medium.com/tag/ethermint" class="p-tag">Ethermint</a>, <a href="https://medium.com/tag/cosmos" class="p-tag">Cosmos</a>, <a href="https://medium.com/tag/development" class="p-tag">Development</a></p><p>By <a href="https://medium.com/@tendermint" class="p-author h-card">Tendermint Team</a> on <a href="https://medium.com/p/9ae1f3c6c4f5"><time class="dt-published" datetime="2017-10-30T15:01:01.531Z">October 30, 2017</time></a>.</p><p><a href="https://medium.com/@tendermint/light-clients-on-ethermint-9ae1f3c6c4f5" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

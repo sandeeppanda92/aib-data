@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Introducing Ethermint — Part 1</title><meta name="description" content="Running vanilla Ethereum on top of Tendermint consensus. By Adrian Brink"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Introducing Ethermint — Part 1</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Running vanilla Ethereum on top of Tendermint consensus. By Adrian Brink
+</section>
+<section data-field="body" class="e-content">
+<section name="afcb" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="cfa3" id="cfa3" class="graf graf--h3 graf--leading graf--title">Introducing Ethermint — Part 1</h3><h4 name="bfa3" id="bfa3" class="graf graf--h4 graf-after--h3 graf--subtitle">Running vanilla Ethereum on top of Tendermint consensus. By <a href="https://medium.com/u/a02fdd9c9222" data-href="https://medium.com/u/a02fdd9c9222" data-anchor-type="2" data-user-id="a02fdd9c9222" data-action-value="a02fdd9c9222" data-action="show-user-card" data-action-type="hover" class="markup--user markup--h4-user" target="_blank">Adrian Brink</a></h4><p name="84b5" id="84b5" class="graf graf--p graf-after--h4">As you might have heard, the <a href="https://tendermint.com" data-href="https://tendermint.com" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Tendermint</a> consensus engine can support almost any other crypto-currency, as long as the source code is open-source and some developer is willing to write an ABCI wrapper around it.</p><p name="af72" id="af72" class="graf graf--p graf-after--p">As part of Tendermint’s goal to launch the <a href="https://cosmos.network" data-href="https://cosmos.network" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">COSMOS hub</a>, we are enabling Ethereum to run on top of Tendermint. This allows developers to have all the nice features of Ethereum, while at the same time benefit from Tendermint’s proof of stake implementation. Tendermint combined with Ethereum results in fast block times, transaction finality while also getting the goodies of smart contracts.</p><h3 name="e341" id="e341" class="graf graf--h3 graf-after--p">Installation</h3><p name="10bc" id="10bc" class="graf graf--p graf-after--h3">Depending on how cutting edge you would like to be, you can choose between the <code class="markup--code markup--p-code">develop</code> branch or the <code class="markup--code markup--p-code">master</code> branch. <strong class="markup--strong markup--p-strong">Currently you have to choose the </strong><code class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">develop</strong></code><strong class="markup--strong markup--p-strong"> branch for </strong><a href="https://ethermint.network" data-href="https://ethermint.network" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">Ethermint</strong></a><strong class="markup--strong markup--p-strong">.</strong></p><h4 name="e1a6" id="e1a6" class="graf graf--h4 graf-after--p">Install go1.8</h4><p name="4d27" id="4d27" class="graf graf--p graf-after--h4">To explore the possibilities of Ethermint you need a couple of prerequisites. First, you need to have <a href="https://golang.org/doc/install" data-href="https://golang.org/doc/install" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">go1.8</a> installed and your $GOPATH properly configured. This is necessary since we are currently not shipping binaries for Ethermint.</p><h4 name="4bfe" id="4bfe" class="graf graf--h4 graf-after--p">Install Tendermint</h4><p name="013c" id="013c" class="graf graf--p graf-after--h4">The second requirement is that you are able to run a Tendermint node, since this engine handles all the blockchain aspects, like P2P and consensus. To install Tendermint just run <code class="markup--code markup--p-code">go get -u github.com/tendermint/tendermint/cmd/tendermint</code> and you should be good to go. If not follow this <a href="https://tendermint.com/docs/guides/install" data-href="https://tendermint.com/docs/guides/install" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">link</a>. As an alternative you can also download <a href="https://tendermint.com/download" data-href="https://tendermint.com/download" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">binaries</a>.</p><h4 name="c846" id="c846" class="graf graf--h4 graf-after--p">Install Ethermint</h4><p name="7a65" id="7a65" class="graf graf--p graf-after--h4">Lastly, we need to install <code class="markup--code markup--p-code">ethermint</code> itself. First clone the source code (<code class="markup--code markup--p-code">git clone https://github.com/tendermint/ethermint.git</code>). Afterwards, switch into the source code directory and run <code class="markup--code markup--p-code">make install</code> and voila, Ethermint should be installed.</p><h4 name="f665" id="f665" class="graf graf--h4 graf-after--p">Install geth</h4><p name="0c0a" id="0c0a" class="graf graf--p graf-after--h4">Geth is an Ethereum tool that allows you to attach to a running Ethereum node over RPC. We will use it later to interact with Ethermint. Please follow this <a href="https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum" data-href="https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">guide</a> to install it on your local machine.</p><h3 name="5926" id="5926" class="graf graf--h3 graf-after--p">Running Ethermint</h3><h4 name="090b" id="090b" class="graf graf--h4 graf-after--h3">Starting Tendermint</h4><p name="b4b3" id="b4b3" class="graf graf--p graf-after--h4">First you need to initialise Tendermint by running <code class="markup--code markup--p-code">tendermint --home ~/.ethermint/tendermint init</code>. This initialises the Tendermint node. The next step is to run <code class="markup--code markup--p-code">tendermint --home ~/.ethermint/tendermint node</code> to start the Tendermint node.</p><h4 name="efe4" id="efe4" class="graf graf--h4 graf-after--p">Starting Ethermint</h4><p name="ae5c" id="ae5c" class="graf graf--p graf-after--h4">In a second terminal window switch into the folder with the Ethermint source code. Then run <code class="markup--code markup--p-code">ethermint --datadir ~/.ethermint init dev/genesis.json</code> to initialise the Ethermint files. Then in order to have an account with money run <code class="markup--code markup--p-code">cp -r dev/keystore ~/.ethermint/keystore</code>. Afterwards, start the Ethermint node by running <code class="markup--code markup--p-code">ethermint --datadir ~/.ethermint --rpc --rpcaddr=0.0.0.0 --ws --wsaddr=0.0.0.0 --rpcapi eth,net,web3,personal,admin</code>. This tells Ethermint to expose a lot of its functionality over RPC.</p><p name="d309" id="d309" class="graf graf--p graf-after--p">At this stage you should see blocks streaming by in both the Tendermint and the Ethermint windows.</p><h4 name="ce30" id="ce30" class="graf graf--h4 graf-after--p">Attaching geth to Ethermint</h4><p name="47aa" id="47aa" class="graf graf--p graf-after--h4">In a third terminal window run <code class="markup--code markup--p-code">geth attach http://localhost:8545</code>. Now you should find yourself in a console environment, where you can use the <a href="https://github.com/ethereum/wiki/wiki/JavaScript-API" data-href="https://github.com/ethereum/wiki/wiki/JavaScript-API" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Web3</a> commands to interact with the Ethermint node.</p><h3 name="cf2a" id="cf2a" class="graf graf--h3 graf-after--p">Conclusion</h3><p name="9c58" id="9c58" class="graf graf--p graf-after--h3">In this short introduction I have explained how to setup Ethermint and how to interact with it using geth. From here, you should be able to develop smart contract applications or simply send transaction between different accounts.</p><p name="6015" id="6015" class="graf graf--p graf-after--p">If you have any trouble setting up any of the above systems or are running into issues using them, please find me on <a href="https://tendermint.slack.com/" data-href="https://tendermint.slack.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">slack</a> under @adrian, via <a href="https://twitter.com/adrian_brink" data-href="https://twitter.com/adrian_brink" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">twitter</a> or via email <a href="mailto:adrian@tendermint.com" data-href="mailto:adrian@tendermint.com" class="markup--anchor markup--p-anchor" target="_blank">adrian@tendermint.com</a> .</p><h3 name="375e" id="375e" class="graf graf--h3 graf-after--p">Next Up</h3><p name="cbc0" id="cbc0" class="graf graf--p graf-after--h3 graf--trailing"><a href="https://blog.cosmos.network/using-ethermint-with-geth-and-mist-d4b7715abbd9" data-href="https://blog.cosmos.network/using-ethermint-with-geth-and-mist-d4b7715abbd9" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">In my next blog post</a> I will explain how to use docker to setup multiple Ethermint instances, so that you can experiment with running networks of Ethermint nodes. Furthermore, I will explain how Ethermint relates to the COSMOS hub.</p></div></div></section><section name="cb77" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="b618" id="b618" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/f878a4040a3f92c1094ad742c82cea87" data-href="https://gist.github.com/f878a4040a3f92c1094ad742c82cea87" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/ethermint" class="p-tag">Ethermint</a>, <a href="https://medium.com/tag/consensus" class="p-tag">Consensus</a>, <a href="https://medium.com/tag/cryptocurrency" class="p-tag">Cryptocurrency</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/385ba9a148d3"><time class="dt-published" datetime="2017-05-26T07:00:00.000Z">May 26, 2017</time></a>.</p><p><a href="https://medium.com/@nylira/introducing-ethermint-part-1-385ba9a148d3" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

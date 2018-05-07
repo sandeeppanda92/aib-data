@@ -268,11 +268,8 @@ We have an upcoming meetup in Berkeley, CA, with Zarko about Tendermint. We will
 livestream this meetup and publish the broadcast on the [Cosmos Network's
 YouTube channel](http://bit.ly/2GTuJgx).
 
-[proposer-selection]:
-https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md
-[sentry-node]:
-https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/p2p/node.md
-[pex]:
-https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/pex/pex.md
-[btcd]: https://github.com/btcsuite/btcd  [dappzone]:
-https://blog.cosmos.network/why-application-specific-blockchains-make-sense-32f2073bfb37
+[proposer-selection]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md
+[sentry-node]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/p2p/node.md
+[pex]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/pex/pex.md
+[btcd]: https://github.com/btcsuite/btcd  
+[dappzone]: https://blog.cosmos.network/why-application-specific-blockchains-make-sense-32f2073bfb37

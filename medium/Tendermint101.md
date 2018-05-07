@@ -182,7 +182,7 @@ deterministically, through a defined mathematical function in the
 implementation. As such, we are able to mathematically prove that the system is
 live and that the protocol will make decisions.
 
-[__Rotating Leader Election__][Proposer selection procedure in Tendermint]
+[__Rotating Leader Election__][proposer-selection]
 
 Tendermint rotates through the validator set, i.e. block proposers, in a
 weighted round-robin fashion. The more stake, i.e. voting power, that a
@@ -198,9 +198,9 @@ a block -> Weight is recalculated, decreases some amount after round is complete
 As  each round progresses, weight increases incrementally in proportion to
 voting power -> Validator is elected again after k rounds`
 
-Because [the protocol selects block proposers deterministically][Proposer
-selection procedure in Tendermint], given that you know the validator set and
-each validator's voting power, you could compute exactly who the next block
+Because [the protocol selects block proposers
+deterministically][proposer-selection], given that you know the validator set
+and each validator's voting power, you could compute exactly who the next block
 proposers will be in rounds `x`, `x + 1`,...,`x + n`. Because of this, critics
 argue that Tendermint isn't decentralized enough. When you can know predictably
 who the leaders will be, an attacker could target those leaders and launch a
@@ -210,7 +210,7 @@ Architecture][Sentry Node] in Tendermint.
 
 ## P2P Networking Protocol
 
-[__Sentry Node Architecture__][Sentry Node]
+[__Sentry Node Architecture__][sentry-node]
 
 ![Tendermint stack]()
 
@@ -228,7 +228,7 @@ fault-tolerance, remain available, and ultimately play their part in keeping the
 network live. Because if they don't, they get slashed by the protocol for being
 offline for over a certain amount of time.
 
-[__Peer Exchange (PEX) Reactor__][PEX]
+[__Peer Exchange (PEX) Reactor__][pex]
 
 Tendermint borrows from Bitcoin's peer discovery protocol. More specifically,
 Tendermint adopts the p2p AddressBook from [btcd][btcd], the Bitcoin alternative
@@ -257,7 +257,7 @@ setting, be it public or enterprise, where a consensus protocol is desired.
 Tendermint is ideal for a developer who wants to implement an application on top
 of its own blockchain. It comes pre-assembled, so if the developer chooses to go
 for a pure Proof-of-Stake, BFT-based consensus engine to power their
-[dAppzone][application-specific blockchain], they can easily do so.
+[dAppzone][dappzone], they can easily do so.
 
 # Additional Resources
 
@@ -268,11 +268,11 @@ We have an upcoming meetup in Berkeley, CA, with Zarko about Tendermint. We will
 livestream this meetup and publish the broadcast on the [Cosmos Network's
 YouTube channel](http://bit.ly/2GTuJgx).
 
-[Proposer selection procedure in
-Tendermint]:https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md
-[Sentry Node]:
+[proposer-selection]:
+https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md
+[sentry-node]:
 https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/p2p/node.md
-[PEX]:
+[pex]:
 https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/pex/pex.md
-[btcd]: https://github.com/btcsuite/btcd [application-specific blockchain]:
+[btcd]: https://github.com/btcsuite/btcd  [dappzone]:
 https://blog.cosmos.network/why-application-specific-blockchains-make-sense-32f2073bfb37

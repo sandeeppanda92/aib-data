@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Testnet disruption update</title><meta name="description" content="There was a disruption in testnet Gaia-1 which caused nodes to go down. Cause of the outage is identified and fixed. Here’s what happened."><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Testnet disruption update</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+There was a disruption in testnet Gaia-1 which caused nodes to go down. Cause of the outage is identified and fixed. Here’s what happened.
+</section>
+<section data-field="body" class="e-content">
+<section name="6a7f" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="1c10" id="1c10" class="graf graf--h3 graf--leading graf--title">Testnet Disruption Update</h3><h4 name="f9b5" id="f9b5" class="graf graf--h4 graf-after--h3 graf--subtitle">Report</h4></div><div class="section-inner sectionLayout--outsetColumn"><figure name="54a4" id="54a4" class="graf graf--figure graf--layoutOutsetCenter graf-after--h4"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 464px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 46.400000000000006%;"></div><img class="graf-image" data-image-id="1*w7BeM52jHWtAGu1Eq4nVSw.jpeg" data-width="1536" data-height="712" src="https://cdn-images-1.medium.com/max/1000/1*w7BeM52jHWtAGu1Eq4nVSw.jpeg"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="a22c" id="a22c" class="graf graf--p graf-after--figure">Last night a disruption in testnet Gaia-1 happened. It caused nodes to go down. Cause of the outage is identified and fixed. You can restart your node, it should function properly.</p><h4 name="1bed" id="1bed" class="graf graf--h4 graf-after--p">What happened</h4><p name="8b6e" id="8b6e" class="graf graf--p graf-after--h4">1- A bug was identified in the way our validator nodes handled logs. This was an operational problem which had nothing to do with Tendermint itself.</p><p name="f111" id="f111" class="graf graf--p graf-after--p">2- This caused our validator nodes to go down for 5 minutes.</p><p name="108e" id="108e" class="graf graf--p graf-after--p">3- Retries for persistent peers currently only last for about 90 seconds before giving up.</p><p name="d264" id="d264" class="graf graf--p graf-after--p">4- Our validator nodes came back online but all other nodes stopped trying to connect to them by then.</p><p name="4d4e" id="4d4e" class="graf graf--p graf-after--p">5- Peer exchange is not enabled by default so no one had peers to connect to.</p><h4 name="8156" id="8156" class="graf graf--h4 graf-after--p">Solution</h4><ul class="postList"><li name="1acc" id="1acc" class="graf graf--li graf-after--h4">Log handling issue on our validator nodes is fixed, so you only need to restart your node and it should work fine.</li><li name="45e1" id="45e1" class="graf graf--li graf-after--li graf--trailing">Peer exchange will be enabled by default in the next release. Detailed solution here: <a href="https://github.com/tendermint/tendermint/milestone/12" data-href="https://github.com/tendermint/tendermint/milestone/12" class="markup--anchor markup--li-anchor" rel="nofollow noopener noopener" target="_blank">https://github.com/tendermint/tendermint/milestone/12</a></li></ul></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/cosmos" class="p-tag">Cosmos</a></p><p>By <a href="https://medium.com/@gautier_md" class="p-author h-card">Gautier MARIN</a> on <a href="https://medium.com/p/7bcfad9590f6"><time class="dt-published" datetime="2017-12-08T18:57:56.148Z">December 8, 2017</time></a>.</p><p><a href="https://medium.com/@gautier_md/testnet-disruption-update-7bcfad9590f6" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

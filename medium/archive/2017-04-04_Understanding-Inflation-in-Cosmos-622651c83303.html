@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Understanding Inflation in Cosmos</title><meta name="description" content="By The Cosmonauts on 2017–04–04"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Understanding Inflation in Cosmos</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+By The Cosmonauts on 2017–04–04
+</section>
+<section data-field="body" class="e-content">
+<section name="4cab" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="cb92" id="cb92" class="graf graf--h3 graf--leading graf--title">Understanding Inflation in Cosmos</h3><p name="74cc" id="74cc" class="graf graf--p graf-after--h3"><em class="markup--em markup--p-em">By The Cosmonauts on 2017–04–04</em></p><p name="f0d8" id="f0d8" class="graf graf--p graf-after--p">Many people have asked us how the Cosmos inflation rate works. Inflation is a loaded term. It evokes a process outside our control. Something that devalues what we own. That threatens us. Fortunately, inflation in Cosmos is a much more friendly force.</p><p name="837b" id="837b" class="graf graf--p graf-after--p">Let’s look at a comparison to Bitcoin first. Bitcoin has often been promoted as a hedge against inflation. The monetary supply of fiat currencies is exploding. For one measure, M3, the USD monetary supply grew by <a href="https://data.oecd.org/money/broad-money-m3.htm" data-href="https://data.oecd.org/money/broad-money-m3.htm" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">55% since 2010</a>. Bitcoin still has inflation, currently at almost 4%, but that is going to zero and is predictable.</p><p name="2d07" id="2d07" class="graf graf--p graf-after--p">Like in Bitcoin, in Cosmos the inflation rate plays an important role in securing the network. In Bitcoin, the block reward compensates miners for their service. In Cosmos also, inflation goes to the validators for their service in securing the network.</p><p name="012b" id="012b" class="graf graf--p graf-after--p">But, there is a fundamental difference. As a Bitcoin holder, inflation is bad for the holder. The miners are a separate group and every block reduces the holder’s relative ownership of the Bitcoin supply. In Cosmos, atom holders themselves provide the security services, and it is they who receive the newly issued atoms. The atoms I own may get diluted, but I get a portion of what dilutes them.</p><p name="8cc4" id="8cc4" class="graf graf--p graf-after--p">You might be asking yourself, ‘is inflation good or bad for the atom holder’?</p><h4 name="00df" id="00df" class="graf graf--h4 graf-after--p">An Example Scenario</h4><p name="e2b4" id="e2b4" class="graf graf--p graf-after--h4">Let’s run through an example to see the effects of the inflation rate. We’ll assume that 60% of the atoms are bonded. That means the owner is either validating herself or delegating them to another validator. If the inflation rate is 10% per year, the total amount of atoms is increasing by 10% annually (regardless of the amount bonded).</p><p name="bec8" id="bec8" class="graf graf--p graf-after--p">So if Alice had 1% of all the atoms in the beginning and stayed unbonded for a full year, after a year she will have 1% / (1 + 0.1) = 0.91% of the atom supply. Cosmonaut Bob on the other hand started with 0.5% and validated the whole year. His share will increase to 0.5% x (1 + 0.1/0.6) = 0.58%. In a steady state equilibrium, that extra 0.08% needs to be enough to pay for the cost of running a validator, assuming Bob runs his own validator node. If Bob is delegating, the inflationary atoms and transaction fees earned would have to cover the validator’s fees. The rewards also need to compensate for the added risk that Bob is taking, since those atoms could get slashed.</p><h4 name="bdf9" id="bdf9" class="graf graf--h4 graf-after--p">Staking Token vs Currency Token</h4><p name="54be" id="54be" class="graf graf--p graf-after--h4">While the bitcoin token is a currency token intended to be used as a means of payment and medium of exchange, the atom is a staking token that is intended to be used as a means of consensus. They’re more like virtual Bitcoin miners, than the virtual Bitcoin coins themselves.</p><p name="16df" id="16df" class="graf graf--p graf-after--p">In a staking token, we want a significant portion of the staking token holder to be “at stake”. This has security benefits. If instead, the staking token were also being used as a medium of exchange, then it would be easier to acquire a significant share of these tokens relative to the total amount of bonded staking tokens. If on the other hand, the staking token were not as liquid as a medium of exchange, an attacker has to incur much steeper costs in order to acquire these tokens for an attack. It may not even be possible.</p><h4 name="31a6" id="31a6" class="graf graf--h4 graf-after--p">Dynamically Adjustable Inflation Rate</h4><p name="92e1" id="92e1" class="graf graf--p graf-after--h4">In order to keep the atom a secure staking token, the Cosmos Hub will automatically adjust the inflation rate to incentivize a proper amount of staking.</p><p name="506f" id="506f" class="graf graf--p graf-after--p">We don’t know what the optimal formula is for dynamically adjusting parameters like inflation, so we will need to figure it out over time.</p><p name="eb58" id="eb58" class="graf graf--p graf-after--p">For now, we propose a simple formula for dynamically adjusting the inflation rate.</p><ul class="postList"><li name="b3c3" id="b3c3" class="graf graf--li graf-after--p">The minimum inflation rate is 7%.</li><li name="ce50" id="ce50" class="graf graf--li graf-after--li">The maximum inflation rate is 21%.</li><li name="9fb1" id="9fb1" class="graf graf--li graf-after--li">In the beginning, the inflation rate will be 7%.</li><li name="ff8b" id="ff8b" class="graf graf--li graf-after--li">If in the past 4 months more than 2/3 of atoms were bonded more than 1/2 of the time, then decrease the inflation rate.</li><li name="e26f" id="e26f" class="graf graf--li graf-after--li">Otherwise, increase the inflation rate.</li></ul><h4 name="d723" id="d723" class="graf graf--h4 graf-after--li">Governance and the Community</h4><p name="b948" id="b948" class="graf graf--p graf-after--h4 graf--trailing">Finding the right solution will take the whole community to be actively engaged in dialog. If you have thoughts on how to design this crypto-economic system, reach out to us. Once the Cosmos Network launches, atom holders can make proposals to change how inflation works. On-chain governance means that changes are always possible, and that Cosmonauts decide for themselves where to go.</p></div></div></section><section name="1574" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="3c57" id="3c57" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/6ee887f43746d65cafad5566cc3e2441" data-href="https://gist.github.com/6ee887f43746d65cafad5566cc3e2441" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/bitcoin" class="p-tag">Bitcoin</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a>, <a href="https://medium.com/tag/cryptocurrency" class="p-tag">Cryptocurrency</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/622651c83303"><time class="dt-published" datetime="2017-04-04T07:00:00.000Z">April 4, 2017</time></a>.</p><p><a href="https://medium.com/@nylira/understanding-inflation-in-cosmos-622651c83303" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

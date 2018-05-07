@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Tendermint 0.8.0 Release</title><meta name="description" content="Tendermint 0.8.0 is the culmination of four months of work, providing many new features and vastly improved stability for network…"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Tendermint 0.8.0 Release</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Tendermint 0.8.0 is the culmination of four months of work, providing many new features and vastly improved stability for network…
+</section>
+<section data-field="body" class="e-content">
+<section name="fd96" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="080c" id="080c" class="graf graf--h3 graf--leading graf--title">Tendermint 0.8.0 Release</h3><h4 name="0127" id="0127" class="graf graf--h4 graf-after--h3 graf--subtitle">Tendermint 0.8.0 is the culmination of four months of work, providing many new features and vastly improved stability for network deployments both big and small. By <a href="https://medium.com/u/c010ef5a0ddf" data-href="https://medium.com/u/c010ef5a0ddf" data-anchor-type="2" data-user-id="c010ef5a0ddf" data-action-value="c010ef5a0ddf" data-action="show-user-card" data-action-type="hover" class="markup--user markup--h4-user" target="_blank">Jae Kwon</a></h4><blockquote name="d107" id="d107" class="graf graf--blockquote graf-after--h4">Credits to our <a href="https://tendermint.com/about" data-href="https://tendermint.com/about" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">team</a>, <a href="http://forum.tendermint.com:3000/" data-href="http://forum.tendermint.com:3000/" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">community</a>, and especially <a href="https://twitter.com/buchmanster" data-href="https://twitter.com/buchmanster" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">Ethan Buchman</a> for the hard work in making this release possible (and most of this post, to be honest). View blog post on <a href="https://hackernoon.com/tendermint-0-8-release-eff1d308b583" data-href="https://hackernoon.com/tendermint-0-8-release-eff1d308b583" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">Hacker Noon</a>.</blockquote><p name="3814" id="3814" class="graf graf--p graf-after--blockquote">See the <a href="https://github.com/tendermint/tendermint/releases/tag/v0.8.0" data-href="https://github.com/tendermint/tendermint/releases/tag/v0.8.0" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">v0.8.0 release notes</a> for more details.</p><p name="1e7f" id="1e7f" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">The interface between Tendermint and the application, previously Tendermint Socket Protocol (TMSP), is now called Asynchronous Blockchain Interface (</strong><a href="http://github.com/tendermint/abci" data-href="http://github.com/tendermint/abci" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">ABCI</strong></a><strong class="markup--strong markup--p-strong">).</strong></p><p name="8dd8" id="8dd8" class="graf graf--p graf-after--p">One of Tendermint’s unique advantages is its ability to support applications written in any programming language. It does this by employing a socket protocol, known as the <em class="markup--em markup--p-em">Tendermint Socket Protocol</em>, or TMSP. While we’ve become comfortable with the acronym TMSP, we are changing the name to a more backend-agnostic “ABCI” (short for <em class="markup--em markup--p-em">Asynchronous Blockchain Interface</em>, or alternatively, <em class="markup--em markup--p-em">Atomic Broadcast Interface</em>) to emphasize its purpose to serve as a general interface between any BFT consensus engine and any application. With this name change, we are signalling to the community that we are committed to designing protocols that benefit the entire blockchain ecosystem. We expect to see other consensus engines adopt the ABCI in the future, whether they be based on Tendermint, Raft, or any other fault-tolerant consensus algorithm.</p><p name="a6c8" id="a6c8" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">ABCI: works-in-process, with Sockets, or with GRPC</strong></p><p name="76c4" id="76c4" class="graf graf--p graf-after--p">Applications that implement the ABCI in Golang can continue to be compiled with Tendermint as a single binary. Applications written in other languages such as Python, Java, or JavaScript can connect with the Tendermint process via a network or Unix socket. With 0.8.0, applications can now also expose ABCI endpoints via Google’s GRPC, which may enable faster prototyping for a wide variety of languages.</p><p name="9905" id="9905" class="graf graf--p graf-after--p">For non-Golang applications that require high throughput, developers are encouraged to use ABCI-over-sockets, since transactions can be pushed to the application asynchronously in order. Due to a design limitation of GRPC, ABCI-over-GRPC delivers messages synchronously, so it should only be used for initial proof-of-concepts, or applications that don’t require high transaction throughput.</p><p name="e4d0" id="e4d0" class="graf graf--p graf-after--p">For more details, see our <a href="https://tendermint.com/docs/guides/app-development" data-href="https://tendermint.com/docs/guides/app-development" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">guide on app development and the ABCI</a>.</p><p name="d988" id="d988" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Persistence and Handshakes</strong></p><p name="596f" id="596f" class="graf graf--p graf-after--p">Prior versions of Tendermint did not handle application state persistence well. That is, when a Tendermint node restarted, it had to re-run all the transactions of the locally stored blockchain to get back in sync. This served our users well for proof-of-concept builds, but obviously that doesn’t work for production systems.</p><p name="bd94" id="bd94" class="graf graf--p graf-after--p">With the 0.8.0 release, we’ve implemented an ABCI handshake protocol that lets the application tell Tendermint which blocks it already knows about. Thus, upon a restart of either Tendermint, the application, or both, only the most recent blocks need to be pushed to the application. This marks a major milestone, <em class="markup--em markup--p-em">allowing Tendermint to be used for actual production environments.</em></p><p name="f0ce" id="f0ce" class="graf graf--p graf-after--p">In fact, in late 2016 we successfully completed a production deployment of a voting blockchain application with <a href="https://votem.com/" data-href="https://votem.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Votem</a>. This was the first production run of the software, and it went off without a hitch, processing over 1.5 million votes over two months on an 8-node cluster on AWS.</p><p name="c93d" id="c93d" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Cosmos and Basecoin</strong></p><p name="7037" id="7037" class="graf graf--p graf-after--p"><a href="http://cosmos.network/" data-href="http://cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Cosmos</a>, the “Internet of Blockchains”, is a network of public and private blockchains. The essential public blockchains of Cosmos, including the Cosmos Hub and the Cosmos DEX (distributed exchange), are ABCI applications powered by Tendermint. Staying true to good software engineering principles, we intend to build these applications out of smaller modules, the basis of which we call <a href="https://github.com/tendermint/basecoin" data-href="https://github.com/tendermint/basecoin" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Basecoin</a>.</p><p name="7eb6" id="7eb6" class="graf graf--p graf-after--p">Basecoin is a simple multi-asset cryptocurrency that forms the foundation for what will eventually become the Cosmos Hub. It is an ABCI app written in Golang, featuring Ethereum-like accounts with a simple plugin architecture that makes it very easy to extend. Its purpose is to be both a baseline cryptocurrency for other implementers to fork from, and a base module for paying fees in more complex state machines. So, if you want to create a new public cryptocurrency application in Golang with experimental features, or perhaps create a private/consortium blockchain application that requires users to pay fees, consider starting with Basecoin!</p><p name="3ed0" id="3ed0" class="graf graf--p graf-after--p">For more details on the design and use of Basecoin, see <a href="https://medium.com/@jaekwon/cosmos-creating-interoperable-blockchains-part-1-2929435ba1fa" data-href="https://medium.com/@jaekwon/cosmos-creating-interoperable-blockchains-part-1-2929435ba1fa" class="markup--anchor markup--p-anchor" target="_blank">our latest blog post</a>.</p><p name="968c" id="968c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Tendermint Roadmap</strong></p><p name="ab7c" id="ab7c" class="graf graf--p graf-after--p">Here are some of the items up next on our stack:</p><ul class="postList"><li name="0d17" id="0d17" class="graf graf--li graf-after--p">Update ABCI to include vote information (e.g. evidence of double-signing)</li><li name="f442" id="f442" class="graf graf--li graf-after--li">Update ABCI to support light-client queries</li><li name="db4e" id="db4e" class="graf graf--li graf-after--li">Implement transaction indexing and querying</li><li name="d575" id="d575" class="graf graf--li graf-after--li">Secure the RPC server</li><li name="8d07" id="8d07" class="graf graf--li graf-after--li">Better Basecoin guides, documentation, and tooling</li><li name="bbe3" id="bbe3" class="graf graf--li graf-after--li">Implement Inter-Blockchain Communication (IBC) as a Basecoin plugin.</li></ul><p name="9084" id="9084" class="graf graf--p graf-after--li graf--trailing">To find out more, check out <a href="https://github.com/tendermint/tendermint/issues" data-href="https://github.com/tendermint/tendermint/issues" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">our GitHub issues</a>, follow us on <a href="http://twitter.com/tendermint_team" data-href="http://twitter.com/tendermint_team" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Twitter</a>, or ask us questions directly on <a href="http://forum.tendermint.com:3000/" data-href="http://forum.tendermint.com:3000/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">our Slack</a>.</p></div></div></section><section name="713d" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="c5dd" id="c5dd" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/95a35719c510364ff648a55c2f65efec" data-href="https://gist.github.com/95a35719c510364ff648a55c2f65efec" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/cosmos" class="p-tag">Cosmos</a>, <a href="https://medium.com/tag/abci" class="p-tag">Abci</a>, <a href="https://medium.com/tag/quark" class="p-tag">Quark</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/389601ee2593"><time class="dt-published" datetime="2017-01-25T08:00:00.000Z">January 25, 2017</time></a>.</p><p><a href="https://medium.com/@nylira/tendermint-0-8-release-389601ee2593" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

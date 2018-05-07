@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Tendermint for Fast Settlement</title><meta name="description" content="Blockchains provide new opportunities in fast settlement. By Jae Kwon"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Tendermint for Fast Settlement</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Blockchains provide new opportunities in fast settlement. By Jae Kwon
+</section>
+<section data-field="body" class="e-content">
+<section name="1031" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="01bb" id="01bb" class="graf graf--h3 graf--leading graf--title">Tendermint for Fast Settlement</h3><h4 name="fe3b" id="fe3b" class="graf graf--h4 graf-after--h3 graf--subtitle">Blockchains provide new opportunities in fast settlement. By <a href="https://medium.com/u/c010ef5a0ddf" data-href="https://medium.com/u/c010ef5a0ddf" data-anchor-type="2" data-user-id="c010ef5a0ddf" data-action-value="c010ef5a0ddf" data-action="show-user-card" data-action-type="hover" class="markup--user markup--h4-user" target="_blank">Jae Kwon</a></h4><p name="1952" id="1952" class="graf graf--p graf-after--h4">Some experts in the nascent blockchain industry have said the following:</p><ul class="postList"><li name="3e06" id="3e06" class="graf graf--li graf-after--p"><em class="markup--em markup--li-em">The blockchain is just a database</em></li><li name="f1c0" id="f1c0" class="graf graf--li graf-after--li"><em class="markup--em markup--li-em">Blockchains don’t help with fast settlement</em></li><li name="6230" id="6230" class="graf graf--li graf-after--li"><em class="markup--em markup--li-em">The future of finance on the blockchain may not involve consensus</em></li><li name="8951" id="8951" class="graf graf--li graf-after--li"><em class="markup--em markup--li-em">You can build on top of the Bitcoin blockchain for fast settlement</em></li></ul><p name="db04" id="db04" class="graf graf--p graf-after--li">This short post will address these statements and paint a different picture.</p><h3 name="f224" id="f224" class="graf graf--h3 graf-after--p">Clearing and settlement woes</h3><p name="50f4" id="50f4" class="graf graf--p graf-after--h3">Clearing and settlement are separate but related terms. The source of the differences stems from the significant duration of time (on the order of days) for the delivery of assets (e.g. paper certificates used to take over a week to deliver by courier). A clearinghouse provides faster settlement between two trading parties by acting as the counterparty for both.</p><p name="a6ce" id="a6ce" class="graf graf--p graf-after--p">So, it isn’t the clearing that is slow. Part of the purpose of clearing is to mitigate the slowness of settlement. The reason why we don’t have fast settlement is because “Current banking databases are disparate and therefore require reconciliation between each other.”, and, “the existence of [3rd party] consortia … prevented banking systems from evolving, because there was no incentive for a single bank to create a better system outside of the consortia” (<a href="https://medium.com/design-matters-4/blockchains-and-banks-cef72f0fcf29" data-href="https://medium.com/design-matters-4/blockchains-and-banks-cef72f0fcf29" class="markup--anchor markup--p-anchor" target="_blank">source</a>). To solve the problem of reconciliation, we need a common ledger and platform.</p><p name="34e7" id="34e7" class="graf graf--p graf-after--p">Once we have a common ledger, we can think about tradeoffs between security and settlement speed. When settlement becomes fast on the order of seconds, human intermediation becomes difficult, which in turn means that we need the system to be as fault tolerant as possible.</p><h3 name="a9ab" id="a9ab" class="graf graf--h3 graf-after--p">The source of Bitcoin’s security</h3><p name="6026" id="6026" class="graf graf--p graf-after--h3">Bitcoin and Bitcoin’s proof-of-work (PoW) mining, or Nakamoto consensus, provides something that until 2008 had never existed before. Bitcoin was the first open decentralized application to provide Byzantine fault-tolerant (BFT) consensus on a global currency ledger. Nakamoto consensus is a novel BFT consensus algorithm that utilizes computational power as a proxy for membership.</p><p name="87ec" id="87ec" class="graf graf--p graf-after--p">The security of Nakamoto consensus depends on extrinsic factors such as the availability of energy and access to semiconductor fabs. Ignoring these factors, the security of Nakamoto consensus can be modeled by the makeup and diversity of the mining network. The more diverse the mining participants, the more difficult it is to coordinate a sufficiently large coalition to successfully attack the network and cause double-spends. If we discount the difficulty of coordination (which may be prudent considering that major mining pools communicate with each other routinely), what’s left is the opportunity cost of producing blockchain forks — just 25 bitcoins per block at today’s inflationary reward schedule.</p><p name="cfff" id="cfff" class="graf graf--p graf-after--p">The Bitcoin blockchain does help with settlement in that it provides a BFT ledger. The problem is that Nakamoto consensus is slow and expensive, as its security is only proportional to the cumulative sum of energy burned over time.</p><h3 name="4272" id="4272" class="graf graf--h3 graf-after--p">Classical BFT enables additive security</h3><p name="26ae" id="26ae" class="graf graf--p graf-after--h3">Classical BFT consensus algorithms don’t rely on the opportunity cost of energy expenditure for security. They use pseudonymous identities and cryptographic signatures to ensure that a sufficient quorum of participants approve of new transactions before they are committed. These algorithms had been around since the 70’s and 80’s, and culminated in 1999 with the renowned PBFT algorithm. Existing PBFT solutions are difficult to use or incomplete (<a href="http://arxiv.org/abs/1110.4854" data-href="http://arxiv.org/abs/1110.4854" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">source</a>), so there is a need for a new free and open-source implementation. Tendermint is such an open-source implementation of the PBFT consensus protocol (see <a href="https://blog.cosmos.network/tendermint-vs-pbft-12e9f294c9ab" data-href="https://blog.cosmos.network/tendermint-vs-pbft-12e9f294c9ab" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">explanation</a>). Tendermint can commit blocks to finality on a global ledger with hundreds of validators on the order of seconds.</p><p name="1444" id="1444" class="graf graf--p graf-after--p">Unlike Nakamoto consensus, there is no extrinsic opportunity cost for signing conflicting blocks on the blockchain, since cryptographic signatures are practically free. Instead, we can design classical BFT consensus protocols to be <em class="markup--em markup--p-em">accountable</em>; that is, <strong class="markup--strong markup--p-strong">when the blockchain is forked, we can review the signatures and determine which participants caused the fork to happen</strong>. If we combine this BFT accountability with the concept of collateral, we get something that I’m calling <em class="markup--em markup--p-em">additive-security</em>. Each individual participant of the BFT consensus process might only post a small amount of collateral (limited by their confidence in ability to secure their hardware and software), but <strong class="markup--strong markup--p-strong">the total effective collateral can be large</strong>. For example, if there are 1000 validators that each post $1M worth of collateral, a double-spend attack would cost attackers at minimum $333M dollars ($1M × 1000 × ⅓). By the way, we can increase the minimum fraction of collateral at stake (beyond ⅓) by requiring a larger quorum of validators to commit each block.</p><p name="2e96" id="2e96" class="graf graf--p graf-after--p">A consortium of banks could run a Tendermint blockchain where the validators are publicly identified. Each validator can post collateral secured by legal contracts with real assets held in escrow by each other, and/or with tokens intrinsic to the blockchain. Each validator on such a blockchain network would secure their public/private key to the best of their ability. To mitigate the risk of accidents and hacks, each validator keypair can be derived from multiple keypairs that produce signatures jointly using a cryptographic threshold signature scheme; in effect, each validator node would be running a BGA consensus network recursively for additional security. Tendermint validators uses the Ed25519 Schnorr signature scheme because it supports cryptographic threshold signatures (<a href="http://cacr.uwaterloo.ca/techreports/2001/corr2001-13.ps" data-href="http://cacr.uwaterloo.ca/techreports/2001/corr2001-13.ps" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">source</a>). I’ll write more about this in a future post, but for now lets just say that, under this scheme, a single bank with a single effective public key on the main ledger could reasonably post billions of dollars in collateral.</p><p name="bfbb" id="bfbb" class="graf graf--p graf-after--p">For public permissionless blockchains, Nielsen’s law of internet bandwidth is at play. If we naively assume that doubling the number of validators requires four times the bandwidth, and that bandwidth doubles every two years, every four years a public blockchain can support twice as many validators (thus naively twice as much collateral) and still commit blocks at the same speed. I bet we can do better.</p><h3 name="2c29" id="2c29" class="graf graf--h3 graf-after--p">Fin</h3><p name="64a4" id="64a4" class="graf graf--p graf-after--h3 graf--trailing">With publicly identified Tendermint validators with collateral at risk, we can have a shared decentralized ledger that offers fast settlement. This is a novel concept and one that has the potential to change the nature of banking itself.</p></div></div></section><section name="0117" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="30db" id="30db" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/58979eae14657c42278b61cbea2afab8" data-href="https://gist.github.com/58979eae14657c42278b61cbea2afab8" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/consensus" class="p-tag">Consensus</a>, <a href="https://medium.com/tag/bitcoin" class="p-tag">Bitcoin</a>, <a href="https://medium.com/tag/bft" class="p-tag">Bft</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/b5b0f5d78ea3"><time class="dt-published" datetime="2015-10-03T07:00:00.000Z">October 3, 2015</time></a>.</p><p><a href="https://medium.com/@nylira/tendermint-for-fast-settlement-b5b0f5d78ea3" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

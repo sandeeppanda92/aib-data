@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Developer Deep Dive—ETGate, Gateway between Ethereum &amp; Tendermint</title><meta name="description" content="[Post updated: Feb 16, 2018] This project is now defunct. The newer, more complete implementation of this idea is called Peggy."><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Developer Deep Dive—ETGate, Gateway between Ethereum &amp; Tendermint</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+[Post updated: Feb 16, 2018] This project is now defunct. The newer, more complete implementation of this idea is called Peggy.
+</section>
+<section data-field="body" class="e-content">
+<section name="bc46" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="32cc" id="32cc" class="graf graf--h3 graf--leading graf--title">Developer Deep Dive—ETGate, Gateway between Ethereum &amp; Tendermint</h3></div><div class="section-inner sectionLayout--outsetColumn"><figure name="3e14" id="3e14" class="graf graf--figure graf--layoutOutsetCenter graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 563px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 56.3%;"></div><img class="graf-image" data-image-id="1*4or-2axuZqtakZ4MQkSgAQ.png" data-width="3840" data-height="2160" src="https://cdn-images-1.medium.com/max/1000/1*4or-2axuZqtakZ4MQkSgAQ.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><blockquote name="d5ea" id="d5ea" class="graf graf--blockquote graf-after--figure"><strong class="markup--strong markup--blockquote-strong">[Post updated: Feb 16, 2018] This project is now defunct. The newer, more complete implementation of this idea is called </strong><a href="https://blog.cosmos.network/the-internet-of-blockchains-how-cosmos-does-interoperability-starting-with-the-ethereum-peg-zone-8744d4d2bc3f" data-href="https://blog.cosmos.network/the-internet-of-blockchains-how-cosmos-does-interoperability-starting-with-the-ethereum-peg-zone-8744d4d2bc3f" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--blockquote-strong">Peggy</strong></a><strong class="markup--strong markup--blockquote-strong">.</strong></blockquote><p name="f5b5" id="f5b5" class="graf graf--p graf-after--blockquote">One of the most important functionalities of the Cosmos Network is <a href="https://blog.cosmos.network/developer-deep-dive-cosmos-ibc-5855aaf183fe" data-href="https://blog.cosmos.network/developer-deep-dive-cosmos-ibc-5855aaf183fe" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">IBC</a> (Inter-Blockchain Communication protocol). It enables individual blockchains to communicate, allowing users to send tokens across zones — such as sending pegged bitcoins to a smart contract on the Ethereum zone. The IBC protocol is meant to be a general-purpose communication protocol like TCP/IP. In theory, it could also be used to relay messages between parachains on Polkadot. (Then Polkadot could be a zone of Cosmos, and Cosmos could be a parachain of Polkadot.)</p><p name="c511" id="c511" class="graf graf--p graf-after--p">But IBC can only be applied to blockchains whose consensus algorithms have transaction finality and efficient commit proofs. For those blockchains that do not, like that of Bitcoin or Ethereum, we have to build peg-zones in order to send assets from other chains to them. The idea is basically like that of a <a href="http://www.rsk.co/blog/sidechains-drivechains-and-rsk-2-way-peg-design" data-href="http://www.rsk.co/blog/sidechains-drivechains-and-rsk-2-way-peg-design" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">multi-party state-channel</a>: we relay all headers and deposit/withdraw requests between chains. However, we can optimize it due to their architectural character.</p><h3 name="ef2d" id="ef2d" class="graf graf--h3 graf-after--p">Two-Way-Pegging</h3><p name="3b85" id="3b85" class="graf graf--p graf-after--h3">The concept of two-way-pegging generally describes a decentralized way to send cryptographic assets from one chain to another, like one would send money from one bank to another through <a href="https://www.investopedia.com/terms/n/nostroaccount.asp" data-href="https://www.investopedia.com/terms/n/nostroaccount.asp" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">nostro account</a>s. In IBC, relayers continuously submit the headers of CHAIN_A to CHAIN_B and vice versa, allowing both chains to be aware of each other’s latest state. Consider the case that a user wants to send some bitcoin to Ethereum. The user will sign a special “transfer” transaction, locking their bitcoin. A few blocks later, the transaction will be confirmed, and the user can mint e-bitcoin on Ethereum with a Merkle proof that the transfer transaction is included on Bitcoin, which would mean that their funds are actually locked.</p><p name="f8b7" id="f8b7" class="graf graf--p graf-after--p">The same thing happens when the owner of e-bitcoin wants to withdraw (to receive actual bitcoins). They sign a transfer transaction on Ethereum, burning their e-bitcoin, wait for the confirmation, and release bitcoin on the original blockchain, proving that their e-bitcoins were actually burnt.</p><h3 name="1daa" id="1daa" class="graf graf--h3 graf-after--p">ETGate</h3><p name="ef6b" id="ef6b" class="graf graf--p graf-after--h3">Introducing ETGate, a two-way peg that allows sending and receiving Ethereum tokens on Tendermint zones.</p><ul class="postList"><li name="0dea" id="0dea" class="graf graf--li graf-after--p">GitHub: <a href="https://github.com/mossid/etgate" data-href="https://github.com/mossid/etgate" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://github.com/mossid/etgate</a></li></ul><h3 name="daed" id="daed" class="graf graf--h3 graf-after--li">Event on Ethereum</h3><p name="c12b" id="c12b" class="graf graf--p graf-after--h3">Unlike other blockchains, Ethereum is designed to be the “World Computer”. Users can interact with it via a webpage. To make it easy to access necessary information on the Ethereum blockchain from a web environment, Ethereum contracts can log events; it is cheap, read-only storage for external agents. Events on Ethereum also form a Merkle tree whereby its root is stored in a header.</p><p name="a140" id="a140" class="graf graf--p graf-after--p">So instead of providing a Merkle proof of each transaction, we can make the contract generate an <em class="markup--em markup--p-em">event</em> when it receives transfer requests. It will then be proven on the Tendermint side more easily.</p><h3 name="7ecb" id="7ecb" class="graf graf--h3 graf-after--p">Tendermint Light Client</h3><p name="f6b8" id="f6b8" class="graf graf--p graf-after--h3">Primer: <a href="https://blog.cosmos.network/light-clients-in-tendermint-consensus-1237cfbda104" data-href="https://blog.cosmos.network/light-clients-in-tendermint-consensus-1237cfbda104" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Light Clients in Tendermint Consensus</a></p><p name="2aa1" id="2aa1" class="graf graf--p graf-after--p">Unlike light clients of PoW-based blockchains, a light client of Tendermint does not have to verify all the headers. It just has to follow validator changes and check the signatures of incoming headers, so we can reduce the cost of relaying Tendermint headers to an Ethereum smart contract.</p><p name="7307" id="7307" class="graf graf--p graf-after--p">Additionally, since we don’t have to follow all the headers, we can collect withdrawal transactions in one block. Header submission validation requires a lot of signature verifications (with <code class="markup--code markup--p-code">ecrecover()</code>), so the number of header submissions could be reduced to make it economically reasonable without causing too much delay.</p><h3 name="fd61" id="fd61" class="graf graf--h3 graf-after--p">Overall Structure</h3><p name="d7ce" id="d7ce" class="graf graf--p graf-after--h3">The following are the behaviors of validators and relayers:</p><h4 name="8340" id="8340" class="graf graf--h4 graf-after--p">Validators</h4><p name="e80a" id="e80a" class="graf graf--p graf-after--h4">Since verifying PoW headers is non-deterministic and expensive, we rely on the validators, not relayers, to add new Ethereum headers in the zone. After a sufficient number of confirmations from the Ethereum network, an Ethereum header needs +2/3 validators signatures (in the form of a transaction, rather than a block precommit) to be successfully submitted to the peg-zone.</p><h4 name="4d7e" id="4d7e" class="graf graf--h4 graf-after--p">Relayers</h4><p name="baae" id="baae" class="graf graf--p graf-after--h4">The relayers continuously submit deposit/withdraw IBC transactions from one zone to another. For deposit transactions (e.g. sending ether to the Cosmos hub), the relayers will send the RLP-encoded event data and its Merkle proof to the peg-zone. When the peg-zone sees a withdraw transaction (e.g. request to send ether to the user’s Ethereum account), they will submit the transaction with its Merkle proof for the batch root to the contract, and additionally submit the header if it is unknown.</p><p name="3ea9" id="3ea9" class="graf graf--p graf-after--p graf--trailing">Users simply sign deposit and withdraw transactions when they want. The rest will be handled by the validators and the relayers.</p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/cryptocurrency" class="p-tag">Cryptocurrencies</a>, <a href="https://medium.com/tag/technical" class="p-tag">Technical</a></p><p>By <a href="https://medium.com/@torecursedivine" class="p-author h-card">Joon</a> on <a href="https://medium.com/p/6a31f049a62f"><time class="dt-published" datetime="2017-11-24T06:31:58.602Z">November 24, 2017</time></a>.</p><p><a href="https://medium.com/@torecursedivine/etgate-md-6a31f049a62f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

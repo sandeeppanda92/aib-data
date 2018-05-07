@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Sidechains without Pegging</title><meta name="description" content="Sidechains is more than one-way or two-way pegging, and beyond Bitcoin Maximalism. By Jae Kwon"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Sidechains without Pegging</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Sidechains is more than one-way or two-way pegging, and beyond Bitcoin Maximalism. By Jae Kwon
+</section>
+<section data-field="body" class="e-content">
+<section name="3f6a" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="3f89" id="3f89" class="graf graf--h3 graf--leading graf--title">Sidechains without Pegging</h3><h4 name="d5ef" id="d5ef" class="graf graf--h4 graf-after--h3 graf--subtitle">Sidechains is more than one-way or two-way pegging, and beyond Bitcoin Maximalism. By <a href="https://medium.com/u/c010ef5a0ddf" data-href="https://medium.com/u/c010ef5a0ddf" data-anchor-type="2" data-user-id="c010ef5a0ddf" data-action-value="c010ef5a0ddf" data-action="show-user-card" data-action-type="hover" class="markup--user markup--h4-user" target="_blank">Jae Kwon</a></h4><p name="54d6" id="54d6" class="graf graf--p graf-after--h4">There is an interesting debate happening between Bitcoin maximalists and the rest of the cryptocurrency community.</p><p name="8884" id="8884" class="graf graf--p graf-after--p">First, BlockStream published Bitcoin maximalist paper on <a href="http://www.blockstream.com/sidechains.pdf" data-href="http://www.blockstream.com/sidechains.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">sidechains</a>. Then, Dominic of Pebble responded with due <a href="http://blog.pebble.io/post/100702644738/on-sidechains-bitcoin-maximalism-and-freedom" data-href="http://blog.pebble.io/post/100702644738/on-sidechains-bitcoin-maximalism-and-freedom" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">criticism</a>. Vitalik of Ethereum responded with <a href="https://blog.ethereum.org/2014/11/20/bitcoin-maximalism-currency-platform-network-effects/" data-href="https://blog.ethereum.org/2014/11/20/bitcoin-maximalism-currency-platform-network-effects/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">more analysis</a>. And finally, Joel of Union Square Ventures wrote about a very <a href="http://joel.mn/post/103546215249/the-blockchain-application-stack" data-href="http://joel.mn/post/103546215249/the-blockchain-application-stack" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Bitcoin maximal world</a>.</p><p name="6d97" id="6d97" class="graf graf--p graf-after--p">I’d like to add a few points to this conversation.</p><p name="3e0d" id="3e0d" class="graf graf--p graf-after--p">First, let’s get this out of the way. Metacoins like Counterparty are a nuisance for Bitcoin, regardless of the merits of the Counterparty protocol itself. They benefit by taking advantage of the Bitcoin consensus network. They bloat the block-chain space with transactions that aren’t relevant to other Bitcoin users. The security of the Counterparty system is dependent on the security of Bitcoin’s, while it’s entirely possible that the market cap of assets in Counterparty become higher than that of Bitcoin, creating a lopsided security threat. Metacoins will phase out as it becomes easier to bootstrap a secure coin with a pre-built consensus engine (such as Tendermint) that doesn’t rely on proof-of-work. When the valuation of Bitcoin drops enough, Counterparty will be forced to migrate to its own block-chain too.</p><p name="5be4" id="5be4" class="graf graf--p graf-after--p">The main thing I’d like to talk about is sidechains. The term was first introduced by Bitcoin developers who were considering ways to encourage innovation in the alt-coin space while cutting down on the speculation and volatility that results from bootstrapping a new coin ex nihilo, by 1-way or 2-way pegging. It works by having one block-chain track the consensus state of another block-chain. It’s no wonder that the term “sidechain” refers to two distinct concepts — interchain-communication and pegging. I like the term for its succinctness, so I’m going to try to hijack it to mean only interchain-communication — with or without pegging.</p><p name="3661" id="3661" class="graf graf--p graf-after--p">The beautiful thing about sidechains is that it’s more than currency pegging. For example, it can be used to run a decentralized exchange between two currencies. You can do this now with “cross-chain-transactions”, but it requires both parties to be online, or for both to trust a few “smart oracles” with threshold signatures to handle the trade. But when your block-chain can track the state of another with sidechain technology, you don’t have to trust anyone except the cryptocurrency network, which you trust already. If you trust a block-chain enough to hold coins in it, you should trust the block-chain to enforce your exchange orders for you when you want to trade with a sidechain. So now you can bootstrap a currency <em class="markup--em markup--p-em">and</em> provide liquidity without trusted centralized exchanges, and really incentivize the development of new currencies without pegging the valuation onto the EuroBitcoin. It’s especially important to have sovereign unpegged market-priced block-chains if the very thing you want to experiment with is monetary policy.</p><p name="6acd" id="6acd" class="graf graf--p graf-after--p graf--trailing">Sidechain technology is more than 1-way or 2-way pegging to Bitcoin. It’s about contractual agreement between two communities represented by different consensus ledgers. To pretend otherwise will only hurt the cryptocurrency movement.</p></div></div></section><section name="9bb0" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="3236" id="3236" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/1ececd5622738804e00a207055aa8198" data-href="https://gist.github.com/1ececd5622738804e00a207055aa8198" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/bitcoin" class="p-tag">Bitcoin</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/sidechains" class="p-tag">Sidechains</a>, <a href="https://medium.com/tag/consensus" class="p-tag">Consensus</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/33eb74fc59f4"><time class="dt-published" datetime="2014-11-25T08:00:00.000Z">November 25, 2014</time></a>.</p><p><a href="https://medium.com/@nylira/sidechains-without-pegging-33eb74fc59f4" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

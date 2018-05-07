@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Smart — log_level flag</title><meta name="description" content="One of the exciting new features in Tendermint 0.10.0 release is smart ` — log_level` flag. By Anton Kaliaev"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Smart — log_level flag</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+One of the exciting new features in Tendermint 0.10.0 release is smart ` — log_level` flag. By Anton Kaliaev
+</section>
+<section data-field="body" class="e-content">
+<section name="828a" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="151d" id="151d" class="graf graf--h3 graf--leading graf--title">Smart — log_level flag</h3><h4 name="755f" id="755f" class="graf graf--h4 graf-after--h3 graf--subtitle">One of the exciting new features in Tendermint 0.10.0 release is smart ` — log_level` flag. By <a href="https://twitter.com/akaliaev" data-href="https://twitter.com/akaliaev" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">Anton Kaliaev</a></h4><p name="5ae4" id="5ae4" class="graf graf--p graf-after--h4">One of the exiting new features in Tendermint 0.10.0 release is smart <code class="markup--code markup--p-code">--log_level</code> flag, which now can accept complex queries.</p><p name="106a" id="106a" class="graf graf--p graf-after--p">Before, one only could set logging level to either notice, info, warning, debug or error, and we got rid of the notice and warning levels in the new release.</p><p name="79b5" id="79b5" class="graf graf--p graf-after--p">Now, you are able to set different log level for modules:</p><figure name="4753" id="4753" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/cbce320b02780d8dd8d22ba49307edbc.js"></script></figure><p name="71de" id="71de" class="graf graf--p graf-after--figure">It will work for any <code class="markup--code markup--p-code">module=...</code>. Some of the most important are: consensus, state, p2p, mempool, proxy, node.</p><p name="fab2" id="fab2" class="graf graf--p graf-after--p">Info level (default) is used for all other modules. To change that you can use * symbol:</p><figure name="bd09" id="bd09" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/49ac320a6ac6437657fe1f3fde49f4b8.js"></script></figure><p name="b3fe" id="b3fe" class="graf graf--p graf-after--figure">These are equivalent:</p><figure name="8f31" id="8f31" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/14764a6174a67ad1ab22bc6251c7e43e.js"></script></figure><p name="bdcd" id="bdcd" class="graf graf--p graf-after--figure">There is a new <code class="markup--code markup--p-code">none</code> level, which can be used to suppress the output for some or all modules.</p><figure name="5b8a" id="5b8a" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/cef5fca9532d72079aadf8178f9ff06a.js"></script></figure><p name="439c" id="439c" class="graf graf--p graf-after--figure graf--trailing">Have fun playing with them! Hope you like it.</p></div></div></section><section name="b17d" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="9f3b" id="9f3b" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/e017c1b5f9b978e8c43e4bae8018f1b5" data-href="https://gist.github.com/e017c1b5f9b978e8c43e4bae8018f1b5" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/programming" class="p-tag">Programming</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/logging" class="p-tag">Logging</a>, <a href="https://medium.com/tag/mempool" class="p-tag">Mempool</a>, <a href="https://medium.com/tag/debugging" class="p-tag">Debugging</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/e2506b4ab756"><time class="dt-published" datetime="2017-06-06T07:00:00.000Z">June 6, 2017</time></a>.</p><p><a href="https://medium.com/@nylira/one-of-the-exciting-new-features-in-0-10-0-release-is-smart-log-level-flag-e2506b4ab756" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

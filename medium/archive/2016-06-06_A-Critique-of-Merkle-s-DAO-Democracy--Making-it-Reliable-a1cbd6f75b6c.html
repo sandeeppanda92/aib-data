@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>A Critique of Merkle’s DAO Democracy: Making it Reliable</title><meta name="description" content="A critique of the subsection of the new DAO paper by Merkle,
+specifically of the section entitled ‘Making it Reliable’. By Jae Kwon"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">A Critique of Merkle’s DAO Democracy: Making it Reliable</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+A critique of the subsection of the new DAO paper by Merkle,
+specifically of the section entitled ‘Making it Reliable’. By Jae Kwon
+</section>
+<section data-field="body" class="e-content">
+<section name="bf0e" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="600e" id="600e" class="graf graf--h3 graf--leading graf--title">A Critique of Merkle’s DAO Democracy: Making it Reliable</h3><h4 name="8670" id="8670" class="graf graf--h4 graf-after--h3 graf--subtitle">A critique of the subsection of the new DAO paper by Merkle,<br>specifically of the section entitled ‘Making it Reliable’. By <a href="https://medium.com/u/c010ef5a0ddf" data-href="https://medium.com/u/c010ef5a0ddf" data-anchor-type="2" data-user-id="c010ef5a0ddf" data-action-value="c010ef5a0ddf" data-action="show-user-card" data-action-type="hover" class="markup--user markup--h4-user" target="_blank">Jae Kwon</a></h4><p name="3b44" id="3b44" class="graf graf--p graf-after--h4">I’ve been looking for a paper that criticizes futarchy that specifically addresses the thin-market and corresponding manipulation and feedback problems that my gut tells me there is. I haven’t found it yet, but I did stumble upon what may be a solution to it.</p><p name="128e" id="128e" class="graf graf--p graf-after--p">Merkle - <a href="http://merkle.com/papers/DAOdemocracyDraft.pdf" data-href="http://merkle.com/papers/DAOdemocracyDraft.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">New DAO Paper</a></p><p name="6adb" id="6adb" class="graf graf--p graf-after--p">While giving it a proper read, I noticed part way through that it includes a section that attempts to address the problem of securing a blockchain ledger using prediction markets.</p><p name="d225" id="d225" class="graf graf--p graf-after--p">I predict that a general prediction market will find that a PoS system on Tendermint will be favored over the BFT validator-set selection system as proposed by Merkle.</p><blockquote name="4918" id="4918" class="graf graf--blockquote graf-after--p"><em class="markup--em markup--blockquote-em">Breaking the system requires sneaking past a fully functioning and well financed prediction market that is actively looking for any attack and which is running as a distributed algorithm on a set of core servers that are fully protected from any attack. Any slightest hint of any attack that might actually be successful on any core server </em><strong class="markup--strong markup--blockquote-strong"><em class="markup--em markup--blockquote-em">will result in its immediate removal from the pool of core servers</em></strong><em class="markup--em markup--blockquote-em">, and its replacement with any one of a large number of constantly running alternate servers. Any strategy for better protecting the core servers, or for better detecting an attack, will be immediately adopted (thanks to a prediction market specifically aimed at improving security which is constantly evaluating new and better strategies). It will be hard to corrupt even a few core servers, let alone half of them. Yet half of them (and possibly more) would have to be corrupted before it would even be possible to gain control of the system and corrupt the prediction market.</em></blockquote><blockquote name="61ca" id="61ca" class="graf graf--blockquote graf-after--blockquote"><em class="markup--em markup--blockquote-em">- Merkle in “DAOs, Democracy and Governance”</em></blockquote><p name="230e" id="230e" class="graf graf--p graf-after--blockquote">The problem with futarchy, which is not the same problem with prediction markets, is that in a futarchy, the prediction market is used to make a decision that can have arbitrary impact. In other words, <strong class="markup--strong markup--p-strong">a futarchy is a prediction market plus feedback</strong>. In order to have futarchy be a good method of governance, not only do <strong class="markup--strong markup--p-strong">you need a good prediction market free of noise by virtue of being sufficiently capitalized</strong>, <strong class="markup--strong markup--p-strong">you also need to ensure the prediction market cannot be manipulated to make a decision that yields an undesirable result</strong> (but still creates a positive ROI for the manipulator).</p><blockquote name="1217" id="1217" class="graf graf--blockquote graf-after--p"><a href="https://twitter.com/paulg" data-href="https://twitter.com/paulg" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank"><em class="markup--em markup--blockquote-em">@paulg</em></a><em class="markup--em markup--blockquote-em"> Noise in thin markets?</em></blockquote><blockquote name="0f03" id="0f03" class="graf graf--blockquote graf-after--blockquote"><em class="markup--em markup--blockquote-em">— Bram Cohen (@bramcohen) </em><a href="https://twitter.com/bramcohen/status/739261628303081472" data-href="https://twitter.com/bramcohen/status/739261628303081472" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank"><em class="markup--em markup--blockquote-em">June 5, 2016</em></a></blockquote><p name="808e" id="808e" class="graf graf--p graf-after--blockquote">I think the first part of Merkle’s paper addresses this problem by giving each person a vote of 0 to 1, assuming that bribing attacks can be mitigated. But the section entitled “Making it Reliable” which uses the prediction market to decide on the validator set, does not prevent manipulation.</p><p name="e8c4" id="e8c4" class="graf graf--p graf-after--p">First, Merkle’s proposal makes it impossible to determine the true outcome of the fitness of a validator, because the outcome of the prediction market that assesses the fitness of the validator makes a decision to remove that validator from the validator set if it is deemed insecure. <strong class="markup--strong markup--p-strong">Once you make a decision to remove a validator, you’ve removed the incentive for that validator to perform correctly at all</strong> — at least if you want financially sustainable blockchain security. To secure a validator requires investment in internet/power/compute infrastructure, to invest in good op-sec, to pay the bills and salaries, etc. A financially sustainable blockchain should only compensate those validators that have a reasonable expectation of being secure, and if the prediction market says otherwise, it should not be compensated.</p><p name="3d5d" id="3d5d" class="graf graf--p graf-after--p">Well, if you dis-incentivize a validator, it will fail, so letting the prediction market dictate whether a validator should be allowed membership in the validator-set of a blockchain opens it up to arbitrary feedback, and thus manipulation.</p><p name="0be6" id="0be6" class="graf graf--p graf-after--p">Second, a secure validator shouldn’t be leaking much information about its weaknesses for the prediction market to make judgements on. Security in validating is about operational-security of human resources, of source-code, of compute hardware, and of internet/power reliability. The best judge of one’s ability should be oneself — if a validator has resources to invest in either improving its operational-security or bonding more stake, it should be able to make the best judgement about where to allocate capital. Meanwhile, it should invest in preventing any information leaks about its weaknesses to the public!</p><p name="8083" id="8083" class="graf graf--p graf-after--p">Likely, any vulnerability in a mature validator-set will be ones that were difficult to detect, like a needle in a haystack. The validators are their own best predictors of their own vulnerabilities, if additional stake can be purchased in the market.</p><p name="91e0" id="91e0" class="graf graf--p graf-after--p">Fortunately, I think we can use the prediction market to help make blockchains reliable. You can make a prediction market based on the high-level operational-security strategy choices made by validators (such as the operating-system used, etc), if any such information can be compelled to be truthfully published, and use the outcome of the prediction market to tweak the relative sizes of quorums of the disparate strategies — and otherwise let the strategies play out unless proven inferior. This minimizes the effect of the decision swaying the measured outcome.</p><p name="15c9" id="15c9" class="graf graf--p graf-after--p graf--trailing">Could you also use the prediction market to practically decide on the overall consensus strategy? Maybe, if the prediction were about the security of the blockchain as a whole, and that prediction weren’t used to make any decisions that might impact the incentive structure of the blockchain once the consensus strategy is chosen. In other words, I think we just need to experiment with self-incentivized blockchains.</p></div></div></section><section name="3ace" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="d670" id="d670" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/89878379731f2bec37c5f5e061ae78ce" data-href="https://gist.github.com/89878379731f2bec37c5f5e061ae78ce" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a>, <a href="https://medium.com/tag/merkle" class="p-tag">Merkle</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/dao" class="p-tag">Dao</a>, <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/a1cbd6f75b6c"><time class="dt-published" datetime="2016-06-06T07:00:00.000Z">June 6, 2016</time></a>.</p><p><a href="https://medium.com/@nylira/a-critique-of-merkles-dao-democracy-making-it-reliable-a1cbd6f75b6c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

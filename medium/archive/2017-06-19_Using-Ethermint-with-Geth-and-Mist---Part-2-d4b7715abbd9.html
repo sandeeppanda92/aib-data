@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Using Ethermint with Geth and Mist — Part 2</title><meta name="description" content="By using Ethermint you get all the goodness from Proof-of-Stake while still being able to use all the usual go-ethereum tooling."><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Using Ethermint with Geth and Mist — Part 2</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+By using Ethermint you get all the goodness from Proof-of-Stake while still being able to use all the usual go-ethereum tooling.
+</section>
+<section data-field="body" class="e-content">
+<section name="73c8" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="29f9" id="29f9" class="graf graf--h3 graf--leading graf--title">Using Ethermint with Geth and Mist — Part 2</h3><h4 name="fad7" id="fad7" class="graf graf--h4 graf-after--h3 graf--subtitle">By using Ethermint you get all the goodness from Proof-of-Stake while still being able to use all the usual go-ethereum tooling.</h4><h4 name="3447" id="3447" class="graf graf--h4 graf-after--h4">Setup</h4><p name="8b72" id="8b72" class="graf graf--p graf-after--h4"><em class="markup--em markup--p-em">Please make sure that you have all the following tools installed and can access them through a terminal window.</em></p><p name="503a" id="503a" class="graf graf--p graf-after--p">For the installation of Ethermint and Tendermint you can follow along with <a href="https://medium.com/@adrian_brink/introducing-ethermint-4551ff5aece2" data-href="https://medium.com/@adrian_brink/introducing-ethermint-4551ff5aece2" class="markup--anchor markup--p-anchor" target="_blank">Part 1</a>.</p><p name="6662" id="6662" class="graf graf--p graf-after--p">The instructions for installing geth can be found <a href="https://github.com/ethereum/go-ethereum" data-href="https://github.com/ethereum/go-ethereum" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">here</a> and for installing mist can be found <a href="https://github.com/ethereum/mist" data-href="https://github.com/ethereum/mist" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">here</a>.</p><p name="8575" id="8575" class="graf graf--p graf-after--p">The end result should be that you can type <em class="markup--em markup--p-em">ethermint</em>, <em class="markup--em markup--p-em">tendermint</em> and <em class="markup--em markup--p-em">geth</em> inside a terminal window with your shell finding the command.</p><p name="7851" id="7851" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Initialising Tendermint</strong></p><p name="31f9" id="31f9" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">tendermint — home ~/.ethermint/tendermint init</em></p></div><div class="section-inner sectionLayout--outsetColumn"><figure name="6208" id="6208" class="graf graf--figure graf--layoutOutsetCenter graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 40px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 4%;"></div><img class="graf-image" data-image-id="1*CRBLPcYXIdmkM0_Ej-6rQw.png" data-width="2504" data-height="100" src="https://cdn-images-1.medium.com/max/1000/1*CRBLPcYXIdmkM0_Ej-6rQw.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="1e66" id="1e66" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Initialising Ethermint<br></strong><em class="markup--em markup--p-em">ethermint — datadir ~/.ethermint init setup/genesis.json</em><br>Please make sure that you are inside the of the <a href="https://github.com/tendermint/ethermint/tree/develop" data-href="https://github.com/tendermint/ethermint/tree/develop" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ethermint repository</a> to have access to the genesis file. If you want you can also create<br>a custom genesis file, since Tendermint does not mind.</p></div><div class="section-inner sectionLayout--outsetColumn"><figure name="5075" id="5075" class="graf graf--figure graf--layoutOutsetCenter graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 67px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 6.7%;"></div><img class="graf-image" data-image-id="1*pv-l4uJxRYEkeNqH6xWZJg.png" data-width="1926" data-height="130" src="https://cdn-images-1.medium.com/max/1000/1*pv-l4uJxRYEkeNqH6xWZJg.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><h4 name="25ec" id="25ec" class="graf graf--h4 graf-after--figure">Running everything</h4><p name="8e7e" id="8e7e" class="graf graf--p graf-after--h4"><em class="markup--em markup--p-em">Currently you need five separate terminal windows to run all the tooling. In the future we will look into decreasing that number.</em></p><p name="3640" id="3640" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Running Tendermint</strong><br><em class="markup--em markup--p-em">tendermint — home ~/.ethermint/tendermint node</em></p></div><div class="section-inner sectionLayout--outsetColumn"><figure name="5ca2" id="5ca2" class="graf graf--figure graf--layoutOutsetCenter graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 68px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 6.800000000000001%;"></div><img class="graf-image" data-image-id="1*YK0fZvMOksAL1ve3YDH5YQ.png" data-width="2506" data-height="170" src="https://cdn-images-1.medium.com/max/1000/1*YK0fZvMOksAL1ve3YDH5YQ.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="eb1c" id="eb1c" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Running Ethermint</strong><em class="markup--em markup--p-em"><br>ethermint — datadir ~/.ethermint — rpc — rpcaddr=0.0.0.0 — ws — wsaddr=0.0.0.0 — rpcapi eth,net,web3,personal,admin</em></p></div><div class="section-inner sectionLayout--outsetColumn"><figure name="36b1" id="36b1" class="graf graf--figure graf--layoutOutsetCenter graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 193px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 19.3%;"></div><img class="graf-image" data-image-id="1*Zl440AAbt3zHwY77Ubz_pw.png" data-width="2498" data-height="482" src="https://cdn-images-1.medium.com/max/1000/1*Zl440AAbt3zHwY77Ubz_pw.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="2c3d" id="2c3d" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Running geth<br></strong><em class="markup--em markup--p-em">geth attach http://localhost:8545</em></p><figure name="a4c0" id="a4c0" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 184px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 26.3%;"></div><img class="graf-image" data-image-id="1*GDv-zTf4WNTyLVHLN4CDbw.png" data-width="934" data-height="246" src="https://cdn-images-1.medium.com/max/800/1*GDv-zTf4WNTyLVHLN4CDbw.png"></div></figure><p name="eb27" id="eb27" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Running mist<br></strong>This happens inside the mist directory.<br><em class="markup--em markup--p-em">cd interface &amp;&amp; meteor — no-release-check</em><br><em class="markup--em markup--p-em">electron . — rpc </em><a href="http://localhost:8545" data-href="http://localhost:8545" class="markup--anchor markup--p-anchor" target="_blank"><em class="markup--em markup--p-em">http://localhost:8545</em></a></p><figure name="429b" id="429b" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 299px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 42.699999999999996%;"></div><img class="graf-image" data-image-id="1*mLBgFFii_-hKvVAItBsC8Q.png" data-width="754" data-height="322" src="https://cdn-images-1.medium.com/max/800/1*mLBgFFii_-hKvVAItBsC8Q.png"></div></figure></div><div class="section-inner sectionLayout--outsetColumn"><figure name="f07a" id="f07a" class="graf graf--figure graf--layoutOutsetCenter graf-after--figure"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 247px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 24.7%;"></div><img class="graf-image" data-image-id="1*QBhdaxEPeC4UNhCAkPjYQQ.png" data-width="2480" data-height="612" src="https://cdn-images-1.medium.com/max/1000/1*QBhdaxEPeC4UNhCAkPjYQQ.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><h3 name="6ac6" id="6ac6" class="graf graf--h3 graf-after--figure">Conclusion</h3><p name="53cd" id="53cd" class="graf graf--p graf-after--h3">Getting started with Ethermint and the tools from go-ethereum is very easy and will help you get up and running in no time.</p><p name="b0aa" id="b0aa" class="graf graf--p graf-after--p graf--trailing">If you have any questions, please ask me on <a href="https://twitter.com/adrian_brink" data-href="https://twitter.com/adrian_brink" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">twitter (@adrian_brink)</a>, via <a href="http://slack.cosmos.network/" data-href="http://slack.cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">slack</a> or via <a href="mailto:adrian@tendermint.com" data-href="mailto:adrian@tendermint.com" class="markup--anchor markup--p-anchor" target="_blank">email</a>.<br>I am happy to help anyone who has problems getting up and running or who just has a simple question.</p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/ethermint" class="p-tag">Ethermint</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a>, <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/proof-of-stake" class="p-tag">Proof Of Stake</a></p><p>By <a href="https://medium.com/@adrian_brink" class="p-author h-card">Adrian Brink</a> on <a href="https://medium.com/p/d4b7715abbd9"><time class="dt-published" datetime="2017-06-19T07:51:27.714Z">June 19, 2017</time></a>.</p><p><a href="https://medium.com/@adrian_brink/using-ethermint-with-geth-and-mist-d4b7715abbd9" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

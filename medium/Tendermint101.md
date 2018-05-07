@@ -1,7 +1,6 @@
 Suggested Titles:
 
-- Tendermint for Dummies: Bringing BFT to the Public
-Blockchain Domain
+- Tendermint for Dummies: Bringing BFT to the Public Blockchain Domain
 
 # Intro
 
@@ -66,24 +65,21 @@ distinction is nuanced and merits deeper investigation.
 In the academic world of BFT, before there was Tendermint, people assumed a
 local area network (LAN) setup of just a handful of nodes--4 to 7 of them at
 maximum. Before Bitcoin introduced the blockchain paradigm to the world, no one
-had ever proposed BFT solutions beyond the single administrator domain, i.e.
+had ever proposed BFT solutions beyond the single administrative domain, i.e.
 centralized entities. There was little to no work done on BFT research for a
-wide area network setup secured by a Proof-of-Stake security model before
-Tendermint. figured out how to scale BFT-based protocols to the tune of hundreds
-of nodes among a cluster of disparate multi-administrator domains (i.e.
-decentralized, untrusted entities) when [he introduced Tendermint in
+wide area network setup before the introduction of Bitcoin using Proof-of-Work.
+Then Jae Kwon figured out how to scale BFT-based protocols to the tune of
+hundreds of nodes among disparate administrative domains (i.e. decentralized,
+untrusted entities) using Proof-of-Stake when [he introduced Tendermint in
 2014](https://tendermint.com/static/docs/tendermint.pdf). Consequently, this
 system model for a large number of validating nodes in a WAN is significantly
 more complex to engineer than it is for a small number of nodes.
 
 The goal was to address a problem that was significantly harder to solve and do
 it with an algorithmic complexity that was even simpler to understand. That was
-Tendermint.
-
-The breakthrough moment was when Jae Kwon realized that one could adapt
-classical BFT algorithms and apply them to the permissionless public blockchain
-setting, relying on Proof-of-Stake, rather than Proof-of-Work, as the underlying
-security mechanism.
+Tendermint. The breakthrough was that one could adapt classical BFT algorithms
+and apply them to the permissionless public blockchain setting, relying on
+Proof-of-Stake, rather than Proof-of-Work, as the underlying security mechanism.
 
 ## The Model
 
@@ -92,8 +88,8 @@ which achieves throughput within the bounds of the latency of the network and
 individual processes themselves. That's quite the mouthful. Lets break it down
 into digestible chunks.
 
-__flp impossibility__ [FLP
-Impossibility](https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf)
+[__FLP
+Impossibility__](https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf)
 
 Theorem: "...we show the surprising result that no completely asynchronous
 consensus protocol can tolerate even a single unannounced process death." As in,
@@ -186,25 +182,97 @@ deterministically, through a defined mathematical function in the
 implementation. As such, we are able to mathematically prove that the system is
 live and that the protocol will make decisions.
 
-__Voting Power__
+[__Rotating Leader Election__][Proposer selection procedure in Tendermint]
 
-__Rotating Leader Election__
+Tendermint rotates through the validator set, i.e. block proposers, in a
+weighted round-robin fashion. The more stake, i.e. voting power, that a
+validator has delegated to them, the more weight that they have, and the
+proportionally more times they will be elected as leaders. To illustrate, if one
+validator has the same amount of voting power as another validator, they will
+both be elected by the protocol an equal amount of times.
 
-[Proposer selection procedure in
-Tendermint](https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md)
+The simplified explanation of how the algorithm works looks like this:
 
-Because the protocol selects the block proposer using a mathematical function,
-you know exactly who the next proposers are; there is no obfuscation there.
-Indeed, Tendermint does not try to hide who the leaders will be. Some critics
-stop here when arguing naively, that Tendermint isn't decentralized enough.
+`Validator weight is established -> Validator is elected, their turn to propose
+a block -> Weight is recalculated, decreases some amount after round is complete ->
+As  each round progresses, weight increases incrementally in proportion to
+voting power -> Validator is elected again after k rounds`
+
+Because [the protocol selects block proposers deterministically][Proposer
+selection procedure in Tendermint], given that you know the validator set and
+each validator's voting power, you could compute exactly who the next block
+proposers will be in rounds `x`, `x + 1`,...,`x + n`. Because of this, critics
+argue that Tendermint isn't decentralized enough. When you can know predictably
+who the leaders will be, an attacker could target those leaders and launch a
+DDoS attack against them and potentially halt the chain from progressing. We
+mitigate this attack vector by implementing something called [Sentry
+Architecture][Sentry Node] in Tendermint.
 
 ## P2P Networking Protocol
 
-__sentry node architecture__
+[__Sentry Node Architecture__][Sentry Node]
+
+![Tendermint stack]()
+
+A properly set up validator will never expose the IP address of or accept
+incoming connections to their validator node. A correctly set up, well-defended
+validator will actively spawn sentry nodes, which act as proxies to the network,
+to obfuscate the real location of their validator node. IP addresses on the p2p
+layer are never exposed.
+
+That said, taking advantage of Sentry Node Architecture is opt-in; the onus is
+on the validator to maintain a fault-tolerant full node. This is where we make
+extra-protocol assumptions based on cryptoeconomic incentives. The assumption
+is, a validator will want to take all precautionary measures so as to maintain
+fault-tolerance, remain available, and ultimately play their part in keeping the
+network live. Because if they don't, they get slashed by the protocol for being
+offline for over a certain amount of time.
+
+[__Peer Exchange (PEX) Reactor__][PEX]
+
+Tendermint borrows from Bitcoin's peer discovery protocol. More specifically,
+Tendermint adopts the p2p AddressBook from [btcd][btcd], the Bitcoin alternative
+implementation in Go.
+
+// Need help providing more context about how the PEX works The PEX enables
+// dynamic peer discovery on the networking layer by default. Peers can be
+// gossiped on the p2p layer.
+
+# Ongoing research--Tendermint Labs
+
+Currently, we are delving into BLS signature research which could potentially
+lead to a reduction in the size of Tendermint block headers from 3.2 KB (with
+~100 validators) to 64 bytes.
+
+# Tendermint in Practice
+
+After all is said and done, beyond the fancy algorithmic design and academic
+jargon, what is Tendermint actually useful for?
+
+Bad news is, everyday people won't find Tendermint useful. Good news is,
+application developers can bridge the gap between protocol and end-user.
+Tendermint is designed to be customizable and flexible enough to fit any
+setting, be it public or enterprise, where a consensus protocol is desired.
+
+Tendermint is ideal for a developer who wants to implement an application on top
+of its own blockchain. It comes pre-assembled, so if the developer chooses to go
+for a pure Proof-of-Stake, BFT-based consensus engine to power their
+[dAppzone][application-specific blockchain], they can easily do so.
+
+# Additional Resources
 
 Read the Interview with Zarko:
 [here](https://github.com/tendermint/aib-data/blob/develop/medium/TendermintBFT.md).
 
 We have an upcoming meetup in Berkeley, CA, with Zarko about Tendermint. We will
 livestream this meetup and publish the broadcast on the [Cosmos Network's
-YouTube channel](http://bit.ly/2GTuJgx ).
+YouTube channel](http://bit.ly/2GTuJgx).
+
+[Proposer selection procedure in
+Tendermint]:https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md
+[Sentry Node]:
+https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/p2p/node.md
+[PEX]:
+https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/pex/pex.md
+[btcd]: https://github.com/btcsuite/btcd [application-specific blockchain]:
+https://blog.cosmos.network/why-application-specific-blockchains-make-sense-32f2073bfb37

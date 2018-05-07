@@ -206,7 +206,7 @@ argue that Tendermint isn't decentralized enough. When you can know predictably
 who the leaders will be, an attacker could target those leaders and launch a
 DDoS attack against them and potentially halt the chain from progressing. We
 mitigate this attack vector by implementing something called [Sentry
-Architecture][Sentry Node] in Tendermint.
+Architecture][sentry-node] in Tendermint.
 
 ## P2P Networking Protocol
 

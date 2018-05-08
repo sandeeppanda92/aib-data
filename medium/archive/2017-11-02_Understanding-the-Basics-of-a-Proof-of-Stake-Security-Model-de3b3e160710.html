@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Understanding the Basics of a Proof-of-Stake Security Model</title><meta name="description" content="Devcon3 is fully underway, and despite the development-focused agenda at the conference, a majority of the audience is still befuddled…"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Understanding the Basics of a Proof-of-Stake Security Model</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Devcon3 is fully underway, and despite the development-focused agenda at the conference, a majority of the audience is still befuddled…
+</section>
+<section data-field="body" class="e-content">
+<section name="35b7" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="7f1d" id="7f1d" class="graf graf--h3 graf--leading graf--title">Understanding the Basics of a Proof-of-Stake Security Model</h3></div><div class="section-inner sectionLayout--outsetColumn"><figure name="e9e9" id="e9e9" class="graf graf--figure graf--layoutOutsetCenter graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 563px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 56.3%;"></div><img class="graf-image" data-image-id="1*NuU16YAE8knlPGmX3MfhZQ.jpeg" data-width="1600" data-height="900" src="https://cdn-images-1.medium.com/max/1000/1*NuU16YAE8knlPGmX3MfhZQ.jpeg"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="d2ec" id="d2ec" class="graf graf--p graf-after--figure">Devcon3 is fully underway, and despite the development-focused agenda at the conference, a majority of the audience is still befuddled during talks about consensus protocols. We took this as an opportunity to translate the technical jargon into plain English.</p><h3 name="5a47" id="5a47" class="graf graf--h3 graf-after--p">Consensus Basics</h3><h4 name="c4dd" id="c4dd" class="graf graf--h4 graf-after--h3">Standard Definitions</h4><p name="2a75" id="2a75" class="graf graf--p graf-after--h4"><strong class="markup--strong markup--p-strong">The ‘Consensus’ Problem</strong></p><p name="5300" id="5300" class="graf graf--p graf-after--p">At the core of every distributed fault-tolerant system is the fundamental problem of ensuring that all remote processes within said systems arrive at the same conclusion. This is known as requiring ‘consensus’ among participants. In completely reliable, controlled environments where faulty processes are tightly monitored and swiftly corrected, reaching consensus is straightforward. Real world decentralized protocols, however, are subject to significantly more arbitrary failures, requiring much higher reliability guarantees in order to be useful, much less secure. As Ethan Buchman at <a href="https://cosmos.network/" data-href="https://cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Cosmos</a> puts it, distributed consensus mechanisms must “make a reliable system from unreliable parts.”</p><p name="68f1" id="68f1" class="graf graf--p graf-after--p">The consensus protocol ensures that every transaction is replicated and recorded in all the machines in the network in the same order. The scheme for state replication in this context is implemented in the blockchain paradigm, where the blockchain is the resultant hash-linked “batched log” of transactions replicated deterministically across all processes in the network.</p><p name="1ef4" id="1ef4" class="graf graf--p graf--startsWithSingleQuote graf-after--p"><strong class="markup--strong markup--p-strong">‘Safety’ &amp; ‘Liveness’</strong></p><p name="b4f3" id="b4f3" class="graf graf--p graf-after--p">Safety implies having a single agreed upon chain where there are not two or more competing chains with valid transactions in either. Simply put, a consensus protocol is said to be ‘safe’ when blocks don’t fork.</p><p name="77f9" id="77f9" class="graf graf--p graf-after--p">A consensus protocol is said to be ‘live’ if it is responsive, therefore <em class="markup--em markup--p-em">available,</em> to new transaction propagation, where valid transactions <em class="markup--em markup--p-em">eventually</em> make it onto the blockchain. A liveness fault occurs when transaction omission, information withholding, or message reordering, among a number of violations are observed. These are indistinguishable from simple network latency, which makes liveness faults difficult to detect.</p><p name="d9da" id="d9da" class="graf graf--p graf--startsWithSingleQuote graf-after--p"><strong class="markup--strong markup--p-strong">‘Asynchronous’ Networks</strong></p><p name="ce13" id="ce13" class="graf graf--p graf-after--p">In asynchronous networks, the arrival order of transactions is witnessed at varying times among nodes. Therefore, to ensure safety, concurrent processes in a consensus system must follow a set of protocol rules in order to agree upon the order in which messages were received. To do so requires that we make synchrony assumptions; we suggest some maximum threshold for the latency of network transactions and the speed of processor clocks.</p><p name="4fe2" id="4fe2" class="graf graf--p graf-after--p">Those assumptions make failures in asynchronous networks detectable with the use of ‘timeouts’, wherein a process is assumed to have crashed if it is unresponsive for a defined amount of time.</p><p name="dca8" id="dca8" class="graf graf--p graf--startsWithSingleQuote graf-after--p"><strong class="markup--strong markup--p-strong">‘Cryptoeconomic’ Security Incentives</strong></p><p name="8c87" id="8c87" class="graf graf--p graf--startsWithDoubleQuote graf-after--p"><em class="markup--em markup--p-em">“Cryptographic primitives are…fundamentally related to the problem of trust, and may similarly be defined as mechanisms which allow for a massive reduction in entropy — successfully authenticating a cryptographic function collapses a distribution over possible outcomes to a single, or in some cases a small number, of outcomes….Most interestingly, economic mechanisms may also serve as means for reducing entropy, in so far as economic agents can be incentivized — which is to say be made more likely to execute a particular behaviour. In fact, Bitcoin’s great insight was that cryptographic primitives could be used in conjunction with economic incentives to sufficiently reduce the entropy of a public consensus network to achieve secure replication of state.”</em></p><p name="50a9" id="50a9" class="graf graf--p graf-after--p">— Ethan Buchman, <a href="https://atrium.lib.uoguelph.ca/xmlui/bitstream/handle/10214/9769/Buchman_Ethan_201606_MAsc.pdf?sequence=7&amp;isAllowed=y" data-href="https://atrium.lib.uoguelph.ca/xmlui/bitstream/handle/10214/9769/Buchman_Ethan_201606_MAsc.pdf?sequence=7&amp;isAllowed=y" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Tendermint: Byzantine Fault Tolerance in the Age of Blockchains</em></a></p><p name="44e0" id="44e0" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Stake</strong></p><p name="9cd1" id="9cd1" class="graf graf--p graf-after--p">Assuming those majority economic agents are not Byzantine (malicious or lying) but are rational rather, we can devise certain in-protocol incentives to modify decisions with determinism. The leveraging of ‘stake’ in Proof-of-Stake consensus provides stronger security guarantees than Proof-of-Work consensus due to the bonding of collateralized capital, or security deposits. Utilizing this is so key to modern, fault tolerant PoS design, that the major protocols like Tendermint and Casper adopt security deposits at the core of their incentive mechanisms.</p><p name="9678" id="9678" class="graf graf--p graf-after--p">This is because stake that is bonded by a node which exhibits faulty behavior can be forfeit, or ‘slashed’, by the protocol. The protocol can therefore define some strong disincentive, or maximal penalty for incorrect behavior which can potentially far outweigh any transaction fees or mining rewards defined for correct behavior.</p><p name="d7cb" id="d7cb" class="graf graf--p graf--startsWithSingleQuote graf-after--p"><strong class="markup--strong markup--p-strong">‘Validators’ as Security</strong></p><p name="0bb9" id="0bb9" class="graf graf--p graf-after--p">In Proof-of-Stake, the consensus nodes are known as validators, whereas in Proof-of-Work, they are known as miners. The term ‘bonded validator’, or ‘validator’ for short, was first introduced by Jae Kwon in his pivotal white paper, <a href="https://tendermint.com/static/docs/tendermint.pdf" data-href="https://tendermint.com/static/docs/tendermint.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Tendermint: Consensus without Mining</em></a>. Each validator’s voting power, or weight, amounts to the proportion of stake that’s self-funded or allotted to them. All three of the aforementioned consensus protocols employ dynamic validator sets.</p><p name="4bee" id="4bee" class="graf graf--p graf-after--p graf--trailing">In many systems, not all validators will have the same “weight” in the consensus protocol. Thus, we are not so much interested in ⅓ or ⅔ of the validators, but in those proportions of the total voting power, which may not be uniformly distributed across individual validators. So when you hear “⅔ or more” validators, what you’re really hearing can be translated as “⅔ or more” of the deposit-weighted percentage of the total deposit size of all validators in a set.</p></div></div></section><section name="a39e" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="c1d2" id="c1d2" class="graf graf--p graf--leading">Hope this was helpful.</p><p name="9d95" id="9d95" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">With love,</strong></p><p name="ce2c" id="ce2c" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Your Fellow Cosmonauts + Devcorn</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/consensus" class="p-tag">Consensus</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/proof-of-stake" class="p-tag">Proof Of Stake</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a></p><p>By <a href="https://medium.com/@tendermint" class="p-author h-card">Tendermint Team</a> on <a href="https://medium.com/p/de3b3e160710"><time class="dt-published" datetime="2017-11-02T01:58:26.373Z">November 2, 2017</time></a>.</p><p><a href="https://medium.com/@tendermint/understanding-the-basics-of-a-proof-of-stake-security-model-de3b3e160710" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

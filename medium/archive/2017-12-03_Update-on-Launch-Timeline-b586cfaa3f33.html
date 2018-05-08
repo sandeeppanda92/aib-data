@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Update on Launch Timeline</title><meta name="description" content="The Cosmos Roadmap has changed. Here’s what to expect from us until launch in Feb 2018."><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Update on Launch Timeline</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The Cosmos Roadmap has changed. Here’s what to expect from us until launch in Feb 2018.
+</section>
+<section data-field="body" class="e-content">
+<section name="c14e" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="1784" id="1784" class="graf graf--h3 graf--leading graf--title">Update on Launch Timeline</h3></div><div class="section-inner sectionLayout--outsetColumn"><figure name="187b" id="187b" class="graf graf--figure graf--layoutOutsetCenter graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 563px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 56.3%;"></div><img class="graf-image" data-image-id="1*oyTD4pL_d8KiWuoqFOTo0A.png" data-width="3840" data-height="2160" src="https://cdn-images-1.medium.com/max/1000/1*oyTD4pL_d8KiWuoqFOTo0A.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="c1a9" id="c1a9" class="graf graf--p graf-after--figure">Dearest Cosmonauts,</p><p name="73de" id="73de" class="graf graf--p graf-after--p">We wanted to take a moment to update you on the expected launch date for the Cosmos Hub. <a href="https://blog.cosmos.network/critical-roadmap-announcement-november-update-38b40e0c1570" data-href="https://blog.cosmos.network/critical-roadmap-announcement-november-update-38b40e0c1570" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">In a sister post, we include updates</a> on the state of development and more details about the short-term roadmap.</p><p name="054b" id="054b" class="graf graf--p graf-after--p">The Cosmos Hub is the initial cornerstone of the <a href="http://https;//cosmos.network" data-href="http://https;//cosmos.network" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Cosmos Network</a>. It is composed of many independent parts, each of which is designed to be a general purpose module in itself, useful beyond the confines of the Cosmos Hub. This is a fundamental aspect of our philosophy of software engineering, and ensures that the software we are building is maintainable and re-usable across a wide diversity of projects, including the diverse set of yet-to-be-built Cosmos Zones. For instance, one of the chief components, <a href="https://tendermint.com" data-href="https://tendermint.com" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Tendermint</a>, is becoming increasingly recognized and adopted as the most mature implementation of Byzantine Fault Tolerant Replicated State Machines on the planet. Well good, we have done a lot of work on Tendermint, and we are doing a lot of work on other parts too, like the <a href="http://github.com/tendermint/abci" data-href="http://github.com/tendermint/abci" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ABCI</a> and the Cosmos SDK.</p><p name="e31b" id="e31b" class="graf graf--p graf-after--p">Keeping these parts modular and independent has significant development cost, especially as we aim to be as general purpose as possible without sacrificing high performance or security.</p><p name="116b" id="116b" class="graf graf--p graf-after--p">It forces us to carefully review every line of code, to think more clearly about the structure of our code, and to prevent abstractions from leaking. And sometimes, it forces us to redesign an entire piece because it is too complicated or difficult to use. For instance, this is what happened with the Cosmos SDK; the initial implementation was too complicated and did not quite admit the generality of purpose we are looking for — it would have been difficult to use it to integrate Ethermint into the Cosmos Network. That said, the new version of the SDK is coming along quite nicely, and is looking very good.</p><p name="0185" id="0185" class="graf graf--p graf-after--p">In short, our rigorous development process has caused us some delays. We are committed to delivering well engineered software that is secure, easy to use, and easy to maintain. Unfortunately, this means we will not be able to launch a production version of the Cosmos Hub by the end of December 2017, as we need more time to complete the implementation of the various pieces and have them reviewed by third party security auditors.</p><p name="6431" id="6431" class="graf graf--p graf-after--p">We would like to announce the following new timeline:</p><ul class="postList"><li name="081c" id="081c" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">December</strong>: Complete specifications for the Cosmos Hub application (feature freeze) and much of the implementation.</li><li name="f7b2" id="f7b2" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">January</strong><em class="markup--em markup--li-em">:</em> Complete implementation for the Cosmos Hub application and get it reviewed.</li><li name="27fc" id="27fc" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">February</strong>: Complete audits and review, and launch.</li></ul><p name="7260" id="7260" class="graf graf--p graf-after--li">Thus, we are targeting a launch by the end of February, pending any serious security concerns that arise during the code audits. Please see the <a href="https://blog.cosmos.network/critical-roadmap-announcement-november-update-38b40e0c1570" data-href="https://blog.cosmos.network/critical-roadmap-announcement-november-update-38b40e0c1570" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">sister post</a> for more on the specific details of what’s done and what’s being implemented.</p><p name="ebd2" id="ebd2" class="graf graf--p graf-after--p">During the summer, we had Tendermint’s consensus guarantees thoroughly empirically tested by the <a href="https://jepsen.io/analyses/tendermint-0-10-2" data-href="https://jepsen.io/analyses/tendermint-0-10-2" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Jepsen</a> distributed systems testing tool. Last September, we began auditing Tendermint and its libraries, and building <a href="https://github.com/tendermint/tendermint/pull/719" data-href="https://github.com/tendermint/tendermint/pull/719" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">fuzzers</a> to search for vulnerabilities. These efforts continue today, and we are looking to ramp up considerably in the new year for all elements of our stack. If you know of any outstanding security auditors for Golang and/or Javascript (or if you are one yourself!), please send them our way. We are also looking for third party audits of the specifications from a cryptoeconomic perspective — if this is your area of expertise, please reach out. And of course, we’re <a href="https://tendermint.com/careers" data-href="https://tendermint.com/careers" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">always looking for top-notch developers</a> to join the team. Find us at <a href="https://tendermint.com/contact." data-href="https://tendermint.com/contact." class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://tendermint.com/contact.</a></p><p name="4e10" id="4e10" class="graf graf--p graf-after--p">Next week, we will be announcing a Bug Bounty program to incentivize members of the community to search for vulnerabilities in the software. We will also be announcing a variety of updates and new releases, so stay tuned for lots of exciting software to try out!</p><p name="5c05" id="5c05" class="graf graf--p graf-after--p">We want to thank our community for all their support and patience as we build out the Internet of Blockchains together. We are really looking forward to launching this thing with all of you.</p><h4 name="ee83" id="ee83" class="graf graf--h4 graf-after--p">Over and out,</h4><blockquote name="6fde" id="6fde" class="graf graf--pullquote graf-after--h4 graf--trailing">Your Friendly Fellow Cosmonauts</blockquote></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/security" class="p-tag">Security</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/cosmos" class="p-tag">Cosmos</a></p><p>By <a href="https://medium.com/@tendermint" class="p-author h-card">Tendermint Team</a> on <a href="https://medium.com/p/b586cfaa3f33"><time class="dt-published" datetime="2017-12-03T23:29:55.015Z">December 3, 2017</time></a>.</p><p><a href="https://medium.com/@tendermint/update-on-launch-timeline-b586cfaa3f33" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

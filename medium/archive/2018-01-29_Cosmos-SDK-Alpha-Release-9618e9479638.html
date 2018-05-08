@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Cosmos SDK Alpha Release</title><meta name="description" content="The highly anticipated alpha release of the Cosmos SDK is here!"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Cosmos SDK Alpha Release</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The highly anticipated alpha release of the Cosmos SDK is here!
+</section>
+<section data-field="body" class="e-content">
+<section name="0d28" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="db20" id="db20" class="graf graf--h3 graf--leading graf--title">Cosmos-SDK Alpha Release</h3></div><div class="section-inner sectionLayout--outsetColumn"><figure name="8d6c" id="8d6c" class="graf graf--figure graf--layoutOutsetCenter graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 563px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 56.3%;"></div><img class="graf-image" data-image-id="1*1fuTv5eNaNCyc5I5RdCpSA.png" data-width="3840" data-height="2160" data-is-featured="true" src="https://cdn-images-1.medium.com/max/1000/1*1fuTv5eNaNCyc5I5RdCpSA.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="5df3" id="5df3" class="graf graf--p graf-after--figure">The highly anticipated alpha release of the Cosmos-SDK is here!</p><p name="3625" id="3625" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">View it on GitHub!</strong></p><ul class="postList"><li name="6108" id="6108" class="graf graf--li graf-after--p"><a href="https://github.com/cosmos/cosmos-sdk/tree/develop/examples/basecoin" data-href="https://github.com/cosmos/cosmos-sdk/tree/develop/examples/basecoin" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Basecoin example</a></li><li name="9146" id="9146" class="graf graf--li graf-after--li"><a href="https://github.com/cosmos/cosmos-sdk/blob/develop/docs/sdk/overview.rst" data-href="https://github.com/cosmos/cosmos-sdk/blob/develop/docs/sdk/overview.rst" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Design philosophy</a></li><li name="2734" id="2734" class="graf graf--li graf-after--li"><a href="https://github.com/cosmos/cosmos-sdk/blob/develop/docs/guide.md" data-href="https://github.com/cosmos/cosmos-sdk/blob/develop/docs/guide.md" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Cosmos-SDK Basics</a> (WIP; help wanted)</li></ul><h3 name="2927" id="2927" class="graf graf--h3 graf-after--li">Construct a Blockchain using the Cosmos-SDK</h3><p name="ea3e" id="ea3e" class="graf graf--p graf-after--h3">The Cosmos-SDK is a generic framework that comes with all the tooling to enable you to construct your own blockchain, called a zone, in the context of the Cosmos Network. It is designed for developers to build decentralized applications as their own zones while removing the daunting task of building a secure state machine from the ground up just to spin up a blockchain-based application. In the past, application developers forked existing codebases in order to do this. Cosmos-SDK gives you a better alternative.</p><p name="4c49" id="4c49" class="graf graf--p graf-after--p">The SDK gives you fine-grained control over your application, enabling highly customizable zones through the use of plugins. It is designed as a bare bones software development kit with basic necessities such as tokens, governance, <a href="https://blog.cosmos.network/developer-deep-dive-cosmos-ibc-5855aaf183fe" data-href="https://blog.cosmos.network/developer-deep-dive-cosmos-ibc-5855aaf183fe" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">IBC</a>, and staking built in. You can then add functionality for your particular use case through plugins and easily deploy your application as its very own blockchain (see diagram).</p><figure name="362f" id="362f" class="graf graf--figure graf--layoutOutsetLeft graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 525px; max-height: 489px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 93.10000000000001%;"></div><img class="graf-image" data-image-id="1*nirAVIv9X7XUpQAe4PfRNA.png" data-width="950" data-height="884" src="https://cdn-images-1.medium.com/max/600/1*nirAVIv9X7XUpQAe4PfRNA.png"></div><figcaption class="imageCaption">Tendermint Core (in green) + your application (in yellow) = a Cosmos zone.</figcaption></figure><p name="3507" id="3507" class="graf graf--p graf-after--figure">A zone that is spun up using the Cosmos-SDK is comprised of two components: the Cosmos-SDK and Tendermint.</p><p name="9ca6" id="9ca6" class="graf graf--p graf-after--p">Very briefly, the Tendermint <a href="https://github.com/Tendermint/abci" data-href="https://github.com/Tendermint/abci" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Application Blockchain Interface (ABCI)</a> that you see depicted is the interface between Tendermint and the “application”. Deeper technical dive on that in a future blog post.</p><p name="5a0c" id="5a0c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Tendermint ABCI documentation can be found </strong><a href="https://tendermint.readthedocs.io/en/master/introduction.html#abci-overview" data-href="https://tendermint.readthedocs.io/en/master/introduction.html#abci-overview" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a><strong class="markup--strong markup--p-strong">.</strong></p><p name="d54b" id="d54b" class="graf graf--p graf-after--p">The Cosmos-SDK-built blockchain, or the “ABCI app”, is a deterministic state machine that can be run on any replication engine. If you build on the Cosmos-SDK, you’re not locked into Tendermint. Everything within Cosmos is designed to be modular, so you can even swap out the underlying consensus engine with whatever you want, i.e., a non-replicating engine, a fault-tolerant engine, or what-have-you.</p><p name="4ba4" id="4ba4" class="graf graf--p graf-after--p">For a broad understanding of how the SDK is used to build a zone, watch <a href="https://medium.com/u/4d91b5da9fd" data-href="https://medium.com/u/4d91b5da9fd" data-anchor-type="2" data-user-id="4d91b5da9fd" data-action-value="4d91b5da9fd" data-action="show-user-card" data-action-type="hover" class="markup--user markup--p-user" target="_blank">Sunny Aggarwal</a>’s overview about the architecture of the Cosmos Network.</p><figure name="1ecf" id="1ecf" class="graf graf--figure graf--iframe graf-after--p"><iframe src="https://www.youtube.com/embed/LApEkXJR_0M?feature=oembed" width="700" height="393" frameborder="0" scrolling="no"></iframe></figure><h4 name="a230" id="a230" class="graf graf--h4 graf-after--figure">Core Components of the SDK:</h4><p name="4683" id="4683" class="graf graf--p graf-after--h4"><strong class="markup--strong markup--p-strong">Transactions &amp; messages</strong> are designed to be generic enough for developers to specify their own encoding schemes. This enables the SDK to be used as the framework for constructing already specified cryptocurrency state machines, like Ethereum for instance.</p><p name="1eff" id="1eff" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Context &amp; Handlers:</strong> Each message has a type, which is associated with a handler via BaseApp.Router. Everything required to process the message is contained in the Context, which is passed in as the first argument to the Handler. This is part of a larger object capability security system.</p><p name="3311" id="3311" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Stores &amp; Mappers:</strong> Stores are Merkle-izable persistent stores, such as Ethereum’s Patricia Trie or an <a href="https://github.com/tendermint/iavl" data-href="https://github.com/tendermint/iavl" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">IAVL Tree</a>. A Mapper provides specific functionality on top of a store, such as loading or saving account data. A Mapper doesn’t have any persistent state itself, but it is provided the persistent state via a Context.</p><h4 name="19eb" id="19eb" class="graf graf--h4 graf-after--p">Key Features:</h4><p name="2353" id="2353" class="graf graf--p graf-after--h4"><strong class="markup--strong markup--p-strong">1. Object Capability Security Model —</strong>When thinking about security, it’s good to start with a specific threat model. Our threat model is the following:</p><blockquote name="bb4d" id="bb4d" class="graf graf--blockquote graf-after--p">We want to assume a thriving ecosystem of Cosmos-SDK modules that are easy to compose into a blockchain application. Some of these modules will be faulty or malicious.</blockquote><p name="3c07" id="3c07" class="graf graf--p graf-after--blockquote">The Cosmos-SDK is designed to address this threat by being the foundation of an object capability system. Read the <a href="https://github.com/cosmos/cosmos-sdk/blob/develop/docs/design.md#object-capability-model" data-href="https://github.com/cosmos/cosmos-sdk/blob/develop/docs/design.md#object-capability-model" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Cosmos-SDK design document</a>.</p><p name="2281" id="2281" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">2. Flexible MultiStore System with Iterators—</strong>Supports multiple kinds of Merkle-ized data stores: i.e., Tendermint’s IAVL trees, Ethereum’s Patricia trie. The IAVL tree has native support for fast iteration (with smart caching) to fetch a series of key-value pairs. The IAVL tree also natively supports keys and values of arbitrary length, making it more efficient to store complex structures.</p></div></div></section><section name="ab27" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="450a" id="450a" class="graf graf--h3 graf--leading">Ongoing Work</h3><p name="420e" id="420e" class="graf graf--p graf-after--h3">Additional modules such as <strong class="markup--strong markup--p-strong">x/gov</strong> for blockchain governance, <strong class="markup--strong markup--p-strong">x/ibc</strong> for Inter-blockchain-communication, <strong class="markup--strong markup--p-strong">x/staking</strong> for staking are all coming soon.</p><p name="0a5a" id="0a5a" class="graf graf--p graf-after--p">Give the Cosmos-SDK a whirl!</p><p name="5b50" id="5b50" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">GitHub: </strong><a href="https://github.com/cosmos/cosmos-sdk" data-href="https://github.com/cosmos/cosmos-sdk" class="markup--anchor markup--p-anchor" rel="nofollow noopener noopener" target="_blank">https://github.com/cosmos/cosmos-sdk</a></p><p name="d9e1" id="d9e1" class="graf graf--p graf-after--p graf--trailing"><strong class="markup--strong markup--p-strong">Contribute: </strong><a href="https://github.com/cosmos/cosmos-sdk/issues" data-href="https://github.com/cosmos/cosmos-sdk/issues" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://github.com/cosmos/cosmos-sdk/issues</a></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/cosmos" class="p-tag">Cosmos</a>, <a href="https://medium.com/tag/cryptocurrency" class="p-tag">Cryptocurrency</a>, <a href="https://medium.com/tag/protocol" class="p-tag">Protocol</a>, <a href="https://medium.com/tag/cosmos-sdk" class="p-tag">Cosmos Sdk</a></p><p>By <a href="https://medium.com/@tendermint" class="p-author h-card">Tendermint Team</a> on <a href="https://medium.com/p/9618e9479638"><time class="dt-published" datetime="2018-01-29T03:11:36.720Z">January 29, 2018</time></a>.</p><p><a href="https://medium.com/@tendermint/cosmos-sdk-alpha-release-9618e9479638" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

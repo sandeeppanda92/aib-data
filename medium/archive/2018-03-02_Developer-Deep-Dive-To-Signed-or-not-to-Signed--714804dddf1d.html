@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Developer Deep Dive—To Signed or not to Signed?</title><meta name="description" content="Anton, Tendermint Core Developer, walks us through his research deciding on a type for blockchain height (beware of unsigned integers)."><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Developer Deep Dive—To Signed or not to Signed?</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Anton, Tendermint Core Developer, walks us through his research deciding on a type for blockchain height (beware of unsigned integers).
+</section>
+<section data-field="body" class="e-content">
+<section name="8050" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="ba6e" id="ba6e" class="graf graf--h3 graf--leading graf--title">Choosing a type for blockchain height (beware of unsigned integers)</h3></div><div class="section-inner sectionLayout--outsetColumn"><figure name="3c2a" id="3c2a" class="graf graf--figure graf--layoutOutsetCenter graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 563px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 56.3%;"></div><img class="graf-image" data-image-id="1*abd9lMNx2EZU4OYC_HNnow.png" data-width="3840" data-height="2160" src="https://cdn-images-1.medium.com/max/1000/1*abd9lMNx2EZU4OYC_HNnow.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="6f66" id="6f66" class="graf graf--p graf-after--figure">Before <a href="https://github.com/tendermint/tendermint/pull/914" data-href="https://github.com/tendermint/tendermint/pull/914" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">this pull request</a>, it was a mess. ABCI was using a <code class="markup--code markup--p-code">uint64</code> height on <code class="markup--code markup--p-code">EndBlock</code>. Tendermint Core was using the same type for <code class="markup--code markup--p-code">TxResult</code>. <code class="markup--code markup--p-code">Block</code> and <code class="markup--code markup--p-code">BlockStore</code>, however, were using <code class="markup--code markup--p-code">int</code> heights (remember that <code class="markup--code markup--p-code">int</code> is different depending on the processor architecture: <code class="markup--code markup--p-code">int32</code> for x86, <code class="markup--code markup--p-code">int64</code> for amd64). There was no single standard across our repositories as for what type to use for blockchain height.</p><p name="9e84" id="9e84" class="graf graf--p graf-after--p">There was a need [<a href="https://github.com/tendermint/tendermint/issues/731" data-href="https://github.com/tendermint/tendermint/issues/731" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">1</a>]. If you have different types everywhere, you need to cast them, which can lead to information loss:</p><ul class="postList"><li name="ecc9" id="ecc9" class="graf graf--li graf-after--p">value — when casting bigger to smaller type</li><li name="17be" id="17be" class="graf graf--li graf-after--li">sign — when casting signed to unsigned type</li></ul><p name="93ac" id="93ac" class="graf graf--p graf-after--li">Users should be able to build upon Tendermint without worrying that some type is going to change overnight.</p><p name="759d" id="759d" class="graf graf--p graf-after--p">So one day we sat down and decided to do a small research. Choosing between <code class="markup--code markup--p-code">uint64</code> and <code class="markup--code markup--p-code">int64</code> was not an obvious choice. At least not back then. Blockchain height should only go up, so it is logical to suggest <code class="markup--code markup--p-code">uint64</code>. And with a maximum value being 18446744073709551615, a chain can live up to 584 million years (assuming one sec. blocks). Wow. That’s life! What about other projects? <a href="https://github.com/paritytech/parity" data-href="https://github.com/paritytech/parity" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Parity</a> and <a href="https://github.com/chain/chain" data-href="https://github.com/chain/chain" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">chain</a> use <code class="markup--code markup--p-code">uint64</code>. Sounds like an obvious choice? But if you look deep enough, there are dragons.</p><h3 name="f6df" id="f6df" class="graf graf--h3 graf-after--p">Ruling out int type</h3><p name="f0e1" id="f0e1" class="graf graf--p graf-after--h3"><code class="markup--code markup--p-code">int</code> was ruled out almost immediately due to size (32 bits on x86) and inconsistency between nodes with different architectures.</p><blockquote name="7ae5" id="7ae5" class="graf graf--blockquote graf-after--p">Assuming a one second block time this means on a 32-bit architecture a Tendermint chain can only live 68 years, which is <em class="markup--em markup--blockquote-em">just</em> under the worldwide mean life expectancy for a male. Surely a Tendermint chain should live longer!</blockquote><h3 name="b90d" id="b90d" class="graf graf--h3 graf-after--blockquote">uint64 vs int64</h3><h4 name="eacc" id="eacc" class="graf graf--h4 graf-after--h3">Benefits of uint64</h4><ul class="postList"><li name="6d49" id="6d49" class="graf graf--li graf-after--h4">good for bit-wise arithmetic (encryption algorithms, etc.)</li><li name="b923" id="b923" class="graf graf--li graf-after--li">a form of self-documentation. The type indicates that the value which the unsigned int was intended to hold is never supposed to be negative.</li></ul><h4 name="f75f" id="f75f" class="graf graf--h4 graf-after--li">Downsides of uint64</h4><ul class="postList"><li name="bda3" id="bda3" class="graf graf--li graf-after--h4">you have to be careful with arithmetic. There are cases where we subtract heights or subtract <code class="markup--code markup--li-code">1</code> like getting the age of some piece of evidence or logic around checkpointing. With signed integers, we can just assert for <code class="markup--code markup--li-code">&lt; 0.</code> With unsigned integers, we are risking to get a super huge value if we forget to check for underflow or make a mistake at some point.</li></ul><blockquote name="7416" id="7416" class="graf graf--blockquote graf-after--li">I am just saying that if we decrement an uninitialized height uint64(0), all of a sudden that’s a quick mess up. if we have code that can check if `height &lt;= 0` then we are set with `int64`. but with `uint64` only code Jesus can help us</blockquote><figure name="2cd9" id="2cd9" class="graf graf--figure graf-after--blockquote"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 588px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 84%;"></div><img class="graf-image" data-image-id="1*3jOzaYaP7Ldgju0JQxT_Ng.jpeg" data-width="1200" data-height="1008" src="https://cdn-images-1.medium.com/max/800/1*3jOzaYaP7Ldgju0JQxT_Ng.jpeg"></div></figure><pre name="25e6" id="25e6" class="graf graf--pre graf-after--figure">package main</pre><pre name="95df" id="95df" class="graf graf--pre graf-after--pre">import (<br>    &quot;fmt&quot;<br>)</pre><pre name="8f7e" id="8f7e" class="graf graf--pre graf-after--pre">func main() {<br>    var a int64<br>    a = 10<br>    a -= 29<br>    if a &lt; 0 {<br>        fmt.Println(&quot;panic&quot;)<br>    }<br>    fmt.Printf(&quot;a=%v\n&quot;, a)</pre><pre name="abc3" id="abc3" class="graf graf--pre graf-after--pre">    var b uint64<br>    b = 10<br>    if (29 - b) &gt; 10 {<br>        fmt.Println(&quot;underflow&quot;)<br>    }<br>    b -= 29<br>    fmt.Printf(&quot;b=%v\n&quot;, b)<br>}</pre><p name="c6be" id="c6be" class="graf graf--p graf-after--pre"><a href="https://play.golang.org/p/YvQgJ6Bm2Xu" data-href="https://play.golang.org/p/YvQgJ6Bm2Xu" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://play.golang.org/p/YvQgJ6Bm2Xu</a></p><h4 name="304b" id="304b" class="graf graf--h4 graf-after--p">Note on uint64 and Java</h4><p name="fa87" id="fa87" class="graf graf--p graf-after--h4">Java does not support unsigned ints. It means ABCI apps, that are written in Java won’t be able to go beyond <code class="markup--code markup--p-code">int64</code> anyway.</p><p name="23b1" id="23b1" class="graf graf--p graf-after--p">If you are curious about why read <a href="https://stackoverflow.com/q/430346/820520" data-href="https://stackoverflow.com/q/430346/820520" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Why doesn’t Java support unsigned ints?</a></p><h4 name="7401" id="7401" class="graf graf--h4 graf-after--p">Benefits of int64</h4><ul class="postList"><li name="606d" id="606d" class="graf graf--li graf-after--h4">less chance of fuck up</li></ul><h4 name="a735" id="a735" class="graf graf--h4 graf-after--li">Downsides of int64</h4><ul class="postList"><li name="f574" id="f574" class="graf graf--li graf-after--h4 graf--trailing">smaller max value (although, 292 million years are more than enough)</li></ul></div></div></section><section name="038b" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="06d2" id="06d2" class="graf graf--h3 graf--leading"><strong class="markup--strong markup--h3-strong">In conclusion</strong></h3><p name="fad6" id="fad6" class="graf graf--p graf-after--h3">Given above reasoning we decided to go with <code class="markup--code markup--p-code">int64</code>. “value should never be less than zero” should not be a primary reason for picking <code class="markup--code markup--p-code">uint64</code> as a type for blockchain height. If you are gonna use <code class="markup--code markup--p-code">uint64</code> , be extra careful with arithmetic.</p><p name="4e23" id="4e23" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Resources</strong></p><ul class="postList"><li name="28ed" id="28ed" class="graf graf--li graf-after--p graf--trailing"><a href="https://codemines.blogspot.ru/2007/10/youre-probably-using-unsigned.html" data-href="https://codemines.blogspot.ru/2007/10/youre-probably-using-unsigned.html" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">You’re probably using “unsigned” incorrectly</a></li></ul></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/golang" class="p-tag">Golang</a>, <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/blockchain-development" class="p-tag">Blockchain Development</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/development" class="p-tag">Development</a></p><p>By <a href="https://medium.com/@anton.kalyaev" class="p-author h-card">Anton Kaliaev</a> on <a href="https://medium.com/p/714804dddf1d"><time class="dt-published" datetime="2018-03-02T13:36:43.837Z">March 2, 2018</time></a>.</p><p><a href="https://medium.com/@anton.kalyaev/choosing-a-type-for-blockchain-height-beware-of-unsigned-integers-714804dddf1d" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

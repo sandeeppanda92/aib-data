@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Fundraiser Was a Resounding Success</title><meta name="description" content="By The Cosmonauts"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Fundraiser Was a Resounding Success</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+By The Cosmonauts
+</section>
+<section data-field="body" class="e-content">
+<section name="f43a" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="b808" id="b808" class="graf graf--h3 graf--leading graf--title">Fundraiser Was a Resounding Success</h3><p name="352e" id="352e" class="graf graf--p graf-after--h3"><em class="markup--em markup--p-em">By The Cosmonauts</em></p><p name="1ee4" id="1ee4" class="graf graf--p graf-after--p">Wow. That was remarkable. Within seconds of opening <a href="https://fundraiser.cosmos.network/" data-href="https://fundraiser.cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">the fundraiser</a> at 6am PDT this morning, well over a million dollars worth of BTC and ETH poured in. Obviously, many of you were very well prepared. Over the following roughly 30 minutes, we raised over 16M USD worth of BTC and ETH, smashing through our hidden cap of 17M.</p><p name="f94f" id="f94f" class="graf graf--p graf-after--p">Thank you everyone for your amazing support!</p><p name="5df5" id="5df5" class="graf graf--p graf-after--p"><a href="https://fundraiser.cosmos.network/" data-href="https://fundraiser.cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">The fundraiser is now closed.</a> It’s time for us to get back to work on building out the Internet of Blockchains!</p><h3 name="8bcb" id="8bcb" class="graf graf--h3 graf-after--p">Proof of the Hidden Cap</h3><p name="fc13" id="fc13" class="graf graf--p graf-after--h3">Our goal for this fundraiser was to raise 10M USD. However, seeing as how quickly certain other fundraisers have hit their cap, we decided to allow more than 10M to be raised within the first 6 hours. That said, we did not want to be in a position where we raised too much money, so we set an additional hard-cap, such that if we hit that, we would halt the fundraiser.</p><p name="502a" id="502a" class="graf graf--p graf-after--p">We decided to keep this hard cap hidden, because we felt doing so would discourage whales from buying too much. Indeed, we got a lot of feed back on slack that many people were discouraged from donating too much because of this hidden cap — exactly the effect we hoped for!</p><p name="a258" id="a258" class="graf graf--p graf-after--p">On March 26, 2017, Jae published a commit to the hidden cap on twitter: <a href="https://twitter.com/jaekwon/status/846055257675218944" data-href="https://twitter.com/jaekwon/status/846055257675218944" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://twitter.com/jaekwon/status/846055257675218944</a>. The commitment is <code class="markup--code markup--p-code">5faa9a8d3faa019b836f63779c454aa2cefa310ba1e04b251dcbfcd3db5471ec</code>. The pre-image for this is the following text:</p><pre name="c81f" id="c81f" class="graf graf--pre graf-after--p">SALT: 26ed7ab241901f7e0a7d<br>MSG: The cap for the first 6 hours is $17M USD</pre><p name="53c6" id="53c6" class="graf graf--p graf-after--pre">If you save that text in a file, say <code class="markup--code markup--p-code">cap.txt</code>, and run <code class="markup--code markup--p-code">shasum -a 256 cap.txt</code>, you can confirm the commitment.</p><h3 name="d759" id="d759" class="graf graf--h3 graf-after--p">Suggested Atom Allocations</h3><p name="29bb" id="29bb" class="graf graf--p graf-after--h3">For each donation, the Interchain Foundation suggests a certain number of Atoms be allocated to the relevant Cosmos address in the genesis block of the Cosmos Network. The Cosmos Network is expected to launch in Q4 2017, and Atoms will not be accessible until then. That said, the suggested Atom allocations for a given donation can be easily computed.</p><p name="3be5" id="3be5" class="graf graf--p graf-after--p">First, you need your Cosmos address. If you did not write it down during the fundraiser, no worries. You can use the <code class="markup--code markup--p-code">cosmos-fundraiser</code> tool to figure it out, so long as you wrote down your 12-words. If you lost the 12-words, your Atoms are gone forever.</p><p name="0d68" id="0d68" class="graf graf--p graf-after--p">To install the tool, you must have <code class="markup--code markup--p-code">node.js</code> installed. Then simply run:</p><pre name="c382" id="c382" class="graf graf--pre graf-after--p">npm install -g cosmos-fundraiser-cli@2.11.0</pre><p name="3946" id="3946" class="graf graf--p graf-after--pre">Now you can check your Cosmos address by running:</p><pre name="10ce" id="10ce" class="graf graf--pre graf-after--p">cosmos-fundraiser cosmosaddress</pre><p name="d933" id="d933" class="graf graf--p graf-after--pre">It will prompt you for your twelve words, and will spit out your address. Please make sure you enter the words correctly.</p><p name="032a" id="032a" class="graf graf--p graf-after--p">If you donated in ETH, your suggested Atom balance is stored directly in the smart contract. To query it, enter your Cosmos address in the <code class="markup--code markup--p-code">record</code> field here: <a href="https://etherscan.io/address/0xcf965cfe7c30323e9c9e41d4e398e2167506f764#readContract" data-href="https://etherscan.io/address/0xcf965cfe7c30323e9c9e41d4e398e2167506f764#readContract" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://etherscan.io/address/0xcf965cfe7c30323e9c9e41d4e398e2167506f764#readContract</a></p><p name="1307" id="1307" class="graf graf--p graf-after--p">If you donated in BTC, your Cosmos address was recorded in an OP_RETURN output. There is no easy way to query for your suggested Atom balance yet, but if you lookup your transaction on blockchain.info, you should see your Cosmos address recorded in the second output, next to OP_RETURN. Note that blockchain.info doesn’t handle OP_RETURN, so it will say “Unable to decode output address” — that is fine and totally expected. To get your suggested Atom balance, just multiply the amount of BTC in the first output by 11635. Also note, your transaction MUST be included between block 460654 and 460661, inclusive. If your transaction is included in a block outside this range, your suggested Atom balance is 0.</p><p name="25d7" id="25d7" class="graf graf--p graf-after--p">We will put up a service in the next couple days to make it super easy to query for your suggested Atom balance directly, whether you donated in BTC or ETH.</p><p name="14a7" id="14a7" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Update:</strong> The Atom balance viewer is now available on <a href="https://fundraiser.cosmos.network/" data-href="https://fundraiser.cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">the fundraiser page</a>.</p><h3 name="1b5b" id="1b5b" class="graf graf--h3 graf-after--p">Issues</h3><p name="db0f" id="db0f" class="graf graf--p graf-after--h3">If you had any issues with the fundraiser, please contact us at <a href="mailto:fundraiser@cosmos.network" data-href="mailto:fundraiser@cosmos.network" class="markup--anchor markup--p-anchor" target="_blank">fundraiser@cosmos.network</a>.</p><h3 name="c2fa" id="c2fa" class="graf graf--h3 graf-after--p">Conclusion</h3><p name="1851" id="1851" class="graf graf--p graf-after--h3 graf--trailing">Thanks again for making <a href="https://fundraiser.cosmos.network/" data-href="https://fundraiser.cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">this fundraiser</a> an epic success! We look forward to building the Internet of Blockchains with you.</p></div></div></section><section name="9fa3" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="2fe0" id="2fe0" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/ff79c2d17f5bf1a3536193c04f44b060" data-href="https://gist.github.com/ff79c2d17f5bf1a3536193c04f44b060" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/fundraiser" class="p-tag">Fundraiser</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/bf378b96fe00"><time class="dt-published" datetime="2017-04-06T07:00:00.000Z">April 6, 2017</time></a>.</p><p><a href="https://medium.com/@nylira/fundraiser-was-a-resounding-success-bf378b96fe00" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

@@ -57,59 +57,70 @@
     {
       "id": "hub-gaia-1",
       "title": "Testnet",
-      "version": "Gaia-1",
+      "version": "gaia-1",
       "children": ["gui-0-2", "gui-0-3"],
       "span": 2,
       "date": "2017-10-19",
       "notes":
-        "Gaia-1 is the first time Cosmos SDK and Tendermint Core are bundled together to form an experimental version of the Cosmos Hub. It includes a dynamic validator set.",
+        "gaia-1 is the first time Cosmos SDK and Tendermint Core are bundled together to form an experimental version of the Cosmos Hub. It includes a dynamic validator set.",
       "url":
         "https://medium.com/@tendermint/validators-now-deployed-on-gaia-testnet-53d9e8b154fc"
     },
     {
       "id": "hub-gaia-2",
       "title": "Testnet",
-      "version": "Gaia-2",
+      "version": "gaia-2",
       "children": ["gui-0-4"],
       "span": 3,
       "date": "2018-01-31",
       "notes":
-        "Gaia-2 includes basic delegation, UI integration for bonding and unbonding, and a PEX reactor for dynamic peer discovery.",
+        "gaia-2 includes basic delegation, UI integration for bonding and unbonding, and a PEX reactor for dynamic peer discovery.",
       "url":
         "https://blog.cosmos.network/quickstart-guide-connecting-to-the-latest-testnet-57568e2d6b9"
     },
     {
       "id": "hub-gaia-3",
       "title": "Testnet",
-      "version": "Gaia-3",
+      "version": "gaia-3000",
       "children": [],
       "span": 1,
-      "date": "",
+      "date": "2018-04-20",
       "notes":
-        "Gaia-3 focuses on the P2P layer. It includes a seed mode, sentry mode architecture, peer IDs, and many bug fixes. Gaia-3 depends on Tendermint 0.16.0.",
-      "url": ""
+        "Multiple instances of gaia-3000 are set up by the Cosmos community, following in the wake of new Tendermint and Cosmos SDK releases. The most recent version was gaia-3008.",
+      "url": "http://explorer.cosmos.network/"
     },
     {
       "id": "hub-gaia-4",
       "title": "Testnet",
-      "version": "Gaia-4",
+      "version": "gaia-4000",
       "children": [],
       "span": 1,
-      "date": "",
+      "date": "2018-04-21",
       "notes":
-        "Gaia-4 includes block rewards for validators and commission fees.",
-      "url": ""
+        "gaia-4000 has improved stability, bug fixes, and runs on Cosmos SDK 0.15.0.",
+      "url": "http://explorer.cosmos.network/"
     },
     {
       "id": "hub-gaia-5",
       "title": "Testnet",
-      "version": "Gaia-5",
+      "version": "gaia-5000",
       "children": [],
       "span": 1,
+      "date": "2018-05-2",
+      "notes":
+        "gaia-5000 includes support for block rewards for validators and commission fees.",
+      "url": "http://explorer.cosmos.network/"
+    },
+    {
+      "id": "hub-gaia-6",
+      "title": "Testnet",
+      "version": "gaia-6000",
+      "children": [],
+      "span": 2,
       "date": "",
       "notes":
-        "Gaia-5 supports an unbonding period for delegates, HSM, fork and halt detection, as well as a LevelDB server.",
-      "url": ""
+        "To be announced.",
+      "url": "http://explorer.cosmos.network/"
     },
     {
       "id": "hub-1-0",
@@ -120,7 +131,7 @@
       "date": "",
       "notes":
         "Final version of Cosmos Hub before we launch. Features are frozen.",
-      "url": ""
+      "url": "http://explorer.cosmos.network/"
     }
   ],
   "sdk": [
@@ -205,7 +216,7 @@
       "span": 1,
       "date": "2018-02-13",
       "notes":
-        "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (Gaia-3, Voyager 0.5.0, and partner projects) gets unblocked.",
+        "Cosmos-SDK 0.9.0, or the 'New SDK', initializes genesis state and marks a significant milestone, in that everything (gaia-3, Voyager 0.5.0, and partner projects) gets unblocked.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.9.0"
     },
     {
@@ -223,7 +234,7 @@
       "id": "sdk-0-11",
       "title": "Cosmos SDK",
       "version": "0.11.0",
-      "children": ["hub-gaia-3", "gui-0-5"],
+      "children": [],
       "span": 1,
       "date": "2018-03-01",
       "notes":
@@ -235,11 +246,10 @@
       "title": "Cosmos SDK",
       "version": "0.12.0",
       "children": [],
-      "children": ["hub-gaia-4", "gui-0-6"],
       "span": 1,
       "date": "2018-03-28",
       "notes":
-        "Cosmos SDK 0.12 'Aristarchus' is part of a two-week sprint to refactor the SDK and to implement cross-chain visibility and transfer.",
+        "Cosmos SDK 0.12.0 'Aristarchus' is part of a two-week sprint to refactor the SDK and to implement cross-chain visibility and transfer.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.12.0"
     },
     {
@@ -247,24 +257,44 @@
       "title": "Cosmos SDK",
       "version": "0.13.0",
       "children": [],
-      "children": [""],
       "span": 1,
       "date": "2018-04-02",
       "notes":
-        "Cosmos SDK 0.13 'Sima Tan' merges in the full staking module, improvements for `basecoind`, and a new `democoin` example app.",
+        "Cosmos SDK 0.13.0 'Sima Tan' merges in the full staking module, improvements for `basecoind`, and a new `democoin` example app.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.13.0"
     },
     {
       "id": "sdk-0-14",
       "title": "Cosmos SDK",
       "version": "0.14.0",
-      "children": [],
-      "children": [""],
+      "children": ["hub-gaia-3", "gui-0-5"],
       "span": 1,
       "date": "2018-04-09",
       "notes":
-        "Cosmos SDK 0.14 'Shi Shen' includes improvements to staking, usability, and refactoring to reduce duplicated code.",
+        "Cosmos SDK 0.14.0 'Shi Shen' includes improvements to staking, usability, and refactoring to reduce duplicated code.",
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.14.1"
+    },
+    {
+      "id": "sdk-0-15",
+      "title": "Cosmos SDK",
+      "version": "0.15.0",
+      "children": ["hub-gaia-4", "gui-0-6"],
+      "span": 1,
+      "date": "2018-04-30",
+      "notes":
+        "Cosmos SDK 0.15.0 includes the upgrade from go-wire to go-amino.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.15.1"
+    },
+    {
+      "id": "sdk-0-16",
+      "title": "Cosmos SDK",
+      "version": "0.16.0",
+      "children": ["hub-gaia-5"],
+      "span": 1,
+      "date": "2018-05-02",
+      "notes":
+        "Cosmos SDK 0.16.0 includes staking functionality, new validator bonding/unbonding functions, and lots of refactoring.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.16.0-rc0"
     },
     {
       "id": "sdk-1-0",
@@ -436,11 +466,11 @@
       "title": "Tendermint",
       "version": "0.19.0",
       "children": [],
-      "span": 1,
+      "span": 3,
       "date": "2018-04-13",
       "notes":
         "Tendermint 0.19.0 upgrades go-wire to go-amino. This is a sweeping change that breaks everything that is serialized to disk or over the network.",
-      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.0"
+      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.2"
     },
     {
       "id": "tmc-1-0",
@@ -507,7 +537,7 @@
       "span": 1,
       "date": "2017-12-14",
       "notes":
-        "This is the first public release of Cosmos UI. In this version, you are able to create a Cosmos account. You also have the ability to send and receive tokens on the Gaia-1 testnet.",
+        "This is the first public release of Cosmos UI. In this version, you are able to create a Cosmos account. You also have the ability to send and receive tokens on the gaia-1 testnet.",
       "url": "https://github.com/cosmos/cosmos-ui/releases/tag/0.2.0"
     },
     {
@@ -518,7 +548,7 @@
       "span": 1,
       "date": "2017-12-31",
       "notes":
-        "In this version, we have updated to the Gaia-2-dev testnet, which has delegation functionality, so you can now bond tokens to validator candidates. It is now a full proof-of-stake system!",
+        "In this version, we have updated to the gaia-2-dev testnet, which has delegation functionality, so you can now bond tokens to validator candidates. It is now a full proof-of-stake system!",
       "url": "https://github.com/cosmos/cosmos-ui/releases/tag/0.3.0"
     },
     {
@@ -537,21 +567,32 @@
       "title": "Voyager",
       "version": "0.5.0",
       "children": [],
-      "span": 1,
-      "date": "",
+      "span": 2,
+      "date": "2018-05-02",
       "notes":
-        "Cosmos UI is renamed to Cosmos Voyager. Voyager 0.5.0 will include bug fixes, usability improvements, and support the newly refactored Cosmos SDK (version 0.9.0).",
-      "url": ""
+        "Voyager 0.5.0 runs on a mocked network that offers users an interactive preview of 1.0 features.",
+      "url": "https://github.com/cosmos/voyager/releases/tag/0.5.0"
     },
     {
       "id": "gui-0-6",
       "title": "Voyager",
       "version": "0.6.0",
       "children": [],
+      "span": 1,
+      "date": "",
+      "notes":
+        "Voyager 0.6.0 works with the light client daemon from the new Cosmos SDK. This means that we now support the gaia-5000 testnet.",
+      "url": ""
+    },
+    {
+      "id": "gui-0-7",
+      "title": "Voyager",
+      "version": "0.7.0",
+      "children": [],
       "span": 2,
       "date": "",
       "notes":
-        "Voyager 0.6.0 will include support for the light client daemon from Cosmos SDK 0.10.0 as well as UI for block rewards and commission rates for validators.",
+        "Voyager 0.7.0 supports block rewards and commission rates for validators.",
       "url": ""
     },
     {

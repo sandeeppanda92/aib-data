@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Tendermint supports Rust</title><meta name="description" content="Links to the bindings — Rust-ABCI"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Tendermint supports Rust</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Links to the bindings — Rust-ABCI
+</section>
+<section data-field="body" class="e-content">
+<section name="2b8c" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a6c1" id="a6c1" class="graf graf--h3 graf--leading graf--title">Tendermint supports Rust</h3><h4 name="77ac" id="77ac" class="graf graf--h4 graf-after--h3 graf--subtitle"><em class="markup--em markup--h4-em">Links to the bindings — </em><a href="https://github.com/tendermint/rust-abci" data-href="https://github.com/tendermint/rust-abci" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank"><em class="markup--em markup--h4-em">Rust-ABCI</em></a></h4><p name="561a" id="561a" class="graf graf--p graf-after--h4">Before I joined the Tendermint/COSMOS project I always thought that I would end up on a project that required me to write rust-lang full-time, since at the time I thought (and to some extend still think) that rust is the most amazing language to build highly complex software in. After joining the Tendermint team though where we almost exclusively work in go-lang I now appreciate the need for a language that is much simpler, has good concurrency features and doesn’t come with a massively steep learning curve.</p></div><div class="section-inner sectionLayout--fullWidth"><figure name="acbc" id="acbc" class="graf graf--figure graf--layoutFillWidth graf-after--p"><div class="aspectRatioPlaceholder is-locked"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 47.9%;"></div><img class="graf-image" data-image-id="1*M3tl8RXNfTsVcWPalX3KFA.png" data-width="2000" data-height="958" src="https://cdn-images-1.medium.com/max/2000/1*M3tl8RXNfTsVcWPalX3KFA.png"></div></figure></div><div class="section-inner sectionLayout--insetColumn"><h3 name="cb19" id="cb19" class="graf graf--h3 graf-after--figure">A quick introduction to Tendermint and ABCI</h3><p name="8b60" id="8b60" class="graf graf--p graf-after--h3"><em class="markup--em markup--p-em">If know those two words above, you can safely skip this part.</em></p><p name="ccca" id="ccca" class="graf graf--p graf-after--p"><a href="https://tendermint.com" data-href="https://tendermint.com" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Tendermint</a> is a blockchain engine. It handles the P2P networking and the consensus rules. In simple terms, it establishes a network with other nodes and decides on the order of transactions and blocks. However, this by itself isn’t very interesting since Tendermint doesn’t come with any logic of what those transactions could contain or mean.</p><p name="38d1" id="38d1" class="graf graf--p graf-after--p">That part is the job of the ABCI app. The ABCI app tracks the state of your blockchain and determines what are valid state changes. For example, it tracks how much money an account contains and who has the right to spend that money.</p><p name="25a5" id="25a5" class="graf graf--p graf-after--p">Now the question is, how do these two pieces, Tendermint Core and the ABCI app, communicate with each other. Oh, and the ABCI app can be written in any language, such as JavaScript or Rust. The communication happens over a protocol called ABCI that sends pre-defined messages (protobuf files) from Tendermint to the ABCI and then the ABCI app can respond with a pre-defined response.</p><h3 name="4a25" id="4a25" class="graf graf--h3 graf-after--p">Introducing the rust-abci</h3><p name="5d67" id="5d67" class="graf graf--p graf-after--h3">If you are a rust developer and always wanted to build your own blockchain application, such as the next bitcoin or ethereum, now is your chance. I have released the rust language bindings for ABCI along with two examples of how to use them. These bindings are under active development and will see major speed improvements in the near future through the support of sockets instead of GRPC. However, even now they are blazingly fast and fun to work with.</p><p name="8808" id="8808" class="graf graf--p graf-after--p">If you have any suggestions please open <a href="https://github.com/tendermint/rust-abci/issues" data-href="https://github.com/tendermint/rust-abci/issues" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">issues</a>. Also, more examples and improved documentation are always welcome, so if you want to show off your cool app, just open a <a href="https://github.com/tendermint/rust-abci/pulls" data-href="https://github.com/tendermint/rust-abci/pulls" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">PR</a> and I’ll include it in the repository.</p><h3 name="8a07" id="8a07" class="graf graf--h3 graf-after--p">Releases</h3><p name="0fcb" id="0fcb" class="graf graf--p graf-after--h3"><a href="https://github.com/tendermint/rust-abci/releases" data-href="https://github.com/tendermint/rust-abci/releases" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Rust-ABCI 0.1.0 — Moist von Lipwig</a></p><h3 name="89dc" id="89dc" class="graf graf--h3 graf-after--p">Conclusion</h3><p name="6f71" id="6f71" class="graf graf--p graf-after--h3 graf--trailing">If you have any questions, please ask me on <a href="https://twitter.com/adrian_brink" data-href="https://twitter.com/adrian_brink" class="markup--anchor markup--p-anchor" rel="nofollow noopener noopener noopener" target="_blank">twitter (@adrian_brink)</a>, via <a href="http://slack.cosmos.network/" data-href="http://slack.cosmos.network/" class="markup--anchor markup--p-anchor" rel="nofollow noopener noopener noopener" target="_blank">slack</a> or via <a href="mailto:adrian@tendermint.com" data-href="mailto:adrian@tendermint.com" class="markup--anchor markup--p-anchor" target="_blank">email</a>. I am happy to help anyone who has problems getting up and running or who just has a simple question.</p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/cosmos" class="p-tag">Cosmos</a>, <a href="https://medium.com/tag/rustlang" class="p-tag">Rustlang</a></p><p>By <a href="https://medium.com/@adrian_brink" class="p-author h-card">Adrian Brink</a> on <a href="https://medium.com/p/c5836d92afc9"><time class="dt-published" datetime="2017-06-19T08:55:30.811Z">June 19, 2017</time></a>.</p><p><a href="https://medium.com/@adrian_brink/tendermint-supports-rust-c5836d92afc9" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Getting Started with Tedermint , Ethermint &amp; Basecoin— A Quickstart Guide</title><meta name="description" content="After Hyperledger’s event named Blockchain Ecosystem there was a workshop hosted by Simply Business, part of the series DLT Jam Session…"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Getting Started with Tedermint , Ethermint &amp; Basecoin— A Quickstart Guide</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+After Hyperledger’s event named Blockchain Ecosystem there was a workshop hosted by Simply Business, part of the series DLT Jam Session…
+</section>
+<section data-field="body" class="e-content">
+<section name="34fd" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0e02" id="0e02" class="graf graf--h3 graf--leading graf--title">Getting Started with Tendermint Quickstart Guide @ DLT Jam Session</h3><figure name="c481" id="c481" class="graf graf--figure graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 525px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 75%;"></div><img class="graf-image" data-image-id="1*iJhOOe-ccyZPgu_WfOdyrA.jpeg" data-width="4032" data-height="3024" src="https://cdn-images-1.medium.com/max/800/1*iJhOOe-ccyZPgu_WfOdyrA.jpeg"></div><figcaption class="imageCaption">Adrian showing Ethermint @ Simply Business’ Office</figcaption></figure><p name="f99f" id="f99f" class="graf graf--p graf-after--figure">After Hyperledger’s event named <em class="markup--em markup--p-em">Blockchain Ecosystem </em>there was a workshop hosted by <a href="https://www.simplybusiness.co.uk/" data-href="https://www.simplybusiness.co.uk/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Simply Business</a>, part of the series DLT Jam Session, characterised for being technical and hands-on. On this particular day, Tendermint and R3 provided demos of their products on a live-coding basis. I attended Termdermint’s session, but I will try get the material of R3’s session ASAP!</p><p name="6b78" id="6b78" class="graf graf--p graf-after--p">To me, it was a great way of understanding and trying Tendermint’s products. During keynotes or explanations, it can a bit hard to process what <em class="markup--em markup--p-em">Tendermint</em>, <em class="markup--em markup--p-em">Cosmos</em>, <em class="markup--em markup--p-em">Ethermint</em>, <em class="markup--em markup--p-em">Basecoin</em>, etc. are (so many names and sometimes so abstract!). But listening to one of their developers talk about them while typing commands and running the live demo can make it a lot more tangible, easy to understand, and to use. The workshop was live streamed and the record was provided by Makoto from Simply Business. Still, I decided to write this post with the steps taken and commands that were run (on OSX only, sorry for Linux/Windows users!). Hope you find it useful!</p><h3 name="44f7" id="44f7" class="graf graf--h3 graf-after--p">Getting Started with Tendermint</h3><p name="03c7" id="03c7" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">First</strong>, you will find all the binaries <a href="https://tendermint.com/download" data-href="https://tendermint.com/download" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">here</a>. After the page is loaded, download <em class="markup--em markup--p-em">tendermint</em>, <em class="markup--em markup--p-em">basecoin</em> and <em class="markup--em markup--p-em">ethermint</em>, save the files in an easy to find place or just in your <em class="markup--em markup--p-em">Downloads</em> folder. Once the binaries have been downloaded, unzip the files (when un-zipable) to the same directory.</p><p name="72da" id="72da" class="graf graf--p graf-after--p">Open your terminal and type the command below to move <strong class="markup--strong markup--p-strong">every</strong> binary to <strong class="markup--strong markup--p-strong">/usr/local/bin</strong>. Change {binary name} for each of the binary file names: <em class="markup--em markup--p-em">tendermint</em>, <em class="markup--em markup--p-em">basecoin</em>, <em class="markup--em markup--p-em">basecli </em>(comes in the same zip as <em class="markup--em markup--p-em">basecoin</em>), and <em class="markup--em markup--p-em">ethermint-darwin-10.6-amd64</em> (YUP, these package naming inconsistencies are temporal).</p><pre name="b6a6" id="b6a6" class="graf graf--pre graf-after--p">$ mv {binary name} /usr/local/bin</pre><p name="a114" id="a114" class="graf graf--p graf-after--pre">Once all the binaries have been moved, type the following commands to check that they are correctly placed. If the commands output something, not an error message, then all set to go!</p><p name="85fc" id="85fc" class="graf graf--p graf-after--p">(Yup, more inconsistencies (┛◉Д◉)┛彡┻━┻).</p><pre name="966a" id="966a" class="graf graf--pre graf-after--p">$ tendermint version</pre><pre name="7ccb" id="7ccb" class="graf graf--pre graf-after--pre">$ basecoin --version</pre><pre name="557f" id="557f" class="graf graf--pre graf-after--pre">$ ethermint version</pre><p name="d425" id="d425" class="graf graf--p graf-after--pre">The first command is the following, to set local variables we need to create this folder in the specified directory. If you have used Tendermints’ testnet(s) before, you might be overriding them.</p><pre name="999f" id="999f" class="graf graf--pre graf-after--p">$ TESTNET_FILES=~/.cosmos-testnets/files</pre><p name="b6f1" id="b6f1" class="graf graf--p graf-after--pre">Then we need to download some init files, the command below and once you downloaded them, navigate to the folder:</p><pre name="4ae2" id="4ae2" class="graf graf--pre graf-after--p">$ git clone https://github.com/tendermint/testnets $TESTNET_FILES</pre><pre name="6a71" id="6a71" class="graf graf--pre graf-after--pre">$ cd $TESTNET_FILES</pre><p name="eff2" id="eff2" class="graf graf--p graf-after--pre">Next, running the following command, which sets up some environment variables that are local to the current shell session.</p><p name="9ac7" id="9ac7" class="graf graf--p graf-after--p">Note: If you’re running this again later, it will ask if you want to override it, just type <em class="markup--em markup--p-em">n</em> for everything in that case.</p><pre name="634a" id="634a" class="graf graf--pre graf-after--p">$ source scripts/testnet-setup.sh</pre><p name="cd39" id="cd39" class="graf graf--p graf-after--pre">The next commands are to initialise the lite client in two different validating nodes. <em class="markup--em markup--p-em">Mercury </em>and <em class="markup--em markup--p-em">Hermes </em>are the names of two data directories of the 7 validating nodes controlled by Tendermint, which are only for the testnets and not the public chain:</p><pre name="d66f" id="d66f" class="graf graf--pre graf-after--p">$ basecli-hermes init --node=tcp://hermes-node4.testnets.interblock.io:46657 --chain-id hermes</pre><pre name="6942" id="6942" class="graf graf--pre graf-after--pre">$ basecli-mercury init --node=tcp://mercury-node4.testnets.interblock.io:46657 --chain-id mercury</pre><p name="d8c0" id="d8c0" class="graf graf--p graf-after--pre">Now we can create create our private keys. Change <em class="markup--em markup--p-em">demo</em> for whatever name you like and hit enter, it will ask to you generate a password and repeat it. You can also check the list of private keys you have generated so far:</p><pre name="cc77" id="cc77" class="graf graf--pre graf-after--p">$ basecli-mercury keys new demo</pre><pre name="37c4" id="37c4" class="graf graf--pre graf-after--pre">$ basecli-mercury keys list</pre><p name="7c7a" id="7c7a" class="graf graf--p graf-after--pre">And check the balance, which will not output anything if you don’t have any coins. Remember to change “<em class="markup--em markup--p-em">3BB9876xx...</em>” for the one you generated before. (And you can send me coins to this address ❤)</p><pre name="434b" id="434b" class="graf graf--pre graf-after--p">$ basecli-mercury query account 3BB9876328E769E658D9E831E65A39E5B1C853C0</pre><p name="7433" id="7433" class="graf graf--p graf-after--pre">Not very pretty, but there’s a command to send coins to other accounts. Replace {key name} for the <strong class="markup--strong markup--p-strong">name</strong> that you gave to one of key(s) you generated before. Set amount equal to any <strong class="markup--strong markup--p-strong">amount</strong> followed by the name of the coin (in this case, it’s 10 pandas, racist jokes apart), followed by the <strong class="markup--strong markup--p-strong">recipient</strong>, and finally the <strong class="markup--strong markup--p-strong">sequence</strong> (tricky!) which is the current sequence of your account <strong class="markup--strong markup--p-strong">+ 1</strong>.</p><pre name="1c73" id="1c73" class="graf graf--pre graf-after--p">$ basecli-mercury tx send —name={key name} —amount=10pandas 3BB9876328E769E658D9E831E65A39E5B1C853C0 —sequence=18</pre><p name="68cb" id="68cb" class="graf graf--p graf-after--pre">You can find the current sequence of your account by running:</p><pre name="793a" id="793a" class="graf graf--pre graf-after--p">$ basecli-mercury query account 3BB9876328E769E658D9E831E65A39E5B1C853C0</pre><p name="c15a" id="c15a" class="graf graf--p graf-after--pre">Finally, you can do the same thing with <em class="markup--em markup--p-em">hermes</em>, yes :</p><pre name="a050" id="a050" class="graf graf--pre graf-after--p">$ basecli-hermes init --node=tcp://mercury-node4.testnets.interblock.io:46657 --chain-id hermes</pre><pre name="0c3a" id="0c3a" class="graf graf--pre graf-after--pre">$ basecli-hermes keys new demo</pre><pre name="9521" id="9521" class="graf graf--pre graf-after--pre">$ basecli-hermes keys list</pre><pre name="3979" id="3979" class="graf graf--pre graf-after--pre">$ basecli-hermes query account EA35286890D3132E220B2AB818856672FCA9B600</pre><pre name="c376" id="c376" class="graf graf--pre graf-after--pre">$ basecli-hermes tx send —name={key name} —amount=10pandas EA35286890D3132E220B2AB818856672FCA9B600 —sequence=19</pre><p name="0520" id="0520" class="graf graf--p graf-after--pre">And that’s it! You have tried the wonders of Tendermint and got a sneak peak into the possibilities of the Cosmos Hub. Check the video below if the steps before were not clear (sorry -.-), it also includes a small explanation of each of these products and some extra demo at the end.</p><p name="f519" id="f519" class="graf graf--p graf-after--p">❤ Thanks for reading ❤</p><figure name="ddd6" id="ddd6" class="graf graf--figure graf--iframe graf-after--p graf--trailing"><iframe src="https://www.youtube.com/embed/SY1MNEvRlIU?feature=oembed" width="700" height="393" frameborder="0" scrolling="no"></iframe><figcaption class="imageCaption">Recording of the workshop, courtesy of Makoto from Simply Business</figcaption></figure></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a>, <a href="https://medium.com/tag/cosmos" class="p-tag">Cosmos</a></p><p>By <a href="https://medium.com/@awasunyin" class="p-author h-card">Awa Sun Yin</a> on <a href="https://medium.com/p/1837df35ef40"><time class="dt-published" datetime="2017-07-15T22:33:46.111Z">July 15, 2017</time></a>.</p><p><a href="https://medium.com/@awasunyin/introduction-to-tendermint-ethermint-and-basecoin-from-the-live-coding-workshop-dlt-jam-1837df35ef40" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

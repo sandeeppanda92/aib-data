@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Tendermint 0.9.1 Release</title><meta name="description" content="Tendermint 0.9.1 fixes a few bugs and introduces transaction indexing. By Ethan Buchman"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Tendermint 0.9.1 Release</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Tendermint 0.9.1 fixes a few bugs and introduces transaction indexing. By Ethan Buchman
+</section>
+<section data-field="body" class="e-content">
+<section name="e56a" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="ea93" id="ea93" class="graf graf--h3 graf--leading graf--title">Tendermint 0.9.1 Release</h3><h4 name="acfb" id="acfb" class="graf graf--h4 graf-after--h3 graf--subtitle">Tendermint 0.9.1 fixes a few bugs and introduces transaction indexing. By <a href="https://twitter.com/buchmanster" data-href="https://twitter.com/buchmanster" class="markup--anchor markup--h4-anchor" rel="noopener" target="_blank">Ethan Buchman</a></h4><blockquote name="6443" id="6443" class="graf graf--blockquote graf-after--h4">Credits to our <a href="https://tendermint.com/about" data-href="https://tendermint.com/about" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">team</a>, and <a href="http://forum.tendermint.com:3000/" data-href="http://forum.tendermint.com:3000/" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank">community</a> for the hard work in making this release possible.</blockquote><p name="c5aa" id="c5aa" class="graf graf--p graf-after--blockquote">The main purpose of Tendermint 0.9.1 is to introduce a long sought feature, transaction indexing. Until now, it has been difficult to track the result of a transaction, or even to know if it was committed, unless you were online and subscribed to events via websockets. Now, we make that easy, with a new rpc endpoint, <code class="markup--code markup--p-code">/tx?hash=X</code>. We also fixed a few bugs in fast sync mode and in the handshake, and upgraded the Command Line Interface to use the phenomenal <code class="markup--code markup--p-code">github.com/spf13/cobra</code> library.</p><p name="cbb1" id="cbb1" class="graf graf--p graf-after--p">Get the latest release at <a href="https://tendermint.com/download" data-href="https://tendermint.com/download" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">our downloads page</a>. See the <a href="https://github.com/tendermint/tendermint/blob/master/CHANGELOG.md#091-april-18-2017" data-href="https://github.com/tendermint/tendermint/blob/master/CHANGELOG.md#091-april-18-2017" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">v0.9.1 release notes</a> for more details.</p><p name="4328" id="4328" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Tx Indexing</strong></p><p name="c630" id="c630" class="graf graf--p graf-after--p">A blockchain is just a simple list of blocks, where every block contains a list of transactions. For storage, each block is serialized and stored under its height within a LevelDB database. Most blockchain software may actually store blocks under their hash, rather than height, as there may be multiple blocks for a given height. However, since Tendermint never forks, we have a unique block for every height and can use this simpler index.</p><p name="6cad" id="6cad" class="graf graf--p graf-after--p">Finding a transaction under this kind of storage is difficult, since you have to scan through full blocks. Thus, in the latest release, we index every transaction by its hash, enabling fast queries without having to load any blocks. We also store some other data with the transaction: result of processing it (ie. the Code and Data returned by DeliverTx), the height of the block it was committed in, and the index of the transaction in that block. Note that the transaction is stored on disk twice: once in the block, and once under the transaction index.</p><p name="f546" id="f546" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Fast Sync and Handshake Fixes</strong></p><p name="7c63" id="7c63" class="graf graf--p graf-after--p">A Tendermint node that has fallen behind its peers has a number of ways to catch up. Peers that are many blocks behind can use the <code class="markup--code markup--p-code">fast_sync</code> option (enabled by default) to quickly download and verify blocks, without going through any of the expensive consensus protocol steps. In this mode, peers are polled for their latest height, and the node starts requesting blocks from many peers in parallel. If a peer suddenly goes offline, the node must request any blocks that peer was supposed to provide from new peers. In this release, we fixed a bug that was not properly accounting for these new requests when a peer went offline, causing the downloads to halt all together in some cases.</p><p name="cb53" id="cb53" class="graf graf--p graf-after--p">Another important syncing mechanism in Tendermint is the ABCI handshake, introduced in 0.8.0, which allows Tendermint to recover from crashing in the middle of processing a block through the ABCI app. During the handshake, Tendermint sends the Info message to the ABCI app, which responds with the latest block it has processed. Tendermint can then replay any blocks it has in its store that the app has not processed yet. There is one particular crash scenario that is more subtle: the app has finished processing a block, but Tendermint crashes before saving its state. In this scenario, Tendermint cannot replay the block (since that would confuse the app), but it needs to get the results from processing it, otherwise it would lose that data, which could contain critical information like validator set changes. This is fixed in the latest release by saving the results of processing a block before calling Commit, reloading those results if necessary upon a crash/restart.</p><p name="165b" id="165b" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">New CLI</strong></p><p name="b6cd" id="b6cd" class="graf graf--p graf-after--p">Until now, Tendermint’s command line interface has been implemented very simply, without using any framework. This made it somewhat annoying to maintain, as we had to keep track of things that can be done for us by many libraries. In this release, we ported the CLI to use the <a href="https://github.com/spf13/cobra" data-href="https://github.com/spf13/cobra" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Cobra library</a>, which is quite popular in the Go community and provides many wonderful features. Fortunately, we could make this change without breaking backwards compatibility.</p><p name="bda5" id="bda5" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Up Next</strong></p><p name="d795" id="d795" class="graf graf--p graf-after--p">Next up for us is the grand repo merge! We currently have many little repositories, and even some big ones, and co-ordinating across all of them has become painful. So we will be doing a massive consolidation. All the little libraries will be centralized under <code class="markup--code markup--p-code">github.com/tendermint/tmlibs</code>, including <code class="markup--code markup--p-code">go-common</code>, which will have its new home under <code class="markup--code markup--p-code">tmlibs/common</code>. Our encoding and crypto libraries, <code class="markup--code markup--p-code">go-wire</code> and <code class="markup--code markup--p-code">go-crypto</code>, will remain independent. Our Merkle tree implementations will be moved into other libraries, with the simple Merkle tree going in <code class="markup--code markup--p-code">tmlibs/merkle</code> and the IAVL tree moving under <code class="markup--code markup--p-code">merkleeyes/iavl</code>. Finally, our p2p and rpc libraries, <code class="markup--code markup--p-code">go-p2p</code> and <code class="markup--code markup--p-code">go-rpc</code>, will be merged into Tendermint Core.</p><p name="e55f" id="e55f" class="graf graf--p graf-after--p">Included in the repo merge are some changes to the way we handle JSON, bringing it inline with standard Go libraries. This will cause breaking changes, for instance to the <code class="markup--code markup--p-code">genesis.json</code> file, so we will be releasing all of this together as version 0.10.0.</p><p name="3e0c" id="3e0c" class="graf graf--p graf-after--p graf--trailing">Cheers!</p></div></div></section><section name="2a3d" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="49c8" id="49c8" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/3f839abf3e893568dea5f0aeed7c4008" data-href="https://gist.github.com/3f839abf3e893568dea5f0aeed7c4008" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/abci" class="p-tag">Abci</a>, <a href="https://medium.com/tag/merkle-tree" class="p-tag">Merkle Tree</a>, <a href="https://medium.com/tag/golang" class="p-tag">Golang</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/b168cb1383cb"><time class="dt-published" datetime="2017-04-21T07:00:00.000Z">April 21, 2017</time></a>.</p><p><a href="https://medium.com/@nylira/tendermint-0-9-1-release-b168cb1383cb" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Tendermint vs PBFT</title><meta name="description" content="Tendermint is a variant of PBFT; similarities and differences explained. By Jae Kwon"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Tendermint vs PBFT</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Tendermint is a variant of PBFT; similarities and differences explained. By Jae Kwon
+</section>
+<section data-field="body" class="e-content">
+<section name="b486" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="bec7" id="bec7" class="graf graf--h3 graf--leading graf--title">Tendermint vs PBFT</h3><h4 name="b34e" id="b34e" class="graf graf--h4 graf-after--h3 graf--subtitle">Tendermint is a variant of PBFT; similarities and differences explained. By <a href="https://medium.com/u/c010ef5a0ddf" data-href="https://medium.com/u/c010ef5a0ddf" data-anchor-type="2" data-user-id="c010ef5a0ddf" data-action-value="c010ef5a0ddf" data-action="show-user-card" data-action-type="hover" class="markup--user markup--h4-user" target="_blank">Jae Kwon</a></h4><p name="c49d" id="c49d" class="graf graf--p graf-after--h4">Tendermint was originally inspired by the DLS algorithm (<a href="http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf" data-href="http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">link</a>). After several iterations to improve efficiency, (namely, making it more asynchronous), it has become quite similar to the PBFT algorithm (<a href="http://www.pmg.lcs.mit.edu/papers/osdi99.pdf" data-href="http://www.pmg.lcs.mit.edu/papers/osdi99.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">link</a>). This document serves to illustrate the similarities and differences between Tendermint and PBFT.</p><figure name="e59d" id="e59d" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/nylira/b795a0d84a07d8968e3e5c6923d309b4.js"></script><figcaption class="imageCaption"><em class="markup--em markup--figure-em">terminology comparison between Tendermint and PBFT</em></figcaption></figure><h3 name="90e9" id="90e9" class="graf graf--h3 graf-after--figure">Byzantine fault tolerance</h3><p name="8f09" id="8f09" class="graf graf--p graf-after--h3">Both PBFT and Tendermint are Byzantine fault-tolerant transaction systems. Both can handle up to ⅓ of malicious Byzantine validators/replicas. Both require three steps/phases; the first for broadcasting the block, and the last two for broadcasting signatures. Finally, both require two quorums of signatures to commit a block.</p><p name="23a8" id="23a8" class="graf graf--p graf-after--p">Where the two differ is in what happens when more than ⅓ of validators are Byzantine. In PBFT, when there are between ⅓ and ⅔ of Byzantine validators, no guarantees are provided whatsoever; the attackers can return arbitrary results to the client (<a href="https://www.usenix.org/conference/nsdi-07/beyond-one-third-faulty-replicas-byzantine-fault-tolerant-systems" data-href="https://www.usenix.org/conference/nsdi-07/beyond-one-third-faulty-replicas-byzantine-fault-tolerant-systems" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">source</a>). Tendermint’s consensus model considers a block to be committed when there are more than ⅔ of precommit signatures for the blockhash, which mitigates this issue. Thus if ½ of the validators are Byzantine they can prevent future blocks from being committed; however, they cannot commit new blocks like they can in PBFT.</p><h3 name="7816" id="7816" class="graf graf--h3 graf-after--p">Round-robin vs sticky leaders</h3><p name="1016" id="1016" class="graf graf--p graf-after--h3">PBFT’s whitepaper, which was the inspiration for Hyperledger, illustrates a “sticky” leader (a.k.a. primary/proposer) system. Tendermint’s specification describes a round-robin scheme for selecting new leaders for every block.</p><p name="5544" id="5544" class="graf graf--p graf-after--p">In some scenarios, the sticky-leader approach has an advantage over the round-robin approach; the throughput in transactions-per-second is higher with sticky-leaders because the leader doesn’t have to wait for block confirmations before proposing the next block. On the other hand, the round-robin approach has the benefit that leaders are continuously tested (preventing possible cascading failures), and the power to re-order transactions is shared equally among the participants.</p><p name="5dc2" id="5dc2" class="graf graf--p graf-after--p">We don’t have to pick one solution; we can combine the two approaches into a hybrid scheme. Fortunately, making this change is straightforward in Tendermint, so it’s easy to configure it for any purpose.</p><h3 name="f06d" id="f06d" class="graf graf--h3 graf-after--p">Dynamic membership</h3><p name="121c" id="121c" class="graf graf--p graf-after--h3">The PBFT algorithm assumes a fixed set of replicas/validators in the network. This may work for internal systems, but it doesn’t work for “consortium” or “public” blockchains where the participants are expected to change over time. Tendermint supports dynamic membership safely by requiring a +⅔ quorum of validators to approve of membership changes. The reference implementation allows anyone to post a bond collateral (with intrinsic coins), but other variations are possible (especially when combined with our permissions framework). For example, Tendermint could be easily modified to reject new members by default, and only approve new members that have been whitelisted (perhaps by an independent third party).</p><h3 name="4924" id="4924" class="graf graf--h3 graf-after--p">Epidemic gossip vs point-to-point</h3><p name="3d8b" id="3d8b" class="graf graf--p graf-after--h3">The PBFT algorithm illustrates a point-to-point consensus algorithm, which is simpler but is less robust to disruptions in the network. Tendermint’s implementation uses an epidemic gossip protocol to ensure that consensus can be reached as long as the network is connected, no matter how many point-to-point edge connections have been broken.</p><h3 name="4d61" id="4d61" class="graf graf--h3 graf-after--p">Block propagation optimizations</h3><p name="7521" id="7521" class="graf graf--p graf-after--h3">Tendermint goes a step further than PBFT and implements a BitTorrent/LibSwift-inspired algorithm to quickly broadcast transaction blocks. This makes the most out of limited available bandwidth to commit transactions sooner.</p><p name="30ef" id="30ef" class="graf graf--p graf-after--p">See <a href="http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf" data-href="http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">Performance Analysis of the Libswift P2P Streaming Protocol</em></a> for details on how LibSwift fares in “flashcrowd” scenarios, which is similar to new block propagations in Tendermint.</p><h3 name="c710" id="c710" class="graf graf--h3 graf-after--p">Self-balancing Merkle trees</h3><p name="62cf" id="62cf" class="graf graf--p graf-after--h3">PBFT and its implementation (the BFS filesystem) doesn’t provide much by way of useful data structures. Tendermint ships with a self-balancing Merkle tree library which can be used to keep track of application data (e.g. account balances) and prove any part of the application state to a client (with a Merkle proof and quorum of signatures). Of course, it’s not necessary to use such a data structure if you need to build a blockchain that can handle a million transactions per second — for that, you should combine Tendermint with an LMAX “disruptor” (<a href="http://martinfowler.com/articles/lmax.html" data-href="http://martinfowler.com/articles/lmax.html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">source</a>) to process all transactions in memory.</p><p name="3f45" id="3f45" class="graf graf--p graf-after--p">The self-balancing Merkle tree data structure also comes in handy when implementing a parallel-blockchain architecture. Since the logic for light-client verification of application state is so cheap, efficient, and safe*, the same logic can be used for nodes and validators to keep track of the application state in foreign blockchains.</p><h3 name="f78b" id="f78b" class="graf graf--h3 graf-after--p">Fin</h3><p name="cc0f" id="cc0f" class="graf graf--p graf-after--h3">Though Tendermint was developed independently from PBFT, both algorithms share more than a few similarities. Both algorithms attempt to approach optimality in fault tolerance and performance. Given the similarities, developers wishing to build BFT systems should consider building on Tendermint, which is furthest ahead at meeting the requirements laid out in this paper about PBFT:</p><blockquote name="863d" id="863d" class="graf graf--blockquote graf--startsWithDoubleQuote graf-after--p"><em class="markup--em markup--blockquote-em">“Interestingly, we may find that the current BFT debate may evolve to resemble the microkernel debate, with one camp advocating that the BFT concept is ultimately impractical for real-world applications and the other camp advocating that it is not the concept that is impractical/faulty, but it is the implementation that is impractical/faulty. Building a complete implementation that supports a real application for a long duration rather than for the length of time it takes to build and test a prototype implementation, that does not cut corners, that is not missing features, that does not make optimizations that break down in corner cases, that can be applied to more than one application, and that has good performance will go a long way to settling the debate. A tall order, for sure.”</em></blockquote><p name="262c" id="262c" class="graf graf--p graf-after--blockquote"><a href="http://arxiv.org/pdf/1110.4854.pdf" data-href="http://arxiv.org/pdf/1110.4854.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">On the Practicality of Byzantine Fault Tolerance</em></a>, 2011</p><p name="c9fb" id="c9fb" class="graf graf--p graf-after--p graf--trailing">*<em class="markup--em markup--p-em">This isn’t completely implemented yet. The Merkle proof logic is implemented, but we still need to implement a data structure to communicate validator set changes to clients, and ideally client code in Javascript as a demo.</em></p></div></div></section><section name="172b" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="7977" id="7977" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/c187052fd9a6fd0a5b8e520ec95bc08a" data-href="https://gist.github.com/c187052fd9a6fd0a5b8e520ec95bc08a" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/bft" class="p-tag">Bft</a>, <a href="https://medium.com/tag/consensus" class="p-tag">Consensus</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/bittorrent" class="p-tag">BitTorrent</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/12e9f294c9ab"><time class="dt-published" datetime="2015-10-04T07:00:00.000Z">October 4, 2015</time></a>.</p><p><a href="https://medium.com/@nylira/tendermint-vs-pbft-12e9f294c9ab" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

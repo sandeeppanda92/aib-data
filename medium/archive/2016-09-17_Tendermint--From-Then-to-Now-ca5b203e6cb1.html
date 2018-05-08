@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Tendermint: From Then to Now</title><meta name="description" content="The history of Tendermint, and information on the latest release and more. By Jae Kwon"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Tendermint: From Then to Now</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The history of Tendermint, and information on the latest release and more. By Jae Kwon
+</section>
+<section data-field="body" class="e-content">
+<section name="834e" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="55a8" id="55a8" class="graf graf--h3 graf--leading graf--title">Tendermint: From Then to Now</h3><h4 name="3bcc" id="3bcc" class="graf graf--h4 graf-after--h3 graf--subtitle">The history of Tendermint, and information on the latest release and more. By <a href="https://medium.com/u/c010ef5a0ddf" data-href="https://medium.com/u/c010ef5a0ddf" data-anchor-type="2" data-user-id="c010ef5a0ddf" data-action-value="c010ef5a0ddf" data-action="show-user-card" data-action-type="hover" class="markup--user markup--h4-user" target="_blank">Jae Kwon</a></h4><p name="fa6e" id="fa6e" class="graf graf--p graf-after--h4">Some of you have asked about the history of <a href="http://tendermint.com/" data-href="http://tendermint.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Tendermint</a>, so here it is. Back in the day, we had some serious concerns about Bitcoin as a global currency, mainly because it is incredibly <a href="http://motherboard.vice.com/read/bitcoin-could-consume-as-much-electricity-as-denmark-by-2020" data-href="http://motherboard.vice.com/read/bitcoin-could-consume-as-much-electricity-as-denmark-by-2020" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">energy intensive</a>. So we started Tendermint to develop a more environmentally friendly cryptocurrency.</p><p name="a08c" id="a08c" class="graf graf--p graf-after--p">What started as a simple cryptocurrency, based on an adaptation of a <a href="http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf" data-href="http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">1980’s consensus algorithm called DLS</a>, eventually evolved into what it is today: a general purpose Byzantine fault-tolerant (BFT) consensus algorithm for running replicated state machines over the internet in possibly adversarial conditions.</p><p name="1c89" id="1c89" class="graf graf--p graf-after--p">Replicated state machines are a staple of modern Internet technology. They permit a consistent and fault-tolerant view of some set of data. Popular open-source implementations of replicated state machines include <a href="http://bookkeeper.apache.org/" data-href="http://bookkeeper.apache.org/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Apache ZooKeeper</a>, <a href="https://coreos.com/etcd/" data-href="https://coreos.com/etcd/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">CoreOS’s etcd</a>, and <a href="https://www.consul.io/" data-href="https://www.consul.io/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Hashicorp’s Consul</a>.</p><p name="26a6" id="26a6" class="graf graf--p graf-after--p">In each of these, the state machine is a simple key-value store, and the underlying consensus algorithm is either Paxos or <a href="https://raft.github.io/" data-href="https://raft.github.io/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Raft</a>. Neither of these algorithms tolerate even a single malicious node in the system. You can see an animation of the Paxos algorithm <a href="http://harry.me/blog/2014/12/27/neat-algorithms-paxos/" data-href="http://harry.me/blog/2014/12/27/neat-algorithms-paxos/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">here</a>.</p><p name="7168" id="7168" class="graf graf--p graf-after--p">In contrast, Tendermint lets you build arbitrary state machines in any programming language, whether that is a key-value store in Go, a voting system in C++, or a cryptocurrency in OCaml. In each case, the application implements a simple interface, and Tendermint handles the rest, including connecting to peers, syncing the latest state, gossiping transactions, and maintaining a consistent log of transactions.</p><h3 name="3d56" id="3d56" class="graf graf--h3 graf-after--p">Who is using Tendermint?</h3><p name="5652" id="5652" class="graf graf--p graf-after--h3">It’s been an exciting journey, and over the past few months people have been putting Tendermint to work in several applications.</p><p name="6869" id="6869" class="graf graf--p graf-after--p">Probably the most complicated implementation of Tendermint so far is by Eris Industries. Eris is using Tendermint to power its <a href="https://erisindustries.com/components/erisdb/" data-href="https://erisindustries.com/components/erisdb/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">eris:db</a> blockchain client. Eris:db includes a fully compatible Ethereum virtual machine and other features that make it a full-fledged blockchain.</p><p name="f4f3" id="f4f3" class="graf graf--p graf-after--p">There are other implementations as well. <a href="http://www.cloudsoft.io/" data-href="http://www.cloudsoft.io/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">CloudSoft</a> published a <a href="http://www.cloudsoft.io/tendermint-and-clocker/" data-href="http://www.cloudsoft.io/tendermint-and-clocker/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">deployment strategy</a> for Apache Brooklyn that uses Tendermint and Clocker. Martin Dyring wrote an <a href="https://github.com/mdyring/cpp-abci" data-href="https://github.com/mdyring/cpp-abci" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">implementation of Tendermint ABCI in C++</a>, and wolfposd wrote a <a href="https://github.com/wolfposd/TMChat" data-href="https://github.com/wolfposd/TMChat" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">chatroom app in Java</a> that uses Tendermint to broadcast messages from one user to another. Yes, that’s right, a chatroom.</p><p name="111c" id="111c" class="graf graf--p graf-after--p">While it might sound like overkill to run a chat application on a blockchain, this is simply an example of the flexibility of Tendermint. This sort of implementation might even come in handy in instances where you have several actors who are malicious and maintaining the total order of the system matters — for instance, in p2p gaming.</p><p name="749d" id="749d" class="graf graf--p graf-after--p">Other companies building on Tendermint include <a href="https://blockfreight.com/" data-href="https://blockfreight.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Blockfreight</a>, <a href="http://www.vidroll.com/" data-href="http://www.vidroll.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Vidroll</a>, and <a href="https://stratumn.com/" data-href="https://stratumn.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Stratumn</a> to name a few. Of course, we use Tendermint too. Our first product built on Tendermint is <a href="http://cosmos.network/" data-href="http://cosmos.network/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Cosmos, the internet of blockchains</a>.</p><h3 name="c9f1" id="c9f1" class="graf graf--h3 graf-after--p">What’s new?</h3><p name="690e" id="690e" class="graf graf--p graf-after--h3">In August 2016 we released Tendermint v0.7.0, the first stable release of our middleware. It featured a weakly-synchronous BFT consensus algorithm, which can process thousands of transactions per second with latencies on the order of a second and cluster sizes ranging from 4 to 64 nodes.</p><p name="a8bf" id="a8bf" class="graf graf--p graf-after--p">Recently we released <a href="https://github.com/tendermint/tendermint" data-href="https://github.com/tendermint/tendermint" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Tendermint v0.7.1</a>, which includes a variety of fixes, as well as the ability for applications to determine what peers Tendermint can connect to and filtering either by IP address, or by public key.</p><p name="d464" id="d464" class="graf graf--p graf-after--p">In the next major release, Tendermint v0.8.0, which should be in October, we plan to introduce a handshake between Tendermint and whatever application is using it, ensuring the two stay synced even after crashes and restarts.</p><p name="932f" id="932f" class="graf graf--p graf-after--p">Additionally, we’ll include some important fixes to the BFT consensus module. While testing Tendermint in adversarial conditions, we discovered a Byzantine node could potentially halt the system in some circumstances — this fix will prevent that from happening.</p><p name="7b7f" id="7b7f" class="graf graf--p graf-after--p">This is critical because even though the Tendermint consensus algorithm guarantees your blockchain won’t fork, all of the subcomponents need to work perfectly to ensure liveness.</p><p name="a882" id="a882" class="graf graf--p graf-after--p graf--trailing">Stay tuned for more updates. We are continuing to test Tendermint extensively in a push to provide a production ready offering in early 2017. And, if you are using Tendermint in a project, <a href="https://docs.google.com/a/tendermint.com/forms/d/e/1FAIpQLSclH87WiZrer8aUzO5oNWoSCqcbn4mwQ3sDJJX44E9rhdVJFw/viewform?c=0&amp;w=1" data-href="https://docs.google.com/a/tendermint.com/forms/d/e/1FAIpQLSclH87WiZrer8aUzO5oNWoSCqcbn4mwQ3sDJJX44E9rhdVJFw/viewform?c=0&amp;w=1" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">let us know</a>! We want to hear how you’re using it and what your feedback is.</p></div></div></section><section name="7cbf" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="1bf6" id="1bf6" class="graf graf--p graf--leading graf--trailing"><em class="markup--em markup--p-em">Originally published at </em><a href="https://gist.github.com/c6d94cb0ba6f32a199910c4a27863ab3" data-href="https://gist.github.com/c6d94cb0ba6f32a199910c4a27863ab3" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">gist.github.com</em></a><em class="markup--em markup--p-em">.</em></p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/blockchain" class="p-tag">Blockchain</a>, <a href="https://medium.com/tag/tendermint" class="p-tag">Tendermint</a>, <a href="https://medium.com/tag/cryptocurrency" class="p-tag">Cryptocurrency</a>, <a href="https://medium.com/tag/consensus" class="p-tag">Consensus</a>, <a href="https://medium.com/tag/ethereum" class="p-tag">Ethereum</a></p><p>By <a href="https://medium.com/@nylira" class="p-author h-card">Peng Zhong</a> on <a href="https://medium.com/p/ca5b203e6cb1"><time class="dt-published" datetime="2016-09-17T07:00:00.000Z">September 17, 2016</time></a>.</p><p><a href="https://medium.com/@nylira/tendermint-from-then-to-now-ca5b203e6cb1" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 23, 2018.</p></footer></article>
+
+</body></html>

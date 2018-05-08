@@ -104,6 +104,13 @@
       "language": "Javascript",
       "author": "Saif Rehman",
       "description": "This is a minimal chat application based on Tendermint using Lotion.js in 30 lines of code!. It also includes web/mobile application built using Ionic 3."
+    },
+    {
+      "name": "BigchainDB",
+      "url": "https://github.com/bigchaindb/bigchaindb",
+      "language": "Python",
+      "author": "BigchainDB GmbH and the BigchainDB community",
+      "description": "Blockchain database"
     }
   ],
   "abciServers": [

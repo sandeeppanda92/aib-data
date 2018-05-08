@@ -226,6 +226,21 @@
     }
   },
   {
+    "slug": "ismail-khoffi",
+    "name": "Ismail Khoffi",
+    "bio": "",
+    "ids": {
+      "github": "Liamsi",
+      "keybase": "ismailk",
+      "linkedin": "ismailkhoffi",
+      "twitter": "kreuzuquer",
+      "website": "https://ismailkhoffi.com/"
+    },
+    "groups": {
+      "aib": "Software Engineer"
+    }
+  },
+  {
     "slug": "jessica-gelbard",
     "name": "Jessica Gelbard",
     "bio": "",

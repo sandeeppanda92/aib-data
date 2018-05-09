@@ -252,5 +252,37 @@
       "start": "2018-06-01",
       "end": "2018-06-04"
     }
+  },
+  {
+    "id": "cosmos-academy-tendermint-101",
+    "title": "Cosmos Academy: Tendermint 101",
+    "href":
+      "https://www.eventbrite.com/e/cosmos-academy-tendermint-101-tickets-45851274396",
+    "body":
+      "In this lecture style meetup, we have invited guest speaker, Zarko Milosevic, Core Tendermint Research Scientist, to answer all your questions about Tendermint. This meetup is friendly to people at all levels of familiarity with blockchain protocols.",
+    "images": {
+      "logo": "cosmos-academy",
+      "location": "berkeley"
+    },
+    "location": "Berkeley, USA",
+    "dates": {
+      "start": "2018-05-26"
+    }
+  },
+  {
+    "id": "cryptokonf-2018",
+    "title": "CryptoKonf 2018",
+    "href": "https://www.cryptokonf.com/",
+    "body":
+      "CryptoKonf is the biggest blockchain, fintech, compliance, cryptocurrency and ICO conference in SE Europe. Conference features hands-on technical blockchain development workshops. Zarko Milosevic, Research Scientist at Tendermint, will be a speaker.",
+    "images": {
+      "logo": "cryptokonf",
+      "location": "belgrade"
+    },
+    "location": "Belgrade, Serbia",
+    "dates": {
+      "start": "2018-05-29",
+      "end": "2018-05-30"
+    }
   }
 ]

@@ -77,14 +77,6 @@ are doing an economics game there. We say that it’s a validator business. If
 they are not able to hide themselves well enough, they’ll be DDoS’d and they
 will be kicked out of the active validator set. So it’s in their interest.
 
-For me it’s an interesting way to think about this. When you talk with Rige, he
-is more sharp about this, “I don’t care, it’s their problem.” Because i was
-thinking from a distributed systems point of view, how we are sure that the
-protocol is live; i’m always afraid about this liveness thing. Now you have
-this cryptoeconomic incentive, they are part of the overall design. By doing
-this, we are able to push some of the responsibility of our design to different
-partners so we don’t necessarily need to solve it ourselves.
-
 [Proposer Selection Procedure in Tendermint][2]. This is how it should work no
 matter what implementation.
 
@@ -120,7 +112,7 @@ the second one is `pre-commit`. Now, to be able to move between steps, between
 a `pre-vote` and `pre-commit` step, you need to receive enough number of
 messages where if message is sent by validator A, then also this message has a
 weight, or voting power which is equal to the voting power of the validator who
-sent this message. So before you receive more than 2/3 of messages, you are not
+sent this message. Before you receive more than 2/3 of voting power messages, you are not
 able to move to the higher round. Only when you receive more than 2/3 of
 messages, you actually start the timeout. The timeout is happening only after
 you receive enough messages. And it happens because of the asynchrony of the
@@ -136,7 +128,7 @@ __ZM__: It's true that in Bitcoin, this is where the synchrony assumption comes
 to play because if they're not able to communicate timely, they are not able to
 converge to a single longest chain. Why are they not able to decrease timeout
 in Bitcoin? Because if they would decrease, there would be so many forks that
-they won't be able to converge to a single change. By increasing this
+they won't be able to converge to a single chain. By increasing this
 complexity and the block time, they're able to have not so many forks. This is
 effectively the timing assumption—the block duration in a sense because it's
 enough time so that the decided block is propagated through the network before
@@ -198,9 +190,6 @@ progress in rounds. It's like breathing. Tendermint is breathing. If there is
 no progress, it's dead; it's blocked, we're  not able to breathe, that's why
 we're not able to make progress.
 
-*Do you mind paraphrasing this synchrony assumption yourself? We need to be
-very precise there in the technical communication.*
-
 __CC__: How does Tendermint compare to other consensus algos?
 
 __ZM__: Tendermint is a very interesting protocol. From an academic point of
@@ -234,9 +223,6 @@ normal case than this complex view change protocol.
 that: The system it addresses it's harder than the others and the algorithm
 complexity in Tendermint is simpler.* The initial goal of Jae and Bucky which
 is inspired by Raft, is that it's simpler so normal engineers could understand.
-If we compare this with the new generation of protocols like Ouroboros, etc...
-
-...some off the record stuff...
 
 __CC__: Can you expand on the termination requirement?
 
@@ -245,25 +231,7 @@ __CC__: Can you expand on the termination requirement?
 __ZM__: In Tendermint, we are saying, for termination, we are making assumption
 that the system is partially synchronous. And in a partially synchronous system
 model, we are able to mathematically prove that the protocol will make
-decisions; it will decide. In Casper, they don't talk about this thing. I know
-that bucky was talking to vlad and I think Vlad still has this position that
-termination is easy, it's trivial, and they will address it after. When people
-compare Tendermint and Casper, they compare Tesla and a car which is not
-finished.
-
-...some off the record stuff...
-
-If you ask me about the competition from the algorithmic point of view, the only
-strong competition we have is vmware research. So the Dahlia group, where they
-are lagging behind is the implementation. This is where we are ahead by at least
-two years. The algorithm is hard but the implementation is harder. They are
-publishing 3 or 4 publications a year and we should follow and learn from each
-of them. Fundamentally how this works, it's very similar. It's the same system
-model as Tendermint: partially synchronous, timing assumptions, safety always
-holds,  and now at the consensus level, it's slightly different. So it's a
-variant. We can probably take their protocol and implement it relatively easily
-in Tendermint. It's an incremental idea but there is nothing fundamentally
-different there.
+decisions; it will decide.
 
 __CC__: What is a persistent peer?
 

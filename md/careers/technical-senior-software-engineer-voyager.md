@@ -1,4 +1,4 @@
-# Senior Software Engineer, JS
+# Senior Software Engineer, JavaScript
 
 ### This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
 

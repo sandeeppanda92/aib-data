@@ -1,20 +1,25 @@
 # Cosmos Academy
 
-## Philosophy 
+## Philosophy
 
 Blockchain development today has a very high barrier to entry. The number of wallets opened in the cryptocurrency ecosystem is generated at a rate of millions per day. The number of ICOs flooding the market numbers in the thousands per week. Yet the number of low-level protocol developers with the skillset to implement blockchains not forked and not smart contract-based number in the hundreds. In the world. To say that the demand for blockchain developers is high would be an understatement.
 
 Because technical constraints impede blockchain infrastructure from growing as rapidly as user adoption, it lends to the argument that indeed, we are in a bubble. The Cosmos Academy seeks to bridge that gap where the R&D team at Cosmos will educate and train the best and brightest minds in the world to become blockchain implementers.
 
-## Curriculum
+## 1. [Curriculum](http://cosmos-academy.readthedocs.io/en/latest/)
 
-Refer to the content in this [Gitbook](https://cosmos-network.gitbooks.io/cosmos-academy/content/).
+The Cosmos Academy curriculum [is available here](http://cosmos-academy.readthedocs.io/en/latest/).
 
-## Meetups
+## 2. [Meetups](https://www.eventbrite.com/o/csmos-16966324702)
 
-[COMING SOON] We will host regular evening meetups in [San Francisco](https://www.meetup.com/Cosmos_SF/) and [Berlin](https://www.meetup.com/Cosmos_Berlin/) for developers who are interested in learning about developing for Cosmos. The Academy meetups will be from 6PM - 7PM on week nights. Dinner is on us!
+We host regular meetups in San Francisco and Berlin for people who are interested in developing for Cosmos. The Academy meetup schedule is available [on our Eventbrite page](https://www.eventbrite.com/o/csmos-16966324702).
 
-## Resources
+## 3. Resources
 
 #### [Cosmos: Many Chains, One Ecosystem](https://www.youtube.com/watch?v=LApEkXJR_0M)
+
 47 min. An introduction to Cosmos by Sunny Aggarwal, Researcher at Tendermint. Sunny explains the architectural and design decisions behind Cosmos and Tendermint. [Watch now.](https://www.youtube.com/watch?v=LApEkXJR_0M)
+
+#### [More Resources](/resources)
+
+View all Cosmos resources.

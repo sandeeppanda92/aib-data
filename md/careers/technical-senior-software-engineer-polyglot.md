@@ -20,6 +20,7 @@
 * Help maintain and improve [ABCI](https://github.com/tendermint/abci) servers in many languages.
 * Help maintain and improve [Amino](https://github.com/tendermint/go-amino) implementations in many languages.
 * Write new ABCI servers in languages that don't have them.
+* Write new Amino implementations in languages that don't have them.
 * Build ABCI applications in many languages to demonstrate Tendermint's
   flexibility.
 * Write blog posts and tutorials about ABCI, Amino, and ABCI applications to

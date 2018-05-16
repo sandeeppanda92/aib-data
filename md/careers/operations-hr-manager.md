@@ -20,5 +20,3 @@
 * Managing the hiring process from sourcing through offer acceptance, and ensure that new hires are set up for success within the company. 
 * Working collaboratively across the organization to identify and deliver improvements and solutions to people, process and system issues before they become major organizational blockers. 
 * Soliciting feedback from employees to improve culture and existing processes within the company.
-
-

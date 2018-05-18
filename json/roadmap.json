@@ -116,10 +116,9 @@
       "title": "Testnet",
       "version": "gaia-6000",
       "children": [],
-      "span": 2,
+      "span": 3,
       "date": "",
-      "notes":
-        "To be announced.",
+      "notes": "To be announced.",
       "url": "http://explorer.cosmos.network/"
     },
     {
@@ -297,6 +296,17 @@
       "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.16.0-rc0"
     },
     {
+      "id": "sdk-0-17",
+      "title": "Cosmos SDK",
+      "version": "0.17.0",
+      "children": ["hub-gaia-5"],
+      "span": 1,
+      "date": "2018-05-16",
+      "notes":
+        "Cosmos SDK 0.17.0 includes querying for candidates and delegator-bonds, current state exporting, transaction tags, and a spec for IBC.",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.0"
+    },
+    {
       "id": "sdk-1-0",
       "title": "Cosmos SDK",
       "version": "1.0.0",
@@ -464,13 +474,13 @@
     {
       "id": "tmc-0-19",
       "title": "Tendermint",
-      "version": "0.19.0",
+      "version": "0.19.4",
       "children": [],
-      "span": 3,
+      "span": 4,
       "date": "2018-04-13",
       "notes":
         "Tendermint 0.19.0 upgrades go-wire to go-amino. This is a sweeping change that breaks everything that is serialized to disk or over the network.",
-      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.2"
+      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.4-rc0"
     },
     {
       "id": "tmc-1-0",
@@ -589,7 +599,7 @@
       "title": "Voyager",
       "version": "0.7.0",
       "children": [],
-      "span": 2,
+      "span": 3,
       "date": "",
       "notes":
         "Voyager 0.7.0 supports block rewards and commission rates for validators.",

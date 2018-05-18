@@ -1,5 +1,7 @@
 ---
-title: Senior User Interface Designer
+area: design
+slug: ui-designer
+title: Senior UI/UX Designer
 excerpt: Tendermint is seeking an exceptional user interface designer to join the burgeoning Tendermint Design team. The designer will be responsible for researching, designing, and prototyping new user experiences based on product requirements.
 locations: ["Berlin", "Toronto", "Berkeley", "San Francisco"]
 tags:  ["User Experience", "User Interface", "UX", "UI"]

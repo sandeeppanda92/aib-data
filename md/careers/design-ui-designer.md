@@ -1,6 +1,9 @@
-# Senior User Interface Designer
-
-### This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
+---
+title: Senior User Interface Designer
+excerpt: Tendermint is seeking an exceptional user interface designer to join the burgeoning Tendermint Design team. The designer will be responsible for researching, designing, and prototyping new user experiences based on product requirements.
+locations: ["Berlin", "Toronto", "Berkeley", "San Francisco"]
+tags:  ["User Experience", "User Interface", "UX", "UI"]
+---
 
 ### Role summary:
 

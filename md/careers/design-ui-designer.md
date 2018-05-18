@@ -5,6 +5,8 @@ locations: ["Berlin", "Toronto", "Berkeley", "San Francisco"]
 tags:  ["User Experience", "User Interface", "UX", "UI"]
 ---
 
+# Senior UI/UX Designer
+
 ### Role summary:
 
 Tendermint is seeking an exceptional user interface designer to join the burgeoning Tendermint Design team. The designer will be responsible for researching, designing, and prototyping new user experiences based on product requirements. Deliverables include design mockups, prototyping, production of visual assets, and documentation required for proper implementation. The candidate must flourish in a fast-paced environment at a blockchain startup.

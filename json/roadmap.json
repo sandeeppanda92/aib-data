@@ -300,7 +300,7 @@
       "title": "Cosmos SDK",
       "version": "0.17.2",
       "children": ["hub-gaia-5", "gui-0-7"],
-      "span": 1,
+      "span": 2,
       "date": "2018-05-16",
       "notes":
         "Cosmos SDK 0.17.0 includes querying for candidates and delegator-bonds, current state exporting, transaction tags, and a spec for IBC.",
@@ -566,7 +566,7 @@
       "title": "Cosmos UI",
       "version": "0.4.0",
       "children": [],
-      "span": 7,
+      "span": 5,
       "date": "2018-02-01",
       "notes":
         "In this release, we upgraded the UI to use the gaia-2 testnet, and added a block explorer, among many other enhancements.",
@@ -577,7 +577,7 @@
       "title": "Voyager",
       "version": "0.5.0",
       "children": [],
-      "span": 2,
+      "span": 3,
       "date": "2018-05-02",
       "notes":
         "Voyager 0.5.0 runs on a mocked network that offers users an interactive preview of 1.0 features.",

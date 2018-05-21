@@ -71,7 +71,7 @@
       "title": "Testnet",
       "version": "gaia-2",
       "children": ["gui-0-4"],
-      "span": 3,
+      "span": 4,
       "date": "2018-01-31",
       "notes":
         "gaia-2 includes basic delegation, UI integration for bonding and unbonding, and a PEX reactor for dynamic peer discovery.",
@@ -94,7 +94,7 @@
       "title": "Testnet",
       "version": "gaia-4000",
       "children": [],
-      "span": 1,
+      "span": 2,
       "date": "2018-04-21",
       "notes":
         "gaia-4000 has improved stability, bug fixes, and runs on Cosmos SDK 0.15.0.",
@@ -277,7 +277,7 @@
       "id": "sdk-0-15",
       "title": "Cosmos SDK",
       "version": "0.15.0",
-      "children": ["hub-gaia-4", "gui-0-6"],
+      "children": ["hub-gaia-4"],
       "span": 1,
       "date": "2018-04-30",
       "notes":

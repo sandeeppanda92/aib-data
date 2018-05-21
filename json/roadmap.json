@@ -59,7 +59,7 @@
       "title": "Testnet",
       "version": "gaia-1",
       "children": ["gui-0-2", "gui-0-3"],
-      "span": 2,
+      "span": 5,
       "date": "2017-10-19",
       "notes":
         "gaia-1 is the first time Cosmos SDK and Tendermint Core are bundled together to form an experimental version of the Cosmos Hub. It includes a dynamic validator set.",

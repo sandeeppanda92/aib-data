@@ -58,14 +58,25 @@ Validators are responsible for ensuring that the network can sustain denial of s
 
 We recommend that validators run full nodes in the cloud and configure their validator nodes only to connect to those full nodes. Those full nodes can be moved or apply cloud based DDOS protection to mitigate DDOS attacks
 
-Finally, establishing connections directly with other validators can ensure that your node can't be taken offline via internet based attacks.
+Validators nodes should edit their config.toml
 
-Validators should track the progress of these two github issues:
+```
+# Comma separated list of nodes to keep persistent connections to
+# Do not add private peers to this list if you don't want them advertised
+persistent_peers =[list of sentry nodes]
 
-* https://github.com/tendermint/tendermint/issues/866
-* https://github.com/tendermint/tendermint/issues/865
+# Set true to enable the peer-exchange reactor
+pex = false
+```
 
-Validators should begin testing sentry nodes on the testnet when progress has been made on these issues.
+Sentry Nodes should have edit config.toml to
+```
+# Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
+private_peer_ids = "ipaddress of validator nodes" 
+
+```
+
+
 
 #### 7. Organize with your local jurisdiction
 

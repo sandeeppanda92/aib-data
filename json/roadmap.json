@@ -299,7 +299,7 @@
       "id": "sdk-0-17",
       "title": "Cosmos SDK",
       "version": "0.17.2",
-      "children": ["hub-gaia-5"],
+      "children": ["hub-gaia-5", "gui-0-7"],
       "span": 1,
       "date": "2018-05-16",
       "notes":
@@ -475,7 +475,7 @@
       "id": "tmc-0-19",
       "title": "Tendermint",
       "version": "0.19.5",
-      "children": [],
+      "children": ["sdk-0-17", "gui-0-7"],
       "span": 4,
       "date": "2018-04-13",
       "notes":

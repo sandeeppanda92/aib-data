@@ -566,7 +566,7 @@
       "title": "Cosmos UI",
       "version": "0.4.0",
       "children": [],
-      "span": 5,
+      "span": 3,
       "date": "2018-02-01",
       "notes":
         "In this release, we upgraded the UI to use the gaia-2 testnet, and added a block explorer, among many other enhancements.",

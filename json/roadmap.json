@@ -298,13 +298,13 @@
     {
       "id": "sdk-0-17",
       "title": "Cosmos SDK",
-      "version": "0.17.0",
+      "version": "0.17.2",
       "children": ["hub-gaia-5"],
       "span": 1,
       "date": "2018-05-16",
       "notes":
         "Cosmos SDK 0.17.0 includes querying for candidates and delegator-bonds, current state exporting, transaction tags, and a spec for IBC.",
-      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.0"
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.17.2"
     },
     {
       "id": "sdk-1-0",
@@ -474,13 +474,13 @@
     {
       "id": "tmc-0-19",
       "title": "Tendermint",
-      "version": "0.19.4",
+      "version": "0.19.5",
       "children": [],
       "span": 4,
       "date": "2018-04-13",
       "notes":
         "Tendermint 0.19.0 upgrades go-wire to go-amino. This is a sweeping change that breaks everything that is serialized to disk or over the network.",
-      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.4-rc0"
+      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.5-rc1"
     },
     {
       "id": "tmc-1-0",
@@ -577,7 +577,7 @@
       "title": "Voyager",
       "version": "0.5.0",
       "children": [],
-      "span": 2,
+      "span": 3,
       "date": "2018-05-02",
       "notes":
         "Voyager 0.5.0 runs on a mocked network that offers users an interactive preview of 1.0 features.",
@@ -588,18 +588,18 @@
       "title": "Voyager",
       "version": "0.6.0",
       "children": [],
-      "span": 1,
-      "date": "",
+      "span": 2,
+      "date": "2018-05-19",
       "notes":
-        "Voyager 0.6.0 works with the light client daemon from the new Cosmos SDK. This means that we now support the gaia-5000 testnet.",
-      "url": ""
+        "Voyager 0.6.0 works with the light client daemon (LCD) from the new Cosmos SDK. Voyager now supports the gaia-5000 and gaia-5001 testnets.",
+      "url": "https://github.com/cosmos/voyager/releases/tag/0.6.0"
     },
     {
       "id": "gui-0-7",
       "title": "Voyager",
       "version": "0.7.0",
       "children": [],
-      "span": 3,
+      "span": 1,
       "date": "",
       "notes":
         "Voyager 0.7.0 supports block rewards and commission rates for validators.",

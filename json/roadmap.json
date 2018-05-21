@@ -577,7 +577,7 @@
       "title": "Voyager",
       "version": "0.5.0",
       "children": [],
-      "span": 3,
+      "span": 6,
       "date": "2018-05-02",
       "notes":
         "Voyager 0.5.0 runs on a mocked network that offers users an interactive preview of 1.0 features.",

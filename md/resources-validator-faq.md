@@ -188,7 +188,7 @@ We have to solve this simple equation to find the reward R for each validator:
 * For each non-proposer validator:
   * The pool obtains R: 100 Atoms
   * Commission: `100 * 80% * 1%` = 0.8 Atoms
-  * Validator's reward: `100 * 20% + Commission` = 20.8 Atoms
+  * Validator's reward: `105 * 20% + Commission` = 20.8 Atoms
   * Delegators' rewards: `100 * 80% - Commission` = 79.2 Atoms (each delegator will be able to claim its portion of these rewards in proportion to their stake)
 
 ### What are the slashing conditions?

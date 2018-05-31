@@ -268,5 +268,22 @@
     "dates": {
       "start": "2018-05-26"
     }
+  },
+  {
+    "id": "cpc-crypto-devcon",
+    "title": "CPC Crypto DevCon",
+    "href":
+      "https://www.eventbrite.com/e/cpc-crypto-developers-conference-tickets-46258404132?aff=efbeventtix",
+    "body":
+      "Thousands of developers from Google, Facebook, Apple, Linkedin, Uber and Airbnb are invited to attend the conference, and speakers include renowned crypto and distributed system professors as well as CTOs of top projects selected by Cryptic Labs, Stanford DTI and CPC. Tendermint will be there.",
+    "images": {
+      "logo": "cpc",
+      "location": "mountain-view"
+    },
+    "location": "Mountain View, USA",
+    "dates": {
+      "start": "2018-06-11",
+      "end": "2018-06-12"
+    }
   }
 ]

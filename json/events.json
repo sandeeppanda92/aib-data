@@ -249,8 +249,8 @@
     },
     "location": "New York City, USA",
     "dates": {
-      "start": "2018-06-01",
-      "end": "2018-06-04"
+      "start": "2018-10-05",
+      "end": "2018-10-08"
     }
   },
   {
@@ -270,19 +270,20 @@
     }
   },
   {
-    "id": "cryptokonf-2018",
-    "title": "CryptoKonf 2018",
-    "href": "https://www.cryptokonf.com/",
+    "id": "cpc-crypto-devcon",
+    "title": "CPC Crypto DevCon",
+    "href":
+      "https://www.eventbrite.com/e/cpc-crypto-developers-conference-tickets-46258404132?aff=efbeventtix",
     "body":
-      "CryptoKonf is the biggest blockchain, fintech, compliance, cryptocurrency and ICO conference in SE Europe. Conference features hands-on technical blockchain development workshops. Zarko Miloseiv, Research Scientist at Tendermint, will be a speaker.",
+      "Thousands of developers from Google, Facebook, Apple, Linkedin, Uber and Airbnb are invited to attend the conference, and speakers include renowned crypto and distributed system professors as well as CTOs of top projects selected by Cryptic Labs, Stanford DTI and CPC. Tendermint will be there.",
     "images": {
-      "logo": "cryptokonf",
-      "location": "belgrade"
+      "logo": "cpc",
+      "location": "mountain-view"
     },
-    "location": "Belgrade, Serbia",
+    "location": "Mountain View, USA",
     "dates": {
-      "start": "2018-05-29",
-      "start": "2018-05-30"
+      "start": "2018-06-11",
+      "end": "2018-06-12"
     }
   }
 ]

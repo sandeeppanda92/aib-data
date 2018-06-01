@@ -1,8 +1,9 @@
-# Senior Software Engineer, Voyager
+# Senior Software Engineer, JavaScript
 
 ### This is a full time position and is located in either Berlin, Toronto, Berkeley, or San Francisco.
 
 ### We're looking for someone who has:
+
 * At least 5 years of software engineering experience.
 * Significant experience writing JavaScript.
 * Knowledge of Vue.js or other reactive frameworks.
@@ -15,6 +16,7 @@
 * An eye for good UI and UX design.
 
 ### What your primary responsibilities will be:
+
 * Work with the Voyager team to triage issues and move the [project](https://github.com/cosmos/voyager/projects) forward.
 * Improve the Voyager codebase by committing DRY, well tested code.
 * Research, design, and implement features and optimizations.

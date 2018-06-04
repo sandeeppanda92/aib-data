@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "remark-cli": "^5.0.0",
+    "remark-lint-no-dead-urls": "^0.3.0",
+    "remark-preset-lint-recommended": "^3.0.1"
+  },
+  "name": "aib-data",
+  "description": "Public AIB Data - e.g. employees, careers, events",
+  "version": "0.0.1",
+  "main": "README.md",
+  "devDependencies": {},
+  "scripts": {
+    "lint-md": "remark ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tendermint/aib-data.git"
+  },
+  "keywords": [
+    "tendermint",
+    "cosmos",
+    "allinbits",
+    "blockchain"
+  ],
+  "author": "Tendermint, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tendermint/aib-data/issues"
+  },
+  "homepage": "https://github.com/tendermint/aib-data#readme",
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  }
+}

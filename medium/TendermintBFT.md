@@ -77,7 +77,7 @@ are doing an economics game there. We say that it’s a validator business. If
 they are not able to hide themselves well enough, they’ll be DDoS’d and they
 will be kicked out of the active validator set. So it’s in their interest.
 
-[Proposer Selection Procedure in Tendermint][2]. This is how it should work no
+[Proposer Selection Procedure in Tendermint][1]. This is how it should work no
 matter what implementation.
 
 **CC**: Going back to the proposer, lets say the validator does get DDoS’d, then
@@ -248,5 +248,3 @@ connection to a peer, you'll look to address book and get some addresses from
 there. There's categorization/ranking of nodes there.
 
 [1]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md
-
-[2]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md

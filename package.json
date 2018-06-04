@@ -34,7 +34,8 @@
   "homepage": "https://github.com/tendermint/aib-data#readme",
   "remarkConfig": {
     "plugins": [
-      "remark-preset-lint-recommended"
+      "remark-preset-lint-recommended",
+      "remark-lint-no-dead-urls"
     ]
   }
 }

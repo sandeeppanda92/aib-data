@@ -7,10 +7,8 @@ jobs:
   build:
     working_directory: ~/aib-data
     docker:
-     - image: circleci/python:3.6.1                                           
+     - image: circleci/python:3.6.1
     steps:
       - checkout
-                                       
-      # run tests!
-      - run:
-          command: make validate-json
+      - run: yarn
+      - run: yarn lint

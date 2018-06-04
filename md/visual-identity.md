@@ -22,10 +22,10 @@ All other ways of writing or typing Cosmos are incorrect. Yes, our logo makes it
 
 The only exception is when “Cosmos” is included in a headline style that appears in all caps. Try to avoid this if possible.
 
-* Cosmos - correct
-* Cøsmos - incorrect
-* COSMOS - incorrect
-* CosmOS - incorrect
+-   Cosmos - correct
+-   Cøsmos - incorrect
+-   COSMOS - incorrect
+-   CosmOS - incorrect
 
 ## Logo
 
@@ -80,7 +80,7 @@ Here are all of the colors we use for Cosmos projects. They are labeled and disp
 Cosmos will be using the SF UI Display and SF UI Text fonts for all online and printed communications. Generally speaking, SF UI Display should be used for headlines and SF UI Text should be used for body copy. Exact suggested styles are forthcoming.
 
 Both SF UI fonts are available at
-https://developer.apple.com/fonts/
+<https://developer.apple.com/fonts/>
 
     [Images: SF UI Variants]
 
@@ -88,11 +88,11 @@ https://developer.apple.com/fonts/
 
 On behalf of all of us — thank you for taking the time to look though these visual identity guidelines. We are glad to have you on board.
 
-The assets shown in this visual identity guide are freely available for download. All of the images and logos contained in this document files can be found at at https://cosmos.network/assets. The assets are available in eps, jpg, pdf, png, and svg formats.
+The assets shown in this visual identity guide are freely available for download. All of the images and logos contained in this document files can be found at at <https://cosmos.network/assets>. The assets are available in eps, jpg, pdf, png, and svg formats.
 
 To the Cosmos and beyond!
 
 —--
 
 © 2018 Interchain Foundation
-https://cosmos.network
+<https://cosmos.network>

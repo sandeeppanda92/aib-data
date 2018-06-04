@@ -1,15 +1,15 @@
 # Interview Transcript with Tendermint core researcher, Zarko Milosevic, by Chjango
 
-__ZM__: Regarding leader election, it's round robin, but a weighted one. You
+**ZM**: Regarding leader election, it's round robin, but a weighted one. You
 take into account the amount of bonded tokens. Depending on how much weight
 they have of voting power, they would be elected more frequently. So we do
 rotate, but just the guys who are having more voting power would be elected
 more frequently. We are having 4 validators, and 1 of them have 2 times more
 voting power, they have 2 times more elected as a leader.
 
-__CC__: 2x more absolute voting power or probabilistic voting power?
+**CC**: 2x more absolute voting power or probabilistic voting power?
 
-__ZM__: It's actually very deterministic. It's not probabilistic at all. See
+**ZM**: It's actually very deterministic. It's not probabilistic at all. See
 [Tendermint proposal election specification][1]. In Tendermint, there is no
 pseudorandom leader election. It's a deterministic protocol. So leader election
 is a built-in function in the code, so you know exactly—depending on the voting
@@ -29,15 +29,15 @@ changing the leaders. So it can't happen to have one guy being more elected
 than other guys, if they have the same voting power. So one time it will be guy
 B, and next time it will be guy B1. So it's not random.
 
-__CC__: Assuming the validator set remains unchanged for a month, then if you
+**CC**: Assuming the validator set remains unchanged for a month, then if you
 run this function, are you able to know exactly who is going to go for that
 entire month?
 
-__ZM__: Yes.
+**ZM**: Yes.
 
-__CC__: What're the attack scenarios for this?
+**CC**: What're the attack scenarios for this?
 
-__ZM__: This is something which is easily attacked by people who argue that
+**ZM**: This is something which is easily attacked by people who argue that
 Tendermint is not decentralized enough. They say that by knowing the leader,
 you can DDoS the leader. And by DDoSing the leader, you are able to stop the
 progress. Because it's true. If you would be able to DDoS the leader, the
@@ -56,11 +56,11 @@ the validator to be clever enough that so that in case they are DDoS’d at the
 sentry level, they will spawn a different sentry node and then you communicate
 through them. We are in a sense pushing the responsibility on the validator.
 
-__CC__: So if I understand this correctly, the public identity of the validator
+**CC**: So if I understand this correctly, the public identity of the validator
 doesn’t even matter because that entity can obfuscate where their real full
 nodes reside via a proxy through this sentry architecture.
 
-__ZM__: Exactly. So you do know what is the address or identity of the validator
+**ZM**: Exactly. So you do know what is the address or identity of the validator
 but you don’t know the network address of it; you’re not able to attack it
 because you don’t know where they are. They are completely obfuscated by the
 sentry nodes. There is now, if you really want to figure out….There is the
@@ -80,10 +80,10 @@ will be kicked out of the active validator set. So it’s in their interest.
 [Proposer Selection Procedure in Tendermint][2]. This is how it should work no
 matter what implementation.
 
-__CC__: Going back to the proposer, lets say the validator does get DDoS’d, then
+**CC**: Going back to the proposer, lets say the validator does get DDoS’d, then
 the proposer goes down. What happens?
 
-__ZM__: How the proposal mechanism works—there’s nothing special there—it goes
+**ZM**: How the proposal mechanism works—there’s nothing special there—it goes
 through a sequence of rounds. Normal execution of Tendermint is that for each
 height, we are going through a sequence of rounds, starting from round 0, and
 then we are incrementing through the rounds. The nodes are moving through the
@@ -93,10 +93,10 @@ not decide in that round, because he will not be able to send his proposal. So
 we will go to the next round, and hopefully the next proposer will be able to
 communicate with the validators and then we’ll decide in the next round.
 
-__CC__: Are there timeouts between one round to another, if a round gets
+**CC**: Are there timeouts between one round to another, if a round gets
 skipped?
 
-__ZM__: There are timeouts. It’s a bit more complex. I think we have 5 timeouts.
+**ZM**: There are timeouts. It’s a bit more complex. I think we have 5 timeouts.
 We may be able to simplify this a bit. What is important to understand is: The
 only condition which needs to be satisfied so we can go to the next round is
 that your validator is able to communicate with more than 2/3rds of voting
@@ -119,12 +119,12 @@ you receive enough messages. And it happens because of the asynchrony of the
 message communication so you give more time to guys with this timeout to
 receive some messages which are maybe delayed.
 
-__CC__: In this way that you just described via the whole network gossiping
+**CC**: In this way that you just described via the whole network gossiping
 before we commit a block, that is what makes Tendermint BFT deterministic in a
 partially synchronous setting vs Bitcoin which has synchrony assumptions
 whereby blocks are first mined and then gossiped to the network.
 
-__ZM__: It's true that in Bitcoin, this is where the synchrony assumption comes
+**ZM**: It's true that in Bitcoin, this is where the synchrony assumption comes
 to play because if they're not able to communicate timely, they are not able to
 converge to a single longest chain. Why are they not able to decrease timeout
 in Bitcoin? Because if they would decrease, there would be so many forks that
@@ -175,10 +175,10 @@ network. During this period, we guarantee that we will be deciding and
 committing blocks. And we will be doing this very fast. We will be basically on
 the speed of the current network.
 
-__CC__: We make liveness assumptions based on the integrity of the validator
+**CC**: We make liveness assumptions based on the integrity of the validator
 businesses, assuming they're up and running fine.
 
-__ZM__: This is where we are saying, the protocol will be live if we have at
+**ZM**: This is where we are saying, the protocol will be live if we have at
 most 1/3, or a bit less than 1/3, of faulty validators. Which means that all
 other guys should be online and available. This is also for liveness. This is
 related to the condition that we are not able to make progress in rounds if we
@@ -190,9 +190,9 @@ progress in rounds. It's like breathing. Tendermint is breathing. If there is
 no progress, it's dead; it's blocked, we're  not able to breathe, that's why
 we're not able to make progress.
 
-__CC__: How does Tendermint compare to other consensus algos?
+**CC**: How does Tendermint compare to other consensus algos?
 
-__ZM__: Tendermint is a very interesting protocol. From an academic point of
+**ZM**: Tendermint is a very interesting protocol. From an academic point of
 view, I'm convinced that there is value there. Hopefully, we prove it by
 publishing it on some good conference. What is novel is, if we compare first
 Tendermint to this existing BFT problem, it's a continuation of academic
@@ -219,23 +219,23 @@ Tendermint, there is no this difference. We have only one protocol, there are
 not two protocols. It's always the same steps and they are much closer to the
 normal case than this complex view change protocol.
 
-*This is a bit too technical but this is on a high level things to remember,
+_This is a bit too technical but this is on a high level things to remember,
 that: The system it addresses it's harder than the others and the algorithm
-complexity in Tendermint is simpler.* The initial goal of Jae and Bucky which
+complexity in Tendermint is simpler._ The initial goal of Jae and Bucky which
 is inspired by Raft, is that it's simpler so normal engineers could understand.
 
-__CC__: Can you expand on the termination requirement?
+**CC**: Can you expand on the termination requirement?
 
-*Important point about Liveness in Tendermint*
+_Important point about Liveness in Tendermint_
 
-__ZM__: In Tendermint, we are saying, for termination, we are making assumption
+**ZM**: In Tendermint, we are saying, for termination, we are making assumption
 that the system is partially synchronous. And in a partially synchronous system
 model, we are able to mathematically prove that the protocol will make
 decisions; it will decide.
 
-__CC__: What is a persistent peer?
+**CC**: What is a persistent peer?
 
-__ZM__: It's a list of peer identities, which you will try to establish
+**ZM**: It's a list of peer identities, which you will try to establish
 connection to them, in case connection is broken, Tendermint will automatically
 try to reestablish connection. These are important peers, you will really try
 persistently to establish connection to them. For other peers, you just drop it
@@ -248,4 +248,5 @@ connection to a peer, you'll look to address book and get some addresses from
 there. There's categorization/ranking of nodes there.
 
 [1]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md
+
 [2]: https://github.com/tendermint/tendermint/blob/master/docs/specification/new-spec/reactors/consensus/proposer-selection.md

@@ -36,31 +36,31 @@ Delegators play a critical role in the system, as they are responsible for choos
 
 Any participant in the network can signal that they want to become a validator by sending a "declare-candidacy" transaction, where they must fill out the following parameters:
 
-* Validator's PubKey: The validator must signal an account with which it will perform its validator duties. The private key associated with PubKey is used to sign _prevotes_ and _precommits_. This way, validators can have different accounts for validating and holding liquid funds.
-* Validator's name
-* Validator's website (Optional)
-* Validator's description (Optional)
-* Initial commission rate: The commission rate on block provisions, block rewards and fees charged to delegators
-* Maximum commission: The maximum commission rate which this validator candidate can charge
-* Commission change rate: The maximum daily increase of the validator candidate commission
-* Minimum self-bond amount: Minimum amount of Atoms the validator candidate need to have bonded at all time. If the validator's self-bonded stake falls below this limit, its entire staking pool will unbond.
-* Initial self-bond amount: Initial amount Atoms the validator candidate wants to self-bond
+-   Validator's PubKey: The validator must signal an account with which it will perform its validator duties. The private key associated with PubKey is used to sign _prevotes_ and _precommits_. This way, validators can have different accounts for validating and holding liquid funds.
+-   Validator's name
+-   Validator's website (Optional)
+-   Validator's description (Optional)
+-   Initial commission rate: The commission rate on block provisions, block rewards and fees charged to delegators
+-   Maximum commission: The maximum commission rate which this validator candidate can charge
+-   Commission change rate: The maximum daily increase of the validator candidate commission
+-   Minimum self-bond amount: Minimum amount of Atoms the validator candidate need to have bonded at all time. If the validator's self-bonded stake falls below this limit, its entire staking pool will unbond.
+-   Initial self-bond amount: Initial amount Atoms the validator candidate wants to self-bond
 
 Once a PubKey has declared candidacy, Atom holders can delegate atoms to it, effectively adding stake to this pool. The total stake of an address is the combination of Atoms bonded by delegators and Atoms self-bonded by the entity which designated itself.
 
 Out of all the candidates that signaled themselves, the 100 with the most stake are the ones who are designated as validators. If a validator's total stake falls below the top 100 then that validator loses its validator privileges. Over time, the maximum number of validators will increase, according to a predefined schedule:
 
-* **Year 0:** 100
-* **Year 1:** 113
-* **Year 2:** 127
-* **Year 3:** 144
-* **Year 4:** 163
-* **Year 5:** 184
-* **Year 6:** 208
-* **Year 7:** 235
-* **Year 8:** 265
-* **Year 9:** 300
-* **Year 10:** 300
+-   **Year 0:** 100
+-   **Year 1:** 113
+-   **Year 2:** 127
+-   **Year 3:** 144
+-   **Year 4:** 163
+-   **Year 5:** 184
+-   **Year 6:** 208
+-   **Year 7:** 235
+-   **Year 8:** 265
+-   **Year 9:** 300
+-   **Year 10:** 300
 
 ### How can I join the testnet?
 
@@ -80,10 +80,10 @@ There is no minimum. The top 100 validator candidates with the highest total sta
 
 Delegators are free to choose validators according to their own subjective criteria. This said, criteria anticipated to be important include:
 
-* **Amount of self-bonded Atoms:** Number of Atoms a validator self-bonded to its staking pool. A validator with higher amount of self-bonded Atoms has more skin in the game, making it more liable for its actions.
-* **Amount of delegated Atoms:** Total number of Atoms delegated to a validator. A high stake shows that the community trusts this validator, but it also means that this validator is a bigger target for hackers. Indeed, hackers are incentivized to hack bigger validators as they receive a reward proportionate to the stake of the validator they can prove to have compromised. Validators are expected to become less and less attractive as their amount of delegated Atoms grows.
-* **Commission rate:** Commission applied on revenue by validators before it is distributed to their delegators
-* **Track record:** Delegators will likely look at the track record of the validators they plan to delegate to. This includes seniority, past votes on proposals, historical average uptime and how often the node was compromised.
+-   **Amount of self-bonded Atoms:** Number of Atoms a validator self-bonded to its staking pool. A validator with higher amount of self-bonded Atoms has more skin in the game, making it more liable for its actions.
+-   **Amount of delegated Atoms:** Total number of Atoms delegated to a validator. A high stake shows that the community trusts this validator, but it also means that this validator is a bigger target for hackers. Indeed, hackers are incentivized to hack bigger validators as they receive a reward proportionate to the stake of the validator they can prove to have compromised. Validators are expected to become less and less attractive as their amount of delegated Atoms grows.
+-   **Commission rate:** Commission applied on revenue by validators before it is distributed to their delegators
+-   **Track record:** Delegators will likely look at the track record of the validators they plan to delegate to. This includes seniority, past votes on proposals, historical average uptime and how often the node was compromised.
 
 Apart from these criteria that will be displayed in Cosmos Voyager, there will be a possibility for validators to signal a website address to complete their resume. Validators will need to build reputation one way or another to attract delegators. For example, it would be a good practice for validators to have their setup audited by third parties. Note though, that the Tendermint team will not approve or conduct any audit itself.
 
@@ -97,8 +97,8 @@ No, they do not. Each delegator will value validators based on their own criteri
 
 Validators have two main responsibilities:
 
-* **Be able to constantly run a correct version of the software:** validators need to make sure that their servers are always online and their private keys are not compromised.
-* **Actively participate in governance:** validators are required to vote on every proposal.
+-   **Be able to constantly run a correct version of the software:** validators need to make sure that their servers are always online and their private keys are not compromised.
+-   **Actively participate in governance:** validators are required to vote on every proposal.
 
 Additionally, validators are expected to be active members of the community. They should always be up-to-date with the current state of the ecosystem so that they can easily adapt to any change.
 
@@ -134,9 +134,9 @@ Yes, they will. Initially, validators of the Cosmos hub will also validate the f
 
 Each member of a validator's staking pool earns different types of revenue:
 
-* **Block provisions:** Native tokens of applications run by validators (e.g. Atoms on the Cosmos Hub) are inflated to produce block provisions. These provisions exist to incentivize Atom holders to bond their stake, as non-bonded Atom will be diluted over time.
-* **Block rewards:** For the Ethermint zone, block rewards are paid in Photons. Initial distribution of Photons will be hard spooned from Ethereum. This means Photons will be emitted 1:1 to Ether.
-* **Transaction fees:** The Cosmos Hub maintains a whitelist of token that are accepted as fee payment.
+-   **Block provisions:** Native tokens of applications run by validators (e.g. Atoms on the Cosmos Hub) are inflated to produce block provisions. These provisions exist to incentivize Atom holders to bond their stake, as non-bonded Atom will be diluted over time.
+-   **Block rewards:** For the Ethermint zone, block rewards are paid in Photons. Initial distribution of Photons will be hard spooned from Ethereum. This means Photons will be emitted 1:1 to Ether.
+-   **Transaction fees:** The Cosmos Hub maintains a whitelist of token that are accepted as fee payment.
 
 This total revenue is divided among validators' staking pools according to each validator's weight. Then, within each validator's staking pool the revenue is divided among delegators in proportion to each delegator's stake. Note that a commission on delegators' revenue is applied by the validator before it is distributed.
 
@@ -156,9 +156,9 @@ Block provisions are distributed proportionally to all validators relative to th
 
 Let us take an example where we have 10 validators with equal staking power and a commission rate of 1%. Let us also assume that the provision for a block is 1000 Atoms and that each validator has 20% of self-bonded Atoms. These tokens do not go directly to the proposer. Instead, they are evenly spread among validators. So now each validator's pool has 100 Atoms. These 100 Atoms will be distributed according to each participant's stake:
 
-* Commission: 100*80%*1% = 0.8 Atoms
-* Validator gets: 100\*20% + Commission = 20.8 Atoms
-* All delegators get: 100\*80% - Commission = 79.2 Atoms
+-   Commission: 100_80%_1% = 0.8 Atoms
+-   Validator gets: 100\*20% + Commission = 20.8 Atoms
+-   All delegators get: 100\*80% - Commission = 79.2 Atoms
 
 Then, each delegator can claim its part of the 79.2 Atoms in proportion to their stake in the validator's staking pool. Note that the validator's commission is not applied on block provisions. Note that block rewards (paid in Photons) are distributed according to the same mechanism.
 
@@ -172,7 +172,7 @@ Let's take a concrete example to illustrate the aforementioned concept. In this 
 
 First, a 2% tax is applied. The corresponding Atoms go to the reserve pool. Reserve pool's funds can be allocated through governance to fund bounties and upgrades.
 
-* 2% \* 1025.51020408 = 20.51020408 Atoms go to the reserve pool.
+-   2% \* 1025.51020408 = 20.51020408 Atoms go to the reserve pool.
 
 1005 Atoms now remain. Let's assume that the proposer included 100% of the signatures in its block. It thus obtains the full bonus of 5%.
 
@@ -180,24 +180,24 @@ We have to solve this simple equation to find the reward R for each validator:
 
 `9*R + R + R*5% = 1005 ⇔ R = 1005/10.05 = 100`
 
-* For the proposer validator:
-  * The pool obtains `R + R * 5%`: 105 Atoms
-  * Commission: `105 * 80% * 1%` = 0.84 Atoms
-  * Validator's reward: `100 * 20% + Commission` = 21.84 Atoms
-  * Delegators' rewards: `105 * 80% - Commission` = 83.16 Atoms (each delegator will be able to claim its portion of these rewards in proportion to their stake)
-* For each non-proposer validator:
-  * The pool obtains R: 100 Atoms
-  * Commission: `100 * 80% * 1%` = 0.8 Atoms
-  * Validator's reward: `105 * 20% + Commission` = 20.8 Atoms
-  * Delegators' rewards: `100 * 80% - Commission` = 79.2 Atoms (each delegator will be able to claim its portion of these rewards in proportion to their stake)
+-   For the proposer validator:
+    -   The pool obtains `R + R * 5%`: 105 Atoms
+    -   Commission: `105 * 80% * 1%` = 0.84 Atoms
+    -   Validator's reward: `100 * 20% + Commission` = 21.84 Atoms
+    -   Delegators' rewards: `105 * 80% - Commission` = 83.16 Atoms (each delegator will be able to claim its portion of these rewards in proportion to their stake)
+-   For each non-proposer validator:
+    -   The pool obtains R: 100 Atoms
+    -   Commission: `100 * 80% * 1%` = 0.8 Atoms
+    -   Validator's reward: `105 * 20% + Commission` = 20.8 Atoms
+    -   Delegators' rewards: `100 * 80% - Commission` = 79.2 Atoms (each delegator will be able to claim its portion of these rewards in proportion to their stake)
 
 ### What are the slashing conditions?
 
 If a validator misbehaves, its bonded stake along with its delegators' stake and will be slashed. The severity of the punishment depends on the type of fault. There are 3 main faults that can result in slashing of funds for a validator and its delegators:
 
-* **Double signing:** If someone reports on chain A that a validator signed two blocks at the same height on chain A and chain B, this validator will get slashed on chain A
-* **Unavailability:** If a validator's signature has not been included in the last X blocks, the validator will get slashed by a marginal amount proportional to X. If X is above a certain limit Y, then the validator will get unbonded
-* **Non-voting:** If a validator did not vote on a proposal and once the fault is reported by a someone, its stake will receive a minor slash.
+-   **Double signing:** If someone reports on chain A that a validator signed two blocks at the same height on chain A and chain B, this validator will get slashed on chain A
+-   **Unavailability:** If a validator's signature has not been included in the last X blocks, the validator will get slashed by a marginal amount proportional to X. If X is above a certain limit Y, then the validator will get unbonded
+-   **Non-voting:** If a validator did not vote on a proposal and once the fault is reported by a someone, its stake will receive a minor slash.
 
 Note that even if a validator does not intentionally misbehave, it can still be slashed if its node crashes, looses connectivity, gets DDOSed, or if its private key is compromised. A complete document on the economics of the network will be published soon.
 
@@ -213,9 +213,9 @@ In order for delegators to have some guarantee about how much skin-in-the-game t
 
 For now the community is expected to behave in a smart and self-preserving way. When a mining pool in Bitcoin gets too much mining power the community usually stops contributing to that pool. The Cosmos Hub will rely on the same effect initially. In the future, other mechanisms will be deployed to smoothen this process as much as possible:
 
-* **Penalty-free re-delegation:** This is to allow delegators to easily switch from one validator to another, in order to reduce validator stickiness.
-* **Hack bounty:** This is an incentive for the community to hack validators. There will be bounties proportionate to the size of the validator, so that a validator becomes a bigger target as its stake grows.
-* **UI warning:** Users will be warned by Cosmos Voyager if they want to delegate to a validator that already has a significant amount of staking power.
+-   **Penalty-free re-delegation:** This is to allow delegators to easily switch from one validator to another, in order to reduce validator stickiness.
+-   **Hack bounty:** This is an incentive for the community to hack validators. There will be bounties proportionate to the size of the validator, so that a validator becomes a bigger target as its stake grows.
+-   **UI warning:** Users will be warned by Cosmos Voyager if they want to delegate to a validator that already has a significant amount of staking power.
 
 ## Technical requirements
 
@@ -245,11 +245,11 @@ A successful validator operation will require the efforts of multiple highly ski
 
 Validators should expect to run an HSM that supports ed25519 keys. Here are potential options:
 
-* YubiHSM 2
-* Ledger Nano S
-* Ledger BOLOS SGX enclave
-* Thales nShield support
-* Tendermint SGX enclave
+-   YubiHSM 2
+-   Ledger Nano S
+-   Ledger BOLOS SGX enclave
+-   Thales nShield support
+-   Tendermint SGX enclave
 
 The Tendermint team does not recommend one solution above the other. The community is encouraged to bolster the effort to improve HSMs and the security of key management.
 

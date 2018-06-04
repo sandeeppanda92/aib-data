@@ -2,14 +2,14 @@
 
 分布式账本网络
 
-Jae Kwon [jae@tendermint.com](mailto:jae@tendermint.com)<br>
-Ethan Buchman [ethan@tendermint.com](mailto:ethan@tendermint.com)
+Jae Kwon <mailto:jae@tendermint.com><br>
+Ethan Buchman <mailto:ethan@tendermint.com>
 
 加入我们的 [Matrix](https://riot.im/app/#/room/#cosmos:matrix.org)一起讨论吧！
 
 _注意：我们会对内容进行定期更新，您可以随时进行查阅，谢谢！_
 
-[[toc]]
+\[[toc]]
 
 ## 介绍
 
@@ -45,8 +45,8 @@ Tendermint是部分同步运作的拜占庭容错共识协议，这种协议源�
 
 Tendermint采用由绝对多数的选票（+⅔）选定的最优拜占庭容错算法，以及一套锁定机制来确保安全性。对此他们保证：
 
-- 想要违背安全必须有超过⅓的选票出现拜占庭问题，并且提交超过两个值。
-- 如果有任何验证组引起了安全问题，或者说是企图这么做，那么就会被协议发现，一方面针对有冲突的区块进行投票，同时广播那些有问题的选票。
+-   想要违背安全必须有超过⅓的选票出现拜占庭问题，并且提交超过两个值。
+-   如果有任何验证组引起了安全问题，或者说是企图这么做，那么就会被协议发现，一方面针对有冲突的区块进行投票，同时广播那些有问题的选票。
 
 除了其超强安全保障外，Tendermint还具备其他功效。以商品型云平台为例，Tendermint共识以分布在五大洲七个数据中心的64位节点为基准，其每秒可以处理成千上万笔交易，提交顺序延迟时间为1-2秒。而值得关注的是，即使是在极其恶劣的敌对环境中，比如验证人崩溃了或者是遇到蓄谋已久的恶意选票，也能维持这种每秒千笔交易的高绩效。详见下图。
 
@@ -68,15 +68,15 @@ Tendermint共识算法是在叫做Tendermint Core的程序中实现的。这个�
 
 我们将其与知名加密货币比特币进行了类比。在比特币这种加密币区块链中，每个节点都维持着完整的审核过的UTXO（未使用交易输出）数据库。如果您想要在TMSP基础上，创建出类似比特币的系统，那么Tendermint Core可以做到：
 
-- 在节点间共享区块及交易
-- 创建规范或不可改变的交易顺序（区块链）
+-   在节点间共享区块及交易
+-   创建规范或不可改变的交易顺序（区块链）
 
 同时，TMSP应用程序会负责：
 
-- 维护UTXO数据库
-- 验证交易的加密签名
-- 防止出现不存在的交易花费
-- 允许客户访问UTXO数据库
+-   维护UTXO数据库
+-   验证交易的加密签名
+-   防止出现不存在的交易花费
+-   允许客户访问UTXO数据库
 
 Tendermint能够通过为应用程序与共识的形成过程，提供简单的应用程序界面（API），来分解区块设计。
 
@@ -230,20 +230,18 @@ Tendermint区块链和比特币之类的工作量证明区块链不同，由于�
 
 在创世块诞生那天，验证人数量最多将设置为100，之后十年的增长率将在13%，最终达到300位验证人。
 
-```
-Year 0: 100
-Year 1: 113
-Year 2: 127
-Year 3: 144
-Year 4: 163
-Year 5: 184
-Year 6: 208
-Year 7: 235
-Year 8: 265
-Year 9: 300
-Year 10: 300
-...
-```
+    Year 0: 100
+    Year 1: 113
+    Year 2: 127
+    Year 3: 144
+    Year 4: 163
+    Year 5: 184
+    Year 6: 208
+    Year 7: 235
+    Year 8: 265
+    Year 9: 300
+    Year 10: 300
+    ...
 
 ### 成为创世日后首个验证人
 
@@ -281,11 +279,11 @@ Cosmos Hub通过分布式组织来运行，这类组织要求有一套完备的�
 
 对于每一个提案，投票人可能会投以下选项：
 
-- 同意
-- 强烈同意
-- 反对
-- 强烈反对
-- 弃权
+-   同意
+-   强烈同意
+-   反对
+-   强烈反对
+-   弃权
 
 决定采纳（或不采纳）提案需要严格的多数投"同意"或"强烈同意"（或者"反对"及"强烈反对"），但是超过1/3的人投"强烈反对"或"强烈支持"的话就可以否决大多数人的决定。如果大多数人的票都被否决，那么每个人都会得到惩罚，即损失否决惩罚费用块那一部分钱（ VetoPenaltyFeeBlocks，默认是一天的区块值 ，税费除外），而否决大多数决定的那一方也会受到额外的惩罚，即损失否决惩罚Atom（VetoPenaltyAtoms，默认为0.1%）。
 
@@ -343,10 +341,10 @@ Casper  [\[16\]](16)是针对以太坊提出的一个权益证明共识算法。
 
 Interledger协议 [\[14\]](14)严格来说不算是可扩展解决方案。它通过一个松散耦合的双边关系网络，为不同账本系统提供了特别的互操作性。比如闪电网络，ILP的目的就是促进支付，不过是以不同账本类型的支付为主，并且延展了原子交易机制，将哈希锁以及公证人的仲裁集（也叫做原子传输协议）都包括进去。用于维持账本间交易原子数的后面这种机制和Tendermint的轻客戸端SPV机制相似，因此就可以对ILP和Cosmos/IBC之间的区别加以解释了，具体如下：
 
-1. 在ILP中连接器的公证人不支持成员变动，并且不允许在公证人间进行灵活的权重。而IBC是专门为区块链设计的，其验证人可以有不同的权重，而且成员也可以根据区块链进程进行变动。
-2. 在闪电网络中，ILP付款接收人必须在线来发送确认函给发送者。而在IBC代币传输过程中，接收人区块链的验证组会负责提供确认，而非接收人。
-3. 两者最大的不同就是ILP的连接器不充当支付状态的权威方，而在Cosmos中，一个中心的验证人就是IBC代币传输状态以及每个空间所持代币总量（不是空间每个账户所持代币总量）的权威见证人。这是一个根本性创新，允许代币在空间里进行安全且非对称的传输，而在Cosmos中，充当ILP连接器的角色是一个持久且安全的区块链账本——Cosmos中心（Cosmos Hub）。
-4. ILP账本间支付需要由一份交易订单簿做支持，因为其不包括代币从一个账本到另一个账本的非对称传输，而只有价值或市场等值在传输。
+1.  在ILP中连接器的公证人不支持成员变动，并且不允许在公证人间进行灵活的权重。而IBC是专门为区块链设计的，其验证人可以有不同的权重，而且成员也可以根据区块链进程进行变动。
+2.  在闪电网络中，ILP付款接收人必须在线来发送确认函给发送者。而在IBC代币传输过程中，接收人区块链的验证组会负责提供确认，而非接收人。
+3.  两者最大的不同就是ILP的连接器不充当支付状态的权威方，而在Cosmos中，一个中心的验证人就是IBC代币传输状态以及每个空间所持代币总量（不是空间每个账户所持代币总量）的权威见证人。这是一个根本性创新，允许代币在空间里进行安全且非对称的传输，而在Cosmos中，充当ILP连接器的角色是一个持久且安全的区块链账本——Cosmos中心（Cosmos Hub）。
+4.  ILP账本间支付需要由一份交易订单簿做支持，因为其不包括代币从一个账本到另一个账本的非对称传输，而只有价值或市场等值在传输。
 
 #### 侧链
 
@@ -360,11 +358,11 @@ Interledger协议 [\[14\]](14)严格来说不算是可扩展解决方案。它�
 
 Cosmos和以太坊2.0 Mauve [\[22\]](22)有不同的设计目标。
 
-- Cosmos专注代币。而Mauve是和扩展普通计算相关。
-- Cosmos不一定是以太坊虚拟机，因此即使是不同的虚拟机也可以进行交互。
-- Cosmos可以让空间创建者决定谁来验证空间。
-- 任何人都可以在Cosmos开创新空间（除非管理有其他决定）。
-- 中心会隔离空间故障，这样全球代币的不变性就得到了维护。
+-   Cosmos专注代币。而Mauve是和扩展普通计算相关。
+-   Cosmos不一定是以太坊虚拟机，因此即使是不同的虚拟机也可以进行交互。
+-   Cosmos可以让空间创建者决定谁来验证空间。
+-   任何人都可以在Cosmos开创新空间（除非管理有其他决定）。
+-   中心会隔离空间故障，这样全球代币的不变性就得到了维护。
 
 ### 普通扩展
 
@@ -392,7 +390,7 @@ Cosmos和以太坊2.0 Mauve [\[22\]](22)有不同的设计目标。
 
 注意，协议中严格的决定论会招致较弱的同步假设，因为默认的首项必须被扣除且略过。因此，验证人在对Nil进行预投票前会等候一段时间（即_TimeoutPropose_ ，超时提议），而_TimeoutPropose_ 的值会随着每一轮的进行而增加。每一轮剩下的进程是完全同步的，在过程中只有验证人收到超过⅔的网络投票才会进入下一步。在实践中，这么做将需要超级强大的对手无限阻挠较弱的同步假设（导致共识无法提交区块），而且通过使用每个验证人的_TimeoutPropose_ 随机值还可加大其难度。
 
-另一套约束，或者锁定规则会确保最终在每个高度只提交一个区块，任何试图提交超过一个区块到指定高度的恶意行为都会被识别出来。首先，每个区块的预提交必须正当，并且以Polka的形式提交。如果验证人已经在_R\_1_轮预提交了一个区块，那么我们就认为它们被锁定在了这个区块，然后用于验证_R\_2_轮新预提交动作的Polka必须进入R_polka轮，其中 `R_1 < R_polka <= R_2`。第二，验证人必须提出并且/或者预投票它们被锁定的区块。这两步合起来，就可以确保验证人不会在没有充足证据证明正当性的前提下进行预提交，并且保证已经完成预提交的验证人不能再为其他东西的预提交贡献证明。这样不但可以保证安全，还能保证共识算法的活跃。
+另一套约束，或者锁定规则会确保最终在每个高度只提交一个区块，任何试图提交超过一个区块到指定高度的恶意行为都会被识别出来。首先，每个区块的预提交必须正当，并且以Polka的形式提交。如果验证人已经在_R_1_轮预提交了一个区块，那么我们就认为它们被锁定在了这个区块，然后用于验证_R_2_轮新预提交动作的Polka必须进入R_polka轮，其中 `R_1 < R_polka <= R_2`。第二，验证人必须提出并且/或者预投票它们被锁定的区块。这两步合起来，就可以确保验证人不会在没有充足证据证明正当性的前提下进行预提交，并且保证已经完成预提交的验证人不能再为其他东西的预提交贡献证明。这样不但可以保证安全，还能保证共识算法的活跃。
 
 关于这一协议的全部细节参考 [这里](https://github.com/tendermint/tendermint/wiki/Byzantine-Consensus-Algorithm)。
 
@@ -442,90 +440,90 @@ TMSP的要求/回应是简单的Protobuf信息。请参考这里的 [模式文�
 
 #### AppendTx（附加交易）
 
-- **命令行参数** :
-  - Data ([]byte): 所需交易的字节
-- **返回** :
-  - Code (uint32): 回复代码
-  - Data ([]byte): 结果字节，如果有的话
-  - Log (string): 调试或出错信息
-- **使用** :
-附加并运行一笔交易。如果交易有效，那返回CodeType.OK
+-   **命令行参数** :
+    -   Data (\[]byte): 所需交易的字节
+-   **返回** :
+    -   Code (uint32): 回复代码
+    -   Data (\[]byte): 结果字节，如果有的话
+    -   Log (string): 调试或出错信息
+-   **使用** :
+    附加并运行一笔交易。如果交易有效，那返回CodeType.OK
 
 #### CheckTx（检查交易）
 
-- **命令行参数** :
-  - Data ([]byte): 所需交易的字节
-- **返回** :
-  - Code (uint32): 回复代码
-  - Data ([]byte): 结果字节，如果有的话
-  - Log (string): 调试或出错信息
-- **使用** :
+-   **命令行参数** :
+    -   Data (\[]byte): 所需交易的字节
+-   **返回** :
+    -   Code (uint32): 回复代码
+    -   Data (\[]byte): 结果字节，如果有的话
+    -   Log (string): 调试或出错信息
+-   **使用** :
 
 验证一笔交易。这个信息不应该改变状态。交易在广播给内存池层对等节点前，首先通过CheckTx运行。你可以发起半状态化CheckTx，并在Commit or BeginBlock上清算状态，以允许执行同一区块中相关的交易序列。
 
 #### Commit（提交）
 
-- **返回** :
-  - Data ([]byte): 梅克尔根哈希
-  - Log (string): 调试或出错信息
-- **使用** :
-返回应用程序状态梅克尔根哈希。
+-   **返回** :
+    -   Data (\[]byte): 梅克尔根哈希
+    -   Log (string): 调试或出错信息
+-   **使用** :
+    返回应用程序状态梅克尔根哈希。
 
 #### Query（查询）
 
-- **命令行参数** :
-  - Data ([]byte): 查询需要的字节
-- **返回** :
-  - Code (uint32): 回复代码
-  - Data ([]byte): 查询回复字节
-  - Log (string): 调试或出错信息
+-   **命令行参数** :
+    -   Data (\[]byte): 查询需要的字节
+-   **返回** :
+    -   Code (uint32): 回复代码
+    -   Data (\[]byte): 查询回复字节
+    -   Log (string): 调试或出错信息
 
 #### Flush（划掉）
 
-- **使用** :
+-   **使用** :
 
 划掉回复队列。使用types.Application的应用程序无需实施这条信息——这个由项目进行处理。
 
-#### Info（信息）       
+#### Info（信息）
 
-- **返回** :
-  - Data ([]byte): 信息的字节
-- **使用** :
+-   **返回** :
+    -   Data (\[]byte): 信息的字节
+-   **使用** :
 
 返回关于应用程序状态的信息。Application specific.
 
 #### SetOption（设置选项）
 
-- **命令行参数** :
-  - Key (string): 设置密钥
-  - Value (string): 密钥设置的值
-- **返回** :
-  - Log (string): 调试或出错信息
-- **使用** :
-设置应用选项。比如，针对内存池的连接可以将密钥设置为"mode"（模式），价值为"mempool"（内存池）。或者针对共识连接，将密钥设置为"mode"，价值设置为"consensus"（共识）。其他选项根据可具体应用进行专门设置。
+-   **命令行参数** :
+    -   Key (string): 设置密钥
+    -   Value (string): 密钥设置的值
+-   **返回** :
+    -   Log (string): 调试或出错信息
+-   **使用** :
+    设置应用选项。比如，针对内存池的连接可以将密钥设置为"mode"（模式），价值为"mempool"（内存池）。或者针对共识连接，将密钥设置为"mode"，价值设置为"consensus"（共识）。其他选项根据可具体应用进行专门设置。
 
 #### InitChain（初始链）
 
-- **命令行参数** :
-  - Validators ([]Validator): 初始创世验证人
-- **使用** :
-在创世块生成后进行调用
+-   **命令行参数** :
+    -   Validators (\[]Validator): 初始创世验证人
+-   **使用** :
+    在创世块生成后进行调用
 
 #### BeginBlock（起始块）
 
-- **命令行参数** :
-  - Height (uint64): 区块刚开始的高度
-- **使用** :
-为新区块的开始提供信号。在任何附加交易（AppendTxs）前进行调用。
+-   **命令行参数** :
+    -   Height (uint64): 区块刚开始的高度
+-   **使用** :
+    为新区块的开始提供信号。在任何附加交易（AppendTxs）前进行调用。
 
 #### EndBlock（结束区块）
 
-- **命令行参数** :
-  - Height (uint64): 结束时的区块高度
-- **返回** :
-  - Validators ([]Validator): 具有新选票的变动后的验证人（归零就去除）
-- **使用** :
-为区块结束提供信号。在每次提交前所有交易后调用。
+-   **命令行参数** :
+    -   Height (uint64): 结束时的区块高度
+-   **返回** :
+    -   Validators (\[]Validator): 具有新选票的变动后的验证人（归零就去除）
+-   **使用** :
+    为区块结束提供信号。在每次提交前所有交易后调用。
 
 更多细节请参考 [TMSP知识库](https://github.com/tendermint/tmsp#message-types)。
 
@@ -539,61 +537,61 @@ TMSP的要求/回应是简单的Protobuf信息。请参考这里的 [模式文�
 
 首先，IBCBlockCommit 以及IBCPacketTx 是公布在"Hub"（中心）上用来证明"Zone1"（空间1）上的IBCPacket的存在的。假如IBCPacketTx 的值如下：
 
-- FromChainID: "Zone1"
-- FromBlockHeight: 100 (假如)
-- Packet: an IBCPacket:
-  - Header: an IBCPacketHeader:
-    - SrcChainID: "Zone1"
-    - DstChainID: "Zone2"
-    - Number: 200 (假如)
-    - Status: AckPending
-    - Type: "coin"
-    - MaxHeight: 350 (假如"Hub"目前的高度是300)
-  - Payload: &lt;The bytes of a "coin" payload&gt;（一个"代币"的有效负荷字节）
+-   FromChainID: "Zone1"
+-   FromBlockHeight: 100 (假如)
+-   Packet: an IBCPacket:
+    -   Header: an IBCPacketHeader:
+        -   SrcChainID: "Zone1"
+        -   DstChainID: "Zone2"
+        -   Number: 200 (假如)
+        -   Status: AckPending
+        -   Type: "coin"
+        -   MaxHeight: 350 (假如"Hub"目前的高度是300)
+    -   Payload: &lt;The bytes of a "coin" payload>（一个"代币"的有效负荷字节）
 
 第二步，IBCBlockCommit 和IBCPacketTx 被公布到"Zone2"（空间2）来证明IBCPacket 存在于"Hub"上。假如IBCPacketTx 的值如下：
 
-- FromChainID: "Hub"
-- FromBlockHeight: 300
-- Packet: an IBCPacket:
-  - Header: an IBCPacketHeader:
-    - SrcChainID: "Zone1"
-    - DstChainID: "Zone2"
-    - Number: 200
-    - Status: AckPending
-    - Type: "coin"
-    - MaxHeight: 350
-  - Payload: &lt;The same bytes of a "coin" payload&gt;（一个"代币"相同的有效负荷字节）
+-   FromChainID: "Hub"
+-   FromBlockHeight: 300
+-   Packet: an IBCPacket:
+    -   Header: an IBCPacketHeader:
+        -   SrcChainID: "Zone1"
+        -   DstChainID: "Zone2"
+        -   Number: 200
+        -   Status: AckPending
+        -   Type: "coin"
+        -   MaxHeight: 350
+    -   Payload: &lt;The same bytes of a "coin" payload>（一个"代币"相同的有效负荷字节）
 
 接下来，"Zone2"必须将缩写的包放入其应用程序哈希中来显示AckSent的最新状态。
 
 IBCBlockCommitand 和IBCPacketTx 会公布到"Hub"上来证明缩写的IBCPacket 存在于"Zone2"上。假如IBCPacketTx 的值如下：
 
-- FromChainID: "Zone2"
-- FromBlockHeight: 400 (say)
-- Packet: an IBCPacket:
-  - Header: an IBCPacketHeader:
-    - SrcChainID: "Zone1"
-    - DstChainID: "Zone2"
-    - Number: 200
-    - Status: AckSent
-    - Type: "coin"
-    - MaxHeight: 350
-  - PayloadHash: &lt;The hash bytes of the same "coin" payload&gt;（相同"代币"有效负荷的哈希字节）
+-   FromChainID: "Zone2"
+-   FromBlockHeight: 400 (say)
+-   Packet: an IBCPacket:
+    -   Header: an IBCPacketHeader:
+        -   SrcChainID: "Zone1"
+        -   DstChainID: "Zone2"
+        -   Number: 200
+        -   Status: AckSent
+        -   Type: "coin"
+        -   MaxHeight: 350
+    -   PayloadHash: &lt;The hash bytes of the same "coin" payload>（相同"代币"有效负荷的哈希字节）
 
 最后，"Hub"必须更新从AckPending 到AckReceived的包的状态。这个最新状态的证据要回到"Zone2"。假如IBCPacketTx 的值如下：
 
-- FromChainID: "Hub"
-- FromBlockHeight: 301
-- Packet: an IBCPacket:
-  - Header: an IBCPacketHeader:
-    - SrcChainID: "Zone1"
-    - DstChainID: "Zone2"
-    - Number: 200
-    - Status: AckReceived
-    - Type: "coin"
-    - MaxHeight: 350
-  - PayloadHash: &lt;The hash bytes of the same "coin" payload&gt;（相同"代币"有效负荷的哈希字节）
+-   FromChainID: "Hub"
+-   FromBlockHeight: 301
+-   Packet: an IBCPacket:
+    -   Header: an IBCPacketHeader:
+        -   SrcChainID: "Zone1"
+        -   DstChainID: "Zone2"
+        -   Number: 200
+        -   Status: AckReceived
+        -   Type: "coin"
+        -   MaxHeight: 350
+    -   PayloadHash: &lt;The hash bytes of the same "coin" payload>（相同"代币"有效负荷的哈希字节）
 
 同时，"Zone1"可能会积极地假设"代币"包的交付是成功的，除非"Hub"上有证据给出相反的证明。在上述例子中，如果"Hub"没有从"Zone2"接收到区块350的AckSent 状态，那么它就会自动将这个设置到Timeout（超时）。这个超时证据可以贴回到"Zone1"上，然后就可以返回任意代币。
 
@@ -607,22 +605,20 @@ Tendermint/Cosmos生态支持的梅克尔树有两种：简单的和IAVL+的。
 
 简易版梅克尔树针对的元素的静态列表。如果项的数目不是2的次方，那么有些树叶就会在不同的层。简易树试图让树的两侧在同一高度，但是左边可能会稍大一点。这种梅克尔树就是用于一个区块交易的梅克尔化的，而顶层元素就是应用状态根。
 
-```
-                *
-               / \
-             /     \
-           /         \
-         /             \
-        *               *
-       / \             / \
-      /   \           /   \
-     /     \         /     \
-    *       *       *       h6
-   / \     / \     / \
-  h0  h1  h2  h3  h4  h5
+                    *
+                   / \
+                 /     \
+               /         \
+             /             \
+            *               *
+           / \             / \
+          /   \           /   \
+         /     \         /     \
+        *       *       *       h6
+       / \     / \     / \
+      h0  h1  h2  h3  h4  h5
 
-  A SimpleTree with 7 elements
-```
+      A SimpleTree with 7 elements
 
 #### IAVL+梅克尔树
 
@@ -644,42 +640,42 @@ Cosmos Hub将接受几类主要交易，包括SendTx，BondTx，UnbondTx，Repor
 
 IBCBlockCommitTx 交易主要由这些组成：
 
-- ChainID (string): 区块链ID
-- BlockHash ([]byte): 区块哈希字节，就是梅克尔根（包括应用程序哈希）
-- BlockPartsHeader (PartSetHeader): 区块部分设置的头字节，只用于验证投票签名
-- BlockHeight (int): 提交高度
-- BlockRound (int): 提交回合
-- Commit ([]Vote): 超过⅔的Tendermint预提交投票，以组成区块提交项
-- ValidatorsHash ([]byte): 新验证组的梅克尔树根哈希
-- ValidatorsHashProof (SimpleProof): 简易版梅克尔树证明，在区块哈希中证明验证人哈希
-- AppHash ([]byte): IAVL树，应用程序状态的梅克尔树根哈希
-- AppHashProof (SimpleProof): 简易版梅克尔树证明，在区块哈希中验证应用程序哈希
+-   ChainID (string): 区块链ID
+-   BlockHash (\[]byte): 区块哈希字节，就是梅克尔根（包括应用程序哈希）
+-   BlockPartsHeader (PartSetHeader): 区块部分设置的头字节，只用于验证投票签名
+-   BlockHeight (int): 提交高度
+-   BlockRound (int): 提交回合
+-   Commit (\[]Vote): 超过⅔的Tendermint预提交投票，以组成区块提交项
+-   ValidatorsHash (\[]byte): 新验证组的梅克尔树根哈希
+-   ValidatorsHashProof (SimpleProof): 简易版梅克尔树证明，在区块哈希中证明验证人哈希
+-   AppHash (\[]byte): IAVL树，应用程序状态的梅克尔树根哈希
+-   AppHashProof (SimpleProof): 简易版梅克尔树证明，在区块哈希中验证应用程序哈希
 
 #### IBCPacketTx（IBC包交易）
 
 IBCPacket 由下列项组成：
 
-- Header (IBCPacketHeader): 包头
-- Payload ([]byte): 包有效负荷字节。_可选择_。
-- PayloadHash ([]byte): 包字节哈希。_可选择。_
+-   Header (IBCPacketHeader): 包头
+-   Payload (\[]byte): 包有效负荷字节。_可选择_。
+-   PayloadHash (\[]byte): 包字节哈希。_可选择。_
 
 有效负荷或有效负荷哈希必须存在一个。IBCPacket 的哈希就是两个项的简易版梅克尔根，即头和有效负荷。没有完整有效负荷的IBCPacket 被称作缩写版包。
 
 IBCPacketHeader由下列项组成：
 
-- SrcChainID (string): 源区块链ID
-- DstChainID (string): 目标区块链ID
-- Number (int): 所有包特定数量
-- Status (enum): 可以是AckPending，AckSent，AckReceived，NoAck，或Timeout任意一个
-- Type (string): 种类根据应用程序决定。Cosmos保留"coin"（币）包种类。
-- MaxHeight (int): 如果状态不是这个高度给出的NoAckWanted 或者AckReceived ，那么状态就算超时。_可选择。_
+-   SrcChainID (string): 源区块链ID
+-   DstChainID (string): 目标区块链ID
+-   Number (int): 所有包特定数量
+-   Status (enum): 可以是AckPending，AckSent，AckReceived，NoAck，或Timeout任意一个
+-   Type (string): 种类根据应用程序决定。Cosmos保留"coin"（币）包种类。
+-   MaxHeight (int): 如果状态不是这个高度给出的NoAckWanted 或者AckReceived ，那么状态就算超时。_可选择。_
 
 IBCPacketTx 交易有下列项组成：
 
-- FromChainID (string): 区块链ID，用于提供这个包，不是必要的来源
-- FromBlockHeight (int): 区块链高度，其中接下来的包会包含在源链的区块哈希中
-- Packet (IBCPacket): 数据包，其状态可以是AckPending，AckSent，AckReceived，NoAck，或Timeout任意一个
-- PacketProof (IAVLProof): IAVL树梅克尔证明，用于一定高度的源链中的应用哈希中验证包的哈希
+-   FromChainID (string): 区块链ID，用于提供这个包，不是必要的来源
+-   FromBlockHeight (int): 区块链高度，其中接下来的包会包含在源链的区块哈希中
+-   Packet (IBCPacket): 数据包，其状态可以是AckPending，AckSent，AckReceived，NoAck，或Timeout任意一个
+-   PacketProof (IAVLProof): IAVL树梅克尔证明，用于一定高度的源链中的应用哈希中验证包的哈希
 
 通过"Hub"，从"Zone1"发送到"Zone2"的包的序列会用{Figure X}函数进行描述。首先一次IBCPacketTx会向"Hub"证明包是包含在"Zone1"的应用程序状态中。然后，另一次IBCPacketTx 会向"Zone2"证明包包含在"Hub"的应用程序状态中。在这个过程中，IBCPacketTx 的域是一样的：SrcChainID永远是"Zone1"而DstChainID 永远是"Zone2"。
 
@@ -694,60 +690,81 @@ PacketProof 必须有正确的梅克尔证明路径，如下：
 感谢朋友及同行在概念成型与检查方面提供的帮助，以及对我们同Tendermint及Cosmos工作的支持。
 
 -   [SkuChain](https://www.skuchain.com/)的 [Zaki Manian](https://github.com/zmanian)在 格式和措辞方面提供了很多支持，尤其是TMSP部分。
-- Althea and Dustin Byington 的 [Jehan Trembac](https://github.com/jtremback) [k](https://github.com/jtremback) 在初始迭代方面帮助。
-- [Honey Badger](https://eprint.iacr.org/2016/199)的 [Andrew Miller](http://soc1024.com/) 对共识部分给予的反馈。
-- [Greg Slepak](https://fixingtao.com/)对共识及措辞给予的反馈。
-- 同时还要感谢  [Bill Gleim](https://github.com/gleim)和 [Seunghwan Han](http://www.seunghwanhan.com/)的各种支持与贡献。
-- **此处还有您及您的组织对本文的贡献。
+-   Althea and Dustin Byington 的 [Jehan Trembac](https://github.com/jtremback) [k](https://github.com/jtremback) 在初始迭代方面帮助。
+-   [Honey Badger](https://eprint.iacr.org/2016/199)的 [Andrew Miller](http://soc1024.com/) 对共识部分给予的反馈。
+-   [Greg Slepak](https://fixingtao.com/)对共识及措辞给予的反馈。
+-   同时还要感谢  [Bill Gleim](https://github.com/gleim)和 [Seunghwan Han](http://www.seunghwanhan.com/)的各种支持与贡献。
+-   \*\*此处还有您及您的组织对本文的贡献。
 
 ## 引用
 
 [1]: https://bitcoin.org/bitcoin.pdf
+
 [2]: http://zerocash-project.org/paper
+
 [3]: https://github.com/ethereum/wiki/wiki/White-Paper
+
 [4]: https://download.slock.it/public/DAO/WhitePaper.pdf
+
 [5]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+
 [6]: https://arxiv.org/pdf/1510.02037v2.pdf
+
 [7]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
+
 [8]: https://github.com/tendermint/tendermint/wiki
+
 [9]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
+
 [10]: https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/
+
 [11]: http://pmg.csail.mit.edu/papers/osdi99.pdf
+
 [12]: https://bitshares.org/technology/delegated-proof-of-stake-consensus/
+
 [13]: https://www.stellar.org/papers/stellar-consensus-protocol.pdf
+
 [14]: https://interledger.org/rfcs/0001-interledger-architecture/
+
 [15]: https://blockstream.com/sidechains.pdf
+
 [16]: https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
+
 [17]: https://github.com/tendermint/tmsp
+
 [18]: https://github.com/ethereum/EIPs/issues/53
+
 [19]: http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf
+
 [20]: http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
+
 [21]: https://en.bitcoin.it/wiki/Thin_Client_Security
+
 [22]: http://vitalik.ca/files/mauve_paper.html
 
-* [1] Bitcoin: https://bitcoin.org/bitcoin.pdf
-* [2] ZeroCash: http://zerocash-project.org/paper
-* [3] Ethereum: https://github.com/ethereum/wiki/wiki/White-Paper
-* [4] TheDAO: https://download.slock.it/public/DAO/WhitePaper.pdf
-* [5] Segregated Witness: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
-* [6] BitcoinNG: https://arxiv.org/pdf/1510.02037v2.pdf
-* [7] Lightning Network: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
-* [8] Tendermint: https://github.com/tendermint/tendermint/wiki
-* [9] FLP Impossibility: https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
-* [10] Slasher: https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/
-* [11] PBFT: http://pmg.csail.mit.edu/papers/osdi99.pdf
-* [12] BitShares: https://bitshares.org/technology/delegated-proof-of-stake-consensus/
-* [13] Stellar: https://www.stellar.org/papers/stellar-consensus-protocol.pdf
-* [14] Interledger: https://interledger.org/rfcs/0001-interledger-architecture/
-* [15] Sidechains: https://blockstream.com/sidechains.pdf
-* [16] Casper: https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
-* [17] TMSP: https://github.com/tendermint/tmsp
-* [18] Ethereum Sharding: https://github.com/ethereum/EIPs/issues/53
-* [19] LibSwift: http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf
-* [20] DLS: http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
-* [21] Thin Client Security: https://en.bitcoin.it/wiki/Thin_Client_Security
-* [22] Ethereum 2.0 Mauve Paper: http://vitalik.ca/files/mauve_paper.html
+-   [1] Bitcoin: <https://bitcoin.org/bitcoin.pdf>
+-   [2] ZeroCash: <http://zerocash-project.org/paper>
+-   [3] Ethereum: <https://github.com/ethereum/wiki/wiki/White-Paper>
+-   [4] TheDAO: <https://download.slock.it/public/DAO/WhitePaper.pdf>
+-   [5] Segregated Witness: <https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki>
+-   [6] BitcoinNG: <https://arxiv.org/pdf/1510.02037v2.pdf>
+-   [7] Lightning Network: <https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf>
+-   [8] Tendermint: <https://github.com/tendermint/tendermint/wiki>
+-   [9] FLP Impossibility: <https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf>
+-   [10] Slasher: <https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/>
+-   [11] PBFT: <http://pmg.csail.mit.edu/papers/osdi99.pdf>
+-   [12] BitShares: <https://bitshares.org/technology/delegated-proof-of-stake-consensus/>
+-   [13] Stellar: <https://www.stellar.org/papers/stellar-consensus-protocol.pdf>
+-   [14] Interledger: <https://interledger.org/rfcs/0001-interledger-architecture/>
+-   [15] Sidechains: <https://blockstream.com/sidechains.pdf>
+-   [16] Casper: <https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/>
+-   [17] TMSP: <https://github.com/tendermint/tmsp>
+-   [18] Ethereum Sharding: <https://github.com/ethereum/EIPs/issues/53>
+-   [19] LibSwift: <http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf>
+-   [20] DLS: <http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf>
+-   [21] Thin Client Security: <https://en.bitcoin.it/wiki/Thin_Client_Security>
+-   [22] Ethereum 2.0 Mauve Paper: <http://vitalik.ca/files/mauve_paper.html>
 
 #### 未分类链接
 
-* https://www.docdroid.net/ec7xGzs/314477721-ethereum-platform-review-opportunities-and-challenges-for-private-and-consortium-blockchains.pdf.html
+-   <https://www.docdroid.net/ec7xGzs/314477721-ethereum-platform-review-opportunities-and-challenges-for-private-and-consortium-blockchains.pdf.html>

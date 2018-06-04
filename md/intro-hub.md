@@ -26,9 +26,9 @@ A hard spoon occurs when a new cryptocurrency is minted by replicating the accou
 
 After launch, Atom holders will be able to vote on the hard spoon, specifically:
 
-* Whether the hard spoon should happen or not
-* When the snapshot will occur
-* How Photons are distributed (what goes to Ethereum holders, what goes to Atom holders and Photon inflation)
+-   Whether the hard spoon should happen or not
+-   When the snapshot will occur
+-   How Photons are distributed (what goes to Ethereum holders, what goes to Atom holders and Photon inflation)
 
 ## Validators
 

@@ -10,7 +10,8 @@
   "main": "README.md",
   "devDependencies": {},
   "scripts": {
-    "lint-md": "remark ."
+    "lint": "remark .",
+    "lint:fix": "remark . -o"
   },
   "repository": {
     "type": "git",

@@ -27,10 +27,10 @@ The Cosmos Network is the first project being funded by the Interchain Foundatio
 
 ### What's the difference between Tendermint, the Cosmos Network, and the Cosmos Hub?
 
-* [Tendermint](https://tendermint.com) is a general purpose blockchain engine that uses a Byzantine-fault tolerant consensus protocol and allows applications to be written in any programming language.
-* The Cosmos Network is a heterogenous network of Proof-of-Stake blockchains that can interoperate with one-another.
-* The Cosmos Hub is the first Proof-of-Stake blockchain to be launched by the Cosmos Network; it uses Tendermint consensus, contains a built in governance protocol, and serves as co-ordinater for interoperability between other blockchains.
-* Atoms: The native cryptocurrency on the Cosmos Hub. Atoms are necessary for participating in the consensus protocol and transacting on the network.
+-   [Tendermint](https://tendermint.com) is a general purpose blockchain engine that uses a Byzantine-fault tolerant consensus protocol and allows applications to be written in any programming language.
+-   The Cosmos Network is a heterogenous network of Proof-of-Stake blockchains that can interoperate with one-another.
+-   The Cosmos Hub is the first Proof-of-Stake blockchain to be launched by the Cosmos Network; it uses Tendermint consensus, contains a built in governance protocol, and serves as co-ordinater for interoperability between other blockchains.
+-   Atoms: The native cryptocurrency on the Cosmos Hub. Atoms are necessary for participating in the consensus protocol and transacting on the network.
 
 ### When will the Cosmos Network launch?
 
@@ -55,12 +55,10 @@ To achieve spam-prevention, all transactions on the Cosmos Hub must pay a fee in
 For tokens outside the Cosmos system, they can only be introduced via pegged
 derivatives. Read about interoperating with existing blockchains here: [Peggy](https://blog.cosmos.network/the-internet-of-blockchains-how-cosmos-does-interoperability-starting-with-the-ethereum-peg-zone-8744d4d2bc3f).
 
-``` 
-           _ peg smart contract
-          /
-  [  Ethereum  ] <--> [ EtherCosmos Peg Zone ] <-IBC-> [  Cosmos Hub  ] <-IBC-> (Bitcoin) [ PoW/Casper ]
-                      [      Tendermint      ]         [  Tendermint  ] <-IBC-> (exchange)
-```
+               _ peg smart contract
+              /
+      [  Ethereum  ] <--> [ EtherCosmos Peg Zone ] <-IBC-> [  Cosmos Hub  ] <-IBC-> (Bitcoin) [ PoW/Casper ]
+                          [      Tendermint      ]         [  Tendermint  ] <-IBC-> (exchange)
 
 ### How does Cosmos manage governance?
 
@@ -76,7 +74,7 @@ We will start with [100 validators](/staking/validators). Anyone else can be a n
 
 ### What will be the process for abandoning validators that misbehave?
 
-If a validator misbehaves on its own by double-signing at the same height &amp; round, then the evidence is very short and simple -- it's just the two conflicting votes.  This evidence can be included in the the Cosmos Hub as a Slash transaction, and the validator will immediately become inactive and slashed after the Slash transaction gets committed.
+If a validator misbehaves on its own by double-signing at the same height & round, then the evidence is very short and simple -- it's just the two conflicting votes.  This evidence can be included in the the Cosmos Hub as a Slash transaction, and the validator will immediately become inactive and slashed after the Slash transaction gets committed.
 
 If there is a zone fork, either of the Cosmos Hub or any of the zones, the two conflicting commits also constitute evidence.  This is a much more complicated data structure.  It is guaranteed to slash at least 1/3 of the validators' atoms for that zone.
 
@@ -84,7 +82,7 @@ If there is a zone fork, either of the Cosmos Hub or any of the zones, the two c
 
 A [validator](/staking/validators) has an active key involved in signing votes in the consensus protocol. A validator must also have some Atoms in a security deposit. Since there will only be a limitted number of validators, [other Atom holders can delegate](/staking/delegators) to the validators, thereby contributing to the economic security of the system by putting their funds on the line if the validator misbehaves. In return, they earn a share of the transaction fees and any inflationary rewards.
 
-### Can delegators also be validators?  
+### Can delegators also be validators?
 
 Delegators are never validators. If a validator wishes to delegate, they need to do so with their free and unbonded Atoms.
 

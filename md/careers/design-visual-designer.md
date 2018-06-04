@@ -10,22 +10,22 @@ This position will work closely with our Head of Design and Communications team 
 
 ### We're looking for someone who has:
 
-* A portfolio showing proficiency in delivering powerful creative ideas for print and web
-* 5+ years of visual design experience
-* Strong command of visual and communication design principles
-* Passion about graphic design, typography, illustration, and animation
-* Clear and concise communication skills
-* Skill in creating and presenting ideas in a understandable and inspiring manner
-* The ability to create work independently, as well as package and present solutions to the Design and Communications teams quickly and beautifully
-* Demonstrated mastery of the Adobe Creative Suite
-* Motivation and drive - they collaborate well with others to solve hard problems with simple solutions
-* A strong grasp on what makes content engaging and successful across multiple platforms and audiences
-* A keen understanding of designing for across international borders - the creative and cultural nuances
-* A desire for self improvement - they keep up with the evolving landscape of available design tools, technologies and resources
+-   A portfolio showing proficiency in delivering powerful creative ideas for print and web
+-   5+ years of visual design experience
+-   Strong command of visual and communication design principles
+-   Passion about graphic design, typography, illustration, and animation
+-   Clear and concise communication skills
+-   Skill in creating and presenting ideas in a understandable and inspiring manner
+-   The ability to create work independently, as well as package and present solutions to the Design and Communications teams quickly and beautifully
+-   Demonstrated mastery of the Adobe Creative Suite
+-   Motivation and drive - they collaborate well with others to solve hard problems with simple solutions
+-   A strong grasp on what makes content engaging and successful across multiple platforms and audiences
+-   A keen understanding of designing for across international borders - the creative and cultural nuances
+-   A desire for self improvement - they keep up with the evolving landscape of available design tools, technologies and resources
 
 ### Primary responsibilities:
 
-* Visual design for Tendermint and Cosmos across print, web, and digital media.
-* Presenting and collaborating on visuals with the Design and the Communications teams.
-* Working with the Head of Design to establish and maintain a company-wide style guide.
-* Deliverables will include logos, iconography, background illustrations, technical diagrams, merchandising, and designs for print.
+-   Visual design for Tendermint and Cosmos across print, web, and digital media.
+-   Presenting and collaborating on visuals with the Design and the Communications teams.
+-   Working with the Head of Design to establish and maintain a company-wide style guide.
+-   Deliverables will include logos, iconography, background illustrations, technical diagrams, merchandising, and designs for print.

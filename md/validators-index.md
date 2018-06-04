@@ -60,23 +60,17 @@ We recommend that validators run full nodes in the cloud and configure their val
 
 Validators nodes should edit their config.toml
 
-```
-# Comma separated list of nodes to keep persistent connections to
-# Do not add private peers to this list if you don't want them advertised
-persistent_peers =[list of sentry nodes]
+    # Comma separated list of nodes to keep persistent connections to
+    # Do not add private peers to this list if you don't want them advertised
+    persistent_peers =[list of sentry nodes]
 
-# Set true to enable the peer-exchange reactor
-pex = false
-```
+    # Set true to enable the peer-exchange reactor
+    pex = false
 
 Sentry Nodes should have edit config.toml to
-```
-# Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
-private_peer_ids = "ipaddress of validator nodes" 
 
-```
-
-
+    # Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
+    private_peer_ids = "ipaddress of validator nodes" 
 
 #### 7. Organize with your local jurisdiction
 
@@ -86,8 +80,8 @@ We strongly recommend that validators setup a separate company and not be run di
 
 Discuss the finer details of being a validator on our community chat and forum:
 
-* [Validator Chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org)
-* [Validator Forum](https://forum.cosmos.network/c/validating)
+-   [Validator Chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org)
+-   [Validator Forum](https://forum.cosmos.network/c/validating)
 
 Promote your validator's website by posting on [this thread in our forum](https://forum.cosmos.network/t/validator-candidates-websites/127).
 
@@ -95,4 +89,4 @@ Promote your validator's website by posting on [this thread in our forum](https:
 
 Subscribe to our Validator's mailing list to get the latest news about testnets, documentation, timelines and more!
 
-* [Validator Mailing List](https://tendermint.us8.list-manage.com/subscribe?u=89d5a312be95ee3f0c9cf7ecd&id=a8e72383ff)
+-   [Validator Mailing List](https://tendermint.us8.list-manage.com/subscribe?u=89d5a312be95ee3f0c9cf7ecd&id=a8e72383ff)

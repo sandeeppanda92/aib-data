@@ -15,8 +15,9 @@ The [peg zone 'Peggy'](https://ether.peg.zone) allows Ethereum users to move the
 ## Cosmos SDK
 
 The Cosmos SDK is an ABCI framework written in Golang that affords you all the tools you need to rapidly develop robust blockchains and blockchain applications which are interoperable with the Cosmos Hub. It is a blockchain development 'starter-pack' of common blockchain modules while not enforcing their use thus giving maximum flexibility for application customization. It is perfect to build highly-customizable public proof-of-stake blockchains.
-* 		[Cosmos SDK on GitHub](https://github.com/cosmos/cosmos-sdk)
-* 		[Cosmos SDK Documentation](http://cosmos-sdk.readthedocs.io/en/develop/)
+
+-       	[Cosmos SDK on GitHub](https://github.com/cosmos/cosmos-sdk)
+-       	[Cosmos SDK Documentation](http://cosmos-sdk.readthedocs.io/en/develop/)
 
 ## Discuss with us
 

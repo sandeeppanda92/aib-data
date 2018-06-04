@@ -12,11 +12,11 @@ We collect information from you when you register on our site, subscribe to a ne
 
 We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:
 
-* To improve our website in order to better serve you.
-* To allow us to better service you in responding to your customer service requests.
-* To administer a contest, promotion, survey or other site feature.
-* To send periodic emails regarding your order or other products and services.
-* To follow up with them after correspondence (live chat, email or phone inquiries)
+-   To improve our website in order to better serve you.
+-   To allow us to better service you in responding to your customer service requests.
+-   To administer a contest, promotion, survey or other site feature.
+-   To send periodic emails regarding your order or other products and services.
+-   To follow up with them after correspondence (live chat, email or phone inquiries)
 
 ## How do we protect your information?
 
@@ -56,7 +56,7 @@ You can opt out by visiting the Network Advertising Initiative Opt Out page or b
 
 ## California Online Privacy Protection Act
 
-CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. - See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf
+CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. - See more at: <http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf>
 
 ### According to CalOPPA, we agree to the following:
 
@@ -68,11 +68,11 @@ Our Privacy Policy link includes the word 'Privacy' and can easily be found on t
 
 You will be notified of any Privacy Policy changes:
 
-* On our Privacy Policy Page
+-   On our Privacy Policy Page
 
 Can change your personal information:
 
-* By emailing us
+-   By emailing us
 
 ### How does our site handle Do Not Track signals?
 
@@ -100,7 +100,7 @@ We will notify you via email
 
 We will notify the users via in-site notification
 
-* Within 7 business days
+-   Within 7 business days
 
 We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors.
 
@@ -110,25 +110,25 @@ The CAN-SPAM Act is a law that sets the rules for commercial email, establishes 
 
 ### We collect your email address in order to:
 
-* Send information, respond to inquiries, and/or other requests or questions
-* Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.
+-   Send information, respond to inquiries, and/or other requests or questions
+-   Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.
 
 ### To be in accordance with CANSPAM, we agree to the following:
 
-* Not use false or misleading subjects or email addresses.
-* Identify the message as an advertisement in some reasonable way.
-* Include the physical address of our business or site headquarters.
-* Monitor third-party email marketing services for compliance, if one is used.
-* Honor opt-out/unsubscribe requests quickly.
-* Allow users to unsubscribe by using the link at the bottom of each email.
+-   Not use false or misleading subjects or email addresses.
+-   Identify the message as an advertisement in some reasonable way.
+-   Include the physical address of our business or site headquarters.
+-   Monitor third-party email marketing services for compliance, if one is used.
+-   Honor opt-out/unsubscribe requests quickly.
+-   Allow users to unsubscribe by using the link at the bottom of each email.
 
 ## Contacting Us
 
 If there are any questions regarding this privacy policy, you may contact us using the information below.
 
-* Interchain Foundation
-* c/o Gubelstrasse 11
-* Zug, Zug 6300
-* Switzerland
+-   Interchain Foundation
+-   c/o Gubelstrasse 11
+-   Zug, Zug 6300
+-   Switzerland
 
 Last Edited on 2017-07-17

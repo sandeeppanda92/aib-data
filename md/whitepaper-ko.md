@@ -4,8 +4,8 @@
 
 **저자:**
 
-Jae Kwon [jae@tendermint.com](mailto:jae@tendermint.com)<br>
-Ethan Buchman [ethan@tendermint.com](mailto:ethan@tendermint.com)
+Jae Kwon <mailto:jae@tendermint.com><br>
+Ethan Buchman <mailto:ethan@tendermint.com>
 
 For discussions, [join our community chat](https://riot.im/app/#/room/#cosmos:matrix.org)!
 
@@ -13,9 +13,9 @@ For discussions, [join our community chat](https://riot.im/app/#/room/#cosmos:ma
 
 한승환, 이승민, 김기현, 윤승완, HJ Kim(금마), 김석현
 
-[[toc]]
+\[[toc]]
 
-## 서 론 (Introduction) ####################################################
+## 서 론 (Introduction)
 
 오픈 소스 생태계, 탈중앙화 파일 공유, 퍼블릭 암호화폐 등이 연달아 성공하면서 탈중앙화 인터넷 프로토콜들이 사회경제적 인프라를 근본적으로 개선하는데 사용될 수 있다는 것을 알게 되었다. 비트코인[\[1\]](https://bitcoin.org/bitcoin.pdf)(암호화폐)과 제로캐시[\[2\]](http://zerocash-project.org/paper)(프라이버시용 암호화폐) 같은 특화된 블록체인 어플리케이션들이 있었고, Augur(예측 시장)와 TheDAO[\[4\]](https://download.slock.it/public/DAO/WhitePaper.pdf)(투자 클럽) 같은 무수한 분산 애플리케이션들을 가진 이더리움(Ethereum)[\[3\]](https://github.com/ethereum/wiki/wiki/White-Paper) 같은 범용 스마트 컨트랙트 플랫폼들이 있었다.
 
@@ -35,11 +35,11 @@ For discussions, [join our community chat](https://riot.im/app/#/room/#cosmos:ma
 
 ### 검증인 (Validators)
 
-전형적인 비잔틴 장애 허용 알고리즘들(BFT: Byzantine fault-tolerant algorithms)에서는 각 노드가 동일한 가중치를 갖는다. 텐더민트에서는 노드들이 ‘0이상’의 *투표권(voting power)*을 가지며, 양(+)의 투표권을 갖는 노드들을 *검증인**(validators)*라고 부른다. 검증인들은 다음 블록에 동의하는 암호서명(cryptographic signature), 즉 *투표(vote)*를 전파(broadcast)함으로써 합의 프로토콜에 참여한다.
+전형적인 비잔틴 장애 허용 알고리즘들(BFT: Byzantine fault-tolerant algorithms)에서는 각 노드가 동일한 가중치를 갖는다. 텐더민트에서는 노드들이 ‘0이상’의 _투표권(voting power)_을 가지며, 양(+)의 투표권을 갖는 노드들을 _검증인\*\*(validators)_라고 부른다. 검증인들은 다음 블록에 동의하는 암호서명(cryptographic signature), 즉 _투표(vote)_를 전파(broadcast)함으로써 합의 프로토콜에 참여한다.
 
 검증인(validator)들의 투표권은 제네시스(genesis) 당시에 결정되거나 블록체인에 의해 결정론적으로(deterministically) 변경되기도 한다. 예를 들어, 코스모스 허브와 같은 지분증명 애플리케이션에서는 투표권이 담보물로서 본딩된(bonded) 지분 토큰(staking  token)의 양에 의해 결정될 수도 있다.
 
-*주: ⅔, ⅓과 같은 분수들은 모든 **검증인**들이 동등한 가중치를 갖지 않는 한, **검증인**들의 총수가 결코 아니라 총 투표권**에서 차지하는** **비중**을 가리킨다. 주: +⅔는 " ⅔ 초과"를 의미하**며**, ⅓+은 "⅓ 이상"을 의미한다.*
+_주: ⅔, ⅓과 같은 분수들은 모든 **검증인**들이 동등한 가중치를 갖지 않는 한, **검증인**들의 총수가 결코 아니라 총 투표권**에서 차지하는** **비중**을 가리킨다. 주: +⅔는 " ⅔ 초과"를 의미하**며**, ⅓+은 "⅓ 이상"을 의미한다._
 
 ### 합의 (Consensus)
 
@@ -49,11 +49,11 @@ For discussions, [join our community chat](https://riot.im/app/#/room/#cosmos:ma
 
 텐더민트 보안은 압도적 다수결(+⅔)과 잠금 메커니즘(locking mechanism)을 통해 최적의 비잔틴 장애 허용을 사용하는 것으로부터 유래한다. 다음을 보장한다.
 
-* 안전성을 저해(violation of safety)하기 위해서는 ⅓+의 투표권이 비잔틴이어야 하고, ‘2개를 초과하는 값들’이 커밋(commit)되어야 한다.
+-   안전성을 저해(violation of safety)하기 위해서는 ⅓+의 투표권이 비잔틴이어야 하고, ‘2개를 초과하는 값들’이 커밋(commit)되어야 한다.
 
-* 프로토콜은 임의의 검증인들 세트가 안전성을 저해하는 데 성공하거나 또는 시도만 하더라도, 이들을 식별할 수 있다. 충돌하는 블록들에 찬성 투표 하거나 정당하지 않은 투표들을 전파하는 이들 모두가 포함된다.
+-   프로토콜은 임의의 검증인들 세트가 안전성을 저해하는 데 성공하거나 또는 시도만 하더라도, 이들을 식별할 수 있다. 충돌하는 블록들에 찬성 투표 하거나 정당하지 않은 투표들을 전파하는 이들 모두가 포함된다.
 
-텐더민트는 강력한 보장들에 더해 성능면에서도 탁월하다. 5개 대륙 7개 데이터센터에 분산되어 있는 64개 노드의 대중품 클라우드(commodity cloud)를 기준으로, 텐더민트 합의는 약 1~2초의 커밋 지연속도(commit latencies)와 함께 초당 수천 개의 트랜잭션(transaction)를 처리한다. 특히, 검증인들이 실패하거나 악의적으로 조작된 투표를 전파하는 가혹한 공격 상황(adversarial conditions)에서도 초당 1,000번 수준의 트랜잭션 성능은 가볍게 능가한다. *아래 그림 참조*
+텐더민트는 강력한 보장들에 더해 성능면에서도 탁월하다. 5개 대륙 7개 데이터센터에 분산되어 있는 64개 노드의 대중품 클라우드(commodity cloud)를 기준으로, 텐더민트 합의는 약 1~2초의 커밋 지연속도(commit latencies)와 함께 초당 수천 개의 트랜잭션(transaction)를 처리한다. 특히, 검증인들이 실패하거나 악의적으로 조작된 투표를 전파하는 가혹한 공격 상황(adversarial conditions)에서도 초당 1,000번 수준의 트랜잭션 성능은 가볍게 능가한다. _아래 그림 참조_
 
 ![Figure of Tendermint throughput performance](https://raw.githubusercontent.com/gnuclear/atom-whitepaper/master/images/tendermint_throughput_blocksize.png)
 
@@ -73,27 +73,27 @@ For discussions, [join our community chat](https://riot.im/app/#/room/#cosmos:ma
 
 비트코인을 예로 들어보자면, 비트코인은 각 노드가 완전 감사되는 UTXO(fully audited Unspent Transaction Output) 데이터베이스를 유지하는 암호화폐 블록체인이다. 만일 누군가 비트코인과 같은 시스템(Bitcoin-like system)을 TMSP 상에 만들고자 하면, ‘**텐더민트 코어**’는 아래와 같은 부분들을 책임진다.
 
-* 노드 간 블록 및 이체 공유
+-   노드 간 블록 및 이체 공유
 
-* 정규(canomical)/변경배제(immutable) 이체순서의 확립(블록체인)
+-   정규(canomical)/변경배제(immutable) 이체순서의 확립(블록체인)
 
 반면, ‘**TMSP의 어플리케이션**’은 다음을 책임진다.
 
-* UTXO 데이터베이스 유지
+-   UTXO 데이터베이스 유지
 
-* 이체의 암호서명 검증
+-   이체의 암호서명 검증
 
-* 존재하지 않는 이체를 지불방지
+-   존재하지 않는 이체를 지불방지
 
-* 클라이언트들의 UTXO 데이터베이스에 대한 query 허용
+-   클라이언트들의 UTXO 데이터베이스에 대한 query 허용
 
 텐더민트는 애플리케이션 프로세스와 합의 프로세스 사이에 매우 단순한 API를 제공함으로써 블록체인 설계를 분해할 수 있다.
 
-## 코스모스 개요 (Cosmos Overview) #########################################
+## 코스모스 개요 (Cosmos Overview)
 
 코스모스는 독립 병렬 블록체인들의 네트워크이며, 해당 블록체인들은 각기 텐더민트와 같은 전형적인 BFT 합의 알고리즘에 기반한다[1].
 
-코스모스의 최초 블록체인이 곧 코스모스 허브가 된다. 코스모스 허브는 블록체인 간 통신(IBC) 프로토콜을 통해 다른 많은 블록체인들(즉, *존들*)과 연결된다. 코스모스 허브는 수많은 유형의 토큰을 추적하고, 연결된 각 존의 토큰 총 수를 기록한다. 모든 존들 간의 코인 전송은 코스모스 허브를 거치기 때문에 토큰은 존들 간의 유동 거래소(liquid exchange) 방식 없이 
+코스모스의 최초 블록체인이 곧 코스모스 허브가 된다. 코스모스 허브는 블록체인 간 통신(IBC) 프로토콜을 통해 다른 많은 블록체인들(즉, _존들_)과 연결된다. 코스모스 허브는 수많은 유형의 토큰을 추적하고, 연결된 각 존의 토큰 총 수를 기록한다. 모든 존들 간의 코인 전송은 코스모스 허브를 거치기 때문에 토큰은 존들 간의 유동 거래소(liquid exchange) 방식 없이 
 
 이 아키텍처는 어플리케이션 상호운용성, 확장성 그리고 무결절 업그레이드 가능성(seamless upgradability)을 포함한 블록체인이 직면한 많은 문제들을 해결한다. 예를 들면, Bitcoind, Go-Ethereum, 크립토노트(CryptoNote), ZCash 등을 포함한 임의의 블록체인 시스템으로부터 파생된 존들이 코스모스 허브에 연결될 수 있다. 이러한 존들을 통해 코스모스는 전역 이체(global transaction) 요구를 충족시킬 때까지 무한히 확장할 수 있다. 그리고 존들은 탈중앙화 거래소(distributed exchange)에도 매우 적합하며, 실제로 지원될 것이다.
 
@@ -119,7 +119,7 @@ For discussions, [join our community chat](https://riot.im/app/#/room/#cosmos:ma
 
 코스모스 네트워크는 상이한 정책의 존들 간 상호운용성을 확보함으로 사용자들에게 궁극적 자유와 실험의 기회를 제공한다.
 
-## 허브와 존 (The Hub and Zones) ###########################################
+## 허브와 존 (The Hub and Zones)
 
 여기서는 탈중앙화(decentralization)와 확장성(scalability)의 새로운 모델을 설명한다. 코스모스는 텐더민트에 기반한 복수의 블록체인들의 네트워크이다. 기존의 프로포잘들이 전역적 이체 순서(total global transaction ordering)를 가진 ‘단일 블록체인’을 목표로 하는 반면에, 코스모스는 수많은 블록체인들이 상호 병행 실행(run concurrently)하는 동시에 상호운용성을 확보하도록 한다.
 
@@ -141,7 +141,7 @@ For discussions, [join our community chat](https://riot.im/app/#/room/#cosmos:ma
 
 코스모스 허브의 아톰들은 허브의 검증인이 아니라, ‘허브에 연결된 존의 검증인’들에 의해 스테이킹될 수도 있다. 이 존들에 대한 이중지불 공격은 텐더민트의 포크 책임인 아톰의 대폭 감소(slashing)라는 결과를 가져오게 되는 반면, 투표권의 +⅔ 이 비잔틴인 존이라면 무효한 상태(invalid state)를 커밋할 수 있다. 코스모스 허브는 다른 존들에 커밋 된 이체들은 검증하거나 실행하지 않으므로, 자신이 신뢰하는 존으로 토큰을 전송하는 것은 사용자들의 책임이다. 장래에는 코스모스 허브의 거버넌스 시스템이 존 실패(failures)를 위한 허브 개선 프로포잘을 만들수도 있다. 예를 들면, 공격이 탐지될 때, 일부(또는 전체) 존들의 아웃바운드 토큰 전송을 억제함으로 ‘긴급 서킷 브레이킹(토큰 전송 일시중단)’을 할 수도 있다.
 
-## 블록체인 간 커뮤니케이션 (Inter-blockchain Communication (IBC)) #############
+## 블록체인 간 커뮤니케이션 (Inter-blockchain Communication (IBC))
 
 여기서는 허브와 존 간의 상호 통신방법을 설명한다. 예를 들어, ‘존1(Zone 1)’, ‘존2(Zone 2)’와 ‘허브(Hub)’의 세 블록체인이 있고, ‘존1’이 ‘허브’를 통과하여 ‘존2’로 가는 패킷을 만들고자 한다. 패킷이 하나의 블록체인에서 다른 블록체인으로 이동하기 위해, 송신 체인(sending chain)이 수신지로 가는 패킷을 발행했다는 증거를 수신 체인(receiving chain)에 포스팅한다. 수신 체인이 이 증거를 확인하기 위해서는 송신자의 블록 헤더(block headers) 정보를 알아야 한다. 이 메커니즘은 사이드체인(sidechain)이 사용하는 메커니즘과 유사한데, 상호 작용하는 두 체인이 ‘존재 증명 데이터그램의 양방향 스트림(a bidirectional stream of proof-of-existence datagram)’을 통해 서로를 ‘인식’해야한다 (이체).
 
@@ -155,7 +155,7 @@ IBC 구동방식을 IBCBlockCommitTx와 IBCPacketTx로 분할함으로, 수신�
 
 _두 IBC 이체 유형에 관한 보다 상세한 정보는 [IBCBlockCommitTx](#ibcblockcommittx) 와 [IBCPacketTx](#ibcpacketcommit) 를 참조._
 
-## 사용사례 (Use Cases) ########################################################
+## 사용사례 (Use Cases)
 
 ### 분산거래소 (Distributed Exchange)
 
@@ -205,7 +205,7 @@ _두 IBC 이체 유형에 관한 보다 상세한 정보는 [IBCBlockCommitTx](#
 
 네임코인(NameCoin)은 비트코인 블록체인을 이용하여 ‘명칭 결의(name-resolution)’ 문제를 해결하고자 한 최초의 블록체인 중 하나였다. 안타깝지만 이 접근법에는 몇 가지 문제들이 있었다.
 
-네임코인으로 예를 들면, *@satoshi*라는 명칭이 과거 어느 시점에 특정 공개키로 등록되었다는 것은 검증할 수 있지만, 이후의 모든 블록들을 다운로드 하지 않는 한 그 공개키가 이후로 업데이트 된 적이 있는지는 알 수 없다. 이는 비트코인의 UTXO 머클화 모델의 한계 때문인데, 이 모델에서는 ‘상태’가 아닌 ‘이체의 기록’만 블록 해시로 머클화된다--이는 존재를 증명하지만, 이후로 업데이트가 없었다는 것을 증명하지는 못한다. 따라서 완전 노드를 신뢰하거나 전체 블록체인을 다운로드 하면서 상당한 비용을 지불해야만 가장 최근 값을 확실히 알 수 있다.
+네임코인으로 예를 들면, _@satoshi_라는 명칭이 과거 어느 시점에 특정 공개키로 등록되었다는 것은 검증할 수 있지만, 이후의 모든 블록들을 다운로드 하지 않는 한 그 공개키가 이후로 업데이트 된 적이 있는지는 알 수 없다. 이는 비트코인의 UTXO 머클화 모델의 한계 때문인데, 이 모델에서는 ‘상태’가 아닌 ‘이체의 기록’만 블록 해시로 머클화된다--이는 존재를 증명하지만, 이후로 업데이트가 없었다는 것을 증명하지는 못한다. 따라서 완전 노드를 신뢰하거나 전체 블록체인을 다운로드 하면서 상당한 비용을 지불해야만 가장 최근 값을 확실히 알 수 있다.
 
 머클 탐색 트리(Merkle-ized search tree)가 네임코인에 구현되더라도, 작업증명에 대한 의존성 때문에 라이트 클라이언트 검증에서 문제가 생긴다. 라이트 클라이언트는 전체 블록체인의 블록헤더들(또는 적어도 마지막 업데이트 이후의 모든 헤더들)을 모두 다운로드 해야 한다. 이는 대역폭 사용이 소모시간과 함께 선형으로 증가한다는 것을 의미한다[\[21\]]][21]. 또한 작업증명 블록체인 위의 명칭 변경을 위해서는 추가적인 블록확인을 기다려야 하는데 이것이 비트코인에서는 최대 1시간까지도 걸릴 수 있다.
 
@@ -213,11 +213,11 @@ _두 IBC 이체 유형에 관한 보다 상세한 정보는 [IBCBlockCommitTx](#
 
 코스모스에서 이 개념을 확장시킬 수 있다. 코스모스의 각 명칭등록 존(name-registration zone)은 ‘.com’이나 ‘.org’와 같은 최상위 도메인(TLD: top-level-domain)을 가질 수 있고, 자체적인 거버넌스와 등록규칙을 설정할 수 있다.
 
-## 발행과 인센티브 (Issuance and Incentives) ###################################
+## 발행과 인센티브 (Issuance and Incentives)
 
 ### 아톰 토큰 (The Atom Token)
 
-코스모스 허브는 ‘다중자산 분산원장’이며 특별한 내부 토큰인 ‘*아톰(atom)*’을 가지고 있다. 아톰은 코스모스 허브의 유일한 지분 토큰(staking token)이다. 아톰은 보유자가 투표, 검증 또는 다른 검증인들에게 위임을 하기 위해 필요하다. 이더리움의 이더와 마찬가지로 아톰 역시 스팸공격 완화를 위한 이체수수료(transaction fees) 지불을 위해 사용될 수 있다. 추가되는 인플레이션 아톰(inflationary atoms)과 블록 이체수수료가 검증인들에게 그리고 검증인들에게 위임한 위임자들(delegators)에게 보상된다.
+코스모스 허브는 ‘다중자산 분산원장’이며 특별한 내부 토큰인 ‘_아톰(atom)_’을 가지고 있다. 아톰은 코스모스 허브의 유일한 지분 토큰(staking token)이다. 아톰은 보유자가 투표, 검증 또는 다른 검증인들에게 위임을 하기 위해 필요하다. 이더리움의 이더와 마찬가지로 아톰 역시 스팸공격 완화를 위한 이체수수료(transaction fees) 지불을 위해 사용될 수 있다. 추가되는 인플레이션 아톰(inflationary atoms)과 블록 이체수수료가 검증인들에게 그리고 검증인들에게 위임한 위임자들(delegators)에게 보상된다.
 
 BurnAtomTx 이체 기능을 통해 ‘지급 준비금 풀(reserve pool)’에서 일정 비율의 토큰 금액(proportionate amount of tokens)을 회수(recover)할 수 있다.
 
@@ -233,20 +233,18 @@ BurnAtomTx 이체 기능을 통해 ‘지급 준비금 풀(reserve pool)’에�
 
 제네시스 시에는 최대 검증인 수가 100명으로 설정될 것이고, 이 수치는 10년 동안 13%의 비율로 증가하여 최종적으로는 총 300명의 검증인을 가지게 될 것이다.
 
-```
-Year 0: 100
-Year 1: 113
-Year 2: 127
-Year 3: 144
-Year 4: 163
-Year 5: 184
-Year 6: 208
-Year 7: 235
-Year 8: 265
-Year 9: 300
-Year 10: 300
-...
-```
+    Year 0: 100
+    Year 1: 113
+    Year 2: 127
+    Year 3: 144
+    Year 4: 163
+    Year 5: 184
+    Year 6: 208
+    Year 7: 235
+    Year 8: 265
+    Year 9: 300
+    Year 10: 300
+    ...
 
 ### 제네시스 일이후에 검증인되기 (Becoming a Validator After Genesis Day)
 
@@ -288,11 +286,11 @@ Year 10: 300
 
 각 프로포잘에 대해, 투표자들은 다음의 옵션으로 투표할 수 있다:
 
-* Yay(찬성)
-* YayWithForce(강력히 찬성)
-* Nay(반대)
-* NayWithForce(강력히 반대)
-* Abstain(기권)
+-   Yay(찬성)
+-   YayWithForce(강력히 찬성)
+-   Nay(반대)
+-   NayWithForce(강력히 반대)
+-   Abstain(기권)
 
 프로포잘의 통과 여부를 결정시에는 과반수의 투표가 요구되지만, 1/3+이 "강력히(with force)" 반대 투표함으로써 과반수의 결정을 거부할 수 있다. 다만 이렇게 과반수가 거부될 경우, 모두가 ‘거부권패널티블록(VetoPenaltyFeeBlocks, 디폴트 1일 가치의 블록)’을 통해 수수료를 상실함으로 처벌 받고, 과반수 결정을 거부한 당사자는 자신의 아톰 중 ‘거부권패널티아톰(VetoPenaltyAtoms, 디폴트 0.1%)’ 만큼을 추가로 상실한다.
 
@@ -304,11 +302,11 @@ Year 10: 300
 
 다른 모든 프로포잘들(예. 업그레이드 프로포잘)은 일반적인 TextProposal을 통해 조정된다.
 
-## 로드맵 (Roadmap) ############################################################
+## 로드맵 (Roadmap)
 
 [Plan](https://github.com/cosmos/cosmos/blob/master/PLAN.md) 참조.
 
-## 관련 연구 (Related Work) ####################################################
+## 관련 연구 (Related Work)
 
 지난 수십 년 동안 블록체인 합의구조와 확장성 부분에서 많은 혁신이 있었다. 아래에서 중요한 몇 가지를 간략히 개관한다.
 
@@ -318,7 +316,7 @@ Year 10: 300
 
 악의적인 참여자가 있는 합의는 80년대 초로 거슬러 올라가는 문제인데, 이때 레슬리 램포트(Leslie Lamport)는 프로세스가 단순한 ‘충돌 장애(crash fault)’와는 대조되는 것으로, 의도된 행위로부터 벗어나는 임의의 프로세스 행위(process behavior)를 가리키는 ‘비잔틴 장애(Byzantine fault)'라는 용어를 만들었다. 초기의 솔루션들은 메시지 지연시간에 상한(upper bound)이 존재하는 동기식 네트워크들을 위한 것이었다. 하지만 실제 사용은 항공기 제어기와 원자시계를 통해 동기화되는 데이터센터 같은 고도로 통제된 환경들로 제한되었다. 임의의 프로세스 행위를 최대 ⅓까지 허용할 수 있는 효율적인 ‘부분 동기 합의 알고리즘’으로서 ‘실용적 비잔틴 장애 허용(PBFT: Practical Byzantine Fault Tolerance)’[\[11\]](11)이 도입된 것은 90년대 말이 되고 나서였다. PBFT는 표준 알고리즘이 되었고, 많은 파생 변형들을 만들어내었다. 가장 최근에는 IBM이 하이퍼레저(Hyperledger)에 기여를 위해 만든 변형이 있다.
 
-PBFT와 비교할때 텐더민트 합의구조의 중요한 장점은 텐더민트가 단순하고 개선된 기반 구조를 가진다는 것이고, 이 구조 중의 일부는 블록체인 패러다임을 수용한 결과이다. 텐더민트 블록들은 순서대로 커밋되는데, 이것이 PBFT의 관점 변화(view-changes)와 관련 있는 복잡도와 통신 오버헤드를 제거한다. 코스모스를 포함한 많은 암호화폐에서는, 블록 *N* 자체가 아직 커밋되지 않았을 때에는 블록 *N+i*(*i >= 1*)의 커밋을 고려할 필요가 없다. 블록 *N*이 코스모스 존에 커밋되지 않은 이유가 대역폭인 경우, *N+i* 블록들에 대해 대역폭 공유 투표(bandwidth sharing votes)를 사용해도 의미가 없다. 만일 네트워크 분할이나 오프라인 노드들 때문에 블록 *N*이 커밋되지 않은 경우, 블록 *N+i*은 어차피 커밋되지 않는다.
+PBFT와 비교할때 텐더민트 합의구조의 중요한 장점은 텐더민트가 단순하고 개선된 기반 구조를 가진다는 것이고, 이 구조 중의 일부는 블록체인 패러다임을 수용한 결과이다. 텐더민트 블록들은 순서대로 커밋되는데, 이것이 PBFT의 관점 변화(view-changes)와 관련 있는 복잡도와 통신 오버헤드를 제거한다. 코스모스를 포함한 많은 암호화폐에서는, 블록 _N_ 자체가 아직 커밋되지 않았을 때에는 블록 _N+i_(_i >= 1_)의 커밋을 고려할 필요가 없다. 블록 _N_이 코스모스 존에 커밋되지 않은 이유가 대역폭인 경우, _N+i_ 블록들에 대해 대역폭 공유 투표(bandwidth sharing votes)를 사용해도 의미가 없다. 만일 네트워크 분할이나 오프라인 노드들 때문에 블록 _N_이 커밋되지 않은 경우, 블록 _N+i_은 어차피 커밋되지 않는다.
 
 뿐만 아니라, 블록들 속으로 이체를 배칭(batching)함으로 PBFT의 체크포인팅(checkpointing) 기법 같은 주기적 다이제스트가 아닌, ‘어플리케이션 상태의 정규 머클 해싱’이 가능하다. 또한 이를 통해, 라이트 클라이언트들을 위한 보다 빠른 증명 가능한 이체 커밋과, 보다 빠른 블록체인 간 통신이 가능하다.
 
@@ -332,9 +330,9 @@ PBFT와 비교할때 텐더민트 합의구조의 중요한 장점은 텐더민�
 
 리플(Ripple)이 개척한 방식을 토대로, 스텔라(Stellar)[\[13\]](13)는 ‘연합형 비잔틴 합의(Federated Byzantine Agreement)’ 모델을 개선했는데, 여기에서는 합의참여 프로세스에서 ‘전역적으로 알려진 고정된 집합’을 요구하지는 않는다. 오히려 프로세스 노드는 각기 신뢰할 수 있는 프로세스 집합을 구성하는 하나 이상의 '정족수 슬라이스(quorum slices)'를 배포한다. 스텔라에서 '정족수'는 노드들의 집합(set)이며, 적어도 각 노드당 하나 이상의 정족수 슬라이스를 포함하여 합의에 도달하도록 한다.
 
-스텔라 메커니즘의 보안은 *임의의* 두 정족수의 교집합이 비공(non-empty)이라는 가정에 의존한다. 또한 노드의 가용성을 위해서는, 정족수 슬라이스들 중 적어도 하나가 완전히 올바른(entirely correct) 노드들로 구성되어야 하며, 신뢰에 관한 중요한 가정 없이는 큰 정족수 슬라이스와 작은 정족수 슬라이스 사용 간에 발생하는 상호관계의 균형유지가 어려울 수 있다. 궁극적으로는 노드들은 충분한 장애허용이 가능한 ‘적절한 정족수 슬라이스’ 또는 ‘온전한 노드들(intact nodes)’을 어떻게든 선택해야 한다. 또한 그런 구성을 보장하는 유일한 전략은 계층적이고, 경계 경로 프로토콜(BGP: Border Gateway Protocol)과도 유사하다. 이는 전역 라우팅 테이블 확립을 위해 인터넷의 최상위 계층 ISP들에 의해 사용되며, TLS 인증서를 관리하기 위해 브라우저들이 사용하기도 한다. 그러나 두 가지 모두 약한 보안성으로 악명높다.
+스텔라 메커니즘의 보안은 _임의의_ 두 정족수의 교집합이 비공(non-empty)이라는 가정에 의존한다. 또한 노드의 가용성을 위해서는, 정족수 슬라이스들 중 적어도 하나가 완전히 올바른(entirely correct) 노드들로 구성되어야 하며, 신뢰에 관한 중요한 가정 없이는 큰 정족수 슬라이스와 작은 정족수 슬라이스 사용 간에 발생하는 상호관계의 균형유지가 어려울 수 있다. 궁극적으로는 노드들은 충분한 장애허용이 가능한 ‘적절한 정족수 슬라이스’ 또는 ‘온전한 노드들(intact nodes)’을 어떻게든 선택해야 한다. 또한 그런 구성을 보장하는 유일한 전략은 계층적이고, 경계 경로 프로토콜(BGP: Border Gateway Protocol)과도 유사하다. 이는 전역 라우팅 테이블 확립을 위해 인터넷의 최상위 계층 ISP들에 의해 사용되며, TLS 인증서를 관리하기 위해 브라우저들이 사용하기도 한다. 그러나 두 가지 모두 약한 보안성으로 악명높다.
 
-스텔라 논문에서 비판한 ‘텐더민트 기반 지분 증명 시스템’들은 이곳에 기술된 토큰 전략을 통해 해명할 수 있다. 이 전략에서는 미래의 수수료 및 보상에 대한 권리인 *아톰*이라는 이름의 새로운 유형의 토큰이 발행된다. ‘텐더민트 기반 지분 증명’은 상대적으로 단순성을 유지하면서도, 충분한 그리고 입증 가능한 보안을 제공한다는 점에서 이점이 있다.
+스텔라 논문에서 비판한 ‘텐더민트 기반 지분 증명 시스템’들은 이곳에 기술된 토큰 전략을 통해 해명할 수 있다. 이 전략에서는 미래의 수수료 및 보상에 대한 권리인 _아톰_이라는 이름의 새로운 유형의 토큰이 발행된다. ‘텐더민트 기반 지분 증명’은 상대적으로 단순성을 유지하면서도, 충분한 그리고 입증 가능한 보안을 제공한다는 점에서 이점이 있다.
 
 #### 비트코인NG (BitcoinNG)
 
@@ -350,13 +348,13 @@ BitcoinNG는 블록 크기 확장과 같은 수직 확장성을 제공하는 방
 
 인터레저 프로토콜(Interledger protocol)[\[14\]](14)은 엄밀히는 확장성 솔루션이 아니다. 느슨하게 연결된 ‘쌍방 관계 네트워크’를 통해 상이한 원장 시스템들 간 ‘애드혹 상호운용성(ad hoc interoperation)’을 제공하는 방식이다. 라이트닝 네트워크(Lightning Network)의 경우처럼, ILP는 지불을 용이하게 하는 프로토콜인데, 특히 서로 다른 유형의 원장들 간 지불에 초점을 맞추며 ‘아톰 이체 메커니즘(atomic transaction mechanism)’을 확장하여 ‘해시 잠금(hash-locks)’과 ‘공증인 정족수(quorum of notaries)’를 포함하로독 했으며, 이를 ‘아톰 전송 프로트콜(Atomic Transport Protocol)’로 칭한다. ‘원장 간 이체의 원자성(atomicity)’을 확보하기 위한 이러한 메커니즘은 텐더민트의 ‘라이트 클라이언트 SPV’ 작동방식과도 유사하다. 하단에서 ILP와 코스모스/IBC를 비교해본다.
 
-1. ILP의 커넥터(connector) 공증인들은 구성원(membership) 변경을 지원하지 않으며 공증인들 간 유연한 가중치 부여를 지원하지 않는다. 반면에 IBC는 블록체인 전용으로 설계되었고, 검증인들이 상이한 가중치를 가질 수 있으며 블록체인을 통해 구성원들의 변경이 가능하다.
+1.  ILP의 커넥터(connector) 공증인들은 구성원(membership) 변경을 지원하지 않으며 공증인들 간 유연한 가중치 부여를 지원하지 않는다. 반면에 IBC는 블록체인 전용으로 설계되었고, 검증인들이 상이한 가중치를 가질 수 있으며 블록체인을 통해 구성원들의 변경이 가능하다.
 
-2. 라이트닝 네트워크나 ILP에서는 지불 수신자가 송신자에게 ‘확인’을 되돌려 보내기 위해 반드시 온라인 상태여야 한다. IBC를 통한 토큰 전송에서는, 수신자가 아니라, 수신자 블록체인의 검증인 세트가 ‘확인’을 제공할 책임이 있다.
+2.  라이트닝 네트워크나 ILP에서는 지불 수신자가 송신자에게 ‘확인’을 되돌려 보내기 위해 반드시 온라인 상태여야 한다. IBC를 통한 토큰 전송에서는, 수신자가 아니라, 수신자 블록체인의 검증인 세트가 ‘확인’을 제공할 책임이 있다.
 
-3. 가장 근본적인 차이는 ILP 커넥터들은 지불에 대한 책임을 지거나 권한 상태를 유지하고 있지 않은 반면에, 코스모스에서는 허브의 검증인들이 IBC토큰 전송과 각 존이 가진 토큰 총액에 대한 권한을 가진다는 점이다(그러나 존 내 각 계정이 보유한 토큰 금액에 대한 권한은 없다). 이는 존에서 존으로 비대칭 토큰 전송을 안전하게 실행하기 위한 근본적 혁신이다. 
+3.  가장 근본적인 차이는 ILP 커넥터들은 지불에 대한 책임을 지거나 권한 상태를 유지하고 있지 않은 반면에, 코스모스에서는 허브의 검증인들이 IBC토큰 전송과 각 존이 가진 토큰 총액에 대한 권한을 가진다는 점이다(그러나 존 내 각 계정이 보유한 토큰 금액에 대한 권한은 없다). 이는 존에서 존으로 비대칭 토큰 전송을 안전하게 실행하기 위한 근본적 혁신이다. 
 
-4. ILP에서 원장 간 지불을 하기 위해서는 거래소 오더북(exchange orderbook)의 지원이 필요한데, 이는 하나의 원장에서 다른 원장으로의 ‘코인 비대칭 전송’이 없고 ‘가치나 시장 등가물(market equivalents)’의 전송만 있기 때문이다.
+4.  ILP에서 원장 간 지불을 하기 위해서는 거래소 오더북(exchange orderbook)의 지원이 필요한데, 이는 하나의 원장에서 다른 원장으로의 ‘코인 비대칭 전송’이 없고 ‘가치나 시장 등가물(market equivalents)’의 전송만 있기 때문이다.
 
 #### 사이드체인 (Sidechains)
 
@@ -370,15 +368,15 @@ BitcoinNG는 블록 크기 확장과 같은 수직 확장성을 제공하는 방
 
 코스모스와 이더리움 2.0 Mauve[\[22\]](22)의 설계 목표에는 차이가 있다.
 
-* 코스모스가 토큰들에 대한 것이라면 Mauve는 일반 계산(general computation)의 스케일링에 관한 것이다.
+-   코스모스가 토큰들에 대한 것이라면 Mauve는 일반 계산(general computation)의 스케일링에 관한 것이다.
 
-* 코스모스는 EVM에 구속되지 않으며, 심지어는 서로 다른 VM들이 상호 운용될 수 있다.
+-   코스모스는 EVM에 구속되지 않으며, 심지어는 서로 다른 VM들이 상호 운용될 수 있다.
 
-* 코스모스는 존의 검증 책임자를 존의 생성자가 결정하도록 한다.
+-   코스모스는 존의 검증 책임자를 존의 생성자가 결정하도록 한다.
 
-* (거버넌스 시스템의 결정과 상충되지만 않는다면) 누구든지 코스모스에서 새 존을 시작할 수 있다.
+-   (거버넌스 시스템의 결정과 상충되지만 않는다면) 누구든지 코스모스에서 새 존을 시작할 수 있다.
 
-* 허브는 존 실패(zone failures)를 격리시키며, 이를 통해 ‘전역 토큰 불변성(global token invariants)’을 보증한다. 
+-   허브는 존 실패(zone failures)를 격리시키며, 이를 통해 ‘전역 토큰 불변성(global token invariants)’을 보증한다. 
 
 ### 일반 스케일링 (General Scaling)
 
@@ -386,7 +384,7 @@ BitcoinNG는 블록 크기 확장과 같은 수직 확장성을 제공하는 방
 
 라이트닝 네트워크는 비트코인 블록체인(그리고 그 밖의 퍼블릭 블록체인들)의 상위 계층에서 운용되도록 제안된 토큰 전송 네트워크로, 합의원장(consensus ledger) 외부의 대다수 이체들을 소위 ‘지불채널(payment channels)’로 이동시켜서 이체처리량(throughput)을 획기적으로 개선시킨다. 온 체인(on-chain) 암호화폐 스크립트를 통해 당사자들이 쌍무 상태기반 계약(bilateral stateful contracts)을 체결할 수 있도록 한다. 계약들의 상태는 디지털 서명에 의해 업데이트 되며, 또한 ‘크로스 체인 아토믹 스왑(cross-chain atomic swap)’를 통해 최초에 설정된 방식에 따라 합당한 증명을 블록체인에 전파함으로 계약이 마감된다. 다수의 당사자와 함께 지불 채널을 개방함으로, 라이트닝 네트워크의 참여자들은 당사자들이 지불을 라우팅하는 ‘포컬포인트(focal point)’의 역할을 할 수 있다. 또한 이러한 지불 채널에 실제 자본을 고정시킴으로 완전히 연결된 지불 채널을 개설하는 것도 가능하다.
 
-라이트닝 네트워크는 다수의 블록체인들에 걸쳐 확장되면서 교환시장을 통해 *가치(value)*를 전송하도록 하지만, 하나의 블록체인에서 다른 블록체인으로 *토큰(token)*을 비대칭적으로 전송하는 것은 불가능하다. 이와 관련된 코스모스 네트워크의 주된 이점은 그러한 토큰의 직접 전송을 지원한다는 것이다. 물론, 비용 절감과 프라이버시 차원에서 토큰 전송 메커니즘이 지불 채널들과 라이트닝 네트워크와 함께 적용되기를 기대한다.
+라이트닝 네트워크는 다수의 블록체인들에 걸쳐 확장되면서 교환시장을 통해 _가치(value)_를 전송하도록 하지만, 하나의 블록체인에서 다른 블록체인으로 _토큰(token)_을 비대칭적으로 전송하는 것은 불가능하다. 이와 관련된 코스모스 네트워크의 주된 이점은 그러한 토큰의 직접 전송을 지원한다는 것이다. 물론, 비용 절감과 프라이버시 차원에서 토큰 전송 메커니즘이 지불 채널들과 라이트닝 네트워크와 함께 적용되기를 기대한다.
 
 #### 세그위트 (Segregated Witness)
 
@@ -394,21 +392,21 @@ BitcoinNG는 블록 크기 확장과 같은 수직 확장성을 제공하는 방
 
 <hr/>
 
-## 부 록 (Appendix) ############################################################
+## 부 록 (Appendix)
 
 ### 포크 책임 (Fork Accountability)
 
-잘 설계된 합의 프로토콜이라면 허용 용량(tolerance capacity)이 초과되거나 합의가 실패할 경우에도 문제가 없어야 한다. 이는 ‘비잔틴 행동’에 상당한 금전적 보상이 있을 수 있는 경제시스템에서 특히 중요하다. 그러한 보장 중 가장 중요한 것이 ‘*포크 책임(fork-accountability)*’인데, 포킹과 같은 합의실패를 초래한 프로세스들이 프로토콜 규칙이나 법적 체계(가능하다면)에 의해 식별되고 처벌받을 수 있다. 법 체계를 신뢰할 수 없거나 적용하기에 과도한 비용이 들 경우, 검증인들이 담보 보증(security deposits)을 내고 참여하도록 하고 악영향을 주는 행위 시 해당 담보를 차감하거나 강제로 환수함으로 처벌할 수 있다[\[10\]](10). 
+잘 설계된 합의 프로토콜이라면 허용 용량(tolerance capacity)이 초과되거나 합의가 실패할 경우에도 문제가 없어야 한다. 이는 ‘비잔틴 행동’에 상당한 금전적 보상이 있을 수 있는 경제시스템에서 특히 중요하다. 그러한 보장 중 가장 중요한 것이 ‘_포크 책임(fork-accountability)_’인데, 포킹과 같은 합의실패를 초래한 프로세스들이 프로토콜 규칙이나 법적 체계(가능하다면)에 의해 식별되고 처벌받을 수 있다. 법 체계를 신뢰할 수 없거나 적용하기에 과도한 비용이 들 경우, 검증인들이 담보 보증(security deposits)을 내고 참여하도록 하고 악영향을 주는 행위 시 해당 담보를 차감하거나 강제로 환수함으로 처벌할 수 있다[\[10\]](10). 
 
 ‘포크 책임’에서 다루는 것은 비트코인에서처럼 ‘네트워크 비동시성’과 ‘부분적 해시충돌’ 특성으로 인해 일어나는 정상적 분기와는 큰 차이가 있다. 많은 경우, 비동시성 때문에 악의적 포킹을 가려내는 것이 거의 불가능하기 때문에 비트코인의 경우 채굴자들이 포킹을 시도하다가 고아블록이 되어버리는 기회비용을 제외하고는 특별히 ‘포크 책임’을 물게하는 것이 어렵다. 
 
 ### 텐더민트 합의 (Tendermint Consensus)
 
-투표 단계들은 *프리보트(PreVote)*와 *프리커밋(PreCommit)*으로 나뉜다. 투표는 특정 블록이나 ‘*무효(Nil)*’를 위해 행사될 수 있다. 동일 라운드에서 단일 블록에 대한 +⅔  PreVote 집합을 *폴카(Polka)*라고 부르며, 동일 라운드에서의 단일 블록에 대한 +⅔ PreCommit 집합을 *커밋(Commit)*이라고 부른다. 만일 동일 라운드에서 ‘무효(Nil)’에 +⅔ PreCommit 상태라면, 다음 라운드로 이동한다.
+투표 단계들은 _프리보트(PreVote)_와 _프리커밋(PreCommit)_으로 나뉜다. 투표는 특정 블록이나 ‘_무효(Nil)_’를 위해 행사될 수 있다. 동일 라운드에서 단일 블록에 대한 +⅔  PreVote 집합을 _폴카(Polka)_라고 부르며, 동일 라운드에서의 단일 블록에 대한 +⅔ PreCommit 집합을 _커밋(Commit)_이라고 부른다. 만일 동일 라운드에서 ‘무효(Nil)’에 +⅔ PreCommit 상태라면, 다음 라운드로 이동한다.
 
-결함 있는 리더들을 검출하고 무시하기 위해 엄격한 결정성(determinism)을 사용하다가 오히려 약한 동시성(synchrony)을 초래할 수 있다. 따라서 검증인들은 무효(Nil)를 Prevote하기 전에, 일정 시간(*TimeoutPropose)*을 기다리게 되며 이 TimeoutPropose 값은 매 라운드마다 점점 증가한다. 검증인이 네트워크의 +⅔ 로부터 전파받을 때에만 단 한번 진행이 되므로, 라운드의 나머지 부분 진행은 완전히 비동시적이다. 실제로, 약한 동시성 가정( weak synchrony assumption)을 계속해서 좌절시키고 결국 블록 커밋을 위한 합의를 실패시키기 위해서는 극단적으로 강한 공격자가 필요하다. 또한 각 검증인에게 서로 다른 TimeoutPropose 랜덤값을 적용한다면, 공격은 더욱 어려워진다.  
+결함 있는 리더들을 검출하고 무시하기 위해 엄격한 결정성(determinism)을 사용하다가 오히려 약한 동시성(synchrony)을 초래할 수 있다. 따라서 검증인들은 무효(Nil)를 Prevote하기 전에, 일정 시간(_TimeoutPropose)_을 기다리게 되며 이 TimeoutPropose 값은 매 라운드마다 점점 증가한다. 검증인이 네트워크의 +⅔ 로부터 전파받을 때에만 단 한번 진행이 되므로, 라운드의 나머지 부분 진행은 완전히 비동시적이다. 실제로, 약한 동시성 가정( weak synchrony assumption)을 계속해서 좌절시키고 결국 블록 커밋을 위한 합의를 실패시키기 위해서는 극단적으로 강한 공격자가 필요하다. 또한 각 검증인에게 서로 다른 TimeoutPropose 랜덤값을 적용한다면, 공격은 더욱 어려워진다.  
 
-‘추가 제약조건 집합’, 즉 ‘잠금 규칙(Locking Rules)’은 네트워크가 각 높이에서 단 하나의 블록만을 커밋하도록 보장한다. 특정한 높이에서 두 개 이상의 블록을 커밋되게 하려는 시도는 모두 발각될 수 있다. 첫째로, 블록에 대한 프리커밋(PreCommit)은 해당 블록에 대한 폴카의 형태로 정당화(justification)되어야 한다. 만일 검증인이 이미* R_1* 라운드에서 블록을 프리커밋했다면, 이는 해당 블록에 로킹*(locked)*되며, *R_2* 라운드의 새로운 프리커밋은 반드시 *R_1 < R_polka <= R_2*인 ‘R_polka 라운드’에서 발생해야한다. 둘째로, 검증인들은 자신들이 로킹되어 있는 블록을 제안(Propose)하거나 아니면 사전투표(PreVote)하거나 또는 둘을 함께 해야한다. 이를 통해 검증인은 충분한 증거 없이 프리커밋하지 못하며, 이미 프리커밋한 검증인의 경우 다른 블록을 동시에 프리커밋할 수 없게 된다. 이렇게 합의 알고리즘의 안전성(safety)과 라이브성(liveness)을 보장하게 된다.
+‘추가 제약조건 집합’, 즉 ‘잠금 규칙(Locking Rules)’은 네트워크가 각 높이에서 단 하나의 블록만을 커밋하도록 보장한다. 특정한 높이에서 두 개 이상의 블록을 커밋되게 하려는 시도는 모두 발각될 수 있다. 첫째로, 블록에 대한 프리커밋(PreCommit)은 해당 블록에 대한 폴카의 형태로 정당화(justification)되어야 한다. 만일 검증인이 이미_ R_1_ 라운드에서 블록을 프리커밋했다면, 이는 해당 블록에 로킹_(locked)_되며, _R_2_ 라운드의 새로운 프리커밋은 반드시 _R_1 &lt; R_polka &lt;= R_2_인 ‘R_polka 라운드’에서 발생해야한다. 둘째로, 검증인들은 자신들이 로킹되어 있는 블록을 제안(Propose)하거나 아니면 사전투표(PreVote)하거나 또는 둘을 함께 해야한다. 이를 통해 검증인은 충분한 증거 없이 프리커밋하지 못하며, 이미 프리커밋한 검증인의 경우 다른 블록을 동시에 프리커밋할 수 없게 된다. 이렇게 합의 알고리즘의 안전성(safety)과 라이브성(liveness)을 보장하게 된다.
 
 프로토콜의 전체 세부내용은 [여기](https://github.com/tendermint/tendermint/wiki/Byzantine-Consensus-Algorithm)를 참조
 
@@ -457,81 +455,89 @@ Commit 메시지는 다음 블록 헤더에 포함될 현재 애플리케이션 
 TMSP 요구/응답(TMSP requests/responses)은 간단한 Protobuf 메시지들이다. [스키마 파일(schema file)](https://github.com/tendermint/tmsp/blob/master/types/types.proto) 확인
 
 ##### AppendTx
-  * __Arguments__:
-    * `Data ([]byte)`: The request transaction bytes
-  * __Returns__:
-    * `Code (uint32)`: Response code
-    * `Data ([]byte)`: Result bytes, if any
-    * `Log (string)`: Debug or error message
-  * __사용법__:<br/>
+
+-   **Arguments**:
+    -   `Data ([]byte)`: The request transaction bytes
+-   **Returns**:
+    -   `Code (uint32)`: Response code
+    -   `Data ([]byte)`: Result bytes, if any
+    -   `Log (string)`: Debug or error message
+-   **사용법**:<br/>
     이체를 덧붙이고 실행한다. 이체가 유효할 경우, CodeType.OK를 반환한다.
 
 ##### CheckTx
-  * __Arguments__:
-    * `Data ([]byte)`: The request transaction bytes
-  * __Returns__:
-    * `Code (uint32)`: Response code
-    * `Data ([]byte)`: Result bytes, if any
-    * `Log (string)`: Debug or error message
-  * __사용법__:<br/>
+
+-   **Arguments**:
+    -   `Data ([]byte)`: The request transaction bytes
+-   **Returns**:
+    -   `Code (uint32)`: Response code
+    -   `Data ([]byte)`: Result bytes, if any
+    -   `Log (string)`: Debug or error message
+-   **사용법**:<br/>
     이체를 검증한다. 이 메시지가 상태를 변경(mutate)해서는 안 된다. 이체들은 mempool 계층의 피어들에게 전파되기 전, CheckTx를 통해 먼저 실행된다. 동일 블록 내 이체의 발생 순서를 고려하기 위해 CheckTx를 semi-stateful(준-상태기반)로 만들고 Commit 또는 BeginBlock 시에 상태를 클리어(clear) 할 수 있다.
 
 ##### 커밋 (Commit)
-  * __Returns__:
-    * `Data ([]byte)`: The Merkle root hash
-    * `Log (string)`: Debug or error message
-  * __사용법__:<br/>
+
+-   **Returns**:
+    -   `Data ([]byte)`: The Merkle root hash
+    -   `Log (string)`: Debug or error message
+-   **사용법**:<br/>
     애플리케이션 상태의 머클 루트 해시를 반환한다.
 
 ##### Query
-  * __Arguments__:
-    * `Data ([]byte)`: The query request bytes
-  * __Returns__:
-    * `Code (uint32)`: Response code
-    * `Data ([]byte)`: The query response bytes
-    * `Log (string)`: Debug or error message
 
+-   **Arguments**:
+    -   `Data ([]byte)`: The query request bytes
+-   **Returns**:
+    -   `Code (uint32)`: Response code
+    -   `Data ([]byte)`: The query response bytes
+    -   `Log (string)`: Debug or error message
 
 ##### Flush
-  * __사용법__:<br/>
+
+-   **사용법**:<br/>
     응답 대기행렬(response queue)을 플러시(flush)한다. types.Application을 구현하는 애플리케이션들은 이 메시지를 구현할 필요가 없다--프로젝트에 의해 처리되기 때문이다. 
 
 ##### Info
-  * __Returns__:
-    * `Data ([]byte)`: The info bytes
-  * __사용법__:<br/>
+
+-   **Returns**:
+    -   `Data ([]byte)`: The info bytes
+-   **사용법**:<br/>
     애플리케이션 상태에 관한 정보를 반환한다. 애플리케이션 특정적이다.
 
 ##### SetOption
-  * __Arguments__:
-    * `Key (string)`: Key to set
-    * `Value (string)`: Value to set for key
-  * __Returns__:
-    * `Log (string)`: Debug or error message
-  * __사용법__:<br/>
+
+-   **Arguments**:
+    -   `Key (string)`: Key to set
+    -   `Value (string)`: Value to set for key
+-   **Returns**:
+    -   `Log (string)`: Debug or error message
+-   **사용법**:<br/>
     애플리케이션 옵션을 설정한다. 예를 들어, mempool 연결을 위해서는 Key='mode', Value='mempool', 또는 합의 연결을 위해서는 Key='mode', Value='consensus'. 다른 옵션들은 각 애플리케이션마다 다르다.
 
 ##### InitChain
-  * __Arguments__:
-    * `Validators ([]Validator)`: Initial genesis-validators
-  * __사용법__:<br/>
+
+-   **Arguments**:
+    -   `Validators ([]Validator)`: Initial genesis-validators
+-   **사용법**:<br/>
     제네시스 시, 1회 호출됨.
 
 ##### BeginBlock
-  * __Arguments__:
-    * `Height (uint64)`: The block height that is starting
-  * __사용법__:<br/>
+
+-   **Arguments**:
+    -   `Height (uint64)`: The block height that is starting
+-   **사용법**:<br/>
     새 블록의 시작을 알린다. 모든 AppendTx에 앞서 호출됨.
 
 ##### EndBlock
-  * __Arguments__:
-    * `Height (uint64)`: The block height that ended
-  * __Returns__:
-    * `Validators ([]Validator)`: Changed validators with new voting powers (0
-      to remove)
-  * __사용법__:<br/>
-    블록의 끝을 알린다. 이체 후, 각 커밋에 앞서 호출됨.
 
+-   **Arguments**:
+    -   `Height (uint64)`: The block height that ended
+-   **Returns**:
+    -   `Validators ([]Validator)`: Changed validators with new voting powers (0
+        to remove)
+-   **사용법**:<br/>
+    블록의 끝을 알린다. 이체 후, 각 커밋에 앞서 호출됨.
 
 상세한 내용은 [TMSP 리포지토리(TMSP repository)](https://github.com/tendermint/tmsp#/h) 참조.
 
@@ -545,59 +551,59 @@ TMSP 요구/응답(TMSP requests/responses)은 간단한 Protobuf 메시지들�
 
 먼저, 'Zone 1'에 IBCPacket이 존재함을 증명하는 '허브'가 있다. 그리고 이 허브 위에 IBCBlockCommit과 IBCPacketTx가 포스팅된다. 예를 들어 IBCPacketTx는 다음과 같은 값을 갖는다:
 
-- `FromChainID`: "Zone1"
-- `FromBlockHeight`: 100 (say)
-- `Packet`: an `IBCPacket`:
-  - `Header`: an `IBCPacketHeader`:
-    - `SrcChainID`: "Zone1"
-    - `DstChainID`: "Zone2"
-    - `Number`: 200 (say)
-    - `Status`: `AckPending`
-    - `Type`: "coin"
-    - `MaxHeight`: 350 (say "Hub" is currently at height 300)
-  - `Payload`: &lt;The bytes of a "coin" payload&gt;
+-   `FromChainID`: "Zone1"
+-   `FromBlockHeight`: 100 (say)
+-   `Packet`: an `IBCPacket`:
+    -   `Header`: an `IBCPacketHeader`:
+        -   `SrcChainID`: "Zone1"
+        -   `DstChainID`: "Zone2"
+        -   `Number`: 200 (say)
+        -   `Status`: `AckPending`
+        -   `Type`: "coin"
+        -   `MaxHeight`: 350 (say "Hub" is currently at height 300)
+    -   `Payload`: &lt;The bytes of a "coin" payload>
 
-다음으로, '허브'에 IBCPacket이 존재함을 증명하는 'Zone 2' 위에 IBCBlockCommit과 IBCPacketTx가 포스팅된다. 예를 들면, IBCPacketTx는 다음과 같다:
+다음으로, '허브'에 IBCPacket이 존재함을 증명하는 'Zone 2' 위에 IBCBlockCommit과 IBCPacketTx가 포스팅된다. 예를 들면, IBCPacketTx는 다음과 같다:
 
-- `FromChainID`: "Hub"
-- `FromBlockHeight`: 300
-- `Packet`: an `IBCPacket`:
-  - `Header`: an `IBCPacketHeader`:
-    - `SrcChainID`: "Zone1"
-    - `DstChainID`: "Zone2"
-    - `Number`: 200
-    - `Status`: `AckPending`
-    - `Type`: "coin"
-    - `MaxHeight`: 350
-  - `Payload`: &lt;The same bytes of a "coin" payload&gt;
+-   `FromChainID`: "Hub"
+-   `FromBlockHeight`: 300
+-   `Packet`: an `IBCPacket`:
+    -   `Header`: an `IBCPacketHeader`:
+        -   `SrcChainID`: "Zone1"
+        -   `DstChainID`: "Zone2"
+        -   `Number`: 200
+        -   `Status`: `AckPending`
+        -   `Type`: "coin"
+        -   `MaxHeight`: 350
+    -   `Payload`: &lt;The same bytes of a "coin" payload>
 
 그 다음, 'Zone 2'는 앱-해시(app-hash)에 새로운 상태의 AckSent를 보이는 생략형 패킷을 반드시 포함해야 한다. 생략형 IBCPacket이 ‘Zone 2' 위에 존재함을 증명하는 '허브' 위에 IBCBlockCommit와 IBCPacketTx가 다시 포스팅된다. 예를 들면 IBCPacketTx는 다음과 같다:
 
-- `FromChainID`: "Zone2"
-- `FromBlockHeight`: 400 (say)
-- `Packet`: an `IBCPacket`:
-  - `Header`: an `IBCPacketHeader`:
-    - `SrcChainID`: "Zone1"
-    - `DstChainID`: "Zone2"
-    - `Number`: 200
-    - `Status`: `AckSent`
-    - `Type`: "coin"
-    - `MaxHeight`: 350
-  - `PayloadHash`: &lt;The hash bytes of the same "coin" payload&gt;
+-   `FromChainID`: "Zone2"
+-   `FromBlockHeight`: 400 (say)
+-   `Packet`: an `IBCPacket`:
+    -   `Header`: an `IBCPacketHeader`:
+        -   `SrcChainID`: "Zone1"
+        -   `DstChainID`: "Zone2"
+        -   `Number`: 200
+        -   `Status`: `AckSent`
+        -   `Type`: "coin"
+        -   `MaxHeight`: 350
+    -   `PayloadHash`: &lt;The hash bytes of the same "coin" payload>
 
 끝으로, '허브'는 패킷의 상태를 AckPending에서 AckReceived로 업데이트 해야 한다. 이 새로이 완결된 상태의 증거가 'Zone 2'로 되돌아간다. 예를 들면, IBCPacketTx는 다음과 같은 값을 갖는다:
 
-- `FromChainID`: "Hub"
-- `FromBlockHeight`: 301
-- `Packet`: an `IBCPacket`:
-  - `Header`: an `IBCPacketHeader`:
-    - `SrcChainID`: "Zone1"
-    - `DstChainID`: "Zone2"
-    - `Number`: 200
-    - `Status`: `AckReceived`
-    - `Type`: "coin"
-    - `MaxHeight`: 350
-  - `PayloadHash`: &lt;The hash bytes of the same "coin" payload&gt;
+-   `FromChainID`: "Hub"
+-   `FromBlockHeight`: 301
+-   `Packet`: an `IBCPacket`:
+    -   `Header`: an `IBCPacketHeader`:
+        -   `SrcChainID`: "Zone1"
+        -   `DstChainID`: "Zone2"
+        -   `Number`: 200
+        -   `Status`: `AckReceived`
+        -   `Type`: "coin"
+        -   `MaxHeight`: 350
+    -   `PayloadHash`: &lt;The hash bytes of the same "coin" payload>
 
 한편, 'Zone 1'은 ‘코인’패킷 전송의 실패가 '허브' 상에서 증명되지 않는 한, 성공적으로 전송될 것이라고 가정할 것이다. 위의 예에서, '허브'는 ‘블록 350’를 통해 'Zone 2'의 AckSent 상태를 수신하지 않는다면, 상태를 타임아웃(Timeout)으로 자동 설정했을 것이다. 이 타임아웃 증거가 'Zone 1'에 다시 포스팅 될 수 있고, 모든 토큰은 반환될 수 있다.
 
@@ -611,23 +617,20 @@ TMSP 요구/응답(TMSP requests/responses)은 간단한 Protobuf 메시지들�
 
 단순트리는 요소들(elements)의 정적 리스트(static list)를 위한 머클 트리이다. 항목의 수가 2의 거듭제곱이 아닐 경우, 잎들이 서로 다른 수준에 위치할 수 있다. 단순 트리는 트리의 양측면을 동일한 높이로 유지하고자 하지만, 좌측이 더 클 수도 있다. 이 머클 트리는 블록의 이체들을 그리고 애플리케이션 상태 루트의 최상위 요소들을 머클화 하기 위해 사용된다.
 
+                    *
+                   / \
+                 /     \
+               /         \
+             /             \
+            *               *
+           / \             / \
+          /   \           /   \
+         /     \         /     \
+        *       *       *       h6
+       / \     / \     / \
+      h0  h1  h2  h3  h4  h5
 
-```
-                *
-               / \
-             /     \
-           /         \
-         /             \
-        *               *
-       / \             / \
-      /   \           /   \
-     /     \         /     \
-    *       *       *       h6
-   / \     / \     / \
-  h0  h1  h2  h3  h4  h5
-
-  7요소의 단순트리
-```
+      7요소의 단순트리
 
 #### IAVL+ Tree
 
@@ -649,132 +652,149 @@ AVL+ 트리는 이더리움의 [패트리샤 트라이(Patricia tries)](http://e
 
 IBCBlockCommitTx 이체는 다음으로 구성된다:
 
-- `ChainID (string)`: The ID of the blockchain
-- `BlockHash ([]byte)`: The block-hash bytes, the Merkle root which includes the
-  app-hash
-- `BlockPartsHeader (PartSetHeader)`: The block part-set header bytes, only
-  needed to verify vote signatures
-- `BlockHeight (int)`: The height of the commit
-- `BlockRound (int)`: The round of the commit
-- `Commit ([]Vote)`: The +⅔ Tendermint `Precommit` votes that comprise a block
-  commit
-- `ValidatorsHash ([]byte)`: A Merkle-tree root hash of the new validator set
-- `ValidatorsHashProof (SimpleProof)`: A SimpleTree Merkle-proof for proving the
-  `ValidatorsHash` against the `BlockHash`
-- `AppHash ([]byte)`: A IAVLTree Merkle-tree root hash of the application state
-- `AppHashProof (SimpleProof)`: A SimpleTree Merkle-proof for proving the
-  `AppHash` against the `BlockHash`
+-   `ChainID (string)`: The ID of the blockchain
+-   `BlockHash ([]byte)`: The block-hash bytes, the Merkle root which includes the
+    app-hash
+-   `BlockPartsHeader (PartSetHeader)`: The block part-set header bytes, only
+    needed to verify vote signatures
+-   `BlockHeight (int)`: The height of the commit
+-   `BlockRound (int)`: The round of the commit
+-   `Commit ([]Vote)`: The +⅔ Tendermint `Precommit` votes that comprise a block
+    commit
+-   `ValidatorsHash ([]byte)`: A Merkle-tree root hash of the new validator set
+-   `ValidatorsHashProof (SimpleProof)`: A SimpleTree Merkle-proof for proving the
+    `ValidatorsHash` against the `BlockHash`
+-   `AppHash ([]byte)`: A IAVLTree Merkle-tree root hash of the application state
+-   `AppHashProof (SimpleProof)`: A SimpleTree Merkle-proof for proving the
+    `AppHash` against the `BlockHash`
 
 #### IBCPacketTx
 
 IBCPacket은 다음으로 구성된다:
 
-- `Header (IBCPacketHeader)`: The packet header
-- `Payload ([]byte)`: The bytes of the packet payload. _Optional_
-- `PayloadHash ([]byte)`: The hash for the bytes of the packet. _Optional_
+-   `Header (IBCPacketHeader)`: The packet header
+-   `Payload ([]byte)`: The bytes of the packet payload. _Optional_
+-   `PayloadHash ([]byte)`: The hash for the bytes of the packet. _Optional_
 
-Payload 또는 PayloadHash가 반드시 존재해야 한다. IBCPacket의 해시는 Header와 Payload의 단순 머클 루트이다. 전체 페이로드(full payload)가 없는 IBCPacket은 *생략형 패킷*(*abbreviated packet*)이라고 부른다.
+Payload 또는 PayloadHash가 반드시 존재해야 한다. IBCPacket의 해시는 Header와 Payload의 단순 머클 루트이다. 전체 페이로드(full payload)가 없는 IBCPacket은 _생략형 패킷_(_abbreviated packet_)이라고 부른다.
 
 IBCPacketHeader는 다음으로 구성된다.
 
-- `SrcChainID (string)`: The source blockchain ID
-- `DstChainID (string)`: The destination blockchain ID
-- `Number (int)`: A unique number for all packets
-- `Status (enum)`: Can be one of `AckPending`, `AckSent`, `AckReceived`,
-  `NoAck`, or `Timeout`
-- `Type (string)`: The types are application-dependent.  Cosmos reserves the
-  "coin" packet type
-- `MaxHeight (int)`: If status is not `NoAckWanted` or `AckReceived` by this
-  height, status becomes `Timeout`. _Optional_
+-   `SrcChainID (string)`: The source blockchain ID
+-   `DstChainID (string)`: The destination blockchain ID
+-   `Number (int)`: A unique number for all packets
+-   `Status (enum)`: Can be one of `AckPending`, `AckSent`, `AckReceived`,
+    `NoAck`, or `Timeout`
+-   `Type (string)`: The types are application-dependent.  Cosmos reserves the
+    "coin" packet type
+-   `MaxHeight (int)`: If status is not `NoAckWanted` or `AckReceived` by this
+    height, status becomes `Timeout`. _Optional_
 
 IBCPacketTx 이체는 다음으로 구성된다:
 
-- `FromChainID (string)`: The ID of the blockchain which is providing this
-  packet; not necessarily the source
-- `FromBlockHeight (int)`: The blockchain height in which the following packet
-  is included (Merkle-ized) in the block-hash of the source chain
-- `Packet (IBCPacket)`: A packet of data, whose status may be one of
-  `AckPending`, `AckSent`, `AckReceived`, `NoAck`, or `Timeout`
-- `PacketProof (IAVLProof)`: A IAVLTree Merkle-proof for proving the packet's
-  hash against the `AppHash` of the source chain at given height
+-   `FromChainID (string)`: The ID of the blockchain which is providing this
+    packet; not necessarily the source
+-   `FromBlockHeight (int)`: The blockchain height in which the following packet
+    is included (Merkle-ized) in the block-hash of the source chain
+-   `Packet (IBCPacket)`: A packet of data, whose status may be one of
+    `AckPending`, `AckSent`, `AckReceived`, `NoAck`, or `Timeout`
+-   `PacketProof (IAVLProof)`: A IAVLTree Merkle-proof for proving the packet's
+    hash against the `AppHash` of the source chain at given height
 
 '허브'를 통해 '존 1'에서 '존 2'로 패킷을 송신하기 위한 순서가 {그림 X}에 도시되어 있다. 먼저, IBCPacketTx가 패킷이 '존 1'의 앱-상태(app-state)에 포함되어 있음을 '허브'에 증명한다. 그 다음에 또 다른 IBCPacketTx가 패킷이 '허브'의 앱-상태에 포함되어 있음을 '존 2'에 증명한다. 이 절차 동안, IBCPacket 필드들은 동일하다: SrcChainID는 언제나 'Zone1(존 1)'이고 DstChainID는 언제나 'Zone2(존 2)'이다.
 
 PacketProof은 반드시 다음과 같은 올바른 머클 증명 경로를 포함해야 한다:
 
-
-```
-IBC/<SrcChainID>/<DstChainID>/<Number>
-
-```
+    IBC/<SrcChainID>/<DstChainID>/<Number>
 
 '존1'이 '허브'를 통해 '존2'로 패킷을 전송할 경우, 패킷이 '존1', '허브' 또는 '존2'의 어디에서 머클화 되든지 상관 없이 IBCPacket 데이터는 동일하다. 변경 가능한 유일한 필드는 전송 추적을 위한 Status(상태)이다.
 
-## 감사의 글 (Acknowledgements) ################################################
+## 감사의 글 (Acknowledgements)
 
 We thank our friends and peers for assistance in conceptualizing, reviewing, and
 providing support for our work with Tendermint and Cosmos.
 
-* [Zaki Manian](https://github.com/zmanian) of
-  [SkuChain](https://www.skuchain.com/) provided much help in formatting and
-wording, especially under the TMSP section
-* [Jehan Tremback](https://github.com/jtremback) of Althea and Dustin Byington
-  for helping with initial iterations
-* [Andrew Miller](http://soc1024.com/) of [Honey
-  Badger](https://eprint.iacr.org/2016/199) for feedback on consensus
-* [Greg Slepak](https://fixingtao.com/) for feedback on consensus and wording
-* Also thanks to [Bill Gleim](https://github.com/gleim) and [Seunghwan
-  Han](http://www.seunghwanhan.com) for various contributions.
-* __Your name and organization here for your contribution__
+-   [Zaki Manian](https://github.com/zmanian) of
+      [SkuChain](https://www.skuchain.com/) provided much help in formatting and
+    wording, especially under the TMSP section
+-   [Jehan Tremback](https://github.com/jtremback) of Althea and Dustin Byington
+    for helping with initial iterations
+-   [Andrew Miller](http://soc1024.com/) of [Honey
+    Badger](https://eprint.iacr.org/2016/199) for feedback on consensus
+-   [Greg Slepak](https://fixingtao.com/) for feedback on consensus and wording
+-   Also thanks to [Bill Gleim](https://github.com/gleim) and [Seunghwan
+    Han](http://www.seunghwanhan.com) for various contributions.
+-   **Your name and organization here for your contribution**
 
-## 인용 (Citations) ############################################################
+## 인용 (Citations)
 
 [1]: https://bitcoin.org/bitcoin.pdf
+
 [2]: http://zerocash-project.org/paper
+
 [3]: https://github.com/ethereum/wiki/wiki/White-Paper
+
 [4]: https://download.slock.it/public/DAO/WhitePaper.pdf
+
 [5]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+
 [6]: https://arxiv.org/pdf/1510.02037v2.pdf
+
 [7]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
+
 [8]: https://github.com/tendermint/tendermint/wiki
+
 [9]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
+
 [10]: https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/
+
 [11]: http://pmg.csail.mit.edu/papers/osdi99.pdf
+
 [12]: https://bitshares.org/technology/delegated-proof-of-stake-consensus/
+
 [13]: https://www.stellar.org/papers/stellar-consensus-protocol.pdf
+
 [14]: https://interledger.org/rfcs/0001-interledger-architecture/
+
 [15]: https://blockstream.com/sidechains.pdf
+
 [16]: https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
+
 [17]: https://github.com/tendermint/tmsp
+
 [18]: https://github.com/ethereum/EIPs/issues/53
+
 [19]: http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf
+
 [20]: http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
+
 [21]: https://en.bitcoin.it/wiki/Thin_Client_Security
+
 [22]: http://vitalik.ca/files/mauve_paper.html
 
-* [1] Bitcoin: https://bitcoin.org/bitcoin.pdf
-* [2] ZeroCash: http://zerocash-project.org/paper
-* [3] Ethereum: https://github.com/ethereum/wiki/wiki/White-Paper
-* [4] TheDAO: https://download.slock.it/public/DAO/WhitePaper.pdf
-* [5] Segregated Witness: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
-* [6] BitcoinNG: https://arxiv.org/pdf/1510.02037v2.pdf
-* [7] Lightning Network: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
-* [8] Tendermint: https://github.com/tendermint/tendermint/wiki
-* [9] FLP Impossibility: https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
-* [10] Slasher: https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/
-* [11] PBFT: http://pmg.csail.mit.edu/papers/osdi99.pdf
-* [12] BitShares: https://bitshares.org/technology/delegated-proof-of-stake-consensus/
-* [13] Stellar: https://www.stellar.org/papers/stellar-consensus-protocol.pdf
-* [14] Interledger: https://interledger.org/rfcs/0001-interledger-architecture/
-* [15] Sidechains: https://blockstream.com/sidechains.pdf
-* [16] Casper: https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
-* [17] TMSP: https://github.com/tendermint/tmsp
-* [18] Ethereum Sharding: https://github.com/ethereum/EIPs/issues/53
-* [19] LibSwift: http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf
-* [20] DLS: http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
-* [21] Thin Client Security: https://en.bitcoin.it/wiki/Thin_Client_Security
-* [22] Ethereum 2.0 Mauve Paper: http://vitalik.ca/files/mauve_paper.html
+-   [1] Bitcoin: <https://bitcoin.org/bitcoin.pdf>
+-   [2] ZeroCash: <http://zerocash-project.org/paper>
+-   [3] Ethereum: <https://github.com/ethereum/wiki/wiki/White-Paper>
+-   [4] TheDAO: <https://download.slock.it/public/DAO/WhitePaper.pdf>
+-   [5] Segregated Witness: <https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki>
+-   [6] BitcoinNG: <https://arxiv.org/pdf/1510.02037v2.pdf>
+-   [7] Lightning Network: <https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf>
+-   [8] Tendermint: <https://github.com/tendermint/tendermint/wiki>
+-   [9] FLP Impossibility: <https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf>
+-   [10] Slasher: <https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/>
+-   [11] PBFT: <http://pmg.csail.mit.edu/papers/osdi99.pdf>
+-   [12] BitShares: <https://bitshares.org/technology/delegated-proof-of-stake-consensus/>
+-   [13] Stellar: <https://www.stellar.org/papers/stellar-consensus-protocol.pdf>
+-   [14] Interledger: <https://interledger.org/rfcs/0001-interledger-architecture/>
+-   [15] Sidechains: <https://blockstream.com/sidechains.pdf>
+-   [16] Casper: <https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/>
+-   [17] TMSP: <https://github.com/tendermint/tmsp>
+-   [18] Ethereum Sharding: <https://github.com/ethereum/EIPs/issues/53>
+-   [19] LibSwift: <http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf>
+-   [20] DLS: <http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf>
+-   [21] Thin Client Security: <https://en.bitcoin.it/wiki/Thin_Client_Security>
+-   [22] Ethereum 2.0 Mauve Paper: <http://vitalik.ca/files/mauve_paper.html>
 
 #### 기타 링크 (Unsorted links)
 
-* [https://www.docdroid.net/ec7xGzs/314477721-ethereum-platform-review-opportunities-and-challenges-for-private-and-consortium-blockchains.pdf.html]
+-   [https://www.docdroid.net/ec7xGzs/314477721-ethereum-platform-review-opportunities-and-challenges-for-private-and-consortium-blockchains.pdf.html]

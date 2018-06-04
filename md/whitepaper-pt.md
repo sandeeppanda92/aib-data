@@ -1,4 +1,5 @@
 # Cosmos
+
 Uma Rede de Distribuição de Ledgers
 
 Jae Kwon jae@tendermint.com<br/>
@@ -8,7 +9,7 @@ Para discussões, [entre no nosso Matrix](https://riot.im/app/#/room/#cosmos:mat
 
 _NOTA: Se você pode ler isso no GitHub, então ainda estamos desenvolvendo este documento ativamente. Por favor, cheque regularmente as atualizações!_
 
-[[toc]]
+\[[toc]]
 
 O sucesso combinado do ecossistema de código aberto, compartilhamento
 de arquivos descentralizado e criptomoedas públicas tem inspirado um conhecimento sobre
@@ -65,7 +66,7 @@ a quantidade total de tokens detidas por cada zona. O hub isola cada zona da
 falha das outras zonas. Porque qualquer um pode conectar uma nova zona no Hub Cosmos,
 o que permite futuras compatibilidades com novas blockchains inovadoras.
 
-## Tendermint ##################################################################
+## Tendermint
 
 Nesta seção, descrevemos o protocolo de consenso da Tendermint e a interface
 usada para construir aplicações através dele. Para mais detalhes, consulte o [apêndice](#apêndice).
@@ -109,11 +110,11 @@ A segurança da Tendermint é baseada na tolerância e falhas clássicas Bizanti
 através de super-maioria (+⅔) e um mecanismo de bloqueio.  Juntas, elas garantem
 isso:
 
-* ⅓+ o poder de voto deve ser bizantino devido a violações de segurança, onde mais
-  que dois valores são comprometidos.
-* se algum conjunto de validadores tiver sucesso em violar a segurança, ou mesmo tentarem
-  para isso, eles podem ser identificados pelo protocolo. Isso inclui tanto o voto
-para blocos conflitantes quanto a transmissão de votos injustificados.
+-   ⅓+ o poder de voto deve ser bizantino devido a violações de segurança, onde mais
+      que dois valores são comprometidos.
+-   se algum conjunto de validadores tiver sucesso em violar a segurança, ou mesmo tentarem
+      para isso, eles podem ser identificados pelo protocolo. Isso inclui tanto o voto
+    para blocos conflitantes quanto a transmissão de votos injustificados.
 
 Apesar de suas fortes garantias, a Tendermint oferece um desempenho excepcional. Dentro
 de Benchmarks de 64 nós distribuídos em 7 datacenters em 5 continentes, em
@@ -162,20 +163,20 @@ blockchain de criptomoedas onde cada nó mantém uma Unspent totalmente auditada
 e banco de dados de saída de transação (UTXO). Se alguém quisesse criar um Bitcoin-like
 TMS, a Tendermint Core seria responsável por
 
-* Compartilhar blocos e transações entre os nós
-* Estabelecer uma ordem de transações canônica/imutável (a blockchain)
+-   Compartilhar blocos e transações entre os nós
+-   Estabelecer uma ordem de transações canônica/imutável (a blockchain)
 
 Entretanto, o aplicativo TMSP seria responsável por
 
-* Manter o banco de dados UTXO
-* Validar a criptografia das assinaturas das transações
-* Previnir transações vindas de gastos de fundos não exisentes
-* Permitir aos clientes a consulta do banco de dados UTXO
+-   Manter o banco de dados UTXO
+-   Validar a criptografia das assinaturas das transações
+-   Previnir transações vindas de gastos de fundos não exisentes
+-   Permitir aos clientes a consulta do banco de dados UTXO
 
 Tendermint é capaz de decompor o design da blockchain, oferecendo um simples
 API entre o processo da aplicação e o processo do consenso.
 
-## Visão Geral da Cosmos #############################################################
+## Visão Geral da Cosmos
 
 Cosmos é uma rede de blockchains paralelos e independentes que são alimentadas pelo
 clássico algorítimo de consenso BFT como a Tendermint
@@ -202,7 +203,7 @@ uma rede aberta de legers distribuídos que pode servir como um novo
 futuros para sistemas financeiros, baseados em princípios de criptografia, economia
 teoria de consenso, transparência e responsabilidade.
 
-### Tendermint-BFT 
+### Tendermint-BFT
 
 O Cosmos Hub é a primeira blockchain pública na rede Cosmos, alimentada pelo
 algoritimo de consenso BFT Tendermint. A Tendermint é um projeto de fonte aberta que
@@ -235,7 +236,7 @@ garantida pelo consenso BFT da Tendermint, e o depósito de garantia das
 partes interessadas - validadores e delegados - fornecem dados prováveis,
 segurança para os nós e clientes light.
 
-### Governança #################################################################
+### Governança
 
 Ledgers de distribuição pública devem ser constituídos de um sistema de governança.
 O Bitcoin confia na Fundação Bitcoin e na mineração para
@@ -259,7 +260,7 @@ Ao disponibilizar a interoperabilidade em diferentes políticas das zonas, a red
 dá aos usuários total liberdade e potenciais permissões para
 experimentos.
 
-## O Hub e as Zonas ###########################################################
+## O Hub e as Zonas
 
 Aqui nós descrevemos o modelo do roteiro de descentralização e ecalabilidade.  Cosmos é uma
 rede de muitas blockchains alimentadas pela Tendermint.  Enquanto existirem propostas visando
@@ -322,7 +323,7 @@ das zonas.  Por exemplo, um token de saída transferido para algumas (ou todas) 
 segurados em caso de uma emergência de quebra de circuito das zonas(uma parada temporária
 nas transferências dos tokens) quando um ataque é detectado.
 
-## Comunicação Inter-blockchain (IBC) ########################################
+## Comunicação Inter-blockchain (IBC)
 
 Agora nós olhamos para como o Hub e as zonas vão se comunicar.  Por exemplo, se
 aqui são três blockchains, "Zona1", "Zona2", and "Hub", e nós queremos que a
@@ -357,7 +358,7 @@ precisa ser feita no "Hub" com o hash de bloco da "Zona1" (ou na
 _Veja [IBCBlockCommitTx](#ibcblockcommittx) e [IBCPacketTx](#ibcpacketcommit)
 para mais informações sobre os 2 tipos de transação IBC._
 
-## Casos de Uso ###################################################################
+## Casos de Uso
 
 ### Exchange Distribuídas
 
@@ -437,7 +438,7 @@ Ether seja retirado.
 Naturalmente, o risco do contrato do pegging e um conjunto de validadores desonestos. -bizantino.
 O poder de voto bizantino poderia causar um fork, retirando o ether do
 peg-contract mantendo o pegged-ether na peg-zone. Na pior das hipóteses,
-+⅔ do poder de voto bizantino pode roubar o ether daqueles que o enviaram para o
+\+⅔ do poder de voto bizantino pode roubar o ether daqueles que o enviaram para o
 peg-contract, desviando-se da pegging e da peg-zone de origem.
 
 É possível abordar essas questões projetando o peg para ser totalmente
@@ -559,7 +560,7 @@ zona de registro de nomes na Cosmos pode ter um domínio de nível superior (TLD
 associado, como o ".com" ou ".org", e cada zona de registro de nome pode ter
 suas próprias regras de governança e registro.
 
-## Emissão e Incentivos #####################################################
+## Emissão e Incentivos
 
 ### O Token Atom
 
@@ -590,8 +591,8 @@ para detalhes adicionais.
 Para evitar que o levantamento de fundos atraia especuladores de curto prazo apenas interessados
 em esquemas de pump and dump, os atoms da Genesis não serão transferíveis até
 eles tenham investido. Cada conta irá adquirir atoms durante um período de 2 anos com
-taxa constante a cada hora, determinada pelo número total de atoms da Genesis/(2*
-365 * 24) horas. Os atoms ganhos pela recompensa do bloco são pré-investidos,
+taxa constante a cada hora, determinada pelo número total de atoms da Genesis/(2_
+365 _ 24) horas. Os atoms ganhos pela recompensa do bloco são pré-investidos,
 e podem ser transferidos imediatamente, de modo que os validadores e os delegados ligados possam ganhar
 mais da metade de seus atoms da Genesis após o primeiro ano.
 
@@ -608,20 +609,18 @@ No dia da Genesis, o número máximo de validadores será definido como 100,
 o número aumentará a uma taxa de 13% durante 10 anos até atingir a marca de 300
 Validadores.
 
-```
-Ano 0: 100
-Ano 1: 113
-Ano 2: 127
-Ano 3: 144
-Ano 4: 163
-Ano 5: 184
-Ano 6: 208
-Ano 7: 235
-Ano 8: 265
-Ano 9: 300
-Ano 10: 300
-...
-```
+    Ano 0: 100
+    Ano 1: 113
+    Ano 2: 127
+    Ano 3: 144
+    Ano 4: 163
+    Ano 5: 184
+    Ano 6: 208
+    Ano 7: 235
+    Ano 8: 265
+    Ano 9: 300
+    Ano 10: 300
+    ...
 
 ### Tornando-se um Validador depois do dia da Genesis
 
@@ -682,7 +681,7 @@ da delegação pelos delegados. A fim de incentivar a descoberta e notificação
 encontradas, o Cosmos Hub incentiva os hackers a publicar exploits bem sucedidos através de uma transação
 `ReportHackTx` que diz," Este validador foi hackeado. Por favor, envie recompensa para este endereço".
 Depois de tal exploração, o validador e os delegados ficarão inativos, `HackPunishmentRatio` (PADRÃO DE 5%)
-dos átomos de todos serão cortados, e` HackRewardRatio` (PADRÃO DE 5%) dos átomos de todos
+dos átomos de todos serão cortados, e`HackRewardRatio` (PADRÃO DE 5%) dos átomos de todos
 serão recompensado com o endereço de recompensa do hacker. O validador deve recuperar os átomos
 restantes usando sua chave de backup.
 
@@ -690,7 +689,7 @@ Para evitar que esse recurso seja abusado para transferir átomos não invadidos
 a porção de átomos adquirido vs relativo de validadores e delegados antes e depois do `ReportHackTx`
 permanecerá o mesmo, e o bounty do hacker irá incluir alguns átomos relativos, se houver.
 
-### Específicação de Governança ###################################################
+### Específicação de Governança
 
 O Cosmos Hub é operado por uma organização distribuída que requer um mecanismo de
 governança bem definido para coordenar várias mudanças na blockchain, como parâmetros 
@@ -711,11 +710,11 @@ o depósito vai para a pool reserva, exceto os átomos que são queimados.
 
 Para cada proposta, os eleitores podem votar nas seguintes opições:
 
-* Sim
-* Com Certeza
-* Não
-* Nunca
-* Abstenção
+-   Sim
+-   Com Certeza
+-   Não
+-   Nunca
+-   Abstenção
 
 É necessário uma maioria estrita de votos Yea(Sim) ou YeaWithForce(Com certeza) 
 (ou votos Nay(Não) ou NayWithForce(Nunca)) para que a proposta seja decidida como aceita 
@@ -734,11 +733,11 @@ de um `ParameterChangeProposal`.
 
 Todas as outras propostas, como uma proposta de atualização do protocolo, serão coordenadas através do genérico `TextProposal`.
 
-## Roteiro #####################################################################
+## Roteiro
 
 Veja [o Plano Cosmos](https://github.com/cosmos/cosmos/blob/master/PLAN.md).
 
-## Trabalho Relacionado ################################################################
+## Trabalho Relacionado
 
 Houve muitas inovações no consenso da blockchain e na escalabilidade nos últimos dois anos.
 Esta seção fornece um breve levantamento de um seleto número das mais importantes.
@@ -802,7 +801,7 @@ um conjunto fixo e globalmente conhecido. Em vez disso, cada nó de processo cod
 Stellar é definido como um conjunto de nós que contêm pelo menos uma fatia de quórum para cada 
 nó no conjunto, de modo que o acordo possa ser alcançado.
 
-A segurança do mecanismo Stellar baseia-se no pressuposto de que a intersecção de *qualquer* dois
+A segurança do mecanismo Stellar baseia-se no pressuposto de que a intersecção de _qualquer_ dois
 quóruns é não-vazia, enquanto a disponibilidade de um nó requer pelo menos uma das suas fatias de 
 quórum para consistir inteiramente de nós corretos, criando um troca externa entre o uso de grandes 
 ou pequenas fatias-quórum que podem ser difíceis de equilíbrar sem impor pressupostos significativos 
@@ -855,24 +854,24 @@ quórum de notários (chamado de Atomic Transport Protocol). O último mecanismo
 atomicidade em transacções entre-ledger é semelhante ao mecanismo SPV do cliente leve do Tendermint,
 então uma ilustração da distinção entre ILP e Cosmos/IBC é garantida, e fornecida abaixo.
 
-1. Os notários de um conector em ILP não suportam mudanças de consentimento, e não permitem uma 
-pesagem flexível entre notários. Por outro lado, o IBC é projetado especificamente para blockchains,
-onde os validadores podem ter diferentes pesos, e onde o consentimento pode mudar ao longo da cadeia de blocos.
+1.  Os notários de um conector em ILP não suportam mudanças de consentimento, e não permitem uma 
+    pesagem flexível entre notários. Por outro lado, o IBC é projetado especificamente para blockchains,
+    onde os validadores podem ter diferentes pesos, e onde o consentimento pode mudar ao longo da cadeia de blocos.
 
-2. Como na Lightning Network, o receptor do pagamento em ILP deve estar on-line para enviar 
-uma confirmação de volta ao remetente. Em uma transferência de token sobre IBC, o conjunto
-de validadores da blockchain do receptor é responsável por fornecer a confirmação, não o usuário receptor.
+2.  Como na Lightning Network, o receptor do pagamento em ILP deve estar on-line para enviar 
+    uma confirmação de volta ao remetente. Em uma transferência de token sobre IBC, o conjunto
+    de validadores da blockchain do receptor é responsável por fornecer a confirmação, não o usuário receptor.
 
-3. A diferença mais notável é que os conectores do ILP não são responsáveis ou mantêm o estado 
-autoritário sobre os pagamentos, enquanto que no Cosmos, os validadores de um hub são a autoridade
-do estado das transferências de tokens do IBC, bem como a autoridade da quantidade de tokens 
-mantidos por cada zona (mas não a quantidade de tokens mantidos por cada conta dentro de uma zona).
-Esta é a inovação fundamental que permite a tranferência assimétrica segura de tokens de zona para
-zona; O conector analógico do ILP no Cosmos é uma persistente e maximamente segura ledger de blockchain, o Cosmos Hub.
+3.  A diferença mais notável é que os conectores do ILP não são responsáveis ou mantêm o estado 
+    autoritário sobre os pagamentos, enquanto que no Cosmos, os validadores de um hub são a autoridade
+    do estado das transferências de tokens do IBC, bem como a autoridade da quantidade de tokens 
+    mantidos por cada zona (mas não a quantidade de tokens mantidos por cada conta dentro de uma zona).
+    Esta é a inovação fundamental que permite a tranferência assimétrica segura de tokens de zona para
+    zona; O conector analógico do ILP no Cosmos é uma persistente e maximamente segura ledger de blockchain, o Cosmos Hub.
 
-4. Os pagamentos entre contas no ILP precisam ser suportados por uma ordem de compra/venda, uma 
-vez que não há transferência assimétrica de moedas de um ledger para outro, apenas a transferência 
-de valor ou equivalentes de mercado.
+4.  Os pagamentos entre contas no ILP precisam ser suportados por uma ordem de compra/venda, uma 
+    vez que não há transferência assimétrica de moedas de um ledger para outro, apenas a transferência 
+    de valor ou equivalentes de mercado.
 
 #### Sidechains
 
@@ -896,14 +895,14 @@ Ethereum Virtual Machine através do espaço de estado compartilhado. Vários es
 pesquisa estão em andamento neste momento. [\[18\]][18][\[22\]][22]
 
 ##### Cosmos vs Ethereum 2.0 Mauve
- 
+
 Cosmos e Ethereum 2.0 Mauve [\[22\]][22] tem diferentes objetivos de projeto.
 
-* Cosmos é especificamente sobre tokens. Malva é sobre escalonamento de computação geral.
-* O Cosmos não está ligado ao EVM, por isso mesmo VMs diferentes podem interoperar.
-* Cosmos permite que o criador da zona determine quem valida a zona.
-* Qualquer pessoa pode iniciar uma nova zona no Cosmos (a menos que a governança decida o contrário).
-* O hub isola falhas de zonas de modo que tokens invariantes sejam preservados.
+-   Cosmos é especificamente sobre tokens. Malva é sobre escalonamento de computação geral.
+-   O Cosmos não está ligado ao EVM, por isso mesmo VMs diferentes podem interoperar.
+-   Cosmos permite que o criador da zona determine quem valida a zona.
+-   Qualquer pessoa pode iniciar uma nova zona no Cosmos (a menos que a governança decida o contrário).
+-   O hub isola falhas de zonas de modo que tokens invariantes sejam preservados.
 
 ### Escala Geral
 
@@ -942,7 +941,7 @@ a escala vertical também.
 
 <hr/>
 
-## Apêndice ####################################################################
+## Apêndice
 
 ### Responsabilidade de Fork
 
@@ -962,7 +961,7 @@ um fork malicioso é indistinguível de um fork devido à assincronia, o Bitcoin
 forma confiável a responsabilidade de um fork, com exceção do custo implícito pago por mineradores que 
 tem a oportunidade de minerarem um bloco órfão.
 
-### Consenso Tendermint 
+### Consenso Tendermint
 
 Chamamos as fases de votação de _PreVote_ e _PreCommit_. Um voto pode ser para um bloco em particular ou 
 para _Nil_. Chamamos uma coleção de +⅔ PreVotes para um único bloco na mesma rodada de um _Polka_, e uma 
@@ -981,7 +980,7 @@ Um conjunto adicional de restrições, ou Locking Rules(Regras de bloqueio), gar
 por confirmar apenas um bloco em cada altura. Qualquer tentativa maliciosa de confirmar de causar um
 bloco a ser confirmado a uma determinada altura pode ser identificada. Primeiro, um PreCommit para um
 bloco deve vir com justificação, na forma de um Polka para esse bloco. Se o validador já tiver PreCommit
-um bloco na rodada <em>R_1</em>, nós dizemos que eles estão _locked_ nesse bloco, e o Polka usado
+um bloco na rodada <em>R_1</em>, nós dizemos que eles estão \_locked_ nesse bloco, e o Polka usado
 para justificar o novo PreCommit na rodada <em>R_2</em> deve vir de uma rodada <em>R_polka</em> 
 onde <em>R_1 &lt; R_polka &lt;= R_2</em>. Em segundo lugar, os validadores devem propor e/ou pré-votar
 o bloco que eles estão travados. Juntas, essas condições garantem que um validador não PreCommit
@@ -998,7 +997,7 @@ a existência de uma cadeia alternativa (um fork) significando que ⅓+ do stake
 Naturalmente, a partir que dividir requer que _someone_ compartilhe evidência de um fork, clientes leves 
 devem armazenar qualquer bloco-hash comprometido que eles vêem. Além disso, os clientes leves podem
 periodicamente ficarem sincronizados com as alterações no conjunto de validadores, para evitar
-[ataques de longo alcance] (#preventing-long-range-attacks) (mas outras soluções são possíveis).
+[ataques de longo alcance](#preventing-long-range-attacks) (mas outras soluções são possíveis).
 
 Em espírito semelhante do Ethereum, o Tendermint permite que os aplicativos incorporem um hash de raiz 
 Merkle global em cada bloco, permitindo verifícações fáceis de consultas de estado para fins como saldos
@@ -1077,7 +1076,7 @@ devem verificar as assinaturas na proposta de reorganização, verificar qualque
 evidência e fazer um julgamento ou solicitar ao usuário final uma decisão. Por exemplo,
 uma carteira para celular um aplicativo que pode alertar o usuário com um aviso de segurança, 
 enquanto um refrigerador pode aceitar qualquer proposta de reorganização assinada por 
-+½ dos validadores originais por poder de voto.
+\+½ dos validadores originais por poder de voto.
 
 Nenhum algoritmo não-sincrônico tolerante a falhas Bizantino pode chegar a um consenso quando ⅓+
 de poder de voto for desonesto, mas um fork supõe que ⅓+ do poder de voto já foram desonestos por
@@ -1134,91 +1133,101 @@ Mensagens TMSP adicionais permitem que o aplicativo acompanhe e altere o conjunt
 de validadores e que o aplicativo receba as informações do bloco, como a altura e os votos de confirmação.
 
 Pedidos/respostas TMSP são simples mensagens Protobuf.
-Confira o [arquivo do esquema] (https://github.com/tendermint/tmsp/blob/master/types/types.proto).
+Confira o [arquivo do esquema](https://github.com/tendermint/tmsp/blob/master/types/types.proto).
 
 ##### AppendTx
-  * __Arguments__:
-    * `Data ([]byte)`: Os bytes de transação solicitada
-  * __Returns__:
-    * `Code (uint32)`: Código de resposta
-    * `Data ([]byte)`: Bytes de resultado, se houver
-    * `Log (string)`: Debug ou mensagem de erro
-  * __Usage__:<br/>
-    Acrescentar e executar uma transação. Se a transação for válida,
-CodeType.OK
+
+-   **Arguments**:
+    -   `Data ([]byte)`: Os bytes de transação solicitada
+-   **Returns**:
+    -   `Code (uint32)`: Código de resposta
+    -   `Data ([]byte)`: Bytes de resultado, se houver
+    -   `Log (string)`: Debug ou mensagem de erro
+-   **Usage**:<br/>
+        Acrescentar e executar uma transação. Se a transação for válida,
+    CodeType.OK
 
 ##### CheckTx
-  * __Arguments__:
-    * `Data ([]byte)`: Os bytes de transação solicitados
-  * __Returns__:
-    * `Code (uint32)`: Código de resposta
-    * `Data ([]byte)`: Bytes de resultado, se houver
-    * `Log (string)`: Debug ou mensagem de erro
-  * __Usage__:<br/>
-    Validar uma transação. Esta mensagem não deve mutar o estado.
-    As transações são primeiro executadas através do CheckTx antes da transmissão para os pares na camada mempool.
-    Você pode fazer o CheckTx semi-stateful e limpar o estado após `Commit` ou
-`BeginBlock`,
-    para permitir sequências dependentes de transações no mesmo bloco.
+
+-   **Arguments**:
+    -   `Data ([]byte)`: Os bytes de transação solicitados
+-   **Returns**:
+    -   `Code (uint32)`: Código de resposta
+    -   `Data ([]byte)`: Bytes de resultado, se houver
+    -   `Log (string)`: Debug ou mensagem de erro
+-   **Usage**:<br/>
+        Validar uma transação. Esta mensagem não deve mutar o estado.
+        As transações são primeiro executadas através do CheckTx antes da transmissão para os pares na camada mempool.
+        Você pode fazer o CheckTx semi-stateful e limpar o estado após `Commit` ou
+    `BeginBlock`,
+        para permitir sequências dependentes de transações no mesmo bloco.
 
 ##### Commit
-  * __Returns__:
-    * `Data ([]byte)`: O hash Merkle raiz
-    * `Log (string)`: Debug ou erro de mensagem
-  * __Usage__:<br/>
+
+-   **Returns**:
+    -   `Data ([]byte)`: O hash Merkle raiz
+    -   `Log (string)`: Debug ou erro de mensagem
+-   **Usage**:<br/>
     Retorna um hash Merkle raiz do estado da aplicação.
 
 ##### Query
-  * __Arguments__:
-    * `Data ([]byte)`: Os bytes de solicitação consultada
-  * __Returns__:
-    * `Code (uint32)`: Código de resposta
-    * `Data ([]byte)`: Os bytes de resposta consultada
-    * `Log (string)`: Debug ou erro de mensagem
+
+-   **Arguments**:
+    -   `Data ([]byte)`: Os bytes de solicitação consultada
+-   **Returns**:
+    -   `Code (uint32)`: Código de resposta
+    -   `Data ([]byte)`: Os bytes de resposta consultada
+    -   `Log (string)`: Debug ou erro de mensagem
 
 ##### Flush
-  * __Usage__:<br/>
-    Limpar a fila de resposta. Aplicações que implementam `types.Application`
-não precisa implementar esta mensagem - é tratada pelo projeto.
+
+-   **Usage**:<br/>
+        Limpar a fila de resposta. Aplicações que implementam `types.Application`
+    não precisa implementar esta mensagem - é tratada pelo projeto.
 
 ##### Info
-  * __Returns__:
-    * `Data ([]byte)`: Os bytes de informação
-  * __Usage__:<br/>
+
+-   **Returns**:
+    -   `Data ([]byte)`: Os bytes de informação
+-   **Usage**:<br/>
     Retorna informações sobre o estado da aplicação. Aplicação específicão.
 
 ##### SetOption
-  * __Arguments__:
-    * `Key (string)`: Chave para definir
-    * `Value (string)`: Valor a definir para a chave
-  * __Returns__:
-    * `Log (string)`: Debug ou mensagem de erro
-  * __Usage__:<br/>
-    Define as opções do aplicativo.  Exemplo Key="mode", Value="mempool" para uma conexão mempool
-, ou Key="mode", Value="consensus" para uma conexão de consenso.
-    Outras opções são específicas da aplicação.
+
+-   **Arguments**:
+    -   `Key (string)`: Chave para definir
+    -   `Value (string)`: Valor a definir para a chave
+-   **Returns**:
+    -   `Log (string)`: Debug ou mensagem de erro
+-   **Usage**:<br/>
+        Define as opções do aplicativo.  Exemplo Key="mode", Value="mempool" para uma conexão mempool
+    , ou Key="mode", Value="consensus" para uma conexão de consenso.
+        Outras opções são específicas da aplicação.
 
 ##### InitChain
-  * __Arguments__:
-    * `Validators ([]Validator)`: validadores de genesis iniciais
-  * __Usage__:<br/>
+
+-   **Arguments**:
+    -   `Validators ([]Validator)`: validadores de genesis iniciais
+-   **Usage**:<br/>
     Chamado uma vez na genesis
 
 ##### BeginBlock
-  * __Arguments__:
-    * `Height (uint64)`: A altura do bloco que está começando
-  * __Usage__:<br/>
+
+-   **Arguments**:
+    -   `Height (uint64)`: A altura do bloco que está começando
+-   **Usage**:<br/>
     Sinaliza o início de um novo bloco. Chamado antes de qualquer AppendTxs.
 
 ##### EndBlock
-  * __Arguments__:
-    * `Height (uint64)`: A altura do bloco que terminou
-  * __Returns__:
-    * `Validators ([]Validator)`: Mudança de validadores com novos poderes de voto (0
-      para remover)
-  * __Usage__:<br/>
-    Sinaliza o fim de um bloco. Chamado antes de cada Commit após todas as
-transações
+
+-   **Arguments**:
+    -   `Height (uint64)`: A altura do bloco que terminou
+-   **Returns**:
+    -   `Validators ([]Validator)`: Mudança de validadores com novos poderes de voto (0
+        para remover)
+-   **Usage**:<br/>
+        Sinaliza o fim de um bloco. Chamado antes de cada Commit após todas as
+    transações
 
 Veja [o repositório TMSP](https://github.com/tendermint/tmsp#message-types) para mais detalhes.
 
@@ -1237,66 +1246,66 @@ cadeia receptora confirmar a entrega, incluindo uma abreviada `IBCPacket` no app
 ![Figura da Zone1, Zone2, e Hub IBC com
 reconhecimento](https://raw.githubusercontent.com/gnuclear/atom-whitepaper/master/msc/ibc_with_ack.png)
 
-Primeiro, um `IBCBlockCommit` e` IBCPacketTx` são postados no "Hub" que prova 
+Primeiro, um `IBCBlockCommit` e`IBCPacketTx` são postados no "Hub" que prova 
 a existência de um `IBCPacket` na "Zone1". Digamos que `IBCPacketTx` tem o seguinte valor:
 
-- `FromChainID`: "Zone1"
-- `FromBlockHeight`: 100 (say)
-- `Packet`: an `IBCPacket`:
-  - `Header`: an `IBCPacketHeader`:
-    - `SrcChainID`: "Zone1"
-    - `DstChainID`: "Zone2"
-    - `Number`: 200 (say)
-    - `Status`: `AckPending`
-    - `Type`: "moeda"
-    - `MaxHeight`: 350 (Dizer que "Hub" está atualmente na altura 300)
-  - `Payload`: &lt;Os bytes de uma carga paga de "moeda"&gt;
+-   `FromChainID`: "Zone1"
+-   `FromBlockHeight`: 100 (say)
+-   `Packet`: an `IBCPacket`:
+    -   `Header`: an `IBCPacketHeader`:
+        -   `SrcChainID`: "Zone1"
+        -   `DstChainID`: "Zone2"
+        -   `Number`: 200 (say)
+        -   `Status`: `AckPending`
+        -   `Type`: "moeda"
+        -   `MaxHeight`: 350 (Dizer que "Hub" está atualmente na altura 300)
+    -   `Payload`: &lt;Os bytes de uma carga paga de "moeda">
 
 Em seguida, um `IBCBlockCommit` e `IBCPacketTx` são publicados na "Zone2" que comprova
 a existência de um `IBCPacket` em "Hub". Digamos que `IBCPacketTx` tem o seguinte valor:
 
-- `FromChainID`: "Hub"
-- `FromBlockHeight`: 300
-- `Packet`: an `IBCPacket`:
-  - `Header`: an `IBCPacketHeader`:
-    - `SrcChainID`: "Zone1"
-    - `DstChainID`: "Zone2"
-    - `Number`: 200
-    - `Status`: `AckPending`
-    - `Type`: "moeda"
-    - `MaxHeight`: 350
-  - `Payload`: &lt;Os mesmos bytes de uma carga paga de "moeda"&gt;
+-   `FromChainID`: "Hub"
+-   `FromBlockHeight`: 300
+-   `Packet`: an `IBCPacket`:
+    -   `Header`: an `IBCPacketHeader`:
+        -   `SrcChainID`: "Zone1"
+        -   `DstChainID`: "Zone2"
+        -   `Number`: 200
+        -   `Status`: `AckPending`
+        -   `Type`: "moeda"
+        -   `MaxHeight`: 350
+    -   `Payload`: &lt;Os mesmos bytes de uma carga paga de "moeda">
 
 Em seguida, "Zone2" deve incluir em seu app-hash um pacote abreviado que mostra o novo
 status de `AckSent`. Um `IBCBlockCommit` e `IBCPacketTx` são colocados de volta no "Hub"
 que comprova a existência de um `IBCPacket` abreviado na "Zone2". Digamos que `IBCPacketTx` tem o seguinte valor:
 
-- `FromChainID`: "Zone2"
-- `FromBlockHeight`: 400 (say)
-- `Packet`: an `IBCPacket`:
-  - `Header`: an `IBCPacketHeader`:
-    - `SrcChainID`: "Zone1"
-    - `DstChainID`: "Zone2"
-    - `Number`: 200
-    - `Status`: `AckSent`
-    - `Type`: "moeda"
-    - `MaxHeight`: 350
-  - `PayloadHash`: &lt;Os bytes de hash da mesma carga paga de "moeda"&gt;
+-   `FromChainID`: "Zone2"
+-   `FromBlockHeight`: 400 (say)
+-   `Packet`: an `IBCPacket`:
+    -   `Header`: an `IBCPacketHeader`:
+        -   `SrcChainID`: "Zone1"
+        -   `DstChainID`: "Zone2"
+        -   `Number`: 200
+        -   `Status`: `AckSent`
+        -   `Type`: "moeda"
+        -   `MaxHeight`: 350
+    -   `PayloadHash`: &lt;Os bytes de hash da mesma carga paga de "moeda">
 
 Finalmente, "Hub" deve atualizar o status do pacote de `AckPending` para`AckReceived`. 
 A evidência desse novo status finalizado deve voltar a "Zone2". Digamos que `IBCPacketTx` tem o seguinte valor:
 
-- `FromChainID`: "Hub"
-- `FromBlockHeight`: 301
-- `Packet`: an `IBCPacket`:
-  - `Header`: an `IBCPacketHeader`:
-    - `SrcChainID`: "Zone1"
-    - `DstChainID`: "Zone2"
-    - `Number`: 200
-    - `Status`: `AckReceived`
-    - `Type`: "moeda"
-    - `MaxHeight`: 350
-  - `PayloadHash`: &lt;Os bytes de hash da mesma carga paga de "moeda"&gt;
+-   `FromChainID`: "Hub"
+-   `FromBlockHeight`: 301
+-   `Packet`: an `IBCPacket`:
+    -   `Header`: an `IBCPacketHeader`:
+        -   `SrcChainID`: "Zone1"
+        -   `DstChainID`: "Zone2"
+        -   `Number`: 200
+        -   `Status`: `AckReceived`
+        -   `Type`: "moeda"
+        -   `MaxHeight`: 350
+    -   `PayloadHash`: &lt;Os bytes de hash da mesma carga paga de "moeda">
 
 Enquanto isso, "Zone1" pode assumir de maneira otimista a entrega bem-sucedida de um pacote 
 de "moeda", a menos que provas em contrário sejam comprovadas em "Hub". No exemplo acima, 
@@ -1319,29 +1328,26 @@ tenta manter ambos os lados da árvore da mesma altura, mas a esquerda pode ter 
 Esta árvore Merkle é usada para Merkle-lizar as transações de um bloco, e os elementos de
 nível superior da raiz do estado do aplicativo.
 
-```
-                *
-               / \
-             /     \
-           /         \
-         /             \
-        *               *
-       / \             / \
-      /   \           /   \
-     /     \         /     \
-    *       *       *       h6
-   / \     / \     / \
-  h0  h1  h2  h3  h4  h5
+                    *
+                   / \
+                 /     \
+               /         \
+             /             \
+            *               *
+           / \             / \
+          /   \           /   \
+         /     \         /     \
+        *       *       *       h6
+       / \     / \     / \
+      h0  h1  h2  h3  h4  h5
 
-  Uma ÁrvoreSimples com sete elementos
-```
+      Uma ÁrvoreSimples com sete elementos
 
 #### Árvore IAVL+
 
 O objetivo da estrutura de dados IAVL+ é fornecer armazenamento persistente para pares de valores-chave
 no estado do aplicativo, de modo que um hash determinista de raiz Merkle possa ser calculado
-eficientemente. A árvore é balanceada usando uma variante do [algoritmo AVL]
-(http://en.wikipedia.org/wiki/AVL_tree), e todas as operações são O(log(n)).
+eficientemente. A árvore é balanceada usando uma variante do [algoritmo AVL](http://en.wikipedia.org/wiki/AVL_tree), e todas as operações são O(log(n)).
 
 Em uma árvore AVL, as alturas das duas subárvores filhas de qualquer nó diferem por no máximo um.
 Sempre que esta condição for violada após uma atualização, a árvore é rebalanceada criando O(log(n))
@@ -1350,7 +1356,7 @@ internos também podem conter pares de valores-chave. O algoritmo AVL + (observe
 modifica o algoritmo AVL para manter todos os valores em folha de nós, enquanto 
 usando apenas nós de ramo para armazenar chaves. Isso simplifica o algoritmo, mantendo a trilha hash merkle curta.
 
- A Árvore AVL + é análoga à Ethereum [Patricia tries] (http://en.wikipedia.org/wiki/Radix_tree).
+ A Árvore AVL + é análoga à Ethereum [Patricia tries](http://en.wikipedia.org/wiki/Radix_tree).
  Há compensações. Chaves não precisam ser hasheadas antes da inserção em árvores IAVL+, portanto, 
  isso fornece iteração mais rápida ordenada no espaço-chave que pode beneficiar algumas aplicações.
  A lógica é mais simples de implementar, requerendo apenas dois tipos de nós - nós internos e nós de folhas. 
@@ -1372,27 +1378,27 @@ Aqui documentamos os dois principais tipos de transação para IBC: `IBCBlockCom
 
 Uma transação `IBCBlockCommitTx` é composta de:
 
-- `ChainID (string)`: O ID da blockchain
-- `BlockHash ([]byte)`: Os bytes de hash de bloco, a raiz Merkle que inclui o app-hash
-- `BlockPartsHeader (PartSetHeader)`: Os bytes de cabeçalho do conjunto de blocos,
-apenas necessários para verificar assinaturas de voto
-- `BlockHeight (int)`: A altura do commit
-- `BlockRound (int)`: A rodada do commit
-- `Commit ([]Vote)`: O +⅔ Tendermint `Precommit` de votos que compõem um bloco
-- `ValidatorsHash ([]byte)`: O hash da raiz da árvore-Merkle do novo conjunto de validadores
-- `ValidatorsHashProof (SimpleProof)`: Uma ÁrvoreSimples da prova-Merkle para provar o
-  `ValidatorsHash` contra o `BlockHash`
-- `AppHash ([]byte)`: Um hash da raiz da árvore-Merkle da Árvore IAVL do estado de aplicação
-- `AppHashProof (SimpleProof)`: Uma ÁrvoreSimples da prova-Merkle para provar o
-  `AppHash` contra o `BlockHash`
+-   `ChainID (string)`: O ID da blockchain
+-   `BlockHash ([]byte)`: Os bytes de hash de bloco, a raiz Merkle que inclui o app-hash
+-   `BlockPartsHeader (PartSetHeader)`: Os bytes de cabeçalho do conjunto de blocos,
+    apenas necessários para verificar assinaturas de voto
+-   `BlockHeight (int)`: A altura do commit
+-   `BlockRound (int)`: A rodada do commit
+-   `Commit ([]Vote)`: O +⅔ Tendermint `Precommit` de votos que compõem um bloco
+-   `ValidatorsHash ([]byte)`: O hash da raiz da árvore-Merkle do novo conjunto de validadores
+-   `ValidatorsHashProof (SimpleProof)`: Uma ÁrvoreSimples da prova-Merkle para provar o
+    `ValidatorsHash` contra o `BlockHash`
+-   `AppHash ([]byte)`: Um hash da raiz da árvore-Merkle da Árvore IAVL do estado de aplicação
+-   `AppHashProof (SimpleProof)`: Uma ÁrvoreSimples da prova-Merkle para provar o
+    `AppHash` contra o `BlockHash`
 
 #### IBCPacketTx
 
 Um `IBCPacket` é composto de:
 
-- `Header (IBCPacketHeader)`: O cabeçalho do pacote
-- `Payload ([]byte)`: Os bytes da carga paga do pacote. _Optional_
-- `PayloadHash ([]byte)`: O hash para os bytes do pacote. _Optional_
+-   `Header (IBCPacketHeader)`: O cabeçalho do pacote
+-   `Payload ([]byte)`: Os bytes da carga paga do pacote. _Optional_
+-   `PayloadHash ([]byte)`: O hash para os bytes do pacote. _Optional_
 
 Qualquer um dos `Payload` ou `PayloadHash` deve estar presente. O hash de um `IBCPacket` 
 é uma raiz Merkle simples dos dois itens, `Header` e `Payload`. Um `IBCPacket` sem a carga completa
@@ -1400,21 +1406,21 @@ Qualquer um dos `Payload` ou `PayloadHash` deve estar presente. O hash de um `IB
 
 Um `IBCPacketHeader` é composto de:
 
-- `SrcChainID (string)`: O ID da blockchain fonte
-- `DstChainID (string)`: O ID da blockchain destino
-- `Number (int)`: Um número exclusivo para todos os pacotes
-- `Status (enum)`: Pode ser um `AckPending`, `AckSent`, `AckReceived`,
-  `NoAck`, ou `Timeout`
-- `Type (string)`: Os tipos são dependentes da aplicação. Cosmos reserva-se ao tipo de pacote "moeda"
-- `MaxHeight (int)`: Se status não for `NoAckWanted` ou `AckReceived` por essa altura, o status se tornará `Timeout`. _Opcional_
+-   `SrcChainID (string)`: O ID da blockchain fonte
+-   `DstChainID (string)`: O ID da blockchain destino
+-   `Number (int)`: Um número exclusivo para todos os pacotes
+-   `Status (enum)`: Pode ser um `AckPending`, `AckSent`, `AckReceived`,
+    `NoAck`, ou `Timeout`
+-   `Type (string)`: Os tipos são dependentes da aplicação. Cosmos reserva-se ao tipo de pacote "moeda"
+-   `MaxHeight (int)`: Se status não for `NoAckWanted` ou `AckReceived` por essa altura, o status se tornará `Timeout`. _Opcional_
 
 Uma transação `IBCPacketTx` é composta de:
 
-- `FromChainID (string)`: O ID da blockchain que está fornecendo este pacote; Não necessariamente a fonte
-- `FromBlockHeight (int)`: A altura da blockchain na qual o seguinte pacote é incluído (Merkle-izado) no hash da blockchain de origem 
-- `Packet (IBCPacket)`: Um pacote de dados, cujo estado pode ser um 
-  `AckPending`, `AckSent`, `AckReceived`, `NoAck`, ou `Timeout`
-- `PacketProof (IAVLProof)`: Uma prova-Merkle da Árvore IAVL para para provar o hash do pacote contra o `AppHash' da cadeia de origem em determinada altura
+-   `FromChainID (string)`: O ID da blockchain que está fornecendo este pacote; Não necessariamente a fonte
+-   `FromBlockHeight (int)`: A altura da blockchain na qual o seguinte pacote é incluído (Merkle-izado) no hash da blockchain de origem 
+-   `Packet (IBCPacket)`: Um pacote de dados, cujo estado pode ser um 
+    `AckPending`, `AckSent`, `AckReceived`, `NoAck`, ou `Timeout`
+-   `PacketProof (IAVLProof)`: Uma prova-Merkle da Árvore IAVL para para provar o hash do pacote contra o \`AppHash' da cadeia de origem em determinada altura
 
 A seqüência para enviar um pacote da "Zone1" para a "Zone2" através do "Hub" é mostrada em {Figure X}. 
 Primeiro, um `IBCPacketTx` prova ao "Hub" que o pacote está incluído no estado da aplicação de "Zone1".
@@ -1424,79 +1430,97 @@ e o `DstChainID` é sempre" Zone2 ".
 
 O `PacketProof` deve ter o caminho correto da prova-Merkle, da seguinte maneira:
 
-```
-IBC/<SrcChainID>/<DstChainID>/<Number>
-
-```
+    IBC/<SrcChainID>/<DstChainID>/<Number>
 
 Quando "Zone1" quer enviar um pacote para "Zone2" através do "Hub", os dados de `IBCPacket` 
 são idênticos se o pacote é Merkle-izado em "Zone1", no "Hub" ou "Zone2". O único campo mutável
 é `Status` para acompanhar a entrega, conforme mostrado abaixo.
 
-## Agradecimentos ############################################################
+## Agradecimentos
 
 Agradecemos aos nossos amigos e colegas por sua ajuda na conceituação, revisão e apoio no nosso trabalho com Tendermint e Cosmos.
 
-* [Zaki Manian](https://github.com/zmanian) da
-  [SkuChain](https://www.skuchain.com/) forneceu muita ajuda na formatação e redacção, especialmente sob a seção TMSP
-* [Jehan Tremback](https://github.com/jtremback) da Althea and Dustin Byington
-  por ajudar com iterações iniciais
-* [Andrew Miller](http://soc1024.com/) da [Honey
-  Badger](https://eprint.iacr.org/2016/199) pelo feedback sobre consenso
-* [Greg Slepak](https://fixingtao.com/) pelo feedback sobre consenso e redação
-* Também agradecemos ao [Bill Gleim](https://github.com/gleim) e [Seunghwan
-  Han](http://www.seunghwanhan.com) por várias contribuições.
-* [Pedro Augusto](https://github.com/ShooterXD) pela tradução para
-Português
+-   [Zaki Manian](https://github.com/zmanian) da
+    [SkuChain](https://www.skuchain.com/) forneceu muita ajuda na formatação e redacção, especialmente sob a seção TMSP
+-   [Jehan Tremback](https://github.com/jtremback) da Althea and Dustin Byington
+    por ajudar com iterações iniciais
+-   [Andrew Miller](http://soc1024.com/) da [Honey
+    Badger](https://eprint.iacr.org/2016/199) pelo feedback sobre consenso
+-   [Greg Slepak](https://fixingtao.com/) pelo feedback sobre consenso e redação
+-   Também agradecemos ao [Bill Gleim](https://github.com/gleim) e [Seunghwan
+    Han](http://www.seunghwanhan.com) por várias contribuições.
+-   [Pedro Augusto](https://github.com/ShooterXD) pela tradução para
+    Português
 
-## Citações ###################################################################
+## Citações
 
 [1]: https://bitcoin.org/bitcoin.pdf
+
 [2]: http://zerocash-project.org/paper
+
 [3]: https://github.com/ethereum/wiki/wiki/White-Paper
+
 [4]: https://download.slock.it/public/DAO/WhitePaper.pdf
+
 [5]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+
 [6]: https://arxiv.org/pdf/1510.02037v2.pdf
+
 [7]: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
+
 [8]: https://github.com/tendermint/tendermint/wiki
+
 [9]: https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
+
 [10]: https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/
+
 [11]: http://pmg.csail.mit.edu/papers/osdi99.pdf
+
 [12]: https://bitshares.org/technology/delegated-proof-of-stake-consensus/
+
 [13]: https://www.stellar.org/papers/stellar-consensus-protocol.pdf
+
 [14]: https://interledger.org/rfcs/0001-interledger-architecture/
+
 [15]: https://blockstream.com/sidechains.pdf
+
 [16]: https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
+
 [17]: https://github.com/tendermint/tmsp
+
 [18]: https://github.com/ethereum/EIPs/issues/53
+
 [19]: http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf
+
 [20]: http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
+
 [21]: https://en.bitcoin.it/wiki/Thin_Client_Security
+
 [22]: http://vitalik.ca/files/mauve_paper.html
 
-* [1] Bitcoin: https://bitcoin.org/bitcoin.pdf
-* [2] ZeroCash: http://zerocash-project.org/paper
-* [3] Ethereum: https://github.com/ethereum/wiki/wiki/White-Paper
-* [4] TheDAO: https://download.slock.it/public/DAO/WhitePaper.pdf
-* [5] Segregated Witness: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
-* [6] BitcoinNG: https://arxiv.org/pdf/1510.02037v2.pdf
-* [7] Lightning Network: https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf
-* [8] Tendermint: https://github.com/tendermint/tendermint/wiki
-* [9] FLP Impossibility: https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
-* [10] Slasher: https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/
-* [11] PBFT: http://pmg.csail.mit.edu/papers/osdi99.pdf
-* [12] BitShares: https://bitshares.org/technology/delegated-proof-of-stake-consensus/
-* [13] Stellar: https://www.stellar.org/papers/stellar-consensus-protocol.pdf
-* [14] Interledger: https://interledger.org/rfcs/0001-interledger-architecture/
-* [15] Sidechains: https://blockstream.com/sidechains.pdf
-* [16] Casper: https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
-* [17] TMSP: https://github.com/tendermint/tmsp
-* [18] Ethereum Sharding: https://github.com/ethereum/EIPs/issues/53
-* [19] LibSwift: http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf
-* [20] DLS: http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
-* [21] Thin Client Security: https://en.bitcoin.it/wiki/Thin_Client_Security
-* [22] Ethereum 2.0 Mauve Paper: http://vitalik.ca/files/mauve_paper.html
+-   [1] Bitcoin: <https://bitcoin.org/bitcoin.pdf>
+-   [2] ZeroCash: <http://zerocash-project.org/paper>
+-   [3] Ethereum: <https://github.com/ethereum/wiki/wiki/White-Paper>
+-   [4] TheDAO: <https://download.slock.it/public/DAO/WhitePaper.pdf>
+-   [5] Segregated Witness: <https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki>
+-   [6] BitcoinNG: <https://arxiv.org/pdf/1510.02037v2.pdf>
+-   [7] Lightning Network: <https://lightning.network/lightning-network-paper-DRAFT-0.5.pdf>
+-   [8] Tendermint: <https://github.com/tendermint/tendermint/wiki>
+-   [9] FLP Impossibility: <https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf>
+-   [10] Slasher: <https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/>
+-   [11] PBFT: <http://pmg.csail.mit.edu/papers/osdi99.pdf>
+-   [12] BitShares: <https://bitshares.org/technology/delegated-proof-of-stake-consensus/>
+-   [13] Stellar: <https://www.stellar.org/papers/stellar-consensus-protocol.pdf>
+-   [14] Interledger: <https://interledger.org/rfcs/0001-interledger-architecture/>
+-   [15] Sidechains: <https://blockstream.com/sidechains.pdf>
+-   [16] Casper: <https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/>
+-   [17] TMSP: <https://github.com/tendermint/tmsp>
+-   [18] Ethereum Sharding: <https://github.com/ethereum/EIPs/issues/53>
+-   [19] LibSwift: <http://www.ds.ewi.tudelft.nl/fileadmin/pds/papers/PerformanceAnalysisOfLibswift.pdf>
+-   [20] DLS: <http://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf>
+-   [21] Thin Client Security: <https://en.bitcoin.it/wiki/Thin_Client_Security>
+-   [22] Ethereum 2.0 Mauve Paper: <http://vitalik.ca/files/mauve_paper.html>
 
 #### Links não classificados
 
-* https://www.docdroid.net/ec7xGzs/314477721-ethereum-platform-review-opportunities-and-challenges-for-private-and-consortium-blockchains.pdf.html
+-   <https://www.docdroid.net/ec7xGzs/314477721-ethereum-platform-review-opportunities-and-challenges-for-private-and-consortium-blockchains.pdf.html>

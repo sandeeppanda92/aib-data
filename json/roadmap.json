@@ -474,24 +474,24 @@
     {
       "id": "tmc-0-19",
       "title": "Tendermint",
-      "version": "0.19.7",
+      "version": "0.19.8",
       "children": ["sdk-0-17", "gui-0-6"],
       "span": 1,
       "date": "2018-04-13",
       "notes":
         "Tendermint 0.19.0 upgrades go-wire to go-amino. This is a sweeping change that breaks everything that is serialized to disk or over the network.",
-      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.7"
+      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.19.8"
     },
     {
       "id": "tmc-0-20",
       "title": "Tendermint",
-      "version": "0.20.0",
+      "version": "0.20.3",
       "children": [],
       "span": 3,
       "date": "2018-05-31",
       "notes":
         "Tendermint 0.20.0 upgrades ABCI to 0.11.0. The new version of ABCI supports slashing and auto-unbonding for Cosmos Validators.",
-      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.20.0-rc0"
+      "url": "https://github.com/tendermint/tendermint/releases/tag/v0.20.0-rc3"
     },
     {
       "id": "tmc-1-0",

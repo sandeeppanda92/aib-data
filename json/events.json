@@ -273,16 +273,16 @@
     "id": "cpc-crypto-devcon",
     "title": "CPC Crypto DevCon",
     "href":
-      "https://www.eventbrite.com/e/cpc-crypto-developers-conference-tickets-46258404132?aff=efbeventtix",
+      "http://cryptic2018.com",
     "body":
-      "Thousands of developers from Google, Facebook, Apple, Linkedin, Uber and Airbnb are invited to attend the conference, and speakers include renowned crypto and distributed system professors as well as CTOs of top projects selected by Cryptic Labs, Stanford DTI and CPC. Tendermint will be there.",
+      "Thousands of developers from Google, Facebook, Apple, Linkedin, Uber and Airbnb are invited to attend the conference, and speakers include renowned crypto and distributed system professors as well as CTOs of top projects selected by Cryptic Labs, Stanford DTI and CPC. Jae Kwon, CEO of Tendermint, will be speaking.",
     "images": {
       "logo": "cpc",
       "location": "mountain-view"
     },
     "location": "Mountain View, USA",
     "dates": {
-      "start": "2018-06-11",
+      "start": "2018-06-10",
       "end": "2018-06-12"
     }
   }

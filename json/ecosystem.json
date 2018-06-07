@@ -111,6 +111,13 @@
       "language": "Python",
       "author": "BigchainDB GmbH and the BigchainDB community",
       "description": "Blockchain database"
+    },
+    {
+      "name": "Mint",
+      "url": "https://github.com/Hashnode/mint",
+      "language": "Go",
+      "author": "Hashnode",
+      "description": "Build blockchain-powered social apps"
     }
   ],
   "abciServers": [
